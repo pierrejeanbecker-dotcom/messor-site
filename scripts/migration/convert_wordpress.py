@@ -49,7 +49,7 @@ TIP = "@@TIP@@"
 SKIP_PAGES = {"/", "/en/homepage", "/blog", "/en/blog-en",
               "/decouvrir-messor-2", "/en/about-us-messor",  # pages sur mesure (src/pages)
               "/contactez-nous", "/en/contact-us",
-              "/offres-demploi"}  # page vide (redirigée vers /nous-rejoindre)
+              "/offres-demploi", "/offres-emploi-conseil"}  # supprimées (redirigées vers /nous-rejoindre)
 
 MEDIA = set()
 # Anciennes adresses -> nouvelles (src/data/redirects.json, aussi utilisé pour le .htaccess)

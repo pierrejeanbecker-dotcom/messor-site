@@ -33,7 +33,6 @@ const year = new Date().getFullYear();
         <ul>
           {singles.map((s) => <li><a href={url(s.href!)}>{s.label}</a></li>)}
           <li><a href={url(t.jobs.href)}>{t.jobs.label}</a></li>
-          {lang === 'fr' && <li><a href={url('/offres-emploi-conseil')}>Offres d’emploi Conseil</a></li>}
         </ul>
       </div>
     </div>
