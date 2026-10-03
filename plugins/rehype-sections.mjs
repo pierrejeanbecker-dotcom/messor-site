@@ -13,7 +13,7 @@ const KINDS = [
 ];
 
 const el = (tagName, className, children = [], props = {}) => ({
-  type: 'element', tagName, properties: { ...(className ? { className: [className] } : {}), ...props }, children,
+  type: 'element', tagName, properties: { ...(className ? { className: className.split(' ') } : {}), ...props }, children,
 });
 const isBlank = (n) => n.type === 'text' && !n.value.trim();
 const pad = (i) => String(i).padStart(2, '0');
@@ -29,7 +29,7 @@ function steps(nodes) {
   if (items.length < 2) return nodes;
   return [
     ...intro,
-    el('ol', 'steps', items.map((c, i) => el('li', 'step', [el('span', 'step-n', [{ type: 'text', value: pad(i + 1) }]), el('div', 'step-c', c)]))),
+    el('ol', `steps steps-${items.length}`, items.map((c, i) => el('li', 'step', [el('span', 'step-n', [{ type: 'text', value: pad(i + 1) }]), el('div', 'step-c', c)]))),
   ];
 }
 

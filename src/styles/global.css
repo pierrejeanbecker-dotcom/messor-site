@@ -350,9 +350,12 @@ a { color: inherit; }
 .blk-steps .blk-body > p { max-width: 720px; }
 .blk-steps .blk-body strong { color: white; }
 .blk-steps .blk-body a { color: var(--accent); }
-.steps { list-style: none; padding: 0 !important; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: var(--line-dark); border: 1px solid var(--line-dark); margin-top: 8px !important; }
-.steps .step { background: var(--dark); padding: 36px 32px; margin: 0 !important; display: flex; flex-direction: column; gap: 18px; }
+/* Flex plutôt que grille : la dernière ligne s'étire, jamais de case vide (fond sombre visible) */
+.steps { list-style: none; padding: 0 !important; display: flex; flex-wrap: wrap; gap: 1px; background: var(--line-dark); border: 1px solid var(--line-dark); margin-top: 8px !important; }
+.steps .step { flex: 1 1 calc(25% - 1px); min-width: 240px; background: var(--dark); padding: 36px 32px; margin: 0 !important; display: flex; flex-direction: column; gap: 18px; }
 .steps .step:nth-child(even) { background: oklch(13.5% 0.015 258); }
+.steps-3 .step, .steps-5 .step, .steps-6 .step, .steps-9 .step { flex-basis: calc(33.333% - 1px); }
+.steps-2 .step { flex-basis: calc(50% - 1px); }
 .step-n { font-family: var(--font-serif); color: var(--accent); font-size: 40px; line-height: 1; }
 .step-c { font-size: 15px; line-height: 1.65; color: oklch(70% 0.01 260); }
 .step-c > * + * { margin-top: 0.8em; }
