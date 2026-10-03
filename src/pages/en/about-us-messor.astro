@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import About from '../../components/About.astro';
+import { ABOUT } from '../../data/about';
+const a = ABOUT.en;
+---
+<Base title={a.seoTitle} description={a.description} lang="en" path="/en/about-us-messor" alternate="/decouvrir-messor-2">
+  <About lang="en" />
+</Base>

@@ -4,6 +4,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import rehypeRaw from 'rehype-raw';
 import rehypeBase from './plugins/rehype-base.mjs';
+import rehypeSections from './plugins/rehype-sections.mjs';
 import rehypeExternal from './plugins/rehype-external.mjs';
 
 const base = process.env.SITE_BASE || '/';
@@ -17,6 +18,6 @@ export default defineConfig({
     i18n: { defaultLocale: 'fr', locales: { fr: 'fr-FR', en: 'en-GB' } },
   })],
   markdown: {
-    rehypePlugins: [rehypeRaw, rehypeExternal, [rehypeBase, { base }]],
+    rehypePlugins: [rehypeRaw, rehypeSections, rehypeExternal, [rehypeBase, { base }]],
   },
 });

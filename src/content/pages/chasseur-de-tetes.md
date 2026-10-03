@@ -5,19 +5,11 @@ description: "Messor vous aide dans votre recrutement de la perle rare. Notre é
 lang: "fr"
 permalink: "/chasseur-de-tetes"
 alternate: "/en/headhunting"
+kind: "expertise"
 heroTitle: "Good Will (Head)Hunting"
-heroImage: "/medias/2023/03/20943596-ai-1024x683-compressed-768x512.png"
 ---
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20944157-ai-1024x683-compressed-768x512.png)
-
-</div>
-<div>
-
-### Approche directe : kesako ?
+## Approche directe : kesako ?
 
 Nous ne publions pas vos offres de recrutement sur des jobboards mais **identifions et contactons directement des profils en poste** ou en recherche en utilisant :
 
@@ -32,15 +24,8 @@ Si nous collaborons déjà ensemble dans le cadre d’une mission de développem
 
 Notre **capacité à échanger en plusieurs langues (anglais, allemand, français, italien)** représente un **atout** **supplémentaire** **pour vous aider à trouver la perle rare.**
 
-</div>
-</div>
-
-### Ils témoignent
-
-![](/medias/2022/12/icons8-quote-left-90-1.png)
+## Ils témoignent
 
 > Messor s’est révélé être un partenaire exemplaire pour nous aider à dénicher les profils IT qui nous manquaient. Je recommande
 >
 > — Mariam Soudani — HR Manager @ Infine Group
-
-<p class="btn-row"><a class="btn" href="/">Retour à la page d&#x27;accueil</a></p>

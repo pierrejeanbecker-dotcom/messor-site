@@ -5,8 +5,8 @@ description: "Omnichannel prospecting campaign - With Messor, develop your netwo
 lang: "en"
 permalink: "/en/prospecting-campaign"
 alternate: "/accompagnement-prospection-multicanal"
+kind: "offer"
 heroTitle: "With Messor, feel the pulse of your market, develop your network and consolidate your sales pipeline"
-heroImage: "/medias/2023/03/20945564-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/en/recruit-talent"
   label: "RECRUIT TALENT"
@@ -15,8 +15,6 @@ next:
   label: "Business development"
 latestPosts: true
 ---
-
-<p class="btn-row"><a class="btn" href="/en/contact-us">Contact us</a></p>
 
 *#Lead My Marquee Subtext #Meetings My Marquee Subtext #ProspectingCampaign My Marquee Subtext #Linkedin My Marquee Subtext #Sourcing My Marquee Subtext #LeadGeneration My Marquee Subtext #Lead My Marquee Subtext #Meetings My Marquee Subtext #ProspectingCampaign My Marquee Subtext #Linkedin My Marquee Subtext #Sourcing My Marquee Subtext #LeadGeneration My Marquee Subtext*
 
@@ -28,12 +26,7 @@ Your sales people are reluctant to pick up their phone or are too busy with thei
 
 You probably made the right choice not to have in-house sales people. Our team is here to help you !
 
-![](/medias/2023/03/Moisson-messor-compressed.png)
-
 ### Our process
-
-<div class="cols cols-2">
-<div>
 
 ### Push method
 
@@ -70,9 +63,6 @@ We send invitations directly to your calendar and reposition them if the prospec
 
 </details>
 
-</div>
-<div>
-
 ### Linkedin pull method
 
 <details>
@@ -107,11 +97,6 @@ Optimisation of Linkedin profile and company website.
 Analysis and sharing of results
 
 </details>
-
-</div>
-</div>
-
-<p class="btn-row"><a class="btn" href="https://outlook.office365.com/owa/calendar/MessorInterne@messor.fr/bookings/">Book a Free Meeting</a></p>
 
 ### Our assets make a difference
 

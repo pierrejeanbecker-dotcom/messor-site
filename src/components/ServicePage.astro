@@ -1,0 +1,73 @@
+---
+// Gabarit des pages « Nos offres » et « Notre expertise ».
+import { marked } from 'marked';
+import { BOOKING_URL, NAV, UI, type Lang } from '../data/site';
+import { prefixHtml, url } from '../lib/url';
+
+interface Related { href: string; label: string; description?: string }
+interface Props {
+  lang: Lang;
+  path: string;
+  title: string;
+  lead?: string;
+  headings: { depth: number; slug: string; text: string }[];
+  related: Related[];
+  cta?: { href: string; label: string };
+}
+const { lang, path, title, lead, headings, related, cta } = Astro.props;
+const t = UI[lang];
+const group = NAV[lang].find((g) => g.children?.some((c) => c.href === path));
+const leadHtml = lead ? prefixHtml(marked.parse(lead) as string) : '';
+const toc = headings.filter((h) => h.depth === 2);
+const L = lang === 'fr'
+  ? { onPage: 'Sur cette page', write: 'Nous écrire', others: 'À découvrir aussi' }
+  : { onPage: 'On this page', write: 'Email us', others: 'Explore further' };
+---
+<section class="svc-hero">
+  <div class="wrap svc-hero-grid">
+    <div>
+      {group && <p class="eyebrow">{group.label}</p>}
+      <h1>{title}</h1>
+      {leadHtml && <div class="lead" set:html={leadHtml} />}
+      <div class="actions">
+        {cta
+          ? <a class="btn" href={url(cta.href)}>{cta.label}</a>
+          : <a class="btn" href={BOOKING_URL} target="_blank" rel="noopener">{t.book}</a>}
+        <a class="btn-ghost" href={url(t.contact)}>{L.write}</a>
+      </div>
+    </div>
+    {toc.length > 1 && (
+      <nav class="svc-toc" aria-label={L.onPage}>
+        <p>{L.onPage}</p>
+        <ol>
+          {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+        </ol>
+      </nav>
+    )}
+  </div>
+</section>
+
+<div class="svc-content">
+  <slot />
+</div>
+
+
+{related.length > 0 && (
+  <section class="section bg-warm">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">{group?.label}</p><h2 class="h2">{L.others}</h2></div>
+      </div>
+      <div class="related-grid">
+        {related.map((r, i) => (
+          <a class="related-card" href={url(r.href)}>
+            <span class="n">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{r.label}</h3>
+            {r.description && <p>{r.description}</p>}
+            <span class="more">{lang === 'fr' ? 'Découvrir →' : 'Discover →'}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

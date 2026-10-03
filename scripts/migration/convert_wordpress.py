@@ -24,8 +24,32 @@ OUT_PAGES = ROOT / "src/content/pages"
 OUT_POSTS = ROOT / "src/content/posts"
 SITE = "https://messor.fr"
 
+# Pages « Nos offres » et « Notre expertise » : mise en page dédiée (kind), contenu aplati.
+SERVICE_PAGES = {
+    "accompagnement-prospection-multicanal": "offer", "developpement-commercial-externalise": "offer",
+    "inbound-marketing-externalise": "offer", "conseil-developpement-commercial": "offer",
+    "automatisation-processus-metiers": "offer", "recruter-des-talents": "offer",
+    "en/recruit-talent": "offer", "en/prospecting-campaign": "offer",
+    "en/business-development": "offer", "en/digital-marketing-strategy": "offer",
+    "base-de-donnees-prospects": "expertise", "prospection-telephonique-b2b": "expertise",
+    "mail-prospection-b2b": "expertise", "prospection-sales-navigator-linkedin": "expertise",
+    "convertir-un-prospect-en-client": "expertise", "creation-de-contenu-digital": "expertise",
+    "gagner-en-visibilite-sur-linkedin": "expertise", "optimiser-campagne-google-ads": "expertise",
+    "chasseur-de-tetes": "expertise",
+    "en/database-creation": "expertise", "en/cold-calling": "expertise", "en/cold-mailing": "expertise",
+    "en/linkedin-prospecting": "expertise", "en/turning-prospect-into-loyal-customer": "expertise",
+    "en/content-creation-and-distribution": "expertise", "en/linkedin-awareness": "expertise",
+    "en/google-ads-en": "expertise", "en/headhunting": "expertise",
+    "nous-rejoindre": "page", "vos-enjeux": "page",
+}
+TIP_IMAGE = re.compile(r"ampoule-conseil", re.I)
+TIP = "@@TIP@@"
+
 # Pages reconstruites à la main (nouveau design) ou générées automatiquement.
-SKIP_PAGES = {"/", "/en/homepage", "/blog", "/en/blog-en"}
+SKIP_PAGES = {"/", "/en/homepage", "/blog", "/en/blog-en",
+              "/decouvrir-messor-2", "/en/about-us-messor",  # pages sur mesure (src/pages)
+              "/contactez-nous", "/en/contact-us",
+              "/offres-demploi"}  # page vide (redirigée vers /nous-rejoindre)
 
 MEDIA = set()
 # Anciennes adresses -> nouvelles (src/data/redirects.json, aussi utilisé pour le .htaccess)
@@ -192,6 +216,11 @@ def widget_md(w, ctx):
         if not img or not img_src(img):
             return ""
         src = norm_url(img_src(img))
+        if ctx.get("flatten"):
+            if TIP_IMAGE.search(src):
+                return TIP
+            # Pages de service : uniquement des illustrations de banque d'images -> retirées
+            return ""
         alt = (img.get("alt") or "").replace("]", "")
         md = f"![{alt}]({src})"
         a = cont.find("a")
@@ -313,13 +342,14 @@ def element_md(el, ctx):
             cols = inner
     if len(cols) >= 2:
         parts = []
-        c2 = dict(ctx, in_columns=True)
+        flat = ctx.get("flatten") and len(cols) == 2
+        c2 = dict(ctx, in_columns=not flat)
         for c in cols:
             md = "\n\n".join(x for x in (element_md(k, c2) for k in children_elements(c)) if x)
             if md.strip():
                 parts.append(md)
         ctx["latestPosts"] = ctx.get("latestPosts") or c2.get("latestPosts")
-        if len(parts) >= 2:
+        if len(parts) >= 2 and not flat:
             n = min(len(parts), 4)
             return f'<div class="cols cols-{n}">\n' + "\n".join(
                 f"<div>\n\n{p}\n\n</div>" for p in parts) + "\n</div>"
@@ -331,11 +361,11 @@ BOILERPLATE = re.compile(
     r"^(avez-vous des questions|do you have any questions|have any questions|blog$)", re.I)
 
 
-def convert_elementor(content_html, lang):
+def convert_elementor(content_html, lang, flatten=False):
     soup = BeautifulSoup(content_html, "lxml")
     root = soup.select_one(".elementor") or soup.body
     sections = children_elements(root)
-    ctx = {}
+    ctx = {"flatten": flatten}
     hero = {}
     blocks = []
     prevnext = {}
@@ -430,6 +460,50 @@ def seo(item):
     return y.get("title", ""), y.get("description", "") or y.get("og_description", ""), img
 
 
+def polish_service(body, kind):
+    """Encadrés « conseil », titres de chapitres et nettoyage des pages de service."""
+    # Image ampoule + paragraphe suivant -> encadré conseil
+    def tip(m):
+        txt = m.group(1).strip()
+        txt = re.sub(r"^\*{1,3}(.*?)\*{1,3}$", r"\1", txt, flags=re.S)
+        return f'<aside class="tip">\n\n{txt}\n\n</aside>\n\n'
+    body = re.sub(re.escape(TIP) + r"\s*\n\n((?:(?!\n\n).)+)\n\n", tip, body + "\n\n", flags=re.S)
+    body = body.replace(TIP, "")
+    # Section « Nous contacter » recopiée sur chaque page : remplacée par le bandeau contact du gabarit
+    body = re.sub(r"^## (Nous contacter|Contactez-nous|Contact us)\s*\n.*?(?=^## |\Z)", "", body, flags=re.M | re.S)
+    # Boutons « contact / RDV / accueil » : la mise en page en propose déjà
+    body = re.sub(r'^<p class="btn-row"><a class="btn" href="(?:https://outlook[^"]*|/contactez-nous|/en/contact-us|/en|/)">.*?</a></p>\n?',
+                  "", body, flags=re.M)
+    # Sections « Méthodologie » : titre en h2, une étape = un h3 (mise en page en étapes)
+    method = re.compile(r"^#{2,3} (Méthodologie|Methodology|Our methodology|Notre méthodologie|Our approach)\s*$", re.I)
+    out, in_method = [], False
+    for line in body.split("\n"):
+        if method.match(line):
+            line, in_method = "## " + line.lstrip("#").strip(), True
+        elif in_method and re.match(r"^#{2,3} ", line):
+            in_method = False
+        elif in_method and line.startswith("#### "):
+            line = "### " + line[5:]
+        out.append(line)
+    body = "\n".join(out)
+    if kind == "expertise":
+        # Les chapitres Elementor étaient en h3 : ils deviennent des h2 (sommaire, sections).
+        body = re.sub(r"^(#{3,4}) ", lambda m: "#" * (len(m.group(1)) - 1) + " ", body, flags=re.M)
+    # Titres répétés à l'identique (artefacts de mise en page)
+    body = re.sub(r"^(#{2,4} .+)\n\n\1$", r"\1", body, flags=re.M)
+    body = re.sub(r"\n{3,}", "\n\n", body)
+    return body.strip()
+
+
+def sentence_case(t):
+    """« CAMPAGNE DE PROSPECTION » -> « Campagne de prospection »."""
+    letters = [c for c in t if c.isalpha()]
+    if letters and sum(c.isupper() for c in letters) / len(letters) > 0.8:
+        t = t.lower()
+        return t[0].upper() + t[1:]
+    return t
+
+
 def strip_missing_media():
     """Retire les images absentes de public/medias (déjà cassées sur l'ancien site)."""
     medias = ROOT / "public/medias"
@@ -498,10 +572,17 @@ def main():
                     "excerpt": excerpt_of(item),
                 })
             if 'data-elementor-type' in content or "elementor-widget" in content:
-                hero, body, prevnext, latest = convert_elementor(content, lang)
+                service = SERVICE_PAGES.get(path) if kind == "pages" else None
+                hero, body, prevnext, latest = convert_elementor(content, lang, flatten=bool(service))
+                if service:
+                    body = polish_service(body, service)
+                    fm["kind"] = service
+                    if path == "nous-rejoindre":
+                        fm["cta"] = {"href": "mailto:rh@messor.fr", "label": "Envoyer une candidature →"}
+                    hero["image"] = ""
                 if kind == "pages":
                     if hero.get("title"):
-                        fm["heroTitle"] = hero["title"]
+                        fm["heroTitle"] = sentence_case(hero["title"])
                     fm["heroLead"] = hero.get("lead", "")
                     fm["heroImage"] = hero.get("image", "")
                     fm["heroImageAlt"] = hero.get("imageAlt", "")

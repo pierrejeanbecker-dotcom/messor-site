@@ -7,6 +7,8 @@ Site de Messor (messor.fr), reconstruit **sans WordPress** : du code et du Markd
 | Je veux modifier… | Fichier |
 |---|---|
 | La page d'accueil (FR et EN) | `src/data/home.ts` |
+| La page Découvrir Messor (équipe, valeurs, photos, FAQ) | `src/data/about.ts` |
+| La page Contact | `src/components/ContactPage.astro` |
 | Une page (offres, expertise, mentions légales…) | `src/content/pages/<adresse>.md` |
 | Un article de blog | `src/content/posts/<catégorie>/<article>.md` |
 | Le menu, l'adresse, le téléphone, le lien de prise de RDV | `src/data/site.ts` |
@@ -14,6 +16,10 @@ Site de Messor (messor.fr), reconstruit **sans WordPress** : du code et du Markd
 | Une redirection (ancienne adresse → nouvelle) | `src/data/redirects.json` |
 | Les couleurs, polices, mises en page | `src/styles/global.css` |
 | Les images | `public/medias/…` (contenu) et `public/images/…` (charte) |
+
+Les pages d'offres et d'expertise (`kind:` dans l'en-tête) sont découpées automatiquement à chaque titre `##` :
+un titre « Méthodologie » donne des étapes numérotées (un `###` = une étape), « Nos atouts » des cartes,
+« FAQ… » un accordéon, et un bloc `<aside class="tip">…</aside>` un encadré « Le conseil Messor ».
 
 Chaque fichier `.md` commence par un en-tête (`title`, `description`, `permalink`…) suivi du texte en Markdown.
 L'adresse publique de la page est son `permalink` : ne la changez pas sans ajouter une redirection.

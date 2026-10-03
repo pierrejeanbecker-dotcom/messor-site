@@ -5,23 +5,15 @@ description: "Découvrez comment convertir vos prospects en clients fidèles gr�
 lang: "fr"
 permalink: "/convertir-un-prospect-en-client"
 alternate: "/en/turning-prospect-into-loyal-customer"
+kind: "expertise"
 heroTitle: "Convertir un prospect en client : signer vos leads"
 heroLead: "*« Quand le blé vient à moisson, si haut soit-il, les poules l’attrapent. »* *Proverbe savoyard*\n\nPour **convertir un prospect en client**, il ne suffit plus de dérouler une méthode de vente classique. L’acheteur B2B, mieux informé grâce à Internet, exige une approche plus agile. L’objectif ? **Adapter** vos techniques à chaque profil, **reprendre de l’ascendant** sur le processus d’achat grâce à des outils digitaux performants et travailler vos arguments sous trois angles : **relationnel**, **émotionnel** et **rationnel**."
-heroImage: "/medias/2023/03/20943645-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/prospection-sales-navigator-linkedin"
   label: "prospection linkedin"
 ---
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2022/12/vendre-ou-se-faire-acheter-768x512.png)
-
-</div>
-<div>
-
-### Vendre ou se faire acheter ?
+## Vendre ou se faire acheter ?
 
 Le modèle de vente basé sur l’écoute et l’empathie, autrefois résumé par la méthode SPIN, montre aujourd’hui ses limites. Face à des prospects **autonomes**, la simple mise en avant de l’urgence du besoin ne suffit plus pour **convertir des prospects en clients**.
 
@@ -32,13 +24,7 @@ Désormais, le vendeur doit :
 - Varier ses **canaux de prospection** (LinkedIn, e-mailing ciblé, calls),
 - Et créer un **lien émotionnel** pour donner envie à l’acheteur de s’engager dans une collaboration.
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Vendre en équipe et en marque blanche
+## Vendre en équipe et en marque blanche
 
 Chaque structure B2B possède ses propres habitudes : **culture commerciale**, **outils CRM**, **processus** et **équipe dédiée**. **MESSOR** ne se positionne pas comme un cabinet de conseil qui redéfinit votre stratégie ; notre rôle est de **nous intégrer** dans votre organisation pour **transformer efficacement vos leads en clients**.
 
@@ -46,23 +32,7 @@ Chaque structure B2B possède ses propres habitudes : **culture commerciale**, *
 - **Marque blanche** : nous représentons vos intérêts comme si nous faisions partie de vos équipes, tout en laissant intacte votre identité de marque.
 - **Suivi des opportunités** : nous travaillons main dans la main sur un **CRM partagé**, pour un pilotage transparent et réactif.
 
-</div>
-<div>
-
-![](/medias/2023/03/20944400-ai-1024x683-compressed-768x512.png)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20945184-ai-1024x683-compressed-768x512.png)
-
-</div>
-<div>
-
-### Il n’y a pas de règles dans la vente, mais on se doit de toutes les connaître
+## Il n’y a pas de règles dans la vente, mais on se doit de toutes les connaître
 
 Le cycle de vente B2B, de la **prise de rendez-vous** jusqu’à la **fidélisation**, regorge de “bonnes pratiques”. Pourtant, c’est la **capacité d’adaptation** qui prime.
 
@@ -72,25 +42,11 @@ Chez **MESSOR** :
 - Nous encourageons la **remise en question** des process, car chaque prospect a des attentes spécifiques,
 - Nous sommes **technophiles**, proposant régulièrement de nouveaux outils pour **améliorer l’expérience client** et favoriser la **conversion** de prospects en clients fidèles.
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![homme au téléphone derrière son ordinateur, prospection commerciale](/medias/2023/04/appel-telephonique-768x768.png)
-
-</div>
-<div>
-
-### Sceller la relation pour convertir vos prospects en clients fidèles
+## Sceller la relation pour convertir vos prospects en clients fidèles
 
 La vente B2B ne se résume plus à la présentation d’un produit ou d’un service. Elle implique de **co-construire** un partenariat, de rassurer sur les **bénéfices concrets** et de maintenir un **contact humain** authentique. En se concentrant sur l’**écoute**, la **pertinence** de la solution et l’**innovation**, vous créez un contexte où vos prospects **désirent** avancer avec vous, plutôt qu’être forcés de le faire.
 
 **MESSOR** s’engage à **stimuler cette dynamique** en s’insérant dans votre organisation, en soignant chaque étape du cycle de vente et en **renforçant le lien** avec vos interlocuteurs. Résultat : plus de **proximité**, plus de **conversions** et une meilleure **fidélisation.**
-
-</div>
-</div>
 
 ## FAQ – Convertissez plus rapidement vos prospects en clients
 

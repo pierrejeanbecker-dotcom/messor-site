@@ -5,8 +5,8 @@ description: "How do Linkedin's algorithms work? We help you build brand awarene
 lang: "en"
 permalink: "/en/linkedin-awareness"
 alternate: "/gagner-en-visibilite-sur-linkedin"
+kind: "expertise"
 heroTitle: "Building brand awareness"
-heroImage: "/medias/2023/03/20943529-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/en/content-creation-and-distribution"
   label: "Content creation and distribution"
@@ -17,15 +17,7 @@ next:
 
 *#ContentMarketing My Marquee Subtext #Audience My Marquee Subtext #Media My Marquee Subtext #Algorithms My Marquee Subtext #PersonalBranding My Marquee Subtext #Copywriting My Marquee Subtext #ContentMarketing My Marquee Subtext #Audience My Marquee Subtext #Media My Marquee Subtext #Algorithms My Marquee Subtext #PersonalBranding My Marquee Subtext #Copywriting My Marquee Subtext*
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20945592-ai-1024x1024-compressed-768x768.png)
-
-</div>
-<div>
-
-### How do LinkedIn's algorithms work?
+## How do LinkedIn's algorithms work?
 
 **LinkedIn is a professional social network built on algorithm(s).**
 
@@ -43,17 +35,6 @@ Your publication is distributed by LinkedIn to a sample of your network (between
 - **Be forwarded** to other members because it is considered of good quality
 - **Become viral**, after being validated by a LinkedIn employee, and be seen by hundreds of thousands of LinkedIn members.
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/01/ideevert2.svg)
-
-</div>
-<div>
-
 - ***Switch between TOP quality content and commitment content.***
 - ***Mix between content on your personal page and content on your business page.***
 - ***Don’t be afraid to post several times a week to build your brand. Take regular breaks to avoid saturating the audience.***
@@ -62,36 +43,14 @@ Your publication is distributed by LinkedIn to a sample of your network (between
 - ***Add 3 hashtags per post – Tag up to 5 people***
 - ***The first 60 to 90 minutes are crucial: there is a correlation between the number of « final » views of a publication and the number of interactions it will have generated in the first hour.***
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### How to set up your LinkedIn account?
+## How to set up your LinkedIn account?
 
 - **Customize your LinkedIn URL** (Click on your photo > View profile > Edit your public profile > Edit URL)
 - **Deactivate « people who viewed your profile also viewed these profiles »** to prevent your visitors from « leaving » to a competitor.
 - **Set your profile to « Open Profile »** so that people outside your network can contact you directly.
 - Sign up for a **Premium membership** if you want to take full advantage of LinkedIn
 
-</div>
-<div>
-
-![](/medias/2023/03/20943447-ai-1024x1024-compressed-1-768x768.png)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20943447-ai-1024x1024-compressed-1-768x768.png)
-
-</div>
-<div>
-
-### How to make your profile a showcase?
+## How to make your profile a showcase?
 
 1. Your profile picture: **smile**!
 2. Use **Remove.bg** to remove the background of your photo for free.
@@ -110,6 +69,3 @@ Your publication is distributed by LinkedIn to a sample of your network (between
 6. To spice up the layout, **insert emojis or unicode characters related to your activity**: on [smiley.cool](https://smiley.cool/fr/emoji-list.php)or [wikipedia](https://en.wikipedia.org/wiki&/Miscellaneous_Symbols).
 7. **Fill in all the information in the sections**: experience, skills, recommendations, languages, volunteering, etc.
 8. **Translate your profile into another language** if you are targeting foreign prospects.
-
-</div>
-</div>

@@ -5,9 +5,9 @@ description: "Comment fonctionnent les algorithmes Linkedin ? Nous consolidons v
 lang: "fr"
 permalink: "/gagner-en-visibilite-sur-linkedin"
 alternate: "/en/linkedin-awareness"
+kind: "expertise"
 heroTitle: "Gagner en visibilité sur LinkedIn : consolidez votre notoriété B2B"
 heroLead: "Optimisez votre présence LinkedIn et gagnez en visibilité. Découvrez comment paramétrer votre compte, publier efficacement et transformer votre profil en vitrine B2B."
-heroImage: "/medias/2023/03/20943529-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/creation-de-contenu-digital"
   label: "creation et diffusion de contenu"
@@ -16,15 +16,7 @@ next:
   label: "google ads"
 ---
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20945592-ai-1024x1024-compressed-768x768.png)
-
-</div>
-<div>
-
-### Comment fonctionnent les algorithmes de LinkedIn ?
+## Comment fonctionnent les algorithmes de LinkedIn ?
 
 LinkedIn, à l’image d’un moteur de recherche, s’appuie sur des **algorithmes** en constante évolution pour déterminer la portée de vos publications. Ces mécanismes, tenus secrets, privilégient avant tout la **“contribution”** : la plateforme met en avant les contenus qui suscitent **discussion**, **engagement** et **interactions**.
 
@@ -43,30 +35,17 @@ Voici quelques points clés pour **gagner en visibilité sur LinkedIn** :
   - Bon engagement : meilleure mise en avant,
   - Très fort engagement : possible effet **viral** après validation manuelle par un collaborateur LinkedIn, ce qui peut toucher plusieurs centaines de milliers de membres.
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/01/ampoule-conseil.png)
-
-</div>
-<div>
+<aside class="tip">
 
 - **Astuces supplémentaires**
+
+</aside>
 
   - Alternez entre **votre compte personnel** et votre **page entreprise** pour diversifier les points de contact.
   - Soignez les **premières interactions** : répondez systématiquement aux commentaires pour encourager la conversation.
   - Utilisez **3 hashtags** pertinents et taguez jusqu’à **5 personnes** susceptibles d’être réellement concernées.
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Comment paramétrer son compte LinkedIn ?
+## Comment paramétrer son compte LinkedIn ?
 
 - Pour **gagner en visibilité sur LinkedIn**, le **paramétrage** de votre profil est un premier pas indispensable.
 
@@ -84,23 +63,7 @@ Voici quelques points clés pour **gagner en visibilité sur LinkedIn** :
 
      - Pour tirer pleinement parti de l’algorithme et accéder à des fonctionnalités avancées (InMails, recherches plus spécifiques).
 
-</div>
-<div>
-
-![](/medias/2023/03/20943447-ai-1024x1024-compressed-1-768x768.png)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20943587-ai-1024x1024-compressed-768x768.png)
-
-</div>
-<div>
-
-### Comment faire de son profil une vitrine ?
+## Comment faire de son profil une vitrine ?
 
 1. Votre **profil LinkedIn** est votre **carte de visite** numérique : il doit inspirer confiance, refléter votre **expertise** et souligner votre **valeur ajoutée**.
 
@@ -124,9 +87,6 @@ Voici quelques points clés pour **gagner en visibilité sur LinkedIn** :
       - **Expériences**, **Compétences**, **Recommandations**, **Langues**, **Projets bénévoles** : chaque section renseigne l’algorithme sur votre **expertise** et attire différents types de lecteurs.
    6. **Multilinguisme** :
       - Si vous ciblez l’international, **traduisez** votre profil dans les langues adéquates pour toucher un public plus large.
-
-</div>
-</div>
 
 ## FAQ – Gagner en visibilité sur LinkedIn
 

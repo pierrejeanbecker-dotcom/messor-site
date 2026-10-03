@@ -1,0 +1,209 @@
+---
+// Page « Découvrir Messor » (textes dans src/data/about.ts)
+import { ABOUT } from '../data/about';
+import { BOOKING_URL, UI, type Lang } from '../data/site';
+import { prefixHtml, url } from '../lib/url';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const a = ABOUT[lang];
+const t = UI[lang];
+const initials = (n: string) => n.split(/\s+/).map((w) => w[0]).join('').slice(0, 2);
+---
+<!-- En-tête -->
+<section class="ab-hero">
+  <div class="wrap">
+    <p class="eyebrow">{a.eyebrow}</p>
+    <h1>{a.title}</h1>
+    <p class="lead">{a.lead}</p>
+    <div class="actions">
+      <a class="btn" href={BOOKING_URL} target="_blank" rel="noopener">{t.book}</a>
+      <a class="btn-ghost" href="#equipe">{a.team.title}</a>
+    </div>
+    <div class="ab-stats">
+      {a.stats.map((s) => <div><div class="n">{s.n}</div><div class="l">{s.label}</div></div>)}
+    </div>
+  </div>
+</section>
+
+<!-- ADN -->
+<section class="section bg-paper">
+  <div class="wrap">
+    <div class="ab-head">
+      <div>
+        <p class="eyebrow">{a.dna.eyebrow}</p>
+        <h2 class="h2">{a.dna.title}</h2>
+      </div>
+      <p class="muted">{a.dna.text}</p>
+    </div>
+    <div class="channels">
+      {a.dna.channels.map((c, i) => {
+        const inner = (
+          <>
+            <span class="num">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{c.title}</h3>
+            <p>{c.text}</p>
+            {c.href && <span class="more">{a.dna.more} →</span>}
+          </>
+        );
+        return c.href ? <a class="channel" href={url(c.href)}>{inner}</a> : <div class="channel">{inner}</div>;
+      })}
+    </div>
+  </div>
+</section>
+
+<!-- Valeurs -->
+<section class="section bg-dark">
+  <div class="wrap">
+    <p class="eyebrow">{a.values.eyebrow}</p>
+    <h2 class="serif" style="font-size:clamp(30px,3.8vw,46px);line-height:1.1;letter-spacing:-0.02em;margin-bottom:56px">{a.values.title}</h2>
+    <div class="values">
+      {a.values.items.map((v, i) => (
+        <div class="value">
+          <span class="vn">{String(i + 1).padStart(2, '0')}</span>
+          <h3>{v.title}</h3>
+          <p>{v.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- La vie chez Messor -->
+<section class="section bg-warm">
+  <div class="wrap">
+    <p class="eyebrow">{a.life.eyebrow}</p>
+    <h2 class="h2" style="max-width:760px;margin-bottom:48px">{a.life.title}</h2>
+    <div class="mosaic">
+      {a.life.photos.map((p, i) => (
+        <figure class={`m${i + 1}`}>
+          <img src={url(p.src)} alt={p.alt} loading="lazy" />
+          <figcaption>{p.alt}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Équipe -->
+<section id="equipe" class="section bg-paper">
+  <div class="wrap">
+    <div class="ab-head">
+      <div>
+        <p class="eyebrow">{a.team.eyebrow}</p>
+        <h2 class="h2">{a.team.title}</h2>
+      </div>
+      <p class="muted">{a.team.text}</p>
+    </div>
+    <div class="team">
+      {a.team.members.map((m) => (
+        <article class="member">
+          <div class="avatar">
+            {m.photo ? <img src={url(m.photo)} alt={m.name} width="300" height="300" loading="lazy" /> : <span>{initials(m.name)}</span>}
+          </div>
+          <h3>{m.name}</h3>
+          <p class="role">{m.role}</p>
+          <p class="langs">{m.langs.map((l) => <span>{l}</span>)}</p>
+          <details>
+            <summary>{lang === 'fr' ? 'Mieux me connaître' : 'Get to know me'}</summary>
+            <dl>
+              {m.facts.map((f, i) => (<><dt>{a.factLabels[i]}</dt><dd>{f}</dd></>))}
+            </dl>
+          </details>
+        </article>
+      ))}
+    </div>
+    <div class="playlist">
+      <p class="eyebrow">{a.team.playlist}</p>
+      <iframe src="https://open.spotify.com/embed/playlist/0Z0UXgTzwYjBzVhSEfWq8S?utm_source=generator&theme=0" height="152" loading="lazy" title={a.team.playlist} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="blk blk-faq" style="background:var(--paper-warm)">
+  <div class="blk-inner">
+    <header class="blk-head">
+      <span class="blk-num">FAQ</span>
+      <h2>{a.faq.title}</h2>
+    </header>
+    <div class="blk-body">
+      {a.faq.items.map((f) => (
+        <details>
+          <summary>{f.q}</summary>
+          <p set:html={prefixHtml(f.a)} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .ab-hero { background: var(--dark); color: white; position: relative; overflow: hidden; padding: 160px var(--gutter) 72px; }
+  .ab-hero::before { content: ''; position: absolute; inset: 0; background: url('/images/bruegel-les-moissonneurs.webp') center 35% / cover; opacity: 0.55; }
+  .ab-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, oklch(11% 0.015 260 / 0.7) 0%, oklch(11% 0.015 260 / 0.85) 55%, var(--dark) 100%); }
+  .ab-hero .wrap { position: relative; z-index: 1; }
+  .ab-hero h1 { font-family: var(--font-serif); font-weight: 400; font-size: clamp(40px, 5.6vw, 76px); line-height: 1.03; letter-spacing: -0.025em; max-width: 980px; margin-bottom: 24px; }
+  .ab-hero .lead { color: oklch(76% 0.01 260); font-size: clamp(17px, 1.5vw, 20px); font-weight: 300; max-width: 660px; line-height: 1.6; margin-bottom: 40px; }
+  .actions { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 72px; }
+  .ab-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding-top: 40px; border-top: 1px solid var(--line-dark); }
+  .ab-stats .n { font-family: var(--font-serif); color: var(--gold); font-size: 36px; line-height: 1; margin-bottom: 8px; }
+  .ab-stats .l { color: var(--on-dark-soft); font-size: 13px; }
+  @media (max-width: 600px) { .ab-stats { grid-template-columns: 1fr 1fr; } }
+
+  .ab-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 48px; }
+  .ab-head .muted { font-size: 16px; line-height: 1.65; max-width: 520px; }
+  @media (max-width: 800px) { .ab-head { grid-template-columns: 1fr; gap: 16px; } }
+
+  .channels { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+  .channel { background: white; border: 1px solid var(--line); border-radius: 10px; padding: 26px 24px; text-decoration: none; display: flex; flex-direction: column; gap: 10px; transition: border-color 0.15s, transform 0.15s; }
+  a.channel:hover { border-color: oklch(72% 0.16 165 / 0.6); transform: translateY(-2px); }
+  .channel .num { font-family: var(--font-serif); color: var(--gold); font-size: 18px; }
+  .channel h3 { font-family: var(--font-serif); font-weight: 400; font-size: 22px; color: var(--ink); }
+  .channel p { font-size: 14px; color: var(--ink-soft); line-height: 1.55; flex: 1; }
+  .channel .more { font-size: 13px; font-weight: 600; color: oklch(48% 0.12 165); }
+
+  .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line-dark); border: 1px solid var(--line-dark); }
+  .value { background: var(--dark); padding: 40px 36px; }
+  .value:nth-child(2) { background: oklch(13.5% 0.015 258); }
+  .vn { font-family: var(--font-serif); color: var(--gold); font-size: 40px; line-height: 1; display: block; margin-bottom: 24px; }
+  .value h3 { font-family: var(--font-serif); font-weight: 400; font-size: 32px; margin-bottom: 12px; }
+  .value p { color: oklch(68% 0.01 260); font-size: 15px; line-height: 1.65; }
+  @media (max-width: 800px) { .values { grid-template-columns: 1fr; } }
+
+  .mosaic { display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: 180px; gap: 12px; }
+  .mosaic figure { position: relative; overflow: hidden; border-radius: 6px; margin: 0; }
+  .mosaic img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+  .mosaic figure:hover img { transform: scale(1.04); }
+  .mosaic figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 16px 12px; font-size: 12px; color: white; background: linear-gradient(transparent, oklch(0% 0 0 / 0.6)); letter-spacing: 0.02em; }
+  .m1 { grid-column: span 4; grid-row: span 2; }
+  .m2 { grid-column: span 2; grid-row: span 2; }
+  .m3, .m4, .m5 { grid-column: span 2; grid-row: span 1; }
+  @media (max-width: 800px) {
+    .mosaic { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; }
+    .m1 { grid-column: span 2; }
+    .m2 { grid-column: span 1; grid-row: span 1; }
+    .m3, .m4, .m5 { grid-column: span 1; }
+  }
+
+  .team { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+  .member { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 28px 24px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .avatar { width: 128px; height: 128px; border-radius: 50%; background: white; border: 3px solid oklch(72% 0.16 165 / 0.35); overflow: hidden; margin-bottom: 18px; display: grid; place-items: center; }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .avatar span { font-family: var(--font-serif); font-size: 40px; color: oklch(48% 0.12 165); }
+  .member h3 { font-family: var(--font-serif); font-weight: 400; font-size: 22px; line-height: 1.2; }
+  .role { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+  .langs { display: flex; gap: 6px; justify-content: center; margin: 14px 0 16px; flex-wrap: wrap; }
+  .langs span { font-size: 10.5px; font-weight: 600; letter-spacing: 0.06em; border: 1px solid var(--line); border-radius: 100px; padding: 3px 8px; color: var(--ink-muted); }
+  .member details { width: 100%; border-top: 1px solid var(--line); text-align: left; margin-top: auto; }
+  .member summary { list-style: none; cursor: pointer; font-size: 13px; font-weight: 600; color: oklch(48% 0.12 165); padding: 14px 0 0; text-align: center; }
+  .member summary::-webkit-details-marker { display: none; }
+  .member summary::after { content: ' +'; }
+  .member details[open] summary::after { content: ' −'; }
+  .member dl { padding: 12px 0 4px; font-size: 13px; line-height: 1.5; }
+  .member dt { font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin-top: 10px; }
+  .member dd { color: var(--ink-soft); }
+
+  .playlist { margin-top: 48px; max-width: 720px; }
+  .playlist iframe { width: 100%; border: 0; border-radius: 12px; display: block; }
+</style>

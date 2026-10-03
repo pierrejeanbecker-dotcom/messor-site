@@ -1,0 +1,127 @@
+---
+// Page Contact (FR / EN)
+import { BOOKING_URL, CONTACT, type Lang } from '../data/site';
+import { url } from '../lib/url';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const fr = lang === 'fr';
+const L = fr
+  ? {
+      eyebrow: 'Contact', title: 'Un échange est à portée de clic.',
+      lead: 'Diagnostic de 30 minutes offert, sans engagement. Pierre-Jean vous répond en direct. Au plaisir de faire votre connaissance !',
+      visio: ['Organiser une visio', '30 minutes pour faire connaissance et parler de votre cycle de vente.', 'Choisir un créneau →'],
+      call: ['Nous appeler', 'Du lundi au vendredi, depuis nos bureaux de Metz.'],
+      mail: ['Nous écrire', 'Une question, un projet, une candidature ? Réponse rapide garantie.'],
+      li: ['Sur LinkedIn', 'Suivez l’actualité de Pierre-Jean Becker et de Messor.', 'Voir le profil →'],
+      where: 'Où nous trouver', jobs: 'Envie de nous rejoindre ?', jobsLink: 'Voir nos offres d’emploi →', jobsHref: '/nous-rejoindre',
+      founder: 'Fondateur · Moissonneur en chef',
+    }
+  : {
+      eyebrow: 'Contact', title: 'A conversation is just a click away.',
+      lead: 'Free 30-minute diagnostic, no commitment. Pierre-Jean answers you directly. Looking forward to meeting you!',
+      visio: ['Book a video call', '30 minutes to get to know each other and talk about your sales cycle.', 'Pick a slot →'],
+      call: ['Call us', 'Monday to Friday, from our offices in Metz, France.'],
+      mail: ['Email us', 'A question, a project, an application? We reply quickly.'],
+      li: ['On LinkedIn', 'Follow Pierre-Jean Becker and Messor’s news.', 'View profile →'],
+      where: 'Where to find us', jobs: 'Want to join us?', jobsLink: 'See our job offers →', jobsHref: '/nous-rejoindre',
+      founder: 'Founder · Chief Harvester',
+    };
+const map = 'https://maps.google.com/maps?q=27%20place%20saint%20thi%C3%A9bault%2C%2057000%20Metz&t=m&z=15&output=embed&iwloc=near';
+---
+<section class="ct-hero">
+  <div class="wrap ct-grid">
+    <div>
+      <p class="eyebrow">{L.eyebrow}</p>
+      <h1>{L.title}</h1>
+      <p class="lead">{L.lead}</p>
+    </div>
+    <div class="ct-person">
+      <img src={url('/images/pierre-jean-becker.png')} alt="Pierre-Jean Becker" width="238" height="258" />
+      <div>
+        <div class="name">Pierre-Jean Becker</div>
+        <div class="role">{L.founder}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-paper" style="padding-top:72px">
+  <div class="wrap">
+    <div class="ct-cards">
+      <a class="ct-card primary" href={BOOKING_URL} target="_blank" rel="noopener">
+        <span class="k">01</span>
+        <h2>{L.visio[0]}</h2>
+        <p>{L.visio[1]}</p>
+        <span class="v">{L.visio[2]}</span>
+      </a>
+      <a class="ct-card" href={CONTACT.phoneHref}>
+        <span class="k">02</span>
+        <h2>{L.call[0]}</h2>
+        <p>{L.call[1]}</p>
+        <span class="v">{CONTACT.phone}</span>
+      </a>
+      <a class="ct-card" href={`mailto:${CONTACT.email}`}>
+        <span class="k">03</span>
+        <h2>{L.mail[0]}</h2>
+        <p>{L.mail[1]}</p>
+        <span class="v">{CONTACT.email}</span>
+      </a>
+      <a class="ct-card" href={CONTACT.linkedin} target="_blank" rel="noopener">
+        <span class="k">04</span>
+        <h2>{L.li[0]}</h2>
+        <p>{L.li[1]}</p>
+        <span class="v">{L.li[2]}</span>
+      </a>
+    </div>
+
+    <div class="ct-where">
+      <div>
+        <p class="eyebrow">{L.where}</p>
+        <h2 class="h2">Messor</h2>
+        <p class="addr">{CONTACT.address[0]}<br />{CONTACT.address[1]}</p>
+        <p class="tag"><em>{fr ? 'Messor, du latin messis qui signifie « moisson »' : 'Messor, from the Latin messis, meaning “harvest”'}</em></p>
+        <div class="jobs">
+          <strong>{L.jobs}</strong>
+          <a href={url(L.jobsHref)}>{L.jobsLink}</a>
+        </div>
+      </div>
+      <iframe src={map} title={CONTACT.address.join(', ')} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ct-hero { background: var(--dark); color: white; position: relative; overflow: hidden; padding: 150px var(--gutter) 80px; }
+  .ct-hero::before { content: ''; position: absolute; inset: 0; background: url('/images/bruegel-les-moissonneurs.webp') 30% 80% / cover; opacity: 0.3; }
+  .ct-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, oklch(11% 0.015 260 / 0.97) 0%, oklch(11% 0.015 260 / 0.85) 60%, oklch(11% 0.015 260 / 0.7) 100%); }
+  .ct-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: center; }
+  h1 { font-family: var(--font-serif); font-weight: 400; font-size: clamp(40px, 5vw, 68px); line-height: 1.04; letter-spacing: -0.025em; margin-bottom: 24px; }
+  .lead { color: oklch(74% 0.01 260); font-size: clamp(16px, 1.4vw, 19px); font-weight: 300; line-height: 1.6; max-width: 600px; }
+  .ct-person { display: flex; align-items: center; gap: 20px; border: 1px solid var(--line-dark); background: oklch(14% 0.015 260 / 0.7); border-radius: 12px; padding: 20px 24px; justify-self: end; }
+  .ct-person img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; object-position: top; background: oklch(94% 0.02 80); border: 3px solid var(--gold); }
+  .ct-person .name { font-family: var(--font-serif); font-size: 22px; }
+  .ct-person .role { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--on-dark-soft); margin-top: 4px; }
+  @media (max-width: 860px) { .ct-grid { grid-template-columns: 1fr; gap: 32px; } .ct-person { justify-self: start; } .ct-hero { padding-top: 120px; } }
+
+  .ct-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 72px; }
+  .ct-card { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 28px 24px; text-decoration: none; display: flex; flex-direction: column; gap: 10px; transition: border-color 0.15s, transform 0.15s; }
+  .ct-card:hover { border-color: oklch(72% 0.16 165 / 0.6); transform: translateY(-2px); }
+  .ct-card.primary { background: var(--gold); border-color: var(--gold); }
+  .ct-card .k { font-family: var(--font-serif); font-size: 18px; color: var(--gold); }
+  .ct-card.primary .k { color: var(--dark); opacity: 0.6; }
+  .ct-card h2 { font-family: var(--font-serif); font-weight: 400; font-size: 24px; color: var(--ink); line-height: 1.2; }
+  .ct-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.55; flex: 1; }
+  .ct-card.primary p { color: oklch(25% 0.05 165); }
+  .ct-card .v { font-size: 15px; font-weight: 600; color: var(--ink); word-break: break-word; }
+  @media (max-width: 1000px) { .ct-cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .ct-cards { grid-template-columns: 1fr; } }
+
+  .ct-where { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; align-items: stretch; }
+  .addr { font-size: 18px; margin: 16px 0 12px; line-height: 1.5; }
+  .tag { color: var(--ink-muted); font-size: 14px; margin-bottom: 32px; }
+  .jobs { border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+  .jobs a { color: oklch(48% 0.12 165); font-weight: 600; text-decoration: none; }
+  .ct-where iframe { width: 100%; min-height: 380px; border: 1px solid var(--line); border-radius: 12px; }
+  @media (max-width: 860px) { .ct-where { grid-template-columns: 1fr; } }
+</style>

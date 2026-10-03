@@ -26,6 +26,8 @@ const pages = defineCollection({
     prev: link.optional(),
     next: link.optional(),
     latestPosts: z.boolean().optional(),
+    cta: link.optional(), // bouton principal de l'en-tête (par défaut : prise de RDV)
+    kind: z.enum(['offer', 'expertise', 'page']).optional(), // mise en page en sections (offres, expertise, autres)
   }),
 });
 

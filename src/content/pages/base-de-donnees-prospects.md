@@ -5,16 +5,14 @@ description: "Découvrez comment Messor construit et enrichit votre base de donn
 lang: "fr"
 permalink: "/base-de-donnees-prospects"
 alternate: "/en/database-creation"
+kind: "expertise"
 heroTitle: "Base de données prospects"
-heroImage: "/medias/2023/03/20944157-ai-1024x683-compressed-768x512.png"
 next:
   href: "/prospection-telephonique-b2b"
   label: "Prospection telephonique"
 ---
 
-### La base de données prospects : un levier clé pour votre développement commercial
-
-<p class="btn-row"><a class="btn" href="/contactez-nous">Contactez-nous</a></p>
+## La base de données prospects : un levier clé pour votre développement commercial
 
 Les données sont le nerf de la guerre en matière de prospection B2B. Chez Messor, nous croyons que la qualité de votre base de données prospects peut faire la différence entre une croissance exponentielle et une stagnation. Notre approche hybride, alliant expertise humaine et technologie de pointe, garantit une collecte et une gestion des données optimisées pour un retour sur investissement maximal.
 
@@ -38,15 +36,7 @@ Résultat : **8 899 sites industriels** répartis en 6 calques par tranche d’e
 <iframe allow="geolocation" height="600" loading="lazy" src="https://umap.openstreetmap.fr/fr/map/sites-manufacturiers_1408901?scaleControl=true&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=true&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=caption&amp;captionBar=false&amp;captionMenus=true#6/47.241949/1.318359" width="100%">
 </iframe>
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20943892-ai-1024x1024-compressed-768x768.png)
-
-</div>
-<div>
-
-### Qu’est-ce que le ciblage ?
+## Qu’est-ce que le ciblage ?
 
 Mon offre répond-elle à une demande marché ? Et si oui, comment ?
 Comment s’articule la demande marché ?
@@ -63,26 +53,13 @@ Le chiffre d’affaires, le nombre d’employés, levée de fonds, dynamique de 
 
 Département fonctionnel, Niveau de responsabilité, Ancienneté dans l’entreprise, Ancienneté à ce poste, Anciens clients, Réseau en commun (Ecole, Club…)
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+En complément de ces critères classiques, on pourra s’attacher également à cerner la personne derrière l’acheteur potentiel : sa personnalité, sa situation familiale, ses loisirs… On utilisera alors volontiers le terme de Buyer Persona, point de départ d’une démarche d’Inbound Marketing.
 
-</div>
-<div>
+</aside>
 
-***En complément de ces critères classiques, on pourra s’attacher également à cerner la personne derrière l’acheteur potentiel : sa personnalité, sa situation familiale, ses loisirs… On utilisera alors volontiers le terme de Buyer Persona, point de départ d’une démarche d’Inbound Marketing.***
-
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Quelles données collecter ?
+## Quelles données collecter ?
 
 Les logiciels de gestion de la relation client appelés CRM reposent sur deux bases de données interconnectées : **la base de contacts** (suspects, prospects et clients) et **la base d’entreprises.**
 
@@ -90,36 +67,13 @@ Les **données primaires**, c’est-à-dire **indispensables** pour **chaque nou
 
 Les **données secondaires** potentielles sont **légions** : Civilité, URL SalesNavigator, courriel, téléphone, numéro du standard, code APE, localisation du siège, secteur d’activité, chiffre d’affaires, mail générique, nom du domaine, page linkedin de l’entreprise.
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Essayez de collecter des données complètes et utiles. Les commerciaux se démotivent devant les cimetières de données.
 
-</div>
-<div>
+</aside>
 
-***Essayez de collecter des données complètes et utiles. Les commerciaux se démotivent devant les cimetières de données.***
-
-</div>
-</div>
-
-</div>
-<div>
-
-![](/medias/2023/03/20943447-ai-1024x1024-compressed-768x768.png)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2022/12/comment-collecter-les-donnees-768x768.png)
-
-</div>
-<div>
-
-### Comment collecter les données ?
+## Comment collecter les données ?
 
 **Il faudra faire appel à des annuaires de données.**
 
@@ -127,26 +81,13 @@ Les **données secondaires** potentielles sont **légions** : Civilité, URL Sal
 
 En fonction de votre temps, de votre budget, de votre patience, vous pourriez avoir envie de tester d’**autres outils vous proposant des bases « clefs en main » exportables au format CSV** ou directement **intégrables à votre CRM**. La qualité de la donnée sera alors à surveiller tout particulièrement.
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Chez Messor 80% de nos bases de contacts sont constitués – sans surprise – à partir de Linkedin Sales Navigator. Les 20% restant pouvant provenir d’annuaires papiers, de veille informationnelle sur internet, de redirection lors de la prospection, d’annuaires « clefs en main », de sites internets… Nous maitrisons les techniques et outils pour extraire le contenu HTML d’un site web.
 
-</div>
-<div>
+</aside>
 
-***Chez Messor 80% de nos bases de contacts sont constitués – sans surprise – à partir de Linkedin Sales Navigator. Les 20% restant pouvant provenir d’annuaires papiers, de veille informationnelle sur internet, de redirection lors de la prospection, d’annuaires « clefs en main », de sites internets… Nous maitrisons les techniques et outils pour extraire le contenu HTML d’un site web.***
-
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Comment obtenir des données exploitables ?
+## Comment obtenir des données exploitables ?
 
 Peu importe la manière choisie, **un écart subsistera toujours entre les données que vous récoltez et les données que vous souhaitez intégrer dans votre CRM.**
 
@@ -154,26 +95,11 @@ C’est d’autant plus vrai si plusieurs plusieurs annuaires de données diffé
 
 Avant de procéder à l’intégration, une étape intermédiaire de “**mise en forme**” et de **suppression** des **données superflues**, **fausses ou incomplètes est de mise**. (en anglais **Data Wrangling**)
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+En fonction de la quantité et de l’hétérogénéité de vos données, votre coeur balancera entre l’utilisation d’Excel (boosté de quelques macros), d’un outil de Data Wrangling spécialisé comme Trifacta, ou d’une solution intermédiaire (Power Bi, Airtable..)
 
-</div>
-<div>
-
-***En fonction de la quantité et de l’hétérogénéité de vos données, votre coeur balancera entre l’utilisation d’Excel (boosté de quelques macros), d’un outil de Data Wrangling spécialisé comme Trifacta, ou d’une solution intermédiaire (Power Bi, Airtable..)***
-
-</div>
-</div>
-
-</div>
-<div>
-
-![](/medias/2023/03/20943946-ai-1024x1024-compressed-768x768.png)
-
-</div>
-</div>
+</aside>
 
 ## Comment enrichir les données ?
 
@@ -183,20 +109,13 @@ Chacun de ces outils vous expliquera par le menu pourquoi il respecte le RGPD.
 
 Si au début des années 2010, ils étaient encore méconnus de la plupart – la majorité d’entre eux n’existait pas d’ailleurs – ils ont depuis été massivement adopté par les équipes commerciales.
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Les mails proposés d’une plateforme d’enrichissement à l’autre sont dans 90% du temps identiques. En conséquence certains suspects sont sursollicités par mail quand d’autres le sont beaucoup moins.
 
-</div>
-<div>
-
-***Les mails proposés d’une plateforme d’enrichissement à l’autre sont dans 90% du temps identiques. En conséquence certains suspects sont sursollicités par mail quand d’autres le sont beaucoup moins.***
+</aside>
 
 ***Opter pour une approche multicanal permettra de toucher un maximum d’interlocuteurs et de récolter des mails autrement.***
-
-</div>
-</div>
 
 ## FAQ – Base de Données Prospects
 

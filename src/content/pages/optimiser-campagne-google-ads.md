@@ -5,9 +5,9 @@ description: "Boostez votre visibilité B2B grâce à Google Ads. Découvrez com
 lang: "fr"
 permalink: "/optimiser-campagne-google-ads"
 alternate: "/en/google-ads-en"
+kind: "expertise"
 heroTitle: "Optimiser votre campagne Google Ads : cap sur la performance"
 heroLead: "Boostez votre visibilité B2B grâce à Google Ads. Découvrez comment optimiser votre campagne, attirer plus de prospects et dynamiser vos conversions avec MESSOR."
-heroImage: "/medias/2023/03/20945887-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/gagner-en-visibilite-sur-linkedin"
   label: "visibilite linkedin"
@@ -23,15 +23,7 @@ En B2B, on estime que **92 % des acheteurs** entament leur parcours en ligne via
 - Ajustant les **enchères** pour un meilleur **retour sur investissement (ROI)**,
 - Testant différents **groupes d’annonces** pour valider ceux qui génèrent le plus de leads.
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20943529-ai-1024x683-compressed-768x512.png)
-
-</div>
-<div>
-
-### Comment MESSOR pilote votre campagne Google Ads
+## Comment MESSOR pilote votre campagne Google Ads
 
 Au-delà du simple lancement d’annonces, **MESSOR** vous accompagne dans toutes les étapes, de la **création des campagnes** à l’**analyse continue des résultats** :
 
@@ -43,26 +35,13 @@ Au-delà du simple lancement d’annonces, **MESSOR** vous accompagne dans toute
 
 **Optimisation continue** : en fonction des **données** recueillies (taux de clic, coût par acquisition, taux de conversion), nous procédons à des **améliorations régulières** de la campagne
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/01/ampoule-conseil.png)
-
-</div>
-<div>
+<aside class="tip">
 
 il est recommandé de prévoir au moins **500 € d’investissement mensuel** pour que la campagne apporte des résultats mesurables.
 
-</div>
-</div>
+</aside>
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Maximiser l’engagement des visiteurs
+## Maximiser l’engagement des visiteurs
 
 Attirer du trafic est une chose, **convertir** ces visiteurs en prospects ou clients en est une autre. **MESSOR** veille à ce que chaque internaute **atterrisse** sur une page adaptée à son stade de réflexion et à son **besoin professionnel** :
 
@@ -70,23 +49,7 @@ Attirer du trafic est une chose, **convertir** ces visiteurs en prospects ou cli
 - **Suivi des conversions** : configuration de **Google Tag Manager** pour mesurer précisément l’impact de votre campagne (inscriptions, téléchargements de livre blanc, demandes de devis, etc.).
 - **Réengagement** : si un visiteur quitte votre site sans conversion, nous pouvons recourir au **remarketing** pour continuer à le sensibiliser à votre offre.
 
-</div>
-<div>
-
-![homme au téléphone derrière son ordinateur, prospection commerciale](/medias/2023/04/appel-telephonique-768x768.png)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20943544-ai-1024x683-compressed-768x512.png)
-
-</div>
-<div>
-
-### Conseils pour un ROI optimal
+## Conseils pour un ROI optimal
 
 Avant de vous lancer dans **LinkedIn Ads**, souvent plus coûteux et moins prévisibles, assurez-vous de **tirer profit au maximum** de **Google Ads** :
 
@@ -95,9 +58,6 @@ Avant de vous lancer dans **LinkedIn Ads**, souvent plus coûteux et moins prév
 3. **Test A/B sur les annonces** : comparez différentes accroches ou landing pages pour déterminer ce qui convertit le mieux.
 4. **Surveillez la qualité du trafic** : préférez la **qualité à la quantité** en ciblant des mots-clés “intention d’achat” ou “solution à un problème professionnel” précis.
 5. **Analysez régulièrement** : l’optimisation se fait en continu ; suivez les performances pour repérer les axes d’amélioration.
-
-</div>
-</div>
 
 ## FAQ – Optimiser campagne Google Ads
 

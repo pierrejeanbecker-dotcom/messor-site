@@ -5,9 +5,9 @@ description: "Prospection multicanal : optimisez votre stratégie, engagez vos p
 lang: "fr"
 permalink: "/accompagnement-prospection-multicanal"
 alternate: "/en/prospecting-campaign"
-heroTitle: "CAMPAGNE DE PROSPECTION MULTICANAL"
+kind: "offer"
+heroTitle: "Campagne de prospection multicanal"
 heroLead: "Avec Messor, développez une véritable stratégie de prospection multicanal pour sentir le pouls de votre marché, renforcer votre visibilité cross-canal et consolider votre tunnel de vente."
-heroImage: "/medias/2023/03/20945564-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/recruter-des-talents"
   label: "Recruter des talents"
@@ -25,12 +25,7 @@ Si vos commerciaux hésitent à décrocher leur téléphone, sont déjà submerg
 
 Nous orchestrons chaque étape, de l’identification des leads qualifiés jusqu’au suivi et à la relance, afin de maximiser votre taux de conversion et votre retour sur investissement (ROI).
 
-![](/medias/2023/03/Moisson-messor-compressed.png)
-
 ## Méthodologie
-
-<div class="cols cols-2">
-<div>
 
 ### Approche “Push”
 
@@ -71,9 +66,6 @@ Cette approche se concentre sur des actions coordonnées pour aller au-devant de
 
 </details>
 
-</div>
-<div>
-
 ### Approche “Pull” Linkedin
 
 Avec cette méthode, nous travaillons votre présence et votre image pour attirer naturellement vos futurs clients (social selling).
@@ -110,11 +102,6 @@ Avec cette méthode, nous travaillons votre présence et votre image pour attire
 - Partage des résultats et réajustement de la stratégie d’acquisition si nécessaire
 
 </details>
-
-</div>
-</div>
-
-<p class="btn-row"><a class="btn" href="https://outlook.office.com/bookwithme/user/c844084bf24a4ff7ba01283a2e3266ed%40messor.fr/meetingtype/09705449-c7ee-4131-b1b9-3e961b18baf2?anonymous">Prendre RDV gratuitement</a></p>
 
 ## Nos atouts font la différence
 

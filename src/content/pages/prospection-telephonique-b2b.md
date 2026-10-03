@@ -5,8 +5,8 @@ description: "Boostez vos ventes avec une prospection téléphonique B2B efficac
 lang: "fr"
 permalink: "/prospection-telephonique-b2b"
 alternate: "/en/cold-calling"
+kind: "expertise"
 heroTitle: "Prospection Téléphonique B2B"
-heroImage: "/medias/2023/03/20943481-ai-1024x1024-compressed-768x768.png"
 prev:
   href: "/base-de-donnees-prospects"
   label: "CREATION BASE DE DONNEES"
@@ -15,46 +15,23 @@ next:
   label: "PROSPECTION MAIL"
 ---
 
-### La Clé d’un Développement Commercial Réussi
-
-<p class="btn-row"><a class="btn" href="/contactez-nous">Contactez-nous</a></p>
+## La Clé d’un Développement Commercial Réussi
 
 La prospection téléphonique reste un levier incontournable en B2B. Elle permet d’engager un premier contact direct et qualifié avec des décideurs. Malgré les défis actuels (diminution des standards, filtrage renforcé, transformation des modes de travail), elle reste une méthode de prédilection pour déclencher des opportunités commerciales.
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2022/12/prospection-telephonique-encore-efficace-768x466.png)
-
-</div>
-<div>
-
-### La Prospection Téléphonique B2B est-elle toujours efficace ?
+## La Prospection Téléphonique B2B est-elle toujours efficace ?
 
 La question est souvent posée et notre réponse est toujours la même : **bien-sûr !**
 
 **Il est vrai toutefois que les taux de transformation baissent et les raisons sont multiples** : le travail hybride, la quasi-disparition des assistantes de direction, la suppression pure et simple de standards dans certaines entreprises, des numéros sur-sollicités par des spameurs ou arnaqueurs B2C (CPF, poêles à granulés..).
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Environ 75% du business que nous générons a eu pour déclencheur un échange téléphonique.
 
-</div>
-<div>
+</aside>
 
-***Environ 75% du business que nous générons a eu pour déclencheur un échange téléphonique.***
-
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Comment rester motivé en cold-calling ?
+## Comment rester motivé en cold-calling ?
 
 **Il faut sur des offres B2B passer entre 50 et 500 appels pour décrocher 1 rdv.**
 
@@ -68,36 +45,13 @@ La question est souvent posée et notre réponse est toujours la même : **bien-
 
 Le manager doit savoir re-mobiliser un commercial et surtout ne pas être à l’origine de sa démotivation. Herzberg, célèbre théoricien de la motivation avait identifié plus de 1000 causes de démotivation en 1959 – il y a donc l’embarras du choix pour se tromper dans son management…
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Si vous êtes seul à appeler dans votre bureau ou en open-space, même avec la plus grande rigueur du monde, l’échec vous guette.
 
-</div>
-<div>
+</aside>
 
-***Si vous êtes seul à appeler dans votre bureau ou en open-space, même avec la plus grande rigueur du monde, l’échec vous guette.***
-
-</div>
-</div>
-
-</div>
-<div>
-
-![](/medias/2023/03/2-1024x683-compressed-768x512.png)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20944394-ai-1-1024x683-compressed-768x512.png)
-
-</div>
-<div>
-
-### Quel est l’impact du CRM sur la prospection téléphonique ?
+## Quel est l’impact du CRM sur la prospection téléphonique ?
 
 **Enorme**. S’il faut 5 minutes pour ouvrir la fiche contact d’un suspect et 5 minutes de plus pour lire l’historique des actions, **votre volume d’appels stagnera à un niveau trop faible pour espérer avoir des résultats.**
 
@@ -107,61 +61,25 @@ L’utilisation d’un **CRM performant** est un facteur clé de productivité. 
 - Le suivi des actions et des historiques
 - L’analyse des performances commerciales
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![ampoule + conseil](/medias/elementor/thumbs/ampoule-conseil-q14yvew3grn4nh4g7if8w1q4oqso9lds59ln1djb7c.png)
+Utiliser 2 outils CRM distincts : un outil dédié à la prospection omnicanal et un outil pour le suivi des rdvs faits/opportunités permet dans certains cas de gagner en productivité !
 
-</div>
-<div>
+</aside>
 
-***Utiliser 2 outils CRM distincts : un outil dédié à la prospection omnicanal et un outil pour le suivi des rdvs faits/opportunités permet dans certains cas de gagner en productivité !***
-
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Quel est le profil type du calleur sur des offres dites “complexes” ?
+## Quel est le profil type du calleur sur des offres dites “complexes” ?
 
 **Le jeune diplômé d’école de commerce.**
 
 Il faut être capable de tenir un **discours solide et d’enchainer un volume d’appel important** ; volume qui immanquablement aura tendance à baisser d’année en année. Il n’est pas anodin de constater que la **moyenne d’âge des équipes commerciales** des ESN (ex-SSII), souvent très matures en matière de prospection téléphonique, **tourne sous la barre des 30 ans.**
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Plutôt introverti qu’extraverti, souvent adepte d’un sport ou e-sport individuel et aimant se confronter à des challenges, le calleur doit avoir un moral au beau fixe pour survivre aux refus quotidiens auxquels il sera immanquablement confronté !
 
-</div>
-<div>
+</aside>
 
-***Plutôt introverti qu’extraverti, souvent adepte d’un sport ou e-sport individuel et aimant se confronter à des challenges, le calleur doit avoir un moral au beau fixe pour survivre aux refus quotidiens auxquels il sera immanquablement confronté !***
-
-</div>
-</div>
-
-</div>
-<div>
-
-[![](/medias/2023/03/20943401-ai-1024x1024-compressed-768x768.png)](/cold-calling/comment-mettre-en-place-une-cellule-de-cold-calling-en-interne)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-[![](/medias/2023/03/20943650-ai-1024x1024-compressed-768x768.png)](/cold-calling/8-phrases-accroche-prospection-telephonique-b2b)
-
-</div>
-<div>
-
-### Comment rédiger un pitch de prospection téléphonique pertinent ?
+## Comment rédiger un pitch de prospection téléphonique pertinent ?
 
 Rien de nouveau sous le soleil.
 
@@ -170,51 +88,23 @@ Rien de nouveau sous le soleil.
 3. **Présentez votre pitch** : votre positionnement, votre promesse, des arguments de légitimé (nombre de clients, ancienneté, qualité des références..)
 4. **Concluez en rappelant le bénéfice** qu’il tirera de l’échange proposé et en lui demandant quelles pourraient être ses disponibilités.
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Garder toujours son pitch de prospection devant soi, au format papier pour ne pas être pris au dépourvu. Un pitch ne se lit pas, il se déclame.
 
-</div>
-<div>
+</aside>
 
-**Garder toujours son pitch de prospection devant soi, au format papier pour ne pas être pris au dépourvu. Un pitch ne se lit pas, il se déclame.**
-
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### Quels types de rdv découlent de la prospection téléphonique ?
+## Quels types de rdv découlent de la prospection téléphonique ?
 
 **Tout est ouvert.**
 
 Vous pouvez accrocher un interlocuteur n’ayant aucun besoin conscient à l’instant T mais aussi tomber pile au bon moment avec un interlocuteur en mode “achat”, qui n’aurait pas pris la peine de répondre à une sollicitation mail ou linkedin.
 
-<div class="cols cols-2">
-<div>
+<aside class="tip">
 
-![](/medias/2023/01/ampoule-conseil.png)
+Un prospect précisant ne pas avoir de besoin lors de la prise de rdv peut – de fait – très bien en avoir un. Il attend simplement de comprendre à qui il a affaire avant de se livrer. N’attendez pas d’un calleur qu’il vende lors de la première approche téléphonique.
 
-</div>
-<div>
-
-**Un prospect précisant ne pas avoir de besoin lors de la prise de rdv peut – de fait – très bien en avoir un. Il attend simplement de comprendre à qui il a affaire avant de se livrer. N’attendez pas d’un calleur qu’il vende lors de la première approche téléphonique.**
-
-</div>
-</div>
-
-</div>
-<div>
-
-![](/medias/2023/03/20943659-ai-1024x1024-compressed-768x768.png)
-
-</div>
-</div>
+</aside>
 
 ## FAQ – Tout savoir sur la prospection téléphonique B2B
 

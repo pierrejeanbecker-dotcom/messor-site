@@ -4,9 +4,9 @@ seoTitle: "Automatisation des Processus Métiers : gagnez en efficacité et en p
 description: "Gagnez en productivité en automatisant les processus supports ou métiers répétitifs afin d'apporter une aide précieuse à votre organisation."
 lang: "fr"
 permalink: "/automatisation-processus-metiers"
+kind: "offer"
 heroTitle: "Automatisation des Processus Métiers"
 heroLead: "Gagnez en productivité en automatisant vos processus métiers et en réduisant les tâches chronophages.\n\nMessor vous accompagne pour mettre en place des workflows intelligents, de la gestion du back-office aux opérations de facturation, afin de fluidifier vos échanges de données et renforcer votre performance globale."
-heroImage: "/medias/2023/07/113.webp"
 prev:
   href: "/accompagnement-prospection-multicanal"
   label: "CAMPAGNE PROSPECTION OMNICANAL"
@@ -21,8 +21,6 @@ latestPosts: true
 Avec Messor, vous identifiez précisément les opérations répétitives ou sans réelle valeur ajoutée : génération de documents, envoi de mails, classement, rappels, etc. Nous connectons vos différentes applications (CRM, solutions no-code, plateformes de messagerie) pour concevoir des processus métier automatisés et des flux de travail adaptés à vos besoins.
 
 De plus, nous associons régulièrement cette démarche à l’utilisation d’outils collaboratifs tels que Airtable ou Notion. Cette intégration facilite le pilotage de vos projets et la circulation des informations au sein de votre organisation.
-
-![](/medias/2023/03/Moisson-messor-compressed.png)
 
 ## Méthodologie
 
@@ -49,8 +47,6 @@ De plus, nous associons régulièrement cette démarche à l’utilisation d’o
 - Évaluation régulière de la performance des flux automatisés
 - Ajustements et évolutions selon vos retours et les changements de votre organisation
 - Accompagnement pour garantir une montée en compétences de vos équipes sur la gestion et le pilotage
-
-<p class="btn-row"><a class="btn" href="https://outlook.office.com/bookwithme/user/c844084bf24a4ff7ba01283a2e3266ed%40messor.fr/meetingtype/09705449-c7ee-4131-b1b9-3e961b18baf2?anonymous">Prendre RDV gratuitement</a></p>
 
 ## Nos atouts font la différence
 

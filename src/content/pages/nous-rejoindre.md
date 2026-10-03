@@ -4,8 +4,11 @@ seoTitle: "Nous rejoindre ! Recrutement"
 description: "Vous souhaitez rejoindre l'équipe Messor ? Découvrez sans plus attendre nos différentes offres d'emploi, de stage et d'alternance !"
 lang: "fr"
 permalink: "/nous-rejoindre"
+kind: "page"
+cta:
+  href: "mailto:rh@messor.fr"
+  label: "Envoyer une candidature →"
 heroTitle: "Envie de rejoindre l'équipe Messor ? Postulez sans plus attendre !"
-heroImage: "/medias/2023/05/Rejoingnez-nous-Messor-Recrutement-1024x1024.png"
 heroImageAlt: "Rejoignez-nous ! Messor recrute"
 ---
 
@@ -325,41 +328,3 @@ Tu es motivé à l’idée de rejoindre une jeune entreprise en pleine évolutio
 Si tu es intéressé(e), merci d’envoyer ta candidature à **rh@messor.fr**.
 
 </details>
-
-## Nous contacter
-
-![](/medias/2023/01/photo-pierre-jean-becker.png)
-
-#### Pierre-Jean Becker
-
-#### Moissonneur en chef
-
-<p class="btn-row"><a class="btn" href="https://outlook.office365.com/owa/calendar/MessorInterne@messor.fr/bookings/">Organisez une visio</a></p>
-
-[![](/medias/2022/12/icons8-linkedin-48.png)](https://www.linkedin.com/in/pj-becker/)
-
-*Messor, du latin messis qui signifie « moisson »*
-
-<div class="cols cols-3">
-<div>
-
-![](/medias/2022/12/icone-emplacement.png)
-
-### 27 place Saint Thiébault, 57000 Metz
-
-</div>
-<div>
-
-![](/medias/2022/12/icone-telephone.png)
-
-### +33 3 87 74 89 89
-
-</div>
-<div>
-
-![](/medias/2022/12/icone-mail.png)
-
-### hello@messor.fr
-
-</div>
-</div>

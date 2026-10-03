@@ -4,7 +4,8 @@ import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import PostCard from '../components/PostCard.astro';
-import { BOOKING_URL, UI } from '../data/site';
+import ServicePage from '../components/ServicePage.astro';
+import { BOOKING_URL, NAV, UI } from '../data/site';
 import { CATEGORIES } from '../data/categories';
 import { url } from '../lib/url';
 
@@ -15,11 +16,24 @@ export async function getStaticPaths() {
   );
   const slug = (permalink: string) => permalink.replace(/^\//, '');
   const byLang = (lang: string) => posts.filter((p) => p.data.lang === lang);
+  const descriptions = Object.fromEntries(pages.map((p) => [p.data.permalink, p.data.description || '']));
+  // Pages du même groupe de menu (offres / expertise), pour le bloc « À découvrir aussi »
+  const related = (lang: 'fr' | 'en', path: string) => {
+    const group = NAV[lang].find((g) => g.children?.some((c) => c.href === path));
+    return (group?.children || [])
+      .filter((c) => c.href !== path)
+      .map((c) => ({ ...c, description: descriptions[c.href]?.replace(/\s*-\s*Messor$/, '') }));
+  };
 
   return [
     ...pages.map((entry) => ({
       params: { slug: slug(entry.data.permalink) },
-      props: { kind: 'page' as const, entry, latest: byLang(entry.data.lang).slice(0, 3) },
+      props: {
+        kind: 'page' as const,
+        entry,
+        latest: byLang(entry.data.lang).slice(0, 3),
+        related: entry.data.kind ? related(entry.data.lang, entry.data.permalink) : [],
+      },
     })),
     ...posts.map((entry) => ({
       params: { slug: slug(entry.data.permalink) },
@@ -54,13 +68,33 @@ const cats = CATEGORIES.filter((c) => c.lang === lang);
 const fmt = (d: Date) => d.toLocaleDateString(t.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
 
 let Content: any = null;
+let headings: any[] = [];
 if (kind === 'page' || kind === 'post') {
-  ({ Content } = await render(props.entry));
+  ({ Content, headings } = await render(props.entry));
 }
 const d = props.entry?.data;
 const catOf = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
 ---
-{kind === 'page' && (
+{kind === 'page' && d.kind && (
+  <Base title={d.seoTitle || d.title} description={d.description} lang={lang} path={path} alternate={d.alternate}>
+    <ServicePage lang={lang} path={path} title={d.heroTitle || d.title} lead={d.heroLead} headings={headings} related={props.related} cta={d.cta}>
+      <Content />
+    </ServicePage>
+    {d.latestPosts && props.latest.length > 0 && (
+      <section class="section bg-paper">
+        <div class="wrap">
+          <div class="section-head">
+            <div><p class="eyebrow">Blog</p><h2 class="h2">{t.latest}</h2></div>
+            <a href={url(t.blog)}>{t.allPosts}</a>
+          </div>
+          <div class="post-grid">{props.latest.map((p: any) => <PostCard post={p} lang={lang} />)}</div>
+        </div>
+      </section>
+    )}
+  </Base>
+)}
+
+{kind === 'page' && !d.kind && (
   <Base title={d.seoTitle || d.title} description={d.description} lang={lang} path={path} alternate={d.alternate} image={d.heroImage}>
     <PageHero title={d.heroTitle || d.title} lead={d.heroLead} image={d.heroImage} imageAlt={d.heroImageAlt}>
       <a class="btn" href={BOOKING_URL} target="_blank" rel="noopener">{t.book}</a>

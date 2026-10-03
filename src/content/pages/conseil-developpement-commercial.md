@@ -4,9 +4,9 @@ seoTitle: "Conseil Développement Commercial : optimisez vos performances - Mess
 description: "Bénéficiez d’un plan d’actions commerciales complet, d’un coaching de managers et d’une méthodologie pour accélérer votre développement."
 lang: "fr"
 permalink: "/conseil-developpement-commercial"
+kind: "offer"
 heroTitle: "Conseil Développement Commercial"
 heroLead: "MESSOR vous accompagne pour construire ou perfectionner votre dispositif commercial, en créant une cohérence entre tous les leviers : organisation, outils, méthodologie de prospection, discours, rémunération, gestion RH…\n\nNotre mission ?\n\nVous aider à déployer une stratégie de croissance robuste et adaptée à votre marché."
-heroImage: "/medias/2023/07/86.webp"
 prev:
   href: "/accompagnement-prospection-multicanal"
   label: "CAMPAGNE PROSPECTION OMNICANAL"
@@ -21,8 +21,6 @@ latestPosts: true
 Ensemble, nous évaluons tous les facteurs qui influencent votre performance commerciale : structuration de la force de vente, choix des outils (CRM, automatisation), formation des équipes, plan d’actions commerciales… Notre rôle est de vous rendre autonomes afin que vous deveniez de véritables experts du développement commercial.
 
 Que ce soit pour un accompagnement global ou des besoins ponctuels (construction d’une base de données, maîtrise de LinkedIn, amélioration des rendez-vous découvertes, etc.), nous intervenons avec flexibilité pour répondre à vos priorités de conquête de marché.
-
-![](/medias/2023/03/Moisson-messor-compressed.png)
 
 ## Méthodologie
 
@@ -49,8 +47,6 @@ Que ce soit pour un accompagnement global ou des besoins ponctuels (construction
 - Mesure de la performance commerciale (KPIs, ROI)
 - Ajustements réguliers en fonction de l’évolution du marché et de vos priorités
 - Accès à nos experts pour des conseils spécifiques en cas de besoin
-
-<p class="btn-row"><a class="btn" href="https://outlook.office.com/bookwithme/user/c844084bf24a4ff7ba01283a2e3266ed%40messor.fr/meetingtype/09705449-c7ee-4131-b1b9-3e961b18baf2?anonymous">Prendre RDV gratuitement</a></p>
 
 ## Nos atouts font la différence
 

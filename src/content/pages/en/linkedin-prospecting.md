@@ -5,8 +5,8 @@ description: "LinkedIn Prospecting - Linkedin prospecting: an end to the gold ru
 lang: "en"
 permalink: "/en/linkedin-prospecting"
 alternate: "/prospection-sales-navigator-linkedin"
+kind: "expertise"
 heroTitle: "Linkedin prospecting: end of the gold rush?"
-heroImage: "/medias/2023/03/19197403-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/en/cold-mailing"
   label: "COLD MAILING"
@@ -17,15 +17,7 @@ next:
 
 *#InMail My Marquee Subtext #Robotisation My Marquee Subtext #LinkedinJail My Marquee Subtext #Community My Marquee Subtext #Personnalisation My Marquee Subtext #AttentionEconomy My Marquee Subtext #Copywriting My Marquee Subtext #InMail My Marquee Subtext #Robotisation My Marquee Subtext #LinkedinJail My Marquee Subtext #Community My Marquee Subtext #Personnalisation My Marquee Subtext #AttentionEconomy My Marquee Subtext #Copywriting My Marquee Subtext*
 
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20943401-ai-1024x1024-compressed-768x768.png)
-
-</div>
-<div>
-
-### What is LinkedIn?
+## What is LinkedIn?
 
 LinkedIn is **a communication channel** allowing you to reach out to your target audience:
 
@@ -37,13 +29,7 @@ Each of these **approaches follows its own rules**, dictated by Linkedin’s **p
 
 By understanding how these **algorithms work**, you will **maximize** your **chances of getting results**: in terms of leads, employer brand or awareness.
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### How to prospect on LinkedIn?
+## How to prospect on LinkedIn?
 
 There are several scenarios:
 
@@ -53,36 +39,9 @@ There are several scenarios:
 
 Beware LinkedIn is **less and less friendly to spammers and robots**. If you exceed certain daily quotas, you might be **banned** from the **network** and have to start a new profile from beginning.
 
-<div class="cols cols-2">
-<div>
-
-![idéevert2](/medias/2023/01/ideevert2.svg)
-
-</div>
-<div>
-
 ***« Visiting » a profile generates a notification for the visited person « Victor looked at your profile » which will sometimes allow you to solve some problems.***
 
-</div>
-</div>
-
-</div>
-<div>
-
-![](/medias/2023/03/20943529-ai-1024x683-compressed-768x512.png)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-![](/medias/2023/03/20943606-ai-1024x1024-compressed-768x768.png)
-
-</div>
-<div>
-
-### How do I write my LinkedIn invitation requests?
+## How do I write my LinkedIn invitation requests?
 
 With the rise of automation tools, **people are less likely to accept invitations from strangers.**
 
@@ -90,26 +49,9 @@ There is no magic solution except using the common sense of the **5Ps of the Ame
 
 If you have identified a list of top suspects, **personalize each invitation** by looking at the latest articles he has published on LinkedIn or elsewhere, commenting on them or referring to them in your invitation.
 
-<div class="cols cols-2">
-<div>
-
-![idéevert2](/medias/2023/01/ideevert2.svg)
-
-</div>
-<div>
-
 ***Invitation personalization such as « We went to the same school add me » or « I see we share a common relationship » are outdated and no longer increase acceptance rates.***
 
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-### The power of your LinkedIn profile
+## The power of your LinkedIn profile
 
 The first thing your c**ontact will do**, especially if he is interested, will be to **look at your LinkedIn profile**. It should therefore reflect your activity and your personal friendliness.
 
@@ -121,23 +63,4 @@ Forget expressions like « Founder of company XY, manager, sales manager… » a
 - **Complete** your **profile** (Summary, Experiences, Skills, Recommendations)
 - **Add a clear call to action** (your phone number, your email, a link to an online appointment page)
 
-<div class="cols cols-2">
-<div>
-
-![idéevert2](/medias/2023/01/ideevert2.svg)
-
-</div>
-<div>
-
 ***Update your LinkedIn title by customizing it to keep track of ongoing prospecting campaigns.***
-
-</div>
-</div>
-
-</div>
-<div>
-
-![](/medias/2023/03/20945564-ai-1024x683-compressed-768x512.png)
-
-</div>
-</div>

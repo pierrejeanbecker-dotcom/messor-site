@@ -5,9 +5,9 @@ description: "Externalisez votre force commerciale pour optimiser vos résultats
 lang: "fr"
 permalink: "/developpement-commercial-externalise"
 alternate: "/en/business-development"
+kind: "offer"
 heroTitle: "Développement Commercial Externalisé"
 heroLead: "Grâce à nos stratégies d’externalisation commerciale sur mesure, vous diversifiez votre portefeuille clients et maximisez les ventes auprès de votre clientèle existante. En confiant la gestion commerciale externalisée à notre équipe, vous bénéficiez d’une force de vente déléguée agile et performante pour accélérer votre croissance."
-heroImage: "/medias/2023/03/20945564-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/accompagnement-prospection-multicanal"
   label: "CAMPAGNE PROSPECTION OMNICANAL"
@@ -24,8 +24,6 @@ Nous analysons en détail vos modèles et cycles de vente, intégrant notamment 
 Nous pouvons également développer le chiffre d’affaires cumulé moyen généré par chaque client en actionnant ensemble les leviers adéquats : augmenter le panier moyen, accroître la fréquence d’achat, conclure des alliances stratégiques ou encore affiner votre prospection B2B externalisée.
 
 Ensemble, testons le potentiel marché de vos différentes offres (ou d’une seule en particulier) et agissons comme votre force de vente externe pour des résultats concrets !
-
-![](/medias/2023/03/Moisson-messor-compressed.png)
 
 ## Méthodologie
 
@@ -48,8 +46,6 @@ Nos consultants en développement commercial peuvent mener les rendez-vous seuls
 ### (Co-)Gestion des suivis post-rendez-vous
 
 De la signature à l’up sell ou down sell en passant par le cross sell, nous prenons part au suivi et à la relance pour vous aider à conclure rapidement et durablement
-
-<p class="btn-row"><a class="btn" href="https://outlook.office.com/bookwithme/user/c844084bf24a4ff7ba01283a2e3266ed%40messor.fr/meetingtype/09705449-c7ee-4131-b1b9-3e961b18baf2?anonymous">Prendre RDV gratuitement</a></p>
 
 ## Nos atouts font la différence
 

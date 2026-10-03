@@ -5,9 +5,9 @@ description: "Optez pour l’inbound marketing externalisé avec Messor. Attirez
 lang: "fr"
 permalink: "/inbound-marketing-externalise"
 alternate: "/en/digital-marketing-strategy"
+kind: "offer"
 heroTitle: "Inbound Marketing Externalisé"
 heroLead: "Attirez et convertissez vos visiteurs en clients grâce à une approche de marketing entrant entièrement pilotée par Messor."
-heroImage: "/medias/2023/03/20945887-ai-1024x683-compressed-768x512.png"
 prev:
   href: "/developpement-commercial-externalise"
   label: "DEVELOPPEMENT COMMERCIAL"
@@ -20,12 +20,7 @@ Le SEO, Google Ads, votre site web, LinkedIn, YouTube… Vous souhaitez accélé
 
 Grâce à notre offre d’Inbound Marketing B2B, nous mettons en œuvre des campagnes inbound multicanal pour optimiser votre conversion funnel. Notre équipe d’experts gère la stratégie, l’exécution et l’optimisation continue, afin de vous libérer du temps et de maximiser vos résultats.
 
-![](/medias/2023/03/Moisson-messor-compressed.png)
-
 ## Exemple de missions
-
-<div class="cols cols-2">
-<div>
 
 ### Optimisation du référencement naturel
 
@@ -34,9 +29,6 @@ Grâce à notre offre d’Inbound Marketing B2B, nous mettons en œuvre des camp
 - Création d’un calendrier éditorial aligné sur votre stratégie de contenu
 - Gestion des backlinks et évaluation mensuelle de la performance
 
-</div>
-<div>
-
 ### Gestion de campagnes Google Ads (SEA)
 
 - Paramétrage de Google Tag Manager et Google Analytics
@@ -44,20 +36,11 @@ Grâce à notre offre d’Inbound Marketing B2B, nous mettons en œuvre des camp
 - Gestion du bidding et création d’annonces responsives
 - Pilotage de la campagne pour un meilleur lead scoring et suivi des conversions
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
 ### Création et mise en forme de contenus
 
 - Production de contenus originaux (articles, infographies, posts LinkedIn, etc.)
 - Diffusion sur votre site web et vos canaux de marketing entrant
 - Stratégie de lead nurturing pour fidéliser et convertir vos prospects
-
-</div>
-<div>
 
 ### Montage vidéo
 
@@ -65,31 +48,17 @@ Grâce à notre offre d’Inbound Marketing B2B, nous mettons en œuvre des camp
 - Mise en forme de visuels et support de communication adaptés à votre identité
 - Intégration de ces contenus dans vos campagnes d’Inbound Marketing Externalisé
 
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
 ### Gestion LinkedIn
 
 - Optimisation et animation de votre profil et de votre page entreprise
 - Alignement marketing-ventes pour soutenir le social selling
 - Analyse de l’algorithme LinkedIn pour gagner en visibilité et générer des leads qualifiés
 
-</div>
-<div>
-
 ### Gestion de Site Web
 
 - Amélioration de l’expérience utilisateur pour booster votre conversion funnel
 - Ajustement du design, du contenu et des facteurs clés d’optimisation des conversions
 - Mise en place d’outils de marketing automation pour faciliter la gestion et le suivi
-
-</div>
-</div>
-
-<p class="btn-row"><a class="btn" href="https://outlook.office.com/bookwithme/user/c844084bf24a4ff7ba01283a2e3266ed%40messor.fr/meetingtype/09705449-c7ee-4131-b1b9-3e961b18baf2?anonymous">Prendre RDV gratuitement</a></p>
 
 ## Nos atouts font la différence
 
