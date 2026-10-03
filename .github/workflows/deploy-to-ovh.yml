@@ -10,7 +10,7 @@ on:
         required: true
       remote_dir:
         description: "Dossier du WordPress sur OVH"
-        default: "/www"
+        default: "www"
         required: true
       dry_run:
         description: "Simulation (ne rien envoyer, juste lister)"

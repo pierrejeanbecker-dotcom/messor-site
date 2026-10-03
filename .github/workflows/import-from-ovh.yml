@@ -7,7 +7,7 @@ on:
     inputs:
       remote_dir:
         description: "Dossier du WordPress sur OVH (celui qui contient wp-config.php)"
-        default: "/www"
+        default: "www"
         required: true
 
 permissions:
@@ -31,7 +31,7 @@ jobs:
         run: |
           lftp -u "$FTP_USERNAME,$FTP_PASSWORD" "sftp://$FTP_SERVER" -e "
             set sftp:auto-confirm yes; set net:max-retries 2;
-            echo '--- Contenu de la racine ---'; cls -1 /;
+            echo '--- Contenu du dossier de départ (home) ---'; cls -1;
             echo '--- Contenu de $REMOTE_DIR ---'; cls -1 '$REMOTE_DIR';
             bye" 
           if ! lftp -u "$FTP_USERNAME,$FTP_PASSWORD" "sftp://$FTP_SERVER" \
