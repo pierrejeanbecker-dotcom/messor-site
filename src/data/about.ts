@@ -45,6 +45,8 @@ const TEAM = [
   },
 ];
 
+export const CLAIRPART_URL = 'https://www.clairpart.fr/';
+
 const PHOTOS = {
   bureaux: '/images/equipe/bureaux-messor-metz.webp',
   vue: '/images/equipe/vue-cathedrale-bureau.webp',
@@ -108,6 +110,12 @@ export const ABOUT = {
       text: 'Diplômés Bac+5, formés en continu, et des interlocuteurs qui ne changent pas tous les trois mois.',
       playlist: 'La playlist du bureau',
       members: TEAM.map((m) => ({ name: m.name, photo: m.photo, langs: m.langs, ...m.fr })),
+      founder: {
+        label: 'Le fondateur',
+        text: 'Pierre-Jean Becker a fondé Messor à Metz. Il est aussi le fondateur de',
+        link: 'Clairpart, sites internet et questionnaires clients pour notaires',
+        after: ', qui accompagne les études notariales dans leur présence en ligne et la préparation des demandes de leurs clients.',
+      },
     },
     faq: {
       title: 'Foire aux questions',
@@ -179,6 +187,12 @@ export const ABOUT = {
       text: 'Master’s graduates, continuously trained, and contacts who don’t change every three months.',
       playlist: 'The office playlist',
       members: TEAM.map((m) => ({ name: m.name, photo: m.photo, langs: m.langs, ...m.en })),
+      founder: {
+        label: 'The founder',
+        text: 'Pierre-Jean Becker founded Messor in Metz. He is also the founder of',
+        link: 'Clairpart, websites and client questionnaires for notaries',
+        after: ', which helps French notarial offices with their online presence and better-prepared client requests.',
+      },
     },
     faq: {
       title: 'Frequently asked questions',
