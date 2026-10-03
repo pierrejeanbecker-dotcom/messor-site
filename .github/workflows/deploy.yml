@@ -2,27 +2,22 @@ name: Publier le site
 
 # production  -> https://messor.fr : dossier www/site-messor, servi grâce à deploy/www.htaccess
 #                (le .htaccess de WordPress est sauvegardé une fois en www/.htaccess-wordpress)
-# preview     -> dossier www/nouveau-site (plus accessible depuis la bascule, conservé pour mémoire)
 on:
   push:
     branches: [claude/nifty-brown-5gkbin, main]
   workflow_dispatch:
-    inputs:
-      target:
-        description: "Où publier"
-        type: choice
-        options: [production, preview]
-        default: production
 
 concurrency:
-  group: deploy-${{ inputs.target || 'production' }}
+  group: deploy-production
   cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      TARGET: ${{ inputs.target || 'production' }}
+      TARGET: production
+      SITE_BASE: /
+      REMOTE_DIR: www/site-messor
     steps:
       - uses: actions/checkout@v5
 
@@ -30,16 +25,6 @@ jobs:
         with:
           node-version: 22
           cache: npm
-
-      - name: Choisir la destination
-        run: |
-          if [ "$TARGET" = "production" ]; then
-            echo "SITE_BASE=/" >> "$GITHUB_ENV"
-            echo "REMOTE_DIR=www/site-messor" >> "$GITHUB_ENV"
-          else
-            echo "SITE_BASE=/nouveau-site" >> "$GITHUB_ENV"
-            echo "REMOTE_DIR=www/nouveau-site" >> "$GITHUB_ENV"
-          fi
 
       - name: Construire le site
         env:
@@ -66,7 +51,6 @@ jobs:
             bye"
 
       - name: Activer le site sur messor.fr
-        if: env.TARGET == 'production'
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
@@ -84,11 +68,9 @@ jobs:
           fi
           L "put deploy/www.htaccess -o www/.htaccess"
           echo "messor.fr sert maintenant www/site-messor"
+          # Ancienne préproduction (www/nouveau-site) : redirigée vers le site en ligne
+          if L "cls -d www/nouveau-site" >/dev/null 2>&1; then L "put deploy/nouveau-site.htaccess -o www/nouveau-site/.htaccess"; fi
 
       - name: Résumé
         run: |
-          if [ "$TARGET" = "production" ]; then
-            echo "### En ligne : https://messor.fr" >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "### Préproduction : https://messor.fr/nouveau-site/" >> "$GITHUB_STEP_SUMMARY"
-          fi
+          echo "### En ligne : https://messor.fr" >> "$GITHUB_STEP_SUMMARY"

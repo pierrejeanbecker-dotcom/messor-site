@@ -33,7 +33,7 @@ automatiquement (à relire). Relançable à volonté : les images existantes son
 
 ## Publier
 
-Chaque `push` sur la branche principale **publie directement sur https://messor.fr** (onglet *Actions* → *Publier le site*).
+Chaque `push` sur la branche principale **publie directement sur https://messor.fr** (onglet *Actions* → *Publier le site*, relançable à la main avec *Run workflow*).
 
 Fonctionnement chez OVH :
 - le site construit est envoyé dans le dossier `www/site-messor` de l'hébergement ;

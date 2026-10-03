@@ -46,10 +46,10 @@ if (prod) {
 
 lines.push(
   '# Anciennes adresses WordPress',
-  `RewriteRule ^wp-content/uploads/(.*)$ ${to('medias/')}$1 [R=301,L]`,
   ...Object.entries(redirects).map(
     ([from, dest]) => `RewriteRule ^${esc(from)}/?$ ${to(dest)} [R=301,L,NC]`,
   ),
+  `RewriteRule ^wp-content/uploads/(.*)$ ${to('medias/')}$1 [R=301,L]`,
   '',
   '# /index.html -> /',
   'RewriteCond %{THE_REQUEST} \\s/+(.*/)?index\\.html[\\s?] [NC]',
