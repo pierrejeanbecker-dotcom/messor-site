@@ -33,17 +33,14 @@ automatiquement (à relire). Relançable à volonté : les images existantes son
 
 ## Publier
 
-Chaque `push` sur la branche principale publie automatiquement la **préproduction** :
-https://messor.fr/nouveau-site/ (non indexée par Google, à côté de WordPress).
+Chaque `push` sur la branche principale **publie directement sur https://messor.fr** (onglet *Actions* → *Publier le site*).
 
-La **production** se lance à la main : onglet *Actions* → *Publier le site* → *Run workflow* → `production`.
-Elle est envoyée dans le dossier `site-messor` de l'hébergement.
+Fonctionnement chez OVH :
+- le site construit est envoyé dans le dossier `www/site-messor` de l'hébergement ;
+- `www/.htaccess` (copie de `deploy/www.htaccess`) fait servir ce dossier sur messor.fr ;
+- l'ancien WordPress est toujours dans `www`, inactif. Sa configuration d'origine est sauvegardée dans `www/.htaccess-wordpress`.
 
-### Basculer messor.fr sur le nouveau site (une seule fois)
-
-1. Lancer *Publier le site* en `production`.
-2. Espace client OVH → Web Cloud → Hébergements → *Multisite* → `messor.fr` (et `www.messor.fr`) → *Modifier* → dossier racine : `site-messor`.
-3. Retour arrière possible à tout moment en remettant `www`.
+**Revenir à WordPress en urgence** : dans `www`, remplacer `.htaccess` par le contenu de `.htaccess-wordpress` (FTP ou gestionnaire de fichiers OVH).
 
 Secrets GitHub requis : `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD` (connexion SFTP OVH).
 

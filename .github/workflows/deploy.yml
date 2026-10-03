@@ -1,7 +1,8 @@
 name: Publier le site
 
-# preview     -> https://messor.fr/nouveau-site/  (dossier www/nouveau-site, à côté de WordPress)
-# production  -> dossier « site-messor » sur OVH, vers lequel on fait pointer messor.fr (Multisite)
+# production  -> https://messor.fr : dossier www/site-messor, servi grâce à deploy/www.htaccess
+#                (le .htaccess de WordPress est sauvegardé une fois en www/.htaccess-wordpress)
+# preview     -> dossier www/nouveau-site (plus accessible depuis la bascule, conservé pour mémoire)
 on:
   push:
     branches: [claude/nifty-brown-5gkbin, main]
@@ -10,18 +11,18 @@ on:
       target:
         description: "Où publier"
         type: choice
-        options: [preview, production]
-        default: preview
+        options: [production, preview]
+        default: production
 
 concurrency:
-  group: deploy-${{ inputs.target || 'preview' }}
+  group: deploy-${{ inputs.target || 'production' }}
   cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      TARGET: ${{ inputs.target || 'preview' }}
+      TARGET: ${{ inputs.target || 'production' }}
     steps:
       - uses: actions/checkout@v5
 
@@ -34,7 +35,7 @@ jobs:
         run: |
           if [ "$TARGET" = "production" ]; then
             echo "SITE_BASE=/" >> "$GITHUB_ENV"
-            echo "REMOTE_DIR=site-messor" >> "$GITHUB_ENV"
+            echo "REMOTE_DIR=www/site-messor" >> "$GITHUB_ENV"
           else
             echo "SITE_BASE=/nouveau-site" >> "$GITHUB_ENV"
             echo "REMOTE_DIR=www/nouveau-site" >> "$GITHUB_ENV"
@@ -64,10 +65,30 @@ jobs:
             mirror --reverse --delete --parallel=6 --verbose=1 dist/ '$REMOTE_DIR';
             bye"
 
+      - name: Activer le site sur messor.fr
+        if: env.TARGET == 'production'
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          L() { lftp -u "$FTP_USERNAME,$FTP_PASSWORD" "sftp://$FTP_SERVER" -e "set sftp:auto-confirm yes; set net:max-retries 3; set cmd:fail-exit yes; $1; bye"; }
+          # Sauvegarde unique du .htaccess WordPress (jamais écrasée ensuite)
+          if L "cls www/.htaccess-wordpress" >/dev/null 2>&1; then
+            echo "Sauvegarde WordPress déjà présente : www/.htaccess-wordpress"
+          else
+            L "get www/.htaccess -o wp.htaccess"
+            if grep -q "site-messor" wp.htaccess; then echo "::error::www/.htaccess est déjà celui du nouveau site, sauvegarde absente"; exit 1; fi
+            L "put wp.htaccess -o www/.htaccess-wordpress"
+            echo "Sauvegarde créée : www/.htaccess-wordpress"
+          fi
+          L "put deploy/www.htaccess -o www/.htaccess"
+          echo "messor.fr sert maintenant www/site-messor"
+
       - name: Résumé
         run: |
           if [ "$TARGET" = "production" ]; then
-            echo "### Production envoyée dans le dossier \`site-messor\`" >> "$GITHUB_STEP_SUMMARY"
+            echo "### En ligne : https://messor.fr" >> "$GITHUB_STEP_SUMMARY"
           else
             echo "### Préproduction : https://messor.fr/nouveau-site/" >> "$GITHUB_STEP_SUMMARY"
           fi

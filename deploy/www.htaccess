@@ -1,0 +1,19 @@
+# Messor : messor.fr est servi depuis le dossier www/site-messor (publié par GitHub Actions,
+# voir .github/workflows/deploy.yml). Ancienne configuration WordPress : .htaccess-wordpress
+# Retour à WordPress : remplacer ce fichier par .htaccess-wordpress.
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+DirectorySlash Off
+RewriteEngine On
+RewriteBase /
+
+# Renouvellement du certificat HTTPS (OVH / Let's Encrypt)
+RewriteRule ^\.well-known/ - [L]
+
+# L'adresse technique /site-messor/... n'est pas publique
+RewriteCond %{THE_REQUEST} \s/+site-messor(/[^\s?]*)?[\s?]
+RewriteRule ^ https://messor.fr%1 [R=301,L,NE]
+
+# Tout le reste est servi par le nouveau site
+RewriteCond %{REQUEST_URI} !^/site-messor/
+RewriteRule ^(.*)$ /site-messor/$1 [L]
