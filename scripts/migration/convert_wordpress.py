@@ -601,6 +601,8 @@ def main():
             else:
                 body = to_md(content)
             if kind == "posts":
+                # Mention de source jamais complétée dans l'article d'origine
+                body = body.replace(", selon [source].", ".")
                 # Navigation Elementor recopiée en fin d'article (Découvrir Messor / Le Blog / Article suivant)
                 body = re.split(r'(?:<div class="cols cols-2">\s*<div>\s*)?#### \[(?:Découvrir Messor|About Messor)\]', body)[0].rstrip()
             dest = out_dir / (path + ".md")

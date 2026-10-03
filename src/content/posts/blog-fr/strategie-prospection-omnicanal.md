@@ -33,7 +33,7 @@ L’omnicanal désigne une approche intégrée de la prospection commerciale uti
 
 ### Avantages de l’Approche Omnicanal
 
-Adopter une stratégie omnicanale peut augmenter vos taux de conversion de plus de 70 %, selon [source]. De plus, elle permet de cibler efficacement les décideurs clés, optimisant ainsi vos efforts de prospection.
+Adopter une stratégie omnicanale peut augmenter vos taux de conversion de plus de 70 %. De plus, elle permet de cibler efficacement les décideurs clés, optimisant ainsi vos efforts de prospection.
 
 Avec ces bases, vous êtes maintenant prêt à explorer les meilleures pratiques pour mettre en place une stratégie omnicanale performante.
 
