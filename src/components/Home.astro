@@ -253,7 +253,8 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
   .layer.shade { background: linear-gradient(95deg, oklch(11% 0.015 260 / 0.95) 0%, oklch(11% 0.015 260 / 0.88) 42%, oklch(11% 0.015 260 / 0.55) 68%, oklch(11% 0.015 260 / 0.3) 100%); }
   @media (max-width: 760px) { .layer.shade { background: linear-gradient(180deg, oklch(11% 0.015 260 / 0.8) 0%, oklch(11% 0.015 260 / 0.88) 50%, oklch(11% 0.015 260 / 0.8) 100%); } }
   .layer.grid { background-image: linear-gradient(oklch(30% 0.01 255 / 0.12) 1px, transparent 1px), linear-gradient(90deg, oklch(30% 0.01 255 / 0.12) 1px, transparent 1px); background-size: 80px 80px; opacity: 0.5; }
-  .glow { position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; border-radius: 50%; background: oklch(72% 0.14 68 / 0.12); filter: blur(80px); pointer-events: none; }
+  /* Halo : dégradé radial (même rendu qu'un flou, sans le coût de calcul) */
+  .glow { position: absolute; top: -360px; right: -360px; width: 920px; height: 920px; border-radius: 50%; background: radial-gradient(closest-side, oklch(72% 0.14 68 / 0.12), oklch(72% 0.14 68 / 0.06) 55%, transparent); pointer-events: none; }
   .credit { position: absolute; bottom: 24px; right: var(--gutter); font-size: 11px; color: oklch(66% 0.01 260); letter-spacing: 0.04em; z-index: 2; }
   .hero-inner { position: relative; }
   .badge { display: inline-flex; align-items: center; gap: 8px; background: oklch(72% 0.14 68 / 0.12); border: 1px solid oklch(72% 0.14 68 / 0.3); color: var(--accent); border-radius: 100px; padding: 5px 14px; font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 28px; }
