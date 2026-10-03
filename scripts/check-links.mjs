@@ -4,6 +4,7 @@ import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
 const DIST = 'dist';
+const BASE = (process.env.SITE_BASE || '/').replace(/\/$/, '');
 const redirects = existsSync('public/.htaccess') ? readFileSync('public/.htaccess', 'utf8') : '';
 const redirected = new Set([...redirects.matchAll(/^RewriteRule \^(.+?)\/\?\$ /gm)].map((m) => '/' + m[1].replace(/\\/g, '')));
 
@@ -17,6 +18,10 @@ const files = [];
 })(DIST);
 
 const exists = (path) => {
+  if (BASE) {
+    if (path !== BASE && !path.startsWith(BASE + '/')) return false;
+    path = path.slice(BASE.length) || '/';
+  }
   const clean = decodeURIComponent(path.split('#')[0].split('?')[0]).replace(/\/$/, '') || '/';
   if (clean === '/') return existsSync(join(DIST, 'index.html'));
   return existsSync(join(DIST, clean)) || existsSync(join(DIST, clean + '.html')) || existsSync(join(DIST, clean, 'index.html'));
@@ -28,7 +33,7 @@ for (const f of files) {
   for (const [, attr, link] of html.matchAll(/\s(href|src)="(\/[^"/][^"]*|\/)"/g)) {
     if (link.startsWith('//') || exists(link)) continue;
     const key = link.split('#')[0];
-    if (redirected.has(key.replace(/\/$/, ''))) continue;
+    if (redirected.has(key.slice(BASE.length).replace(/\/$/, ''))) continue;
     if (!broken.has(key)) broken.set(key, new Set());
     broken.get(key).add(f.replace(DIST, ''));
   }
