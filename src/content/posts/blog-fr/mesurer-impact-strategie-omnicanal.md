@@ -19,6 +19,8 @@ Dans cet article, vous découvrirez comment mesurer l’impact d’une stratégi
 
 Voyons maintenant comment une stratégie omnicanal peut transformer votre approche client et booster vos résultats.
 
+![Infographie : les 4 points clés de l’article « Comment Mesurer l’Impact d’une Stratégie Omnicanal sur Votre Acquisition de Clients »](/images/blog/mesurer-impact-strategie-omnicanal-points-cles.webp)
+
 ## Comprendre la Stratégie Omnicanal
 
 Une stratégie omnicanal intègre tous les canaux de communication et de vente d’une entreprise pour offrir une expérience client unifiée. Cela inclut les points de contact en ligne et hors ligne tels que les sites web, les réseaux sociaux, les magasins physiques et le service client. En harmonisant ces différents canaux, vous améliorez la cohérence et la fluidité du parcours client. Si les canaux ne sont pas connectés, vous risquez de créer des expériences fragmentées qui peuvent diminuer la satisfaction et la fidélité des clients. Par exemple, un client qui begin son parcours d’achat sur mobile devrait pouvoir le poursuivre sans interruption sur ordinateur ou en magasin. Cette approche facilite la collecte et l’analyse des données clients, permettant ainsi une personnalisation accrue des offres et des communications. Avec ces bases, vous êtes maintenant prêt à explorer les indicateurs clés pour mesurer l’impact de votre stratégie omnicanal.
@@ -118,6 +120,8 @@ Assurez-vous que vos objectifs soutiennent une expérience cohérente sur tous l
 Utilisez des outils d’analyse pour suivre les performances. Ajustez vos objectifs en fonction des résultats obtenus pour optimiser continuellement votre acquisition de clients.
 
 Avec ces objectifs clairement définis, vous pouvez mesurer efficacement l’impact de votre stratégie omnicanal sur l’acquisition de clients.
+
+![Chiffre clé : Un taux de conversion de 5 % sur le site web contre 2 % via les réseaux sociaux révèle vos priorités stratégiques.](/images/blog/mesurer-impact-strategie-omnicanal-chiffre-cle.webp)
 
 ## Métriques Clés pour Évaluer l’Impact
 

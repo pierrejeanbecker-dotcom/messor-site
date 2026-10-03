@@ -17,6 +17,8 @@ excerpt: "Vendre plus à ses clients ou ouvrir davantage de comptes clients : qu
 
 Le développement commercial d’un cabinet de conseil est une préoccupation centrale pour ses dirigeants. L’univers concurrentiel, l’évolution des besoins clients, la transformation digitale et l’innovation constante obligent les cabinets de conseil à repenser leurs stratégies pour croître de manière durable. Si vous dirigez un cabinet de conseil, vous êtes sûrement à la recherche d’actions concrètes pour augmenter votre chiffre d’affaires tout en fidélisant votre clientèle existante. Voici un guide pratique pour vous orienter sur les meilleurs leviers à activer pour grandir dans un secteur aussi concurrentiel.
 
+![Infographie : les 4 points clés de l’article « Cabinet de conseil : comment développer son chiffre d’affaires ? »](/images/blog/comment-developper-le-chiffre-daffaires-de-son-cabinet-de-conseil-points-cles.webp)
+
 ## Connais-toi toi même : affinez votre offre de conseil
 
 Avant d’envisager des actions purement commerciales pour développer les revenus de votre cabinet de conseil, il est impératif de réaliser une introspection approfondie. Examinez vos **offres de services** et vos **propositions de valeur.**
@@ -134,6 +136,8 @@ On ne le dira jamais assez, la vente complexe est un travail d’équipe ! Afin 
 **Votre CRM est-il vraiment collaboratif ?**
 
 Par ailleurs, bien que l’automatisation et la digitalisation soient au coeur de la majorité des offres de transformation portées par les cabinets de conseil, force est de constater qu’il reste de nombreuses gisements de progrès sur ces deux sujets dans le process commercial des cabinets. Qui a dit que les cordonniers étaient toujours les plus mal chaussés ?
+
+![Le conseil Messor : Chaque offre doit répondre aux préoccupations spécifiques de vos cibles : leur comportement d’achat n’est pas forcément identique au vôtre.](/images/blog/comment-developper-le-chiffre-daffaires-de-son-cabinet-de-conseil-conseil.webp)
 
 ## Vendez plus aux clients existants de votre cabinet de conseil
 

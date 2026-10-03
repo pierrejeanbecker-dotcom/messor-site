@@ -21,6 +21,8 @@ Dans cet article, vous découvrirez les clés du succès pour personnaliser effi
 
 Voyons maintenant comment **la personnalisation** peut transformer vos efforts de prospection.
 
+![Infographie : les 5 points clés de l’article « L’Art de la Personnalisation dans les Campagnes de Prospection : Les Clés du Succès »](/images/blog/lart-de-la-personnalisation-dans-les-campagnes-de-prospection-les-cles-du-succes-points-cles.webp)
+
 ## Importance de la Personnalisation
 
 La personnalisation transforme vos campagnes de prospection en interactions significatives, augmentant leur efficacité et impact.
@@ -142,6 +144,8 @@ Créer du contenu dynamique qui s’adapte en fonction du profil du prospect ren
 Réaliser des tests A/B sur vos campagnes permet d’identifier les éléments les plus efficaces. Testez différentes versions de vos emails, appels à l’action ou visuels pour déterminer ce qui résonne le mieux avec vos prospects. L’optimisation continue de vos stratégies de personnalisation assure une amélioration constante des performances de vos campagnes.
 
 Avec ces stratégies en place, vous pouvez personnaliser vos campagnes de manière précise et efficace, garantissant ainsi une meilleure résonance avec votre audience cible.
+
+![Chiffre clé : Selon HubSpot, les entreprises qui personnalisent leurs campagnes voient leurs ventes augmenter de 20 %.](/images/blog/lart-de-la-personnalisation-dans-les-campagnes-de-prospection-les-cles-du-succes-chiffre-cle.webp)
 
 ## Collecte et Gestion des Données Clients
 

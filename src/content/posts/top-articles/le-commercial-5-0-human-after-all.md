@@ -18,6 +18,8 @@ excerpt: "Le métier de commercial B2B a connu de nombreuses évolutions au cour
 Jusqu’aux années 80, **on entrainait les commerciaux à être égocentrés**, à avoir la « tchatche ».
 Ils devaient souvent vendre « dans le dur », faire du porte à porte. On leur enseignait des tactiques comme celles des « 3 oui » :
 
+![Infographie : les 5 points clés de l’article « Le commercial 5.0 : Human After All »](/images/blog/le-commercial-5-0-human-after-all-points-cles.webp)
+
 > *M. Durand, vous aimez votre femme ?*
 >  *Oui.*
 > *M. Durand vous aimez vos enfants ?*
@@ -44,6 +46,8 @@ L’écoute client n’étant plus suffisante, il fallait comprendre qui était 
 Les années 90 sont marqués par l’émergence de tout un tas de courant : analyse transactionnelle, PNL, sémantique différenciée, morphopsychologie, caractérologie…
 
 **Au lieu de s’intéresser à la réponse, on s’intéressait à la manière dont le prospect avait répondu.**
+
+![Le conseil Messor : Au lieu de s’intéresser à la réponse, on s’intéressait à la manière dont le prospect avait répondu.](/images/blog/le-commercial-5-0-human-after-all-conseil.webp)
 
 ## L’acheteur autonome
 

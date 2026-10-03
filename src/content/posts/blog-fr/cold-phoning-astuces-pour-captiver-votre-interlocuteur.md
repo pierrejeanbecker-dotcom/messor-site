@@ -19,6 +19,8 @@ Avec le **cold phoning**, vous avez l’opportunité de transformer vos approche
 
 Nous savons combien il peut être difficile de percer le brouillard des décideurs. C’est pourquoi nous avons rassemblé des stratégies qui fonctionnent réellement. Entrez dans le détail avec nos conseils pratiques ci-dessous et commencez à captiver vos prospects dès aujourd’hui.
 
+![Infographie : les 5 points clés de l’article « Cold Phoning : Comment Passer des Appels Qui Captivent les Décideurs »](/images/blog/cold-phoning-astuces-pour-captiver-votre-interlocuteur-points-cles.webp)
+
 ## Comprendre le Cold Phoning
 
 Le cold phoning consiste à contacter des prospects sans interaction préalable. Cette méthode permet d’établir un premier contact direct avec les décideurs. En moyenne, seulement 2 % des appels à froid mènent à une conversation avec un décideur, ce qui souligne l’importance d’une approche stratégique. Pour réussir, identifie les bons contacts, personnalise ton discours et capte l’attention dès les premières secondes.
@@ -74,6 +76,8 @@ Utilise des données pertinentes pour renforcer tes arguments et démontre une c
 ### Techniques pour Captiver les Décideurs
 
 Utilise des accroches personnalisées basées sur tes recherches. Maintiens un dialogue interactif en posant des questions ouvertes. Présente des bénéfices tangibles et des études de cas pertinentes. Adopte un ton confiant et dynamique pour maintenir l’attention. Intègre des témoignages ou des statistiques convaincantes pour renforcer ta crédibilité. Ces méthodes assurent un engagement durable avec les décideurs.
+
+![Chiffre clé : Seulement 2 % des appels à froid aboutissent à une conversation avec un décideur.](/images/blog/cold-phoning-astuces-pour-captiver-votre-interlocuteur-chiffre-cle.webp)
 
 ## Suivi et Optimisation des Appels
 

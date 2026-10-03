@@ -19,6 +19,8 @@ Saviez-vous que **70% des initiatives commerciales échouent** faute de toucher 
 
 Vous êtes sur le point de découvrir comment optimiser vos efforts pour engager les bonnes personnes et maximiser vos chances de succès. **Entrons dans le vif du sujet** et explorez ensemble les méthodes qui transformeront votre approche commerciale.
 
+![Infographie : les 5 points clés de l’article « Comment Identifier et Atteindre les Décideurs Clés dans les Grandes Entreprises »](/images/blog/comment-identifier-et-atteindre-les-decideurs-cles-dans-les-grandes-entreprises-points-cles.webp)
+
 ## Comprendre la Structure Organisationnelle des Grandes Entreprises
 
 Analyser la structure organisationnelle est essentiel pour identifier les décideurs clés. Les grandes entreprises souvent adoptent des structures hiérarchiques ou matricielles, qui définissent clairement les rôles et responsabilités. Par exemple, dans une structure hiérarchique, les décisions passent par plusieurs niveaux de gestion, tandis que dans une structure matricielle, les collaborateurs peuvent relever de plusieurs managers. Connaître ces structures te permet de cibler efficacement les responsables des départements pertinents. Utilise des organigrammes disponibles publiquement ou internes pour cartographier les décideurs potentiels. Avec ces bases, tu es maintenant prêt à identifier précisément les influenceurs clés au sein de l’entreprise.
@@ -98,6 +100,8 @@ Pour engager efficacement les décideurs clés, identifiez leurs profils spécif
 ### Utiliser les Outils de Veille
 
 Exploitez des outils comme LinkedIn, Sales Navigator ou des logiciels de CRM pour surveiller et identifier les décideurs clés. Configurez des alertes pour les mises à jour professionnelles et utilisez des filtres avancés pour affiner votre recherche. Ces outils facilitent la collecte de données précises sur les profils des influenceurs stratégiques.
+
+![Chiffre clé : 70 % des initiatives commerciales échouent faute de toucher les décideurs clés.](/images/blog/comment-identifier-et-atteindre-les-decideurs-cles-dans-les-grandes-entreprises-chiffre-cle.webp)
 
 ## Stratégies pour Atteindre les Décideurs
 

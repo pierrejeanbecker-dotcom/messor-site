@@ -19,6 +19,8 @@ En collaborant avec des experts dédiés, vous bénéficiez de stratégies cibl�
 
 Dans cet article, vous découvrirez les principaux avantages de cette collaboration et comment elle peut propulser votre ESN vers de nouveaux sommets. Plongeons ensemble dans les solutions efficaces qu’une agence de prospection externalisée peut vous offrir.
 
+![Infographie : les 5 points clés de l’article « Quels Avantages pour une ESN à Travailler avec une Agence de Prospection Externalisée ? »](/images/blog/quels-avantages-pour-une-esn-a-travailler-avec-une-agence-de-prospection-externalisee-points-cles.webp)
+
 ## Comprendre les ESN et la Prospection Externalisée
 
 Les **Entreprises de Services Numériques (ESN)** fournissent des solutions informatiques et technologiques aux clients. Elles jouent un rôle clé dans la transformation digitale des organisations en offrant expertise et innovation.
@@ -74,6 +76,8 @@ Chaque ESN possède des besoins spécifiques. L’agence propose des **services 
 L’externalisation offre une **scalabilité** flexible. Vous pouvez facilement augmenter ou réduire les efforts de prospection en fonction de vos besoins. Cette capacité à évoluer permet de soutenir la croissance de votre ESN tout en maîtrisant les coûts.
 
 Avec ces bases, vous êtes maintenant prêt à explorer les autres avantages de la collaboration avec une agence de prospection externalisée.
+
+![Chiffre clé : Jusqu’à 40 % de prospects supplémentaires chaque trimestre, sans sacrifier la qualité.](/images/blog/quels-avantages-pour-une-esn-a-travailler-avec-une-agence-de-prospection-externalisee-chiffre-cle.webp)
 
 ## Focus sur le Cœur de Métier
 

@@ -19,6 +19,8 @@ LinkedIn : L’Outil Incontournable pour les ESN et Cabinets de Conseil en Prosp
 
 Voyons maintenant comment LinkedIn peut transformer votre prospection B2B.
 
+![Infographie : les 5 points clés de l’article « LinkedIn : L’Outil Incontournable pour les ESN et Cabinets de Conseil en Prospection B2B »](/images/blog/linkedin-outil-incontournbale-prospection-reseaux-sociaux-points-cles.webp)
+
 ## L’Importance de LinkedIn pour la Prospection B2B
 
 LinkedIn s’impose comme la plateforme incontournable pour la prospection B2B. Plus de 80 % des professionnels B2B utilisent LinkedIn pour développer leurs affaires. Pour les ESN et cabinets de conseil, cet outil permet de cibler précisément les décideurs et d’établir des relations professionnelles solides. Utiliser LinkedIn optimise la génération de leads qualifiés, augmentant ainsi le retour sur investissement des efforts de prospection. De plus, une présence active renforce la visibilité en ligne de votre entreprise, facilitant la reconnaissance de votre expertise dans le secteur. Avec ces atouts, LinkedIn devient un levier essentiel pour atteindre vos objectifs commerciaux.
@@ -86,6 +88,8 @@ Assurez une visibilité accrue en optimisant votre profil d’entreprise. Intég
 ### Utilisation des Groupes et Réseaux
 
 Participez activement aux groupes LinkedIn pertinents pour votre secteur. Engagez-vous dans les discussions, partagez votre expertise et établissez des connexions stratégiques. Rejoignez des réseaux spécifiques aux ESN et cabinets de conseil pour accéder à un public ciblé. Cette interaction renforce votre présence et crée des opportunités de collaboration et de prospection efficace.
+
+![Chiffre clé : Plus de 80 % des professionnels B2B utilisent LinkedIn pour développer leurs affaires.](/images/blog/linkedin-outil-incontournbale-prospection-reseaux-sociaux-chiffre-cle.webp)
 
 ## Stratégies de Prospection Efficace sur LinkedIn
 

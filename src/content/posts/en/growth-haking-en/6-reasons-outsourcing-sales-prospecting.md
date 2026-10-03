@@ -18,6 +18,8 @@ As the first phase of the sales cycle, **sales prospecting is a crucial element 
 
 So here are **six reasons** why a consulting firm or high-value-added **services company might consider outsourcing their sales prospecting:**
 
+![Infographic: the 5 key takeaways from “6 reasons why you should outsource your sales prospecting”](/images/blog/6-reasons-outsourcing-sales-prospecting-points-cles.webp)
+
 ## 1. Access to specialized skills
 
 Everyone will tell you that B2B prospecting is becoming more and more complex… management assistants are disappearing, prospects are no longer responding, buyers’ decision-making processes are getting longer and more complex… Companies specialized in commercial prospecting are structured in terms of tools, processes, and personnel to increase the chances of success in commercial prospecting. Outsourcing this function can therefore allow the company to benefit from a know-how and an expertise that it would not have internally or that it would take time to acquire alone.
@@ -31,6 +33,8 @@ Outsourcing sales prospecting can help reduce the company’s costs by avoiding 
 ## 3. Better time management
 
 Sales prospecting can be very time consuming. On average, out of every 100 calls made to prospects’ cell phones (C-Level), only 10 will be answered. Outsourcing this task allows the company to focus on its core business, while benefiting from a continuous flow of leads.
+
+![Messor tip: Outsourcing sales prospecting gives consulting firms business engineers without having to hire staff themselves.](/images/blog/6-reasons-outsourcing-sales-prospecting-conseil.webp)
 
 ## 4. Reduction of the employer’s risk
 

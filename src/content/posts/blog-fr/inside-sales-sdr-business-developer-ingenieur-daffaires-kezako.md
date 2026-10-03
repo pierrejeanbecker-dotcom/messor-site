@@ -17,6 +17,8 @@ excerpt: "Inside Sales, SDR, BDR, Ingénieur d’affaires : qui fait quoi ? Les 
 
 Le commercial n’échappe pas à ce qui semble être devenue une règle pour tous les métiers : une tendance à la diversification et à l’ultra-spécialisation
 
+![Infographie : les 5 points clés de l’article « Inside Sales, SDR, Business Developer, ingénieur d’affaires : kezako ? »](/images/blog/inside-sales-sdr-business-developer-ingenieur-daffaires-kezako-points-cles.webp)
+
 Et oui, on ne vend pas aujourd’hui en btob comme on pouvait le faire 50, 10 ou même 3 ans en arrière. Certes les méthodes et bonnes pratiques pour réussir les entretiens commerciaux gardent une belle longévité (coucou Dale Carnegie) mais l’arrivée du digital a fait entrer les commerciaux dans une nouvelle ère.
 
 La prospection téléphonique est plus difficile, les règles de délivrabilité plus ardues à maitriser, les prospects deviennent pour certains des autonomistes de l’acte d’achat, les prises de décision plus longues, plus collégiales…
@@ -64,6 +66,8 @@ Aujourd’hui le terme de sdr est largement utilisé comme synonyme de BDR – B
 Toutefois une distinction est parfois faite : **le sdr gèrerait plutôt la qualification de leads** venant de l’ inbound marketing alors que le bdr serait pour sa part concentré sur l’outbound.
 
 Le SDR est un métier de plus en plus technique si bien que certaines entreprises préfèrent avoir recours à un ou des SDR externalisé.
+
+![Le conseil Messor : Le schéma le plus courant : des Inside Sales prennent les rendez-vous, réalisés et suivis ensuite par des commerciaux « outside sales ».](/images/blog/inside-sales-sdr-business-developer-ingenieur-daffaires-kezako-conseil.webp)
 
 ## Business Developer : rôle et définition
 

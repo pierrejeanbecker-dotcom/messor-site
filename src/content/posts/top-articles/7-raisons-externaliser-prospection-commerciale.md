@@ -24,6 +24,8 @@ Précisons également qu’il s’agit d’une démarche « push », qu’on opp
 
 **Sans plus attendre, voici sept raisons pour lesquelles un cabinet de conseil, une société de services ou une start-up SAAS peut envisager d’externaliser sa prospection b to b et de collaborer avec une agence :**
 
+![Infographie : les 5 points clés de l’article « 7 bonnes raisons d’externaliser sa prospection btob auprès d’une agence »](/images/blog/7-raisons-externaliser-prospection-commerciale-points-cles.webp)
+
 ## 1. Accéder à l’expertise d’une agence de prospection b to b
 
 ![](/medias/2023/07/recruter-des-talents-300x300.webp)
@@ -61,6 +63,8 @@ En moyenne, sur 100 appels émis sur des téléphones portables de prospects (ni
 Externaliser la prospection permet à l’entreprise de se concentrer sur ses activités principales et sur ses clients actuels, tout en bénéficiant d’un flux de prospects continu.
 
 ![prise de contact avec un prospect](/medias/2023/07/prise-de-contact-prospect.webp)
+
+![Le conseil Messor : Externaliser la prospection vous donne un élément de comparaison tangible et permet de fixer des objectifs SMART.](/images/blog/7-raisons-externaliser-prospection-commerciale-conseil.webp)
 
 ## 4. Réduction du risque employeur
 

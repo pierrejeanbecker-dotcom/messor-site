@@ -41,6 +41,8 @@ jobs:
           fi
 
       - name: Construire le site
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
         run: |
           npm ci
           npm run build

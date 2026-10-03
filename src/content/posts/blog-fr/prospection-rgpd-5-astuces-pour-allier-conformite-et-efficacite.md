@@ -19,6 +19,8 @@ Dans cet article, vous découvrirez des techniques efficaces pour aligner vos ac
 
 Vous êtes sur le point de transformer votre approche commerciale grâce à des conseils clairs et adaptés. Plongeons ensemble dans les stratégies qui garantiront le succès de votre prospection tout en respectant la règlementation.
 
+![Infographie : les 5 points clés de l’article « Prospection RGPD : 5 Astuces pour Allier Conformité et Efficacité »](/images/blog/prospection-rgpd-5-astuces-pour-allier-conformite-et-efficacite-points-cles.webp)
+
 ## Comprendre le RGPD et la Prospection Commerciale
 
 Le RGPD encadre la protection des données personnelles dans la prospection commerciale. Respecter cette réglementation est crucial pour optimiser vos actions commerciales tout en garantissant la confidentialité des informations clients.
@@ -134,6 +136,8 @@ Choisissez des fournisseurs qui démontrent une conformité stricte au RGPD. Vé
 Collaborez avec vos partenaires pour réaliser des audits conjointement. Ces audits permettent d’assurer une conformité mutuelle et de partager les meilleures pratiques en matière de protection des données.
 
 En collaborant avec des partenaires engagés, vous renforcez votre stratégie de prospection tout en garantissant la conformité au RGPD.
+
+![Chiffre clé : Le non-respect du RGPD peut coûter jusqu’à 20 millions d’euros ou 4 % du chiffre d’affaires annuel mondial.](/images/blog/prospection-rgpd-5-astuces-pour-allier-conformite-et-efficacite-chiffre-cle.webp)
 
 ## Adaptation Continue aux Évolutions Réglementaires
 

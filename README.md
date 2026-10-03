@@ -26,6 +26,11 @@ L'adresse publique de la page est son `permalink` : ne la changez pas sans ajout
 
 **Ajouter un article** : copier un fichier de `src/content/posts/`, changer `title`, `permalink`, `date`, `excerpt` et le texte.
 
+**Illustrations des articles** : `npm run illustrations` génère pour chaque article deux images aux couleurs Messor
+(« Les points clés » à partir des titres `##`, et un « Chiffre clé » ou « Le conseil Messor ») et les insère dans le texte.
+Le chiffre ou le conseil de chaque article se choisit dans `scripts/blog-illustrations.json` ; sans choix, il est détecté
+automatiquement (à relire). Relançable à volonté : les images existantes sont remplacées.
+
 ## Publier
 
 Chaque `push` sur la branche principale publie automatiquement la **préproduction** :

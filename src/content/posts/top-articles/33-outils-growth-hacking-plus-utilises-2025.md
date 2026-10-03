@@ -623,9 +623,13 @@ Vous souhaitez être conseillé sur votre développement commercial ? **[Contact
 
 ![Growth hacking and growth marketing 2023](/medias/elementor/thumbs/blog-growth-hacking-2023-1-q6jpnej2rfzxy0rnsml4ai3subwg9f7fm5z6pi1gl4.png)
 
+![Infographie : les 5 points clés de l’article « Les 33 outils de growth hacking les plus utilisés en 2025 »](/images/blog/33-outils-growth-hacking-plus-utilises-2025-points-cles.webp)
+
 ## Pourquoi utiliser des outils de growth hacking ?
 
 ## Quels sont les types d’outils de growth hacking ?
+
+![Chiffre clé : Les 33 outils les plus utilisés par les professionnels du growth hacking, selon une centaine de freelances.](/images/blog/33-outils-growth-hacking-plus-utilises-2025-chiffre-cle.webp)
 
 ## Création de sites internet et landing pages (CMS)​
 
@@ -748,13 +752,3 @@ Vous souhaitez être conseillé sur votre développement commercial ? **[Contact
 ## En résumé
 
 <p class="btn-row"><a class="btn" href="/contactez-nous">Contactez-nous !</a></p>
-
-#### [Découvrir Messor](/decouvrir-messor-2)
-
-#### [Le Blog](/blog)
-
-<p class="btn-row"><a class="btn" href="/cold-calling/8-phrases-accroche-prospection-telephonique-b2b">Article précédent</a></p>
-
-## Avez-vous des questions ? Contactez-nous dès maintenant !​
-
-<p class="btn-row"><a class="btn" href="/contactez-nous">Contactez-nous</a></p>

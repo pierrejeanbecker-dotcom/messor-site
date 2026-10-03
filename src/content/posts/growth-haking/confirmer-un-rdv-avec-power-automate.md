@@ -18,9 +18,13 @@ excerpt: "💡Comment réduire le nombre de rdvs en visio/ Teams non honorés ? 
 
 Avec l’essor du télétravail et la généralisation des rdvs en visio, les déplacements commerciaux se sont fortement réduits. Autant de temps gagné ?
 
+![Infographie : les 3 points clés de l’article « Utiliser Power Automate pour lutter contre le no-show Teams »](/images/blog/confirmer-un-rdv-avec-power-automate-points-cles.webp)
+
 Pas tout à fait, car en parallèle le nombre de rdvs non honorés par les prospects ou clients explose…et les minutes passées à attendre en vain vos interlocuteurs s’accumulent.
 
 ![👉](https://s.w.org/images/core/emoji/14.0.0/svg/1f449.svg) Avec Microsoft Power Automate, vous pouvez configurer en quelques minutes l’envoi automatique d’un courriel avant (1H ? 1jour.. à vous de décider) certains de vos événements. ![🤩](https://s.w.org/images/core/emoji/14.0.0/svg/1f929.svg)
+
+![Le conseil Messor : Un email de rappel automatique avant chaque rendez-vous Teams : une solution simple pour lutter contre le no-show.](/images/blog/confirmer-un-rdv-avec-power-automate-conseil.webp)
 
 ## Comment faire avec Microsoft Power Automate ?
 

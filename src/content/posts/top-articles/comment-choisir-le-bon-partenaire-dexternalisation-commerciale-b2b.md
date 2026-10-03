@@ -26,6 +26,8 @@ Mais il y a aussi dans ce milieu :
 
 Comment grater derrière le discours officiel des sites webs et choisir le bon partenaire ?
 
+![Infographie : les 5 points clés de l’article « Comment choisir le bon partenaire d’externalisation commerciale B2B ? »](/images/blog/comment-choisir-le-bon-partenaire-dexternalisation-commerciale-b2b-points-cles.webp)
+
 ## C’est quoi un lead ?
 
 Chez nos amis anglo-saxons, un lead est synonyme de « contact qualifié », c’est-à-dire un contact correspondant à un ciblage. Par exemple, vous cherchez le nom et les coordonnées de directeurs industriels d’ETI allemandes. Je vous fournis une liste de 100 contacts correspondants à cette recherche, je vous ai donc apporté 100 leads.
@@ -81,6 +83,8 @@ Je vous le divulgâche : les business developers sont souvent jeunes et le turno
 **Est-il possible d’écrire dans le contrat – noir sur blanc – le statut de la personne qui réalisera la mission ou son taux de staffing ?**
 
 Dans la prospection commerciale, on peut voir de tout : du profil spécialisé cadre commercial BAC+5 à la ressource multitâche basée à Madagascar. Et c’est parfait ! Il faut de tout !
+
+![Le conseil Messor : Ne comparez pas des pommes avec des poires : en France, le terme « lead » peut avoir plusieurs significations.](/images/blog/comment-choisir-le-bon-partenaire-dexternalisation-commerciale-b2b-conseil.webp)
 
 ## Lire ou ne pas lire dans une boule de cristal
 

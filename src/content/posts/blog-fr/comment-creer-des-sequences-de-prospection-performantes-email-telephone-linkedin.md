@@ -10,6 +10,7 @@ author: "Baptiste"
 category: "blog-fr"
 categories: ["blog-fr"]
 excerpt: "Imaginez pouvoir augmenter votre taux de conversion de 50 % grâce à des séquences de prospection parfaitement orchestrées. Créer des séquences de prospection performantes (Email, Téléphone, LinkedIn) est désormais…"
+image: "/images/blog/comment-creer-des-sequences-de-prospection-performantes-email-telephone-linkedin-points-cles.webp"
 ---
 
 Imaginez pouvoir augmenter votre taux de conversion de 50 % grâce à des séquences de prospection parfaitement orchestrées. Créer des séquences de prospection performantes (Email, Téléphone, LinkedIn) est désormais indispensable pour toute stratégie commerciale efficace. Vous permet non seulement de capter l’attention de vos prospects mais aussi de bâtir des relations durables et fructueuses.
@@ -17,6 +18,8 @@ Imaginez pouvoir augmenter votre taux de conversion de 50 % grâce à des séque
 Dans cet article, vous découvrirez des techniques éprouvées et des astuces pratiques pour optimiser vos séquences de prospection sur différents canaux. Nous allons explorer comment chaque outil – email, téléphone et LinkedIn – peut être utilisé de manière stratégique pour maximiser vos résultats.
 
 Entrez dans le détail avec nos conseils experts ci-dessous et commencez à transformer votre approche de prospection dès aujourd’hui.
+
+![Infographie : les 5 points clés de l’article « Comment Créer des Séquences de Prospection Performantes (Email, Téléphone, LinkedIn) »](/images/blog/comment-creer-des-sequences-de-prospection-performantes-email-telephone-linkedin-points-cles.webp)
 
 ## Comprendre la Prospection Multicanal
 
@@ -75,6 +78,8 @@ Un profil complet attire l’attention des prospects. Utilisez une photo profess
 ### Engager avec les Prospects sur LinkedIn
 
 Interagissez activement avec vos prospects pour bâtir des relations solides. Commentez et partagez leurs publications pour montrer votre intérêt. Envoyez des invitations personnalisées en mentionnant un point commun ou un intérêt partagé. Utilisez la messagerie InMail pour des approches ciblées et pertinentes. Publiez régulièrement du contenu de valeur pour rester présent dans leur fil d’actualité. L’engagement constant améliore la confiance et facilite la conversion des prospects.
+
+![Le conseil Messor : Multipliez les points de contact — email, téléphone, LinkedIn — et adaptez l’approche aux préférences de chaque prospect.](/images/blog/comment-creer-des-sequences-de-prospection-performantes-email-telephone-linkedin-conseil.webp)
 
 ## Intégrer les Outils d’Automatisation
 

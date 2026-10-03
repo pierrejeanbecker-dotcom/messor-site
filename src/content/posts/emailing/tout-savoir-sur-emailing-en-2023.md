@@ -17,6 +17,8 @@ Pourquoi certains emails arrivent-ils à destination et d’autres non ? Quels s
 
 Messor est une agence proposant des services d’ externalisation commerciale et d’inbound marketing pour les entreprises B2B.
 
+![Infographie : les 5 points clés de l’article « Emailing et délivrabilité en 2023 »](/images/blog/tout-savoir-sur-emailing-en-2023-points-cles.webp)
+
 ## Délivrabilité : définition
 
 La délivrabilité d’un courrier électronique ou d’une campagne d’ emailing désigne sa capacité à parvenir à ses destinataires en boîte de réception principale (et non dans les filtres anti spam)
@@ -87,6 +89,8 @@ Puis d’un point de vue réputation  **:** la mise en place de ces *whitelabels
 [![105](/medias/elementor/thumbs/105-q9cg0a0revel3f0lxu7ckhnio8gz8ic1hn2yizzu7s.webp)](/top-articles/7-raisons-externaliser-prospection-commerciale)
 
 *Accéder à notre article : 6 bonnes raisons d’externaliser sa prospection commerciale*
+
+![Le conseil Messor : Le taux d’ouverture devient de moins en moins fiable : couplez-le aux autres métriques, à commencer par le taux de clic.](/images/blog/tout-savoir-sur-emailing-en-2023-conseil.webp)
 
 ## Peut-on configurer seul DKIM, DMARC et SPF ?
 

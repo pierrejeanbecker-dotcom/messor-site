@@ -10,11 +10,14 @@ author: "Pierre-Jean BECKER"
 category: "top-articles"
 categories: ["top-articles"]
 excerpt: "Un défi historique pour les cabinets de conseil Le business development (BD) dans le conseil ne va pas de soi. Historiquement, il est laissé aux partners, dont le réseau, bien que précieux, n’est pas inépuisable et peut…"
+image: "/images/blog/le-business-development-dans-le-conseil-comment-lia-revolutionne-la-vente-de-missions-points-cles.webp"
 ---
 
 ## Un défi historique pour les cabinets de conseil
 
 Le business development (BD) dans le conseil ne va pas de soi. Historiquement, il est laissé aux partners, dont le réseau, bien que précieux, n’est pas inépuisable et peut limiter la croissance. En 2025, la majorité des cabinets ont expérimenté diverses stratégies de BD, souvent avec des résultats variables, ce qui peut engendrer un certain découragement.
+
+![Infographie : les 5 points clés de l’article « Le business development dans le conseil : comment l’IA révolutionne la vente de missions »](/images/blog/le-business-development-dans-le-conseil-comment-lia-revolutionne-la-vente-de-missions-points-cles.webp)
 
 Et pour cause : comme le rugby à 7, le BD dans le conseil s’est considérablement complexifié et professionnalisé ces dernières années. Aujourd’hui, il est difficile d’entrer dans la compétition sans une bonne cohérence entre l’équipe, l’entraîneur, les processus, la stratégie et l’équipement. Cette complexité explique les résultats inégaux observés.
 
@@ -25,6 +28,8 @@ L’IA générative surgit dans ce contexte et promet de rebattre les cartes. So
 ## Automatisation et business development : un sujet encore mal compris
 
 L’automatisation est souvent perçue comme synonyme de spamming ou de growth hacking, des approches efficaces pour des business standardisés mais peu adaptées aux ventes complexes du conseil. Ce biais explique pourquoi certains dirigeants n’y voient pas un levier pertinent pour leur stratégie commerciale, alors qu’ils poussent en parallèle des offres de conseil sur l’automation des processus ou la RPA.
+
+![Le conseil Messor : Le principal atout de l’IA générative en business development : sa capacité à analyser et synthétiser de grandes quantités de données.](/images/blog/le-business-development-dans-le-conseil-comment-lia-revolutionne-la-vente-de-missions-conseil.webp)
 
 ## Exploiter l’IA pour une prospection ultra-personnalisée
 

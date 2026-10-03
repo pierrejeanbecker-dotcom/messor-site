@@ -21,6 +21,8 @@ Dans cet article, vous découvrirez les indicateurs clés à surveiller pour opt
 
 Voyons maintenant comment ces KPIs peuvent vous aider à atteindre vos objectifs.
 
+![Infographie : les 5 points clés de l’article « Prospection pour ESN : Quels KPIs Suivre pour Mesurer Votre Succès »](/images/blog/prospection-esn-mesurer-kpi-points-cles.webp)
+
 ## Comprendre la Prospection pour ESN
 
 La prospection pour les Entreprises de Services du Numérique (ESN) englobe l’ensemble des actions visant à identifier et à attirer de nouveaux clients dans un marché compétitif. **65 % des ESN** rencontrent des obstacles pour atteindre leurs objectifs de prospection, soulignant la nécessité d’une stratégie bien définie. Les principales étapes incluent :
@@ -63,6 +65,8 @@ Ce KPI évalue la quantité de leads répondant à vos critères de qualificatio
 ### Temps de Cycle de Vente
 
 Le temps de cycle de vente représente la durée moyenne entre le premier contact et la conclusion de la vente. Un cycle court permet d’augmenter votre efficacité et de libérer des ressources plus rapidement. Analysez les différentes étapes de votre processus de vente pour identifier les goulots d’étranglement. Réduisez ce temps en améliorant la réactivité de votre équipe et en optimisant vos démarches commerciales.
+
+![Chiffre clé : 65 % des ESN déclarent rencontrer des difficultés à atteindre leurs objectifs de prospection.](/images/blog/prospection-esn-mesurer-kpi-chiffre-cle.webp)
 
 ## Mesurer et Analyser les KPIs
 

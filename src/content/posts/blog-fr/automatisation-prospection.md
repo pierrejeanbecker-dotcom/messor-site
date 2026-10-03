@@ -19,6 +19,8 @@ L’automatisation de la prospection devient essentielle pour rester compétitif
 
 Dans cet article, vous découvrirez jusqu’où aller pour maximiser cette efficacité. Nous allons explorer les outils et les stratégies clés pour transformer votre processus de prospection. Plongeons ensemble dans l’univers de l’automatisation et atteignez vos objectifs commerciaux.
 
+![Infographie : les 5 points clés de l’article « Automatisation de la Prospection : Jusqu’où Aller pour Maximiser l’Efficacité »](/images/blog/automatisation-prospection-points-cles.webp)
+
 ## Comprendre l’Automatisation de la Prospection
 
 L’automatisation de la prospection optimise vos efforts commerciaux en intégrant des outils technologiques avancés. Elle permet de gérer efficacement les contacts et d’accélérer le cycle de vente.
@@ -80,6 +82,8 @@ Assurez-vous que vos équipes de vente sont alignées avec les outils automatis�
 Utilisez les analyses fournies par vos outils d’automatisation pour évaluer la performance de vos campagnes. Ajustez vos stratégies en temps réel en fonction des données recueillies, afin d’optimiser continuellement vos efforts de prospection.
 
 Avec ces stratégies en place, vous êtes prêt à maximiser l’efficacité de votre prospection automatisée et à atteindre vos objectifs commerciaux.
+
+![Chiffre clé : Automatiser la prospection libère jusqu’à 30 % de votre temps pour les activités à forte valeur ajoutée.](/images/blog/automatisation-prospection-chiffre-cle.webp)
 
 ## Outils et Technologies Essentiels
 

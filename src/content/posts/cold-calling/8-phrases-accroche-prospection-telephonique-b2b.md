@@ -50,6 +50,8 @@ La probabilité de vendre directement après une simple conversation en cold cal
 <div class="cols cols-2">
 <div>
 
+![Infographie : les 5 points clés de l’article « Prospection téléphonique B2B : 8 phrases pour bien commencer un appel ! »](/images/blog/8-phrases-accroche-prospection-telephonique-b2b-points-cles.webp)
+
 ### Si votre objectif de prospection téléphonique est la prise de rdv
 
 Avant de partir sur votre pitch “technique”, il y aura toujours un petit préambule au cours duquel vous devez : **confirmer l’identité de votre interlocuteur, décliner la votre et l’objectif de votre appel (proposer un rdv) et confirmer sa disponibilité pour vous écouter.** Voici 6 exemples d’accroches :
@@ -61,6 +63,7 @@ Avant de partir sur votre pitch “technique”, il y aura toujours un petit pr�
 
 </div>
 </div>
+![Le conseil Messor : « Je vous dérange pas, j’espère ? » : le « j’espère » en fin de phrase change tout, on a envie de répondre « allez-y ».](/images/blog/8-phrases-accroche-prospection-telephonique-b2b-conseil.webp)
 
 **Je peux vous embêter deux petites minutes ?**
 
@@ -111,29 +114,3 @@ Pour conclure, selon votre objectif d’appel, la phrase d’accroche devra êtr
 Vous ne savez pas **comment continuer et conclure votre appel ?** Consultez notre rubrique sur la prospection téléphonique juste **[ici](/prospection-telephonique-b2b)** et **bénéficiez de conseils pour un appel en B2B réussi !**
 
 <p class="btn-row"><a class="btn" href="/accompagnement-prospection-multicanal">En savoir + sur l&#x27;externalisation de la propsection</a></p>
-
-<div class="cols cols-2">
-<div>
-
-#### [Découvrir Messor](/decouvrir-messor-2)
-
-</div>
-<div>
-
-#### [Le Blog](/blog)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-<p class="btn-row"><a class="btn" href="/top-articles/33-outils-growth-hacking-plus-utilises-2025">Article suivant</a></p>
-
-</div>
-<div>
-
-<p class="btn-row"><a class="btn" href="/emailing/tout-savoir-sur-emailing-en-2023">Article précédent</a></p>
-
-</div>
-</div>

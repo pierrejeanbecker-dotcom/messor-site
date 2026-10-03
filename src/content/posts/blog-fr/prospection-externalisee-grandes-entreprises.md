@@ -19,6 +19,8 @@ En choisissant la prospection externalisée, vous bénéficiez d’une expertise
 
 Dans cet article, vous découvrirez pourquoi les grandes entreprises adoptent cette approche et comment elle peut transformer votre processus de sélection de fournisseurs. Ensemble, explorons les avantages de la prospection externalisée et comment elle peut vous aider à atteindre vos objectifs.
 
+![Infographie : les 4 points clés de l’article « Pourquoi les Grandes Entreprises Privilégient la Prospection Externalisée pour Trouver leurs Fournisseurs »](/images/blog/prospection-externalisee-grandes-entreprises-points-cles.webp)
+
 ## Définition de la Prospection Externalisée
 
 La prospection externalisée consiste à confier la recherche et la sélection de fournisseurs à des tiers spécialisés. En externalisant cette tâche, les grandes entreprises bénéficient d’une expertise dédiée sans alourdir leur structure interne. Cette approche permet d’accéder à un réseau étendu de fournisseurs potentiels, optimisant ainsi le processus de sélection.
@@ -58,6 +60,8 @@ Externaliser la prospection permet une adaptation rapide aux fluctuations du mar
 ### Concentration sur les Compétences Clés
 
 En externalisant la recherche de fournisseurs, vous pouvez vous concentrer sur vos compétences principales. Cela améliore l’efficacité de vos équipes internes et renforce votre avantage concurrentiel. Vous optimisez ainsi vos ressources internes pour des activités à forte valeur ajoutée.
+
+![Chiffre clé : Plus de 70 % des grandes entreprises préfèrent externaliser la prospection de leurs fournisseurs.](/images/blog/prospection-externalisee-grandes-entreprises-chiffre-cle.webp)
 
 ## Études de Cas et Témoignages
 

@@ -19,6 +19,8 @@ Dans cet article, vous découvrirez comment optimiser votre stratégie pour atti
 
 Vous êtes sur le point de découvrir des méthodes qui changeront la donne pour votre cabinet de conseil. Entrez dans le détail avec nos astuces pratiques ci-dessous.
 
+![Infographie : les 5 points clés de l’article « 5 Astuces pour des Rendez-Vous Qualifiés en BtoB »](/images/blog/5-astuces-pour-des-rendez-vous-qualifies-en-btob-points-cles.webp)
+
 ## L’Importance des Rendez-Vous Qualifiés
 
 Les rendez-vous qualifiés optimisent votre temps et vos ressources. En ciblant des prospects pertinents, vous augmentez significativement vos taux de conversion. Par exemple, un cabinet de conseil qui se concentre sur des leads qualifiés peut observer une hausse de 30 % de ses contrats signés.
@@ -70,6 +72,8 @@ Définissez des critères précis pour évaluer vos prospects. Considérez le se
 ### Évaluation des Besoins
 
 Analysez les besoins spécifiques de chaque prospect pour garantir la pertinence de vos services. Posez des questions ciblées lors des premiers échanges pour identifier les défis et objectifs. Par exemple, découvrez si un prospect cherche à optimiser ses processus internes ou à développer de nouveaux marchés. Cette évaluation permet de personnaliser votre approche et d’augmenter les chances de conversion.
+
+![Chiffre clé : Plus de 60 % des cabinets de conseil ont du mal à remplir leur calendrier avec des rendez-vous qualifiés.](/images/blog/5-astuces-pour-des-rendez-vous-qualifies-en-btob-chiffre-cle.webp)
 
 ## Suivi et Conversion des Rendez-Vous
 

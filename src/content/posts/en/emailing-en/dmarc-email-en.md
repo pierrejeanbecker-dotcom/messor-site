@@ -18,6 +18,8 @@ excerpt: "✉️ Do your emails end up in the SPAM folder? 💻 Lost control of 
 
 **DMARC might be the answer to your questions. It’s a good thing we’re talking about it today!**
 
+![Infographic: the 3 key takeaways from “Why use DMARC in Email ? How to configure it?”](/images/blog/dmarc-email-en-points-cles.webp)
+
 ![Man holding settings for computer, phone and tablet](/medias/elementor/thumbs/man-holding-settings-computer-phone-tablet-PhotoRoom-PhotoRoom-q467rn5e880oy4r59o0311vyuxzetgxnryfjf4eom8.png)
 
 DMARC is an acronym for **Domain\_based Message Authentication, Reporting & Conformance.**
@@ -27,6 +29,8 @@ It is part of the famous triptych: **SPF / DKIM / DMARC**: these security protoc
 As you know, cybercriminals send billions of emails a day. In order to gain your trust, they may try to forge the address in the « From » field of an email. The email will then appear to come from the spoofed organization or domain.
 
 This is where DMARC comes in.
+
+![Messor tip: Setting up DMARC protects your domain from spoofing and improves the deliverability of your mailings.](/images/blog/dmarc-email-en-conseil.webp)
 
 ## DMARC is a standard email authentication method.
 

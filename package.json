@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build && node scripts/build-htaccess.mjs",
     "preview": "astro preview",
-    "check-links": "node scripts/check-links.mjs"
+    "check-links": "node scripts/check-links.mjs",
+    "illustrations": "node scripts/blog-illustrations.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.1",
@@ -16,5 +17,9 @@
     "marked": "^18.0.14",
     "rehype-raw": "^7.0.0",
     "unist-util-visit": "^5.1.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1",
+    "sharp": "^0.35.5"
   }
 }

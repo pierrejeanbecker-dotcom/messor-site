@@ -19,6 +19,8 @@ La prospection commerciale est un enjeu stratégique majeur, mais elle représen
 
 Dans cet article, nous allons explorer les avantages d’un service de prospection externalisé pour les cabinets de conseil.
 
+![Infographie : les 5 points clés de l’article « Cabinets de conseil : les avantages d’un service de prospection externalisé »](/images/blog/cabinets-de-conseil-les-avantages-dun-service-de-prospection-externalise-points-cles.webp)
+
 ## Gain de temps et concentration sur le cœur de métier
 
 Le premier bénéfice d’une externalisation de la prospection est le gain de temps considérable pour les consultants.
@@ -48,6 +50,8 @@ Les cabinets de conseil peuvent **ajuster la capacité du prestataire en fonctio
 Cela permet de mieux gérer les périodes de forte demande sans avoir à engager et former du personnel interne supplémentaire. De plus, l’externalisation permet d’accroître rapidement la taille des équipes de prospection lorsque cela est nécessaire.
 
 Que ce soit pour lancer un nouveau service, pénétrer un nouveau marché ou simplement soutenir une croissance rapide, la scalabilité offerte par un service externe est un atout majeur pour tout cabinet cherchant à augmenter ses revenus.
+
+![Le conseil Messor : Externaliser la prospection permet d’ajuster la capacité du prestataire à vos besoins et à la saisonnalité de votre activité.](/images/blog/cabinets-de-conseil-les-avantages-dun-service-de-prospection-externalise-conseil.webp)
 
 ## Réduction des coûts
 

@@ -600,6 +600,9 @@ def main():
                     body = "\n\n".join(p for p in parts if p)
             else:
                 body = to_md(content)
+            if kind == "posts":
+                # Navigation Elementor recopiée en fin d'article (Découvrir Messor / Le Blog / Article suivant)
+                body = re.split(r'(?:<div class="cols cols-2">\s*<div>\s*)?#### \[(?:Découvrir Messor|About Messor)\]', body)[0].rstrip()
             dest = out_dir / (path + ".md")
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(frontmatter(fm) + "\n\n" + body + "\n", encoding="utf-8")

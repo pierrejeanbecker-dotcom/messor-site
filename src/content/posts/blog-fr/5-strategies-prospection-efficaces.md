@@ -19,6 +19,8 @@ Les stratégies de prospection les plus efficaces pour les services B2B évoluen
 
 Nous savons combien il peut être difficile de naviguer dans ce paysage en perpétuelle évolution. Entrez dans le détail avec nos astuces pratiques ci-dessous et boostez votre prospection dès aujourd’hui.
 
+![Infographie : les 5 points clés de l’article « Les 5 Stratégies de Prospection qui Fonctionnent le Mieux pour les Services B2B en 2024 »](/images/blog/5-strategies-prospection-efficaces-points-cles.webp)
+
 ## Utilisation du Marketing de Contenu
 
 Le marketing de contenu capte l’attention de vos prospects et renforce votre crédibilité. En 2024, il s’impose comme une stratégie essentielle pour les services B2B.
@@ -72,6 +74,8 @@ Segmenter votre base de données permet d’envoyer des messages personnalisés.
 Concevoir des emails engageants nécessite un contenu pertinent et attrayant. Utilisez des lignes d’objet percutantes pour capter l’attention dès le début. Intégrez des appels à l’action clairs et des visuels adaptés pour encourager l’interaction. Personnalisez le message selon les segments pour renforcer la connexion avec vos prospects. Testez différentes mises en page et contenus pour optimiser les performances et maximiser vos taux de clics.
 
 Avec ces bases, vous êtes prêt à optimiser vos campagnes de marketing par email et à améliorer vos résultats en prospection B2B.
+
+![Chiffre clé : Intégrer des outils d’automatisation réduit les tâches manuelles de 40 % et améliore la précision des données.](/images/blog/5-strategies-prospection-efficaces-chiffre-cle.webp)
 
 ## Partenariats Stratégiques
 

@@ -19,6 +19,8 @@ Dans cet article, vous découvrirez comment mettre en place une stratégie omnic
 
 Voyons maintenant comment l’omnicanal peut vous aider à atteindre vos objectifs.
 
+![Infographie : les 5 points clés de l’article « Omnicanal : La Stratégie de Prospection Incontournable pour Atteindre les Décideurs en Entreprise »](/images/blog/strategie-prospection-omnicanal-points-cles.webp)
+
 ## Qu’Est-Ce Que l’Omnicanal ?
 
 L’omnicanal désigne une approche intégrée de la prospection commerciale utilisant divers canaux de communication. En combinant les interactions en ligne et hors ligne, vous créez une expérience fluide pour les décideurs en entreprise.
@@ -80,6 +82,8 @@ Utiliser les bons outils facilite la gestion de votre approche omnicanal. Voici 
 Assurez-vous que ces outils sont compatibles et intégrés pour offrir une vue unifiée de vos interactions. Investissez dans des technologies évolutives pour soutenir la croissance de votre prospection omnicanal.
 
 Avec ces outils en place, votre stratégie omnicanal gagne en efficacité et en cohérence.
+
+![Chiffre clé : Une campagne intégrée peut augmenter les taux de réponse jusqu’à 50 %.](/images/blog/strategie-prospection-omnicanal-chiffre-cle.webp)
 
 ## Les Avantages de l’Approche Omnicanal
 

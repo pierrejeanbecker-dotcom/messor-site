@@ -10,9 +10,12 @@ author: "Pierre-Jean BECKER"
 category: "top-articles"
 categories: ["top-articles"]
 excerpt: "Les agents IA transforment la prospection B2B en profondeur — identification des leads, personnalisation, relances automatisées. Mais ils soulèvent aussi de vraies questions sur la confidentialité des données…"
+image: "/images/blog/agents-ia-prospection-commerciale-points-cles.webp"
 ---
 
 La prospection commerciale est en pleine mutation. Après les CRM intelligents, les séquences automatisées et le social selling, une nouvelle vague arrive : les **agents IA**. Et cette fois, ce n’est pas un simple outil de plus dans la stack — c’est une refonte profonde de la façon dont on génère du pipeline commercial.
+
+![Infographie : les 5 points clés de l’article « Agents IA et prospection commerciale : comment ils transforment la vente B2B »](/images/blog/agents-ia-prospection-commerciale-points-cles.webp)
 
 ## Agents IA : de quoi parle-t-on vraiment ?
 
@@ -45,6 +48,8 @@ Cette capacité de suivi systématique et sans faille est probablement l’une d
 ### Qualification et scoring : prioriser l’effort commercial
 
 Les agents IA ne se contentent pas de générer des interactions — ils les analysent. Chaque signal de réponse (ou d’absence de réponse), chaque clic, chaque échange est interprété pour affiner le score de maturité du prospect. Le commercial reçoit ainsi une liste priorisée, avec les comptes les plus chauds en tête, et peut concentrer son énergie là où elle aura le plus d’impact.
+
+![Chiffre clé : 80 % des deals se closent après le 5e point de contact.](/images/blog/agents-ia-prospection-commerciale-chiffre-cle.webp)
 
 ## Le vrai sujet : la confidentialité des données d’entreprise
 

@@ -29,6 +29,8 @@ Dans cet article, nous vous expliquerons toutes **les choses à savoir pour pros
 </div>
 </div>
 
+![Infographie : les 3 points clés de l’article « Tout savoir sur le Cold Calling B2B en Allemagne »](/images/blog/cold-calling-b2b-allemagne-points-cles.webp)
+
 ## Les lois sur la prospection B2B en Allemagne
 
 Avant d’entrer dans le vif du sujet, il est important de bien comprendre les lois en Allemagne concernant la sécurité et confidentialité des utilisateurs. Comme précisé au-dessus, **les cold calling B2B en Allemagne ne sont** **pas illégaux ou interdits**mais il faudra bien respecter quelques paramètres.
@@ -87,6 +89,8 @@ Il faudra alors s’attarder à ce que les points suivants soient pris en consid
 
 Pour résumer, **la distinction entre la**[**UWG**](https://www.gesetze-im-internet.de/uwg_2004/)**et la**[**DSGVO**](https://dsgvo-gesetz.de/)réside dans le fait que la [**DSGVO**](https://dsgvo-gesetz.de/)concerne le **traitement et la collecte des données personnelles**, tandis que la [**UWG**](https://www.gesetze-im-internet.de/uwg_2004/)concerne le **processus de prise de contact avec une personne**, que cela soit par mail ou par téléphone.
 
+![Le conseil Messor : En Allemagne, le cold calling B2B n’est ni illégal ni interdit : il faut simplement respecter quelques règles.](/images/blog/cold-calling-b2b-allemagne-conseil.webp)
+
 ## La prospection téléphonique B2B en Allemagne
 
 <div class="cols cols-2">
@@ -124,29 +128,3 @@ Pour un peu plus de sûreté, **vous pouvez vérifier si une des raisons suivant
 Vous souhaitez trouver de **nouveaux prospects et signer de nouveaux clients en Allemagne**, mais vous ne savez pas comment vous y prendre ? Nous sommes là pour vous ! Pour en savoir plus sur **nos services de prospection**, cliquez ici:
 
 <p class="btn-row"><a class="btn" href="/accompagnement-prospection-multicanal">En savoir + sur nos campagnes de prospection</a></p>
-
-<div class="cols cols-2">
-<div>
-
-#### [Découvrir Messor](/decouvrir-messor-2)
-
-</div>
-<div>
-
-#### [Le Blog](/blog)
-
-</div>
-</div>
-
-<div class="cols cols-2">
-<div>
-
-<p class="btn-row"><a class="btn" href="/top-articles/7-raisons-externaliser-prospection-commerciale">Article suivant</a></p>
-
-</div>
-<div>
-
-<p class="btn-row"><a class="btn" href="/emailing/protocole-dmarc">Article précédent</a></p>
-
-</div>
-</div>

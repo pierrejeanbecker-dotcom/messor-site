@@ -8,7 +8,12 @@ export default function rehypeExternal() {
         node.properties.target = '_blank';
         node.properties.rel = 'noopener';
       }
-      if (node.tagName === 'img') node.properties.loading = 'lazy';
+      if (node.tagName === 'img') {
+        node.properties.loading = 'lazy';
+        node.properties.decoding = 'async';
+        // Illustrations générées (1200 × 675) : dimensions connues, pas de saut de mise en page
+        if (String(node.properties.src || '').includes('/images/blog/')) Object.assign(node.properties, { width: 1200, height: 675 });
+      }
     });
   };
 }

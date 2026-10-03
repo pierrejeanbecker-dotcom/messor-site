@@ -44,6 +44,8 @@ Messor est une [agence](/top-articles/7-raisons-externaliser-prospection-commerc
 </div>
 </div>
 
+![Infographie : les 5 points clés de l’article « Le Cold Emailing en 2025 : tout comprendre »](/images/blog/tout-savoir-sur-le-cold-emailing-points-cles.webp)
+
 ## Le Cold Emailing, c'est quoi ?
 
 Je te propose cette définition du cold emailing :
@@ -121,6 +123,8 @@ Il ne faut pas envoyer d’ emails les week-end à des suspects (ni vos prospect
 Idem pour les horaires des envois : on essayera là aussi de se **calquer aux horaires de travail** d’une **journée ouvrée (8h et 19h)**
 
 ![](/medias/2023/07/106-300x300.webp)
+
+![Le conseil Messor : Les messageries notent chaque email selon la réputation du domaine, celle de l’IP d’envoi et le contenu du message.](/images/blog/tout-savoir-sur-le-cold-emailing-conseil.webp)
 
 ## Comment envoyer davantage de messages pour accélérer sa prospection ?
 
@@ -241,25 +245,3 @@ Il est plus judicieux pour augmenter le taux d’ouverture de son e mail de cré
 Les utilisateurs feront le lien , mais sans que cela n’impacte négativement la marque, l’agence, ou le cabinet de conseil. Par exemple « domaine1.net » ou « notifications-domain1.com ».
 
 ![](/medias/2023/07/collaboration-300x300.webp)
-
-<div class="cols cols-2">
-<div>
-
-#### [Découvrir Messor](/decouvrir-messor-2)
-
-</div>
-<div>
-
-#### [Le Blog](/blog)
-
-</div>
-</div>
-
-<p class="btn-row"><a class="btn" href="/cold-calling/comment-mettre-en-place-une-cellule-de-cold-calling-en-interne">Article précédent</a></p>
-
-## Contactez-nous !
-
-Des questions sur [notre expertise en cold emailing](/mail-prospection-b2b) ? Ou sur nos services [d’acquisition de talents](/recruter-des-talents), [prospects](/accompagnement-prospection-multicanal) et de [clients](/developpement-commercial-externalise) ? Retrouvez toutes les informations utiles dans notre [FAQ](/decouvrir-messor-2#faq).
-[Contactez-nous](/contactez-nous) pour un entretien personnalisé afin de découvrir les solutions Messor peut vous apporter !
-
-<p class="btn-row"><a class="btn" href="/contactez-nous">Contactez-nous</a></p>

@@ -18,9 +18,13 @@ excerpt: "💡How can we reduce the number of unmet video/team appointments? Wit
 
 With the rise of home working and the generalization of video meetings, commercial travel has been greatly reduced. So much time saved?
 
+![Infographic: the 3 key takeaways from “Power Automate to avoid customer no-shows in Teams meetings”](/images/blog/power-automate-avoid-no-show-teams-points-cles.webp)
+
 Not quite, because at the same time the number of appointments not honored by prospects or customers is exploding…and the minutes spent waiting in vain for your contacts are accumulating.
 
 ![👉](https://s.w.org/images/core/emoji/14.0.0/svg/1f449.svg) With Microsoft Power Automate, you can configure in a few minutes the automatic sending of an email before (1H? 1day…you decide) some of your events. ![🤩](https://s.w.org/images/core/emoji/14.0.0/svg/1f929.svg)
+
+![Messor tip: An automatic reminder email before each Teams meeting is a simple way to reduce no-shows.](/images/blog/power-automate-avoid-no-show-teams-conseil.webp)
 
 ## How to do it?
 

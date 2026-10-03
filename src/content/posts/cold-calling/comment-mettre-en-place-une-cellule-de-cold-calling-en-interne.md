@@ -19,6 +19,8 @@ Cependant, lorsque l’on débute dans la prospection, il est difficile de savoi
 
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" height="686" loading="lazy" src="https://www.youtube.com/embed/Fx_Rtv7tUj0?start=10&amp;feature=oembed" title="Comment mettre en place une cellule de cold calling en interne ? - MESSOR" width="1220"></iframe>
 
+![Infographie : les 5 points clés de l’article « Cellule de cold calling en interne : comment la mettre en place ? »](/images/blog/comment-mettre-en-place-une-cellule-de-cold-calling-en-interne-points-cles.webp)
+
 ## Etape 1: Trouvez une salle pour mettre votre équipe commerciale à l’aise
 
 Optez pour une pièce lumineuse, assez calme et grande.
@@ -36,6 +38,8 @@ Il faudra donner du matériel pour travailler à votre commercial. C’est simle
 *Lusha, Scrape Box, Zapier, Mozenda, Zoho, SalesNavigator, Cloudtalk, Sellsy, DataMiner, Scrapy, Parsehub, Simplescraper, Scrapinghub, talkdesk, Diffbot, Teamleader, Dynamics 365, Hubspot, Twilio, Aircall, Freshsale, Bitrix24, Pipedrive, Goto, Salesforce, …*
 
 C’est simple, il suffit de choisir le CRM, les outils de Scrapping et d’appels qui correspondent le plus à vos besoins !
+
+![Le conseil Messor : Le cold calling reste l’un des outils de prospection les plus efficaces, mais monter une cellule en interne n’est pas aussi simple qu’il n’y paraît.](/images/blog/comment-mettre-en-place-une-cellule-de-cold-calling-en-interne-conseil.webp)
 
 ## Etape 5: La formation en cold calling
 

@@ -19,6 +19,8 @@ Dans cet article, vous découvrirez pourquoi le suivi des leads est aussi import
 
 Vous êtes sur le point de comprendre comment un suivi rigoureux peut amplifier vos efforts de prospection et booster vos résultats. Entrez dans le détail avec nos astuces pratiques ci-dessous.
 
+![Infographie : les 4 points clés de l’article « Pourquoi le Suivi des Leads Est Aussi Important que la Prospection Elle-Même »](/images/blog/pourquoi-le-suivi-des-leads-est-aussi-important-que-la-prospection-elle-meme-points-cles.webp)
+
 ## L’Importance de la Prospection dans la Génération de Leads
 
 La prospection est essentielle pour alimenter le pipeline de ventes. Elle permet de découvrir de nouveaux prospects, garantissant un flux continu de leads à convertir.
@@ -52,6 +54,8 @@ En combinant prospection et suivi des leads, vous augmentez vos opportunités de
 ### Optimisation du Retour sur Investissement
 
 Le suivi des leads optimise votre retour sur investissement en maximisant l’efficacité de vos efforts de prospection. En ciblant les leads les plus prometteurs, vous réduisez les coûts liés aux démarches inutiles. Les entreprises qui investissent dans un bon suivi des leads voient leur ROI augmenter jusqu’à 30 %.
+
+![Chiffre clé : Selon Salesforce, les leads bien suivis sont 85 % plus susceptibles de se convertir en clients.](/images/blog/pourquoi-le-suivi-des-leads-est-aussi-important-que-la-prospection-elle-meme-chiffre-cle.webp)
 
 ## Meilleures Pratiques pour un Suivi Efficace des Leads
 

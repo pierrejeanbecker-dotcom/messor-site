@@ -18,6 +18,8 @@ As we have already seen in our [**previous article**](/en/growth-haking-en/6-rea
 
 However, there is no question of doing business with the first person who comes along, otherwise your company will suffer. We have gathered for you **the most important points to validate before starting a collaboration with an external company for commercial prospecting**.
 
+![Infographic: the 5 key takeaways from “5 things to check before outsourcing your sales prospecting”](/images/blog/5-things-check-outsourcing-sales-points-cles.webp)
+
 ## 1. Check the company’s reputation
 
 Before entrusting your commercial prospecting to an external company, it is important to check its reputation and its experience in the field. It is recommended to ask for references and to contact current or past clients to get their opinion, taking care to avoid confirmation bias. Consider checking Twitter, Google, Linkedin… The website [**B-reputation**](http://b-reputation.com/) even tells you for free how many disputes the company has: useful to avoid some disillusionment! The website [**archive.org**](http://archive.org/) allows you to go back in time and browse an archived version of the website.
@@ -27,6 +29,8 @@ Before entrusting your commercial prospecting to an external company, it is impo
 It is important to ensure that the professionals in charge of business development have the necessary skills and experience to carry out this task. In commercial prospecting, we can see everything: from a specialized profile of a commercial executive with 5 years of higher education to a multi-task resource based in Madagascar. If you are offered a resource at an unbeatable price, there is surely a catch!
 
 ![collaboration plan b2b prospection externe](/medias/2023/04/collaboration-plan-b2b-prospection-externe-768x768.png)
+
+![Messor tip: Before starting any collaboration, check that the company you plan to work with is really the right one for your business.](/images/blog/5-things-check-outsourcing-sales-conseil.webp)
 
 ## 3. Clearly define your goals and expectations
 

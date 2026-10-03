@@ -19,6 +19,8 @@ Les meilleures pratiques de cold mailing sont essentielles pour capter l’atten
 
 Dans cet article, vous découvrirez des stratégies éprouvées et des astuces pratiques pour améliorer vos emails à froid. Nous allons explorer les éléments clés qui feront la différence et vous aideront à atteindre vos objectifs commerciaux. Entrez dans le détail avec nos conseils experts ci-dessous.
 
+![Infographie : les 5 points clés de l’article « Les Meilleures Stratégies de Cold Mailing »](/images/blog/meilleures-strategies-cold-mailing-points-cles.webp)
+
 ## Comprendre le Cold Mailing
 
 Le cold mailing consiste à envoyer des emails non sollicités à des prospects potentiels. Cette méthode vise à générer des opportunités commerciales pour les cabinets de conseil et les ESN. Actuellement, 70 % des emails à froid n’obtiennent aucune réponse[^1]. Comprendre les mécanismes du cold mailing permet d’optimiser les campagnes et d’augmenter le taux de réponse.
@@ -96,6 +98,8 @@ Adaptez chaque email impactant au contexte du prospect. Incluez son nom, son ent
 ### Techniques d’Accroche
 
 Créez des objets accrocheurs pour vos emails impactants afin d’augmenter les taux d’ouverture. Commencez par une question ou une statistique marquante. Mettez en avant un avantage clé dès le début de l’email. Utilisez un langage concis pour maintenir l’intérêt. Des accroches efficaces encouragent les prospects à lire et à interagir avec votre message.
+
+![Chiffre clé : 70 % des emails à froid restent sans réponse.](/images/blog/meilleures-strategies-cold-mailing-chiffre-cle.webp)
 
 ## Optimisation des Campagnes
 

@@ -28,6 +28,8 @@ Vous n’êtes pas sans savoir que les cybercriminels envoient des milliards d�
 
 C’est là que DMARC intervient.
 
+![Infographie : les 3 points clés de l’article « Pourquoi utiliser le protocole DMARC ? Comment le configurer? »](/images/blog/protocole-dmarc-points-cles.webp)
+
 ## DMARC est une méthode d’authentification de courriels standard.
 
 Ce protocole permet aux administrateurs de messagerie de :
@@ -43,6 +45,8 @@ Paramétrer finement et comprendre toutes les fonctionnalités de DMARC est un t
 [![20945887-ai-1024x683 compressed](/medias/elementor/thumbs/20945887-ai-1024x683-compressed-q46l2lss369qlrvnhk934bxcx8u5atlmhvabjztr34.png)](/emailing/tout-savoir-sur-emailing-en-2023)
 
 *Accéder à notre article sur l’emailing et la délivrabilité*
+
+![Le conseil Messor : Mettre en place DMARC protège votre domaine des usurpations et améliore la délivrabilité de vos campagnes.](/images/blog/protocole-dmarc-conseil.webp)
 
 ## Comment auditer sa configuration mail ?
 

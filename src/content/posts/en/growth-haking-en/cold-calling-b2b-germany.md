@@ -18,6 +18,8 @@ Although at first glance a simple Google search may seem **to indicate that B2B 
 
 In this article, we will explain all the **things you need to know to prospect** in Europe’s largest economy while **respecting the norms on user privacy**. (GDPR)
 
+![Infographic: the 3 key takeaways from “B2B Cold Calling in Germany : everything you need to know !”](/images/blog/cold-calling-b2b-germany-points-cles.webp)
+
 ## The laws on B2B prospecting in Germany
 
 Before getting into the nitty-gritty of the subject, it is important to understand the laws in Germany regarding user security and privacy. As mentioned above, **B2B cold calling in Germany is not illegal or forbidden but some parameters must be respected**.
@@ -65,6 +67,8 @@ To summarize, the **distinction between the**[**UWG**](https://www.gesetze-im-in
 [![](/medias/2023/03/rgpd-rules-private-data-1024x1024.png)](/en/emailing-en/dmarc-email-en)
 
 *[Why use DMARC in Email ? How to configure it?](/en/emailing-en/dmarc-email-en)*
+
+![Messor tip: B2B cold calling in Germany is not illegal or forbidden, but some rules must be respected.](/images/blog/cold-calling-b2b-germany-conseil.webp)
 
 ## B2B cold calling in Germany
 
