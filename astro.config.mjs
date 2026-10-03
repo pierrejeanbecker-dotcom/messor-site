@@ -13,7 +13,8 @@ export default defineConfig({
   site: 'https://messor.fr',
   base,
   trailingSlash: 'never',
-  build: { format: 'file' },
+  // Styles intégrés dans chaque page : rien ne bloque le premier affichage (CSS ~9 Ko)
+  build: { format: 'file', inlineStylesheets: 'always' },
   integrations: [sitemap({
     i18n: { defaultLocale: 'fr', locales: { fr: 'fr-FR', en: 'en-GB' } },
   })],

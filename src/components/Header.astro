@@ -42,7 +42,16 @@ const isCurrent = (href: string) => href === current;
 
 <script>
   const header = document.getElementById('site-header')!;
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  // Lecture de la position puis écriture dans la frame suivante (pas de recalcul de mise en page forcé)
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+      ticking = false;
+    });
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 

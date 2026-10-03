@@ -17,7 +17,7 @@ const OUT = join(ROOT, 'public/images/blog');
 // Polices et image intégrées en data URI (une page générée en mémoire ne peut pas lire les fichiers locaux)
 const dataUri = (file, mime) => `data:${mime};base64,${readFileSync(join(ROOT, file)).toString('base64')}`;
 const FONT = (name) => dataUri(`public/fonts/${name}.woff2`, 'font/woff2');
-const BRUEGEL = `data:image/jpeg;base64,${(await sharp(join(ROOT, 'public/images/bruegel-les-moissonneurs.webp')).resize(1400).jpeg({ quality: 70 }).toBuffer()).toString('base64')}`;
+const BRUEGEL = `data:image/jpeg;base64,${(await sharp(join(ROOT, 'public/images/bruegel-les-moissonneurs-2200.webp')).resize(1400).jpeg({ quality: 70 }).toBuffer()).toString('base64')}`;
 const filter = process.argv[2] || '';
 // Choix relus à la main (prioritaires) : scripts/blog-illustrations.json
 const PICKS = JSON.parse(readFileSync(join(ROOT, 'scripts/blog-illustrations.json'), 'utf8'));

@@ -11,7 +11,7 @@ const cat = CATEGORIES.find((c) => c.slug === d.category);
 const date = d.date.toLocaleDateString(t.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 <a class="post-card" href={url(d.permalink)}>
-  <div class:list={['thumb', { fallback: !d.image }]} style={`background-image:url("${url(d.image || '/images/bruegel-les-moissonneurs.webp')}")`}></div>
+  <div class:list={['thumb', { fallback: !d.image }]} style={`background-image:url("${url(d.image || '/images/bruegel-les-moissonneurs-640.webp')}")`}></div>
   <div class="body">
     <div class="meta">{cat && cat.slug !== 'blog-fr' ? `${cat.name} · ` : ''}{date}</div>
     <h3>{d.title}</h3>
