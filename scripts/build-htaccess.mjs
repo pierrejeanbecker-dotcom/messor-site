@@ -6,12 +6,15 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const base = (process.env.SITE_BASE || '/').replace(/\/?$/, '/');
 const prod = base === '/';
+// Redirections en adresse complète (sinon Apache chez OVH ajoute « :443 »)
+const ORIGIN = process.env.SITE_ORIGIN || 'https://messor.fr';
+const to = (p) => ORIGIN + base + p.replace(/^\//, '');
 const redirects = JSON.parse(readFileSync('src/data/redirects.json', 'utf8'));
 const esc = (s) => s.replace(/^\//, '').replace(/[.+?()[\]{}^$|\\]/g, '\\$&');
 
 const lines = [
   '# Généré automatiquement par scripts/build-htaccess.mjs — ne pas modifier à la main.',
-  'Options -Indexes',
+  'Options -Indexes -MultiViews',
   'DirectoryIndex index.html',
   'DirectorySlash Off',
   `ErrorDocument 404 ${base}404.html`,
@@ -25,7 +28,7 @@ if (!prod) {
   lines.push(
     '# Dossier de préproduction appelé sans barre finale',
     `<If "%{REQUEST_URI} == '${base.replace(/\/$/, '')}'">`,
-    '  DirectorySlash On',
+    `  Redirect 301 ${base.replace(/\/$/, '')} ${to('')}`,
     '</If>',
     '',
   );
@@ -43,22 +46,22 @@ if (prod) {
 
 lines.push(
   '# Anciennes adresses WordPress',
-  'RewriteRule ^wp-content/uploads/(.*)$ medias/$1 [R=301,L]',
+  `RewriteRule ^wp-content/uploads/(.*)$ ${to('medias/')}$1 [R=301,L]`,
   ...Object.entries(redirects).map(
-    ([from, to]) => `RewriteRule ^${esc(from)}/?$ ${base}${to.replace(/^\//, '')} [R=301,L,NC]`,
+    ([from, dest]) => `RewriteRule ^${esc(from)}/?$ ${to(dest)} [R=301,L,NC]`,
   ),
   '',
   '# /index.html -> /',
   'RewriteCond %{THE_REQUEST} \\s/+(.*/)?index\\.html[\\s?] [NC]',
-  'RewriteRule ^ /%1 [R=301,L,NE]',
+  `RewriteRule ^ ${ORIGIN}/%1 [R=301,L,NE]`,
   '',
   '# Adresses sans « .html » : /page.html -> /page',
   'RewriteCond %{THE_REQUEST} \\s/+(.+?)\\.html[\\s?] [NC]',
-  'RewriteRule ^ /%1 [R=301,L,NE]',
+  `RewriteRule ^ ${ORIGIN}/%1 [R=301,L,NE]`,
   '',
   '# Barre oblique finale superflue : /page/ -> /page',
   'RewriteCond %{REQUEST_URI} !^' + base.replace(/\/$/, '') + '/?$',
-  'RewriteRule ^(.+)/$ ' + base + '$1 [R=301,L]',
+  `RewriteRule ^(.+)/$ ${to('')}$1 [R=301,L]`,
   '',
   '# Accueil (y compris le dossier sans barre finale)',
   'RewriteRule ^$ index.html [L]',
