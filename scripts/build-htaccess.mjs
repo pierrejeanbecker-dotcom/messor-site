@@ -10,6 +10,10 @@ const prod = base === '/';
 const ORIGIN = process.env.SITE_ORIGIN || 'https://messor.fr';
 const to = (p) => ORIGIN + base + p.replace(/^\//, '');
 const redirects = JSON.parse(readFileSync('src/data/redirects.json', 'utf8'));
+// Garde-fou : une redirection vers sa propre adresse créerait une boucle infinie
+for (const [from, dest] of Object.entries(redirects)) {
+  if (from.replace(/\/$/, '') === dest.replace(/\/$/, '')) throw new Error(`Redirection en boucle : ${from} -> ${dest}`);
+}
 const esc = (s) => s.replace(/^\//, '').replace(/[.+?()[\]{}^$|\\]/g, '\\$&');
 
 const lines = [
@@ -47,7 +51,7 @@ if (prod) {
 lines.push(
   '# Anciennes adresses WordPress',
   ...Object.entries(redirects).map(
-    ([from, dest]) => `RewriteRule ^${esc(from)}/?$ ${to(dest)} [R=301,L,NC]`,
+    ([from, dest]) => `RewriteRule ^${esc(from)}/?$ ${to(dest)} [R=301,L]`,
   ),
   `RewriteRule ^wp-content/uploads/(.*)$ ${to('medias/')}$1 [R=301,L]`,
   '',
