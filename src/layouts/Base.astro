@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactBand from '../components/ContactBand.astro';
+import { type Lang } from '../data/site';
+import { url } from '../lib/url';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: Lang;
+  path: string;            // adresse publique de la page, ex. /blog
+  alternate?: string;      // même page dans l'autre langue
+  image?: string;
+  type?: 'website' | 'article';
+  contactBand?: boolean;
+  contactTitle?: string;
+  contactText?: string;
+}
+const { title, description = '', lang, path, alternate, image, type = 'website', contactBand = true, contactTitle, contactText } = Astro.props;
+const SITE = 'https://messor.fr';
+const canonical = SITE + (path === '/' ? '/' : path);
+const ogImage = SITE + (image || '/images/bruegel-les-moissonneurs.webp');
+const preview = import.meta.env.BASE_URL !== '/';
+const alts = alternate
+  ? [{ lang, href: canonical }, { lang: lang === 'fr' ? 'en' : 'fr', href: SITE + alternate }]
+  : [];
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  {description && <meta name="description" content={description} />}
+  <link rel="canonical" href={canonical} />
+  {alts.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
+  {preview && <meta name="robots" content="noindex, nofollow" />}
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={title} />
+  {description && <meta property="og:description" content={description} />}
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_GB'} />
+  <meta property="og:site_name" content="Messor" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href={url('/favicon.png')} />
+  <link rel="preload" href={url('/fonts/dm-sans-latin.woff2')} as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href={url('/fonts/dm-serif-display-latin.woff2')} as="font" type="font/woff2" crossorigin />
+  <slot name="head" />
+</head>
+<body>
+  <Header lang={lang} alternate={alternate} current={path} />
+  <main>
+    <slot />
+  </main>
+  {contactBand && <ContactBand lang={lang} title={contactTitle} text={contactText} />}
+  <Footer lang={lang} />
+</body>
+</html>

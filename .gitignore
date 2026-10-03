@@ -1,23 +1,5 @@
-# Ne jamais versionner les identifiants WordPress
-wp-config.php
-.htpasswd
-
-# Coeur WordPress (géré par les mises à jour WordPress, pas par Git)
-/wp-admin/
-/wp-includes/
-/wp-*.php
-/xmlrpc.php
-/index.php
-/license.txt
-/readme.html
-
-# Contenu généré / volumineux
-wp-content/uploads/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/backup*/
-wp-content/ai1wm-backups/
-wp-content/updraft/
-wp-content/debug.log
-*.log
+node_modules/
+dist/
+.astro/
 .DS_Store
+*.log

@@ -1,0 +1,52 @@
+---
+import { CONTACT, NAV, UI, type Lang } from '../data/site';
+import { url } from '../lib/url';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = UI[lang];
+const groups = NAV[lang].filter((i) => i.children);
+const singles = NAV[lang].filter((i) => !i.children);
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <a class="brand" href={url(t.home)}>
+          <img src={url('/images/logo-messor.png')} alt="Messor" width="32" height="32" loading="lazy" />
+          <span class="brand-name">M<span>€</span>SSOR</span>
+        </a>
+        <p class="about">
+          {CONTACT.address.join(', ')}<br />
+          <a href={CONTACT.phoneHref}>{CONTACT.phone}</a> · <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+        </p>
+      </div>
+      {groups.map((g) => (
+        <div>
+          <h3>{g.label}</h3>
+          <ul>{g.children!.map((c) => <li><a href={url(c.href)}>{c.label}</a></li>)}</ul>
+        </div>
+      ))}
+      <div>
+        <h3>Messor</h3>
+        <ul>
+          {singles.map((s) => <li><a href={url(s.href!)}>{s.label}</a></li>)}
+          <li><a href={url(t.jobs.href)}>{t.jobs.label}</a></li>
+          {lang === 'fr' && <li><a href={url('/offres-emploi-conseil')}>Offres d’emploi Conseil</a></li>}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="brand-name">M<span>€</span>SSOR</span>
+        <span class="tag">{t.tagline}</span>
+      </div>
+      <div class="footer-legal">
+        <a href={url(t.legal.href)}>{t.legal.label}</a>
+        <a href={url(t.privacy.href)}>{t.privacy.label}</a>
+        <span>© {year} Messor</span>
+      </div>
+    </div>
+  </div>
+</footer>

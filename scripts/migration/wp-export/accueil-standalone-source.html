@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messor — L'agence qui moissonne vos prospects B2B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("13833438-7cd0-4239-96da-cf41b2294356") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("8be24214-ef1b-49ba-9c24-3b3ebc1dacf7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("bac1158a-699f-439f-b8fd-357cd08cda7f") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("099896bd-dd89-4b16-8371-81d3c1d7588e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("bac1158a-699f-439f-b8fd-357cd08cda7f") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("099896bd-dd89-4b16-8371-81d3c1d7588e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("bac1158a-699f-439f-b8fd-357cd08cda7f") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("099896bd-dd89-4b16-8371-81d3c1d7588e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("bac1158a-699f-439f-b8fd-357cd08cda7f") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("099896bd-dd89-4b16-8371-81d3c1d7588e") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("a721ce2b-2819-4193-a447-9c5f794112b2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("64827f76-3601-4460-afe8-9ee8199d4543") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("4eed9598-9628-468c-8743-af6995bf575e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("01690073-6f9e-4303-9657-726a304efa2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+
+
+
+<script src="2ca2a502-cd9b-407b-acb4-68faebd38393" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="ad11447e-cdbf-4960-afbc-e66b7d58c20d" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="666772ff-d85e-4789-a9e9-d620e66a3b82" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: oklch(14% 0.01 260);
+    --ink-soft: oklch(40% 0.01 260);
+    --ink-muted: oklch(58% 0.01 260);
+    --paper: oklch(97.5% 0.008 80);
+    --paper-warm: oklch(95% 0.012 80);
+    --dark: oklch(11% 0.015 260);
+    --dark-2: oklch(16% 0.015 255);
+    --gold: oklch(72% 0.16 165);
+    --line: oklch(88% 0.005 80);
+    --line-dark: oklch(22% 0.015 255);
+    --font-sans: 'DM Sans', 'Helvetica Neue', sans-serif;
+    --font-serif: 'DM Serif Display', Georgia, serif;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--gold); color: var(--dark); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+
+const { useState, useEffect } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accentColor": "#13C995"
+} /*EDITMODE-END*/;
+
+/* ── NAV ── */
+function Nav({ scrolled }) {
+  return (
+    <header style={{
+      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
+      background: scrolled ? 'rgba(249,247,243,0.96)' : 'transparent',
+      backdropFilter: scrolled ? 'blur(12px)' : 'none',
+      borderBottom: scrolled ? '1px solid oklch(88% 0.005 80)' : '1px solid transparent',
+      transition: 'all 0.3s ease'
+    }}>
+      <nav style={{
+        maxWidth: 1200, margin: '0 auto',
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        padding: '0 32px', height: 68
+      }}>
+        <a href="#" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
+          <img src={window.__resources.logoMark} alt="Messor" style={{ width: 32, height: 32, objectFit: 'contain', display: 'block' }} />
+          <span style={{ fontWeight: 700, fontSize: 18, color: scrolled ? 'var(--ink)' : 'white', letterSpacing: '0.02em', transition: 'color 0.3s', textTransform: 'uppercase' }}>M<span style={{ color: 'var(--gold)' }}>€</span>SSOR</span>
+        </a>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 4 }} className="desktop-nav">
+          {[
+          { label: 'Notre expertise', anchor: 'https://messor.fr/base-de-donnees-prospects' },
+          { label: 'Nos offres', anchor: 'https://messor.fr/accompagnement-prospection-multicanal' },
+          { label: 'Découvrir Messor', anchor: 'https://messor.fr/decouvrir-messor-2' },
+          { label: 'Blog', anchor: 'https://messor.fr/blog' },
+          { label: 'Contactez-nous', anchor: 'https://messor.fr/contactez-nous' }].
+          map((item) =>
+          <a key={item.label} href={item.anchor} target="_blank" rel="noopener" style={{
+            fontSize: 14, fontWeight: 400,
+            color: scrolled ? 'var(--ink-soft)' : 'oklch(78% 0.01 260)',
+            textDecoration: 'none', padding: '6px 14px',
+            borderRadius: 6, transition: 'color 0.15s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.color = scrolled ? 'var(--ink)' : 'white'}
+          onMouseLeave={(e) => e.currentTarget.style.color = scrolled ? 'var(--ink-soft)' : 'oklch(78% 0.01 260)'}>
+            {item.label}</a>
+          )}
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+          <a href="index.en.html" title="English version" aria-label="Switch to English"
+             style={{
+               display: 'inline-flex', alignItems: 'center', gap: 6,
+               textDecoration: 'none',
+               fontSize: 12, fontWeight: 600, letterSpacing: '0.06em',
+               color: scrolled ? 'var(--ink-soft)' : 'oklch(78% 0.01 260)',
+               border: scrolled ? '1px solid var(--line)' : '1px solid oklch(40% 0.01 260)',
+               borderRadius: 100, padding: '5px 10px 5px 6px',
+               transition: 'all 0.15s'
+             }}
+             onMouseEnter={(e) => { e.currentTarget.style.color = scrolled ? 'var(--ink)' : 'white'; e.currentTarget.style.borderColor = scrolled ? 'var(--ink)' : 'white'; }}
+             onMouseLeave={(e) => { e.currentTarget.style.color = scrolled ? 'var(--ink-soft)' : 'oklch(78% 0.01 260)'; e.currentTarget.style.borderColor = scrolled ? 'var(--line)' : 'oklch(40% 0.01 260)'; }}>
+            <span style={{ fontSize: 14, lineHeight: 1 }} aria-hidden="true">🌐</span>
+            <span>EN</span>
+          </a>
+          <a href="#contact" style={{
+            background: 'var(--gold)', color: 'var(--dark)',
+            fontSize: 13, fontWeight: 600, padding: '9px 20px',
+            borderRadius: 7, textDecoration: 'none',
+            transition: 'background 0.15s'
+          }}
+          onMouseEnter={(e) => {e.currentTarget.style.background = 'white';}}
+          onMouseLeave={(e) => {e.currentTarget.style.background = 'var(--gold)';}}>
+            Parlons-en →</a>
+        </div>
+      </nav>
+      <style>{`@media(max-width:900px){ .desktop-nav{display:none!important;} }`}</style>
+    </header>);
+
+}
+
+/* ── HERO — resserré, orienté ICP + promesse ── */
+function Hero() {
+  const altWords = ['produit', 'service'];
+  const [wIdx, setWIdx] = React.useState(0);
+  const [wVisible, setWVisible] = React.useState(true);
+  React.useEffect(() => {
+    const t = setInterval(() => {
+      setWVisible(false);
+      setTimeout(() => {
+        setWIdx((i) => (i + 1) % altWords.length);
+        setWVisible(true);
+      }, 280);
+    }, 2400);
+    return () => clearInterval(t);
+  }, []);
+  return (
+    <section style={{
+      background: 'var(--dark)',
+      minHeight: '100vh',
+      display: 'flex', flexDirection: 'column', justifyContent: 'center',
+      padding: '120px 32px 60px',
+      position: 'relative', overflow: 'hidden'
+    }}>
+      {/* Bruegel — The Harvesters (1565, public domain, The Met) */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        backgroundImage: `url("${window.__resources.bruegel}")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 30%',
+        filter: 'grayscale(0.3) contrast(1.05) brightness(0.55)',
+        opacity: 0.55
+      }}></div>
+      {/* dark gradient overlay for legibility */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: 'linear-gradient(180deg, oklch(11% 0.015 260 / 0.85) 0%, oklch(11% 0.015 260 / 0.65) 40%, oklch(11% 0.015 260 / 0.9) 100%)'
+      }}></div>
+      {/* subtle grid on top */}
+      {/* Bruegel painting — anchors the brand metaphor */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        backgroundImage: `url("${window.__resources.bruegel}")`,
+        backgroundSize: 'cover',
+        backgroundPosition: '30% 90%',
+        opacity: 0.85,
+        pointerEvents: 'none'
+      }}></div>
+      {/* Dark overlay for legibility — left-heavy so text remains readable */}
+      <div style={{
+        position: 'absolute', inset: 0,
+background: 'linear-gradient(95deg, oklch(11% 0.015 260 / 0.95) 0%, oklch(11% 0.015 260 / 0.85) 35%, oklch(11% 0.015 260 / 0.55) 65%, oklch(11% 0.015 260 / 0.3) 100%)',
+        pointerEvents: 'none'
+      }}></div>
+      <div style={{
+        position: 'absolute', inset: 0,
+        background: 'linear-gradient(180deg, transparent 0%, transparent 60%, var(--dark) 100%)',
+        pointerEvents: 'none'
+      }}></div>
+      <div style={{
+        position: 'absolute', inset: 0,
+        backgroundImage: 'linear-gradient(oklch(30% 0.01 255 / 0.12) 1px, transparent 1px), linear-gradient(90deg, oklch(30% 0.01 255 / 0.12) 1px, transparent 1px)',
+        backgroundSize: '80px 80px',
+        opacity: 0.5
+      }}></div>
+      <div style={{ position: 'absolute', top: -200, right: -200, width: 600, height: 600, borderRadius: '50%', background: 'oklch(72% 0.14 68 / 0.12)', filter: 'blur(80px)', pointerEvents: 'none' }}></div>
+
+      {/* Painting credit */}
+      <div style={{ position: 'absolute', bottom: 24, right: 32, fontSize: 11, color: 'oklch(55% 0.01 260)', letterSpacing: '0.04em', zIndex: 2 }}>
+        Pieter Bruegel l'Ancien · <em>Les Moissonneurs</em>, 1565
+      </div>
+
+      <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%', position: 'relative' }}>
+
+        <div style={{ marginBottom: 28 }}>
+          <span style={{
+            display: 'inline-flex', alignItems: 'center', gap: 8,
+            background: 'oklch(72% 0.14 68 / 0.12)', border: '1px solid oklch(72% 0.14 68 / 0.3)',
+            color: 'var(--gold)', borderRadius: 100, padding: '5px 14px', fontSize: 12, fontWeight: 500,
+            letterSpacing: '0.06em', textTransform: 'uppercase'
+          }}>
+            <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--gold)' }}></span>
+            Cabinets de conseil · éditeurs SaaS · sociétés de services
+          </span>
+        </div>
+
+        <h1 style={{
+          fontFamily: 'var(--font-serif)', fontWeight: 400, color: 'white',
+          fontSize: 'clamp(44px, 6vw, 86px)', lineHeight: 1.03,
+          letterSpacing: '-0.025em', marginBottom: 28, maxWidth: 960
+        }}>
+          Vous avez semé un{' '}
+          <span style={{
+            display: 'inline-block', minWidth: '4.5ch',
+            color: 'var(--gold)',
+            opacity: wVisible ? 1 : 0,
+            transform: wVisible ? 'translateY(0)' : 'translateY(8px)',
+            transition: 'opacity 0.28s ease, transform 0.28s ease'
+          }}>{altWords[wIdx]}</span>.<br />
+          <em style={{ color: 'var(--gold)' }}>Nous moissonnons</em> vos clients.
+        </h1>
+
+        <p style={{
+          color: 'oklch(72% 0.01 260)', fontSize: 'clamp(17px, 1.5vw, 20px)',
+          maxWidth: 640, lineHeight: 1.6, marginBottom: 44, fontWeight: 300
+        }}>Agence de business development B2B basée à Metz. Nous vous accompagnons par petit bout ou de bout en bout — ciblage, prise de contact multicanal, prise de rendez-vous, (co-)réalisation des rdvs, gestion du suivi post-rdvs — pour vous aider à signer de nouveaux clients.
+
+        </p>
+
+        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center', marginBottom: 72 }}>
+          <a href="https://bookings.cloud.microsoft/bookwithme/user/c844084bf24a4ff7ba01283a2e3266ed%40messor.fr?anonymous&ismsaljsauthenabled=true"
+          target="_blank" rel="noopener"
+          style={{
+            background: 'var(--gold)', color: 'var(--dark)',
+            fontWeight: 600, fontSize: 15, padding: '14px 26px',
+            borderRadius: 8, textDecoration: 'none',
+            transition: 'all 0.15s'
+          }}
+          onMouseEnter={(e) => {e.currentTarget.style.background = 'white';}}
+          onMouseLeave={(e) => {e.currentTarget.style.background = 'var(--gold)';}}>
+            Réserver un diagnostic de 30 min →</a>
+          <a href="#resultats" style={{
+            color: 'oklch(78% 0.01 260)', fontSize: 14, textDecoration: 'none',
+            padding: '14px 4px', borderBottom: '1px solid oklch(40% 0.01 260)',
+            transition: 'color 0.15s, border-color 0.15s'
+          }}
+          onMouseEnter={(e) => {e.currentTarget.style.color = 'white';e.currentTarget.style.borderColor = 'white';}}
+          onMouseLeave={(e) => {e.currentTarget.style.color = 'oklch(78% 0.01 260)';e.currentTarget.style.borderColor = 'oklch(40% 0.01 260)';}}>
+            Voir les résultats clients</a>
+        </div>
+
+        {/* Result-driven stat bar (not vanity metrics) */}
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 24,
+          paddingTop: 44, borderTop: '1px solid var(--line-dark)'
+        }}>
+          {[
+          { n: '+50%', label: 'de trafic généré pour un éditeur SAAS luxembourgeois' },
+          { n: '10M€', label: 'le chiffre d\'affaires signé ensemble avec notre principal partenaire' },
+          { n: 'C-Level', label: 'la cible la plus attaquée par l\'agence' },
+          { n: '4 langues', label: 'FR · EN · DE · IT pour l\'Europe' }].
+          map((s, i) =>
+          <div key={i}>
+              <div style={{ fontFamily: 'var(--font-serif)', color: 'var(--gold)', fontSize: 34, lineHeight: 1, marginBottom: 8 }}>{s.n}</div>
+              <div style={{ color: 'oklch(60% 0.01 260)', fontSize: 13, lineHeight: 1.4 }}>{s.label}</div>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>);
+
+}
+
+/* ── PAIN POINTS — le prospect se reconnaît ── */
+function Problem() {
+  const pains = [
+  { label: "Vos consultants ne sont pas des vendeurs" },
+  { label: "Vous préférez closer qu'aller dénicher des opportunités" },
+  { label: "Les séquences LinkedIn ou mails génériques ne génèrent plus de réponses" },
+  { label: "Votre CRM est plein de leads froids jamais retravaillés" },
+  { label: "Recruter un SDR en interne est long, coûteux et risqué" },
+  { label: "Vous attaquez de nouveaux marchés sans vraiment savoir par où commencer" }];
+
+  return (
+    <section style={{ background: 'var(--paper)', padding: '90px 32px' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+        <div style={{ maxWidth: 720, marginBottom: 56 }}>
+          <p style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 }}>Le problème</p>
+          <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(30px,3.8vw,46px)', fontWeight: 400, lineHeight: 1.15, letterSpacing: '-0.02em' }}>
+            La prospection B2B est devenue un métier à part entière — et il dévore le temps de vos équipes.
+          </h2>
+        </div>
+        <div className="pains-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0 32px', borderTop: '1px solid var(--line)' }}>
+          {pains.map((p, i) =>
+          <div key={i} style={{ padding: '28px 24px 28px 0', borderBottom: '1px solid var(--line)', display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+              <span style={{ color: 'var(--gold)', fontFamily: 'var(--font-serif)', fontSize: 14, marginTop: 2 }}>✕</span>
+              <span style={{ fontSize: 16, color: 'var(--ink)', fontWeight: 400, lineHeight: 1.5 }}>{p.label}</span>
+            </div>
+          )}
+        </div>
+        <p style={{ marginTop: 48, fontFamily: 'var(--font-serif)', fontSize: 'clamp(22px,2.6vw,32px)', fontStyle: 'italic', color: 'var(--ink)', lineHeight: 1.35, letterSpacing: '-0.01em', maxWidth: 820 }}>
+          Notre rôle : <span style={{ color: 'var(--gold)', fontStyle: 'normal', fontFamily: 'var(--font-sans)', fontWeight: 500 }}>vous décharger</span> de cette charge mentale et remettre vos commerciaux ou consultants face à des prospects prêts à acheter, aujourd'hui ou demain.
+        </p>
+        <style>{`@media(max-width:900px){ .pains-grid{grid-template-columns:repeat(2,1fr)!important;} } @media(max-width:600px){ .pains-grid{grid-template-columns:1fr!important;} }`}</style>
+      </div>
+    </section>);
+
+}
+
+/* ── OFFRES — 3 offres principales, reformulées autour de la promesse ── */
+const offres = [
+{
+  tag: 'L\'essentiel (non disponible actuellement)',
+  title: 'Prospection externalisée',
+  pitch: "Une équipe dédiée qui prend en main votre prospection multicanal — LinkedIn, email, téléphone — et remplit l'agenda de vos commerciaux.",
+  deliverables: [
+  'Base de prospects ciblée et enrichie',
+  'Séquences multicanal personnalisées',
+  'Prise de rendez-vous qualifiés',
+  'Reporting hebdomadaire'],
+
+  href: 'https://messor.fr/accompagnement-prospection-multicanal',
+  highlight: false
+},
+{
+  tag: 'Le plus demandé',
+  title: 'Force de vente externalisée',
+  pitch: "Un commercial senior dédié à votre compte, intégré à votre CRM et à vos outils, qui pilote la prospection ET closing jusqu'à la signature.",
+  deliverables: [
+  "Tout ce qui est inclus dans l'offre Prospection",
+  'Qualification approfondie & closing',
+  'Pilotage CRM & process de vente',
+  'Point stratégique hebdomadaire'],
+
+  href: 'https://messor.fr/developpement-commercial-externalise',
+  highlight: true
+},
+{
+  tag: 'Le long terme',
+  title: 'Inbound & automatisation',
+  pitch: "SEO, contenu, automatisations métier — nous construisons le dispositif qui attire des leads en continu et libère vos équipes des tâches répétitives.",
+  deliverables: [
+  'Stratégie SEO & création de contenu',
+  'Automatisations Make (certifiés Advanced)',
+  'Enrichissement CRM & synchronisations',
+  'Tableaux de bord sur mesure'],
+
+  href: 'https://messor.fr/inbound-marketing-externalise',
+  highlight: false
+}];
+
+
+function Offres() {
+  return (
+    <section id="offres" style={{ background: 'var(--dark)', padding: '100px 32px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 56, flexWrap: 'wrap', gap: 24 }}>
+          <div style={{ maxWidth: 640 }}>
+            <p style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 }}>Nos offres</p>
+            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(32px,4vw,52px)', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em', color: 'white' }}>
+              Trois façons de travailler ensemble
+            </h2>
+          </div>
+          <p style={{ color: 'oklch(60% 0.01 260)', fontSize: 14, maxWidth: 320 }}>Chaque mission démarre par un diagnostic offert. Nous vous orientons vers le format qui correspond à votre maturité, à vos ressources internes et à notre staffing.
+
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 1, background: 'var(--line-dark)' }}>
+          {offres.map((o) =>
+          <div key={o.title} style={{
+            background: o.highlight ? 'oklch(18% 0.02 255)' : 'var(--dark)',
+            padding: '40px 36px',
+            display: 'flex', flexDirection: 'column',
+            position: 'relative'
+          }}>
+              {o.highlight && <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: 'var(--gold)' }}></div>}
+              <span style={{
+              fontSize: 11, color: o.highlight ? 'var(--gold)' : 'oklch(55% 0.01 260)',
+              fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 20
+            }}>{o.tag}</span>
+              <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: 28, fontWeight: 400, color: 'white', marginBottom: 16, letterSpacing: '-0.01em', lineHeight: 1.15 }}>{o.title}</h3>
+              <p style={{ fontSize: 14, color: 'oklch(65% 0.01 260)', lineHeight: 1.6, marginBottom: 28 }}>{o.pitch}</p>
+              <ul style={{ listStyle: 'none', marginBottom: 32, flex: 1 }}>
+                {o.deliverables.map((d, i) =>
+              <li key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: 14, color: 'oklch(75% 0.01 260)', paddingBottom: 10, lineHeight: 1.5 }}>
+                    <span style={{ color: 'var(--gold)', fontSize: 13, marginTop: 2 }}>✓</span>
+                    {d}
+                  </li>
+              )}
+              </ul>
+              <a href={o.href} style={{
+              color: o.highlight ? 'var(--gold)' : 'white',
+              fontSize: 13, fontWeight: 500, textDecoration: 'none',
+              paddingTop: 16, borderTop: '1px solid var(--line-dark)'
+            }}>Découvrir l'offre →</a>
+            </div>
+          )}
+        </div>
+
+        <p style={{ marginTop: 40, fontSize: 13, color: 'oklch(55% 0.01 260)', textAlign: 'center' }}>
+          Besoin plus ponctuel ? Nous proposons aussi du <a href="https://messor.fr/conseil-developpement-commercial" style={{ color: 'var(--gold)', textDecoration: 'none' }}>conseil commercial</a> et de la <a href="https://messor.fr/recruter-des-talents" style={{ color: 'var(--gold)', textDecoration: 'none' }}>chasse de talents commerciaux</a>.
+        </p>
+      </div>
+    </section>);
+
+}
+
+/* ── PROCESS — nouveau : comment ça se passe ── */
+const steps = [
+{ n: '01', title: 'Diagnostic', delay: 'Semaine 0', desc: "Un échange de 30 min pour comprendre votre produit, votre cycle de vente et vos objectifs. Nous identifions votre ICP et le canal prioritaire. Sans engagement." },
+{ n: '02', title: 'Atelier de cadrage', delay: 'Semaines 1–2', desc: "Workshop pour figer le message, les personas, les critères de qualification et la structure des séquences. Toute la documentation est centralisée dans un espace NOTION partagé — nous privilégions la communication asynchrone pour respecter votre agenda." },
+{ n: '03', title: 'Lancement opérationnel', delay: 'Semaines 3–4', desc: "Construction de la base de prospects, paramétrage des outils (LinkedIn, email, CRM), rédaction des séquences. Démarrage de la prospection téléphonique. Analyse des premiers taux de conversion. Prise des premiers rendez-vous." },
+{ n: '04', title: 'Pilotage & itération', delay: 'Mois 2 → ∞', desc: "Comparaison des taux de conversion par cible et par message. Réalisation des rendez-vous, suivi jusqu'à la vente. Réunion hebdomadaire de suivi d'activité, point mensuel et trimestriel davantage orienté stratégie." }];
+
+
+function Process() {
+  return (
+    <section id="process" style={{ background: 'var(--paper-warm)', padding: '100px 32px' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+        <div style={{ maxWidth: 720, marginBottom: 64 }}>
+          <p style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 }}>Comment ça marche</p>
+          <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(32px,4vw,48px)', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 20 }}>
+            De la signature aux premiers rendez-vous, <em>en 4 semaines</em>.
+          </h2>
+          <p style={{ color: 'var(--ink-soft)', fontSize: 16, lineHeight: 1.65 }}>
+            Une méthodologie éprouvée avec plus de 50 clients. Chaque étape est cadrée, livrable et validée avec vous — aucune boîte noire. Nous travaillons en marque blanche.
+          </p>
+        </div>
+        <div style={{ position: 'relative' }}>
+          {steps.map((s, i) =>
+          <div key={s.n} style={{
+            display: 'grid', gridTemplateColumns: '80px 180px 1fr',
+            gap: 32, padding: '32px 0',
+            borderTop: '1px solid var(--line)',
+            alignItems: 'start'
+          }} className="process-row">
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: 36, color: 'var(--gold)', lineHeight: 1 }}>{s.n}</div>
+              <div>
+                <div style={{ fontSize: 11, color: 'var(--ink-muted)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 4 }}>{s.delay}</div>
+                <div style={{ fontFamily: 'var(--font-serif)', fontSize: 24, fontWeight: 400, letterSpacing: '-0.01em' }}>{s.title}</div>
+              </div>
+              <div style={{ color: 'var(--ink-soft)', fontSize: 15, lineHeight: 1.65, maxWidth: 560 }}>{s.desc}</div>
+            </div>
+          )}
+          <div style={{ borderTop: '1px solid var(--line)' }}></div>
+        </div>
+        <style>{`@media(max-width:720px){ .process-row{ grid-template-columns: 1fr!important; gap:12px!important; } }`}</style>
+      </div>
+    </section>);
+
+}
+
+/* ── RESULTS / CASE SNAPSHOTS ── */
+const results = [
+{
+  client: 'Many Many',
+  sector: 'Agence digitale',
+  metric: '+50%',
+  label: 'de clics sur le site',
+  note: '2 à 3× plus d\'impressions sur les moteurs de recherche'
+},
+{
+  client: 'Proaction International',
+  sector: 'Conseil industriel',
+  metric: 'Ouvertures',
+  label: 'de comptes majeurs en France et en Europe',
+  note: ''
+},
+{
+  client: 'Confidentiel',
+  sector: 'Conseil risques & conformité finance',
+  metric: '+12 AO',
+  label: 'répondus sur de nouveaux comptes en un an',
+  note: 'Internalisation de la ressource MESSOR par le cabinet'
+},
+{
+  client: 'InFine · VONA · Qontrol · CXP',
+  sector: 'IT / Services',
+  metric: 'RDV qualifiés',
+  label: 'par centaines pour des acteurs IT (cybersécurité, cloud…)',
+  note: 'Plusieurs années de collaboration sur des cycles complexes B2B avec des décideurs techniques (CTO, RSSI, DSI) — sur des marchés tendus où l\'accès aux bons interlocuteurs est rare.'
+}];
+
+
+function Results() {
+  return (
+    <section id="resultats" style={{ background: 'var(--paper)', padding: '100px 32px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 56, flexWrap: 'wrap', gap: 20 }}>
+          <div style={{ flex: '1 1 480px' }}>
+            <p style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 }}>Résultats clients</p>
+            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(30px,3.8vw,46px)', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+              Ce que nos clients obtiennent, en vrai.
+            </h2>
+          </div>
+        </div>
+        <div className="results-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 1, background: 'var(--line)' }}>
+          {results.map((r) =>
+          <div key={r.client} style={{ background: 'var(--paper)', padding: '36px 32px', display: 'flex', flexDirection: 'column', gap: 0 }}>
+              <div style={{ fontSize: 11, color: 'var(--ink-muted)', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 24 }}>{r.sector}</div>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: 44, color: 'var(--gold)', lineHeight: 1, marginBottom: 12, letterSpacing: '-0.02em' }}>{r.metric}</div>
+              <div style={{ fontSize: 15, fontWeight: 500, marginBottom: 16 }}>{r.label}</div>
+              <div style={{ fontSize: 13, color: 'var(--ink-soft)', lineHeight: 1.55, flex: 1, marginBottom: 20 }}>{r.note}</div>
+              <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--ink)', paddingTop: 16, borderTop: '1px solid var(--line)' }}>{r.client}</div>
+            </div>
+          )}
+        </div>
+        <style>{`
+          @media(max-width:1100px){ .results-grid{ grid-template-columns: repeat(2, 1fr) !important; } }
+          @media(max-width:600px){ .results-grid{ grid-template-columns: 1fr !important; } }
+        `}</style>
+      </div>
+    </section>);
+
+}
+
+/* ── ADN / Why Messor — repositionnement "commerciaux 5.0" ── */
+function Why() {
+  const points = [
+  {
+    title: 'Des commerciaux qui maîtrisent la donnée',
+    desc: 'Formés à la vente consultative ET aux outils modernes (CRM, Sales Navigator, MAKE & API, AIRTABLE & Javascript). Un profil rare, assez senior pour parler à un C-level, assez technique pour opérer le stack.'
+  },
+  {
+    title: 'Multilingues pour l\'Europe',
+    desc: "FR, EN, DE, IT — nous adressons aussi bien la France que le DACH, l'Italie ou le Royaume-Uni, sans sous-traiter à l'étranger."
+  },
+  {
+    title: 'Transparence totale',
+    desc: "Reporting temps réel, accès à nos outils, point hebdomadaire. Vous savez exactement ce qui est fait, pour qui, et avec quels résultats."
+  },
+  {
+    title: 'Pas de salle des machines anonyme',
+    desc: "Basés à Metz, équipe identifiable, diplômée Bac+5, formée en continu. Vos interlocuteurs ne changent pas tous les trois mois."
+  }];
+
+  return (
+    <section id="adn" style={{ background: 'var(--paper-warm)', padding: '100px 32px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 80, alignItems: 'start' }} className="adn-grid">
+        <div style={{ position: 'sticky', top: 100 }}>
+          <div style={{
+            aspectRatio: '16 / 10',
+            backgroundImage: `url("${window.__resources.bruegel}")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 35%',
+            borderRadius: 4,
+            marginBottom: 32,
+            border: '1px solid var(--line)',
+            boxShadow: '0 2px 8px oklch(0% 0 0 / 0.04)'
+          }}></div>
+          <p style={{ color: 'var(--ink-muted)', fontSize: 11, fontStyle: 'italic', letterSpacing: '0.02em', marginBottom: 28, lineHeight: 1.4 }}>
+            Pieter Bruegel l'Ancien — <em>Les Moissonneurs</em>, 1565. Metropolitan Museum of Art, New York.
+          </p>
+          <p style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 }}>Pourquoi Messor</p>
+          <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(30px,3.8vw,46px)', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 24 }}>
+            Du latin <em>messis</em> — la moisson.
+          </h2>
+          <p style={{ color: 'var(--ink-soft)', lineHeight: 1.7, fontSize: 15, marginBottom: 32 }}>Nous partons du principe qu'une bonne récolte se prépare. Qu'elle demande du temps, de la méthode, de la sueur et des larmes, et des gens qui connaissent leur terrain. C'est exactement ce que nous faisons avec votre marché.
+
+          </p>
+          <a href="https://messor.fr/decouvrir-messor-2" style={{
+            display: 'inline-block', background: 'var(--ink)', color: 'white',
+            padding: '12px 22px', borderRadius: 7, textDecoration: 'none',
+            fontSize: 14, fontWeight: 500, transition: 'background 0.15s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.background = 'var(--gold)'}
+          onMouseLeave={(e) => e.currentTarget.style.background = 'var(--ink)'}>
+            Découvrir l'équipe</a>
+        </div>
+        <div>
+          {points.map((p, i) =>
+          <div key={p.title} style={{ padding: '28px 0', borderBottom: i < points.length - 1 ? '1px solid var(--line)' : 'none', borderTop: i === 0 ? '1px solid var(--line)' : 'none' }}>
+              <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: 22, fontWeight: 400, marginBottom: 10, letterSpacing: '-0.01em' }}>{p.title}</h4>
+              <p style={{ fontSize: 15, color: 'var(--ink-soft)', lineHeight: 1.65 }}>{p.desc}</p>
+            </div>
+          )}
+        </div>
+      </div>
+      <style>{`@media(max-width:900px){ .adn-grid{grid-template-columns:1fr!important; gap:40px!important;} .adn-grid > div:first-child{position:static!important;} }`}</style>
+    </section>);
+
+}
+
+/* ── CLIENTS ── */
+const clients = ['UTrakk', 'CXP', 'C&S', 'La Lettre du Conseil', 'Proaction International', 'Vona', 'InFine', 'PAC', 'KSI Partners', 'Ressource', 'Seven', 'Many Many', 'Qontrol', 'MPG Partners'];
+
+function Clients() {
+  return (
+    <section style={{ background: 'var(--paper)', padding: '56px 32px', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        <p style={{ textAlign: 'center', fontSize: 12, color: 'var(--ink-muted)', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 500, marginBottom: 28 }}>+ de 50 clients B2B accompagnés</p>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px 40px', justifyContent: 'center', alignItems: 'center' }}>
+          {clients.map((c) =>
+          <span key={c} style={{ fontSize: 14, color: 'var(--ink-muted)', fontWeight: 500 }}>{c}</span>
+          )}
+        </div>
+      </div>
+    </section>);
+
+}
+
+/* ── TESTIMONIALS ── */
+const testimonials = [
+{ quote: "Ce qui a fait la différence : la maîtrise de la méthodologie, la qualité du pilotage et du reporting, et avant tout la qualité des liens humains créés.", name: 'Matthias Poirier', role: 'CEO — MPG Partners' },
+{ quote: "Messor est aujourd'hui un partenaire incontournable en Europe. Ils nous apportent plusieurs nouveaux clients majeurs chaque année.", name: 'Christophe Cren', role: 'VP Business Development Europe — Proaction International' },
+{ quote: "Dans le marché tendu qu'est l'IT, Messor est parvenu à identifier de nombreuses opportunités dont plusieurs se sont transformées en vente.", name: 'Antoine Ramponi', role: 'Co-Founder & CEO — InFine' },
+{ quote: "En seulement 2 mois, leur capacité à comprendre notre discours commercial a déjà généré des rendez-vous de qualité avec des CTO.", name: 'Emeric Lamour de Caslou', role: 'Sales Lead — Qontrol' },
+{ quote: "MESSOR a su définir et appliquer une méthodologie de prospection adaptée et efficace. Nous nous félicitons d'avoir fait appel à leurs services.", name: 'Jérôme Bricout', role: 'Directeur des Opérations — CXP' },
+{ quote: "Une augmentation de 50% des clics, 2 à 3 fois plus d'impressions sur les moteurs de recherche — les résultats sont au rendez-vous.", name: 'Nicolas Legay', role: 'CEO — Many Many' },
+{ quote: "Déjà deux ans que KSI fait confiance à MESSOR. Une collaboration fructueuse qui ne fait que commencer.", name: 'Hubert Castellan', role: 'Fondateur & CEO — KSI Partners' }];
+
+
+function Testimonials() {
+  const [idx, setIdx] = useState(0);
+  const t = testimonials[idx];
+
+  return (
+    <section style={{ background: 'var(--dark)', padding: '100px 32px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 56, flexWrap: 'wrap', gap: 16 }}>
+          <div>
+            <p style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 }}>Témoignages</p>
+            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px,3vw,42px)', fontWeight: 400, color: 'white', letterSpacing: '-0.02em' }}>Ce que disent nos clients</h2>
+          </div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button onClick={() => setIdx((idx - 1 + testimonials.length) % testimonials.length)} style={{ width: 40, height: 40, borderRadius: '50%', border: '1px solid var(--line-dark)', background: 'transparent', color: 'white', cursor: 'pointer', fontSize: 16 }}>←</button>
+            <button onClick={() => setIdx((idx + 1) % testimonials.length)} style={{ width: 40, height: 40, borderRadius: '50%', border: '1px solid var(--line-dark)', background: 'transparent', color: 'white', cursor: 'pointer', fontSize: 16 }}>→</button>
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 1, background: 'var(--line-dark)' }} className="testimonials-grid">
+          <div style={{ background: 'var(--dark)', padding: '48px' }}>
+            <div style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(20px,2.2vw,30px)', color: 'white', lineHeight: 1.4, marginBottom: 40, fontStyle: 'italic', fontWeight: 400 }}>
+              "{t.quote}"
+            </div>
+            <div>
+              <div style={{ fontSize: 15, fontWeight: 600, color: 'white', marginBottom: 2 }}>{t.name}</div>
+              <div style={{ fontSize: 13, color: 'oklch(55% 0.01 260)' }}>{t.role}</div>
+            </div>
+          </div>
+          <div style={{ background: 'oklch(14% 0.015 260)', padding: '24px', display: 'flex', flexDirection: 'column', gap: 2 }}>
+            {testimonials.map((tt, i) =>
+            <button key={i} onClick={() => setIdx(i)} style={{
+              background: i === idx ? 'oklch(20% 0.015 255)' : 'transparent',
+              border: 'none', padding: '12px 16px', cursor: 'pointer',
+              textAlign: 'left', borderRadius: 6, transition: 'background 0.15s'
+            }}>
+                <div style={{ fontSize: 13, fontWeight: i === idx ? 600 : 400, color: i === idx ? 'white' : 'oklch(50% 0.01 260)', lineHeight: 1.3 }}>{tt.name}</div>
+                {i === idx && <div style={{ fontSize: 11, color: 'var(--gold)', marginTop: 2 }}>{tt.role}</div>}
+              </button>
+            )}
+          </div>
+        </div>
+        <style>{`@media(max-width:768px){ .testimonials-grid{grid-template-columns:1fr!important;} }`}</style>
+      </div>
+    </section>);
+
+}
+
+/* ── FAQ ── */
+const faqs = [
+{ q: "Quel est le délai moyen pour voir des résultats ?", a: "Les premiers rendez-vous arrivent généralement entre la 4e et la 6e semaine — le temps de construire la base, calibrer le message et déclencher la première vague. Un cycle de vente B2B complet se joue ensuite sur 3 à 9 mois selon la complexité de votre offre. Nous calibrons le pilotage pour maximiser le ROI à chaque étape." },
+{ q: "Quelle est la différence entre \"prospection\" et \"force de vente externalisée\" ?", a: "La prospection s'arrête à la prise de rendez-vous qualifié — vos commerciaux prennent le relais. La force de vente externalisée va plus loin : nous qualifions, nous négocions, nous faisons avancer l'opportunité dans votre CRM jusqu'à la signature. À vous de choisir le périmètre selon vos ressources internes." },
+{ q: "Comment choisir la meilleure agence de prospection ?", a: "Le choix d'une agence de prospection dépend de plusieurs critères clés.\n\n• La clientèle de l'agence : une agence ayant de l'expérience avec des entreprises similaires à la vôtre (cabinet de conseil, société SaaS…) saura adapter ses techniques et ses outils à vos besoins spécifiques.\n• L'expertise multicanal : certaines agences se spécialisent sur un seul canal (LinkedIn), d'autres adoptent une approche multicanal — plus adaptée aux organisations qui souhaitent toucher leurs cibles via plusieurs points de contact.\n• Le profil de vos cibles : si vous adressez des décideurs de niveau direction, il est essentiel de choisir une agence capable de combiner plusieurs canaux, notamment le téléphone, qui reste un moyen de prospection très efficace en 2025.\n• Les profils des collaborateurs : selon votre organisation, choisissez des experts qui correspondent à vos besoins (Business Developers, Inside Sales, Growth Hackers…) et qui s'intègrent à l'ADN de votre société.\n• Data Intelligence : la maîtrise de la data est au cœur de la performance commerciale en 2025. Challengez vos interlocuteurs sur leurs outils CRM, leurs certifications… Vous seriez surpris de la disparité de maturité des agences sur ce sujet primordial.\n• Transparence et reporting : optez pour une agence qui joue carte sur table et vous permet de suivre en temps réel l'évolution des résultats.\n\nMESSOR est l'agence idéale pour les cabinets de conseil, les sociétés de services et les éditeurs de logiciels. Nous proposons une équipe d'experts formés à la vente 5.0, composée de jeunes talents ou de profils expérimentés, diplômés des meilleures écoles de commerce et basés en France." },
+{ q: "Quel rôle joue l'IA dans le business development en 2024 ?", a: "L'intelligence artificielle (IA), et plus particulièrement l'IA générative, révolutionne le business development avec des cas d'usage concrets et variés. Parmi les applications courantes, on retrouve la retranscription automatique d'entretiens, la rédaction et la correction de mails.\n\nPour aller plus loin, l'IA peut exploiter la big data issue des API et des outils CRM pour analyser des milliers de profils LinkedIn et personnaliser à grande échelle vos campagnes de prospection, ou synthétiser des milliers d'offres d'emploi pour mieux comprendre vos cibles et leurs besoins.\n\nGrâce à son double savoir-faire en business development et en gestion avancée de la data (API, outils, propriétés), MESSOR conçoit des solutions IA sur mesure pour booster votre productivité commerciale et optimiser vos efforts de prospection." },
+{ q: "Travaillez-vous uniquement en français ?", a: "Non. Notre équipe couvre FR, EN, DE et IT. Nous accompagnons régulièrement des développements sur le DACH, l'Italie, le Benelux et le Royaume-Uni, avec des collaborateurs natifs des pays ciblés." },
+{ q: "Comment intégrez-vous mon CRM et mes outils ?", a: "Nous travaillons dans votre stack, pas dans le nôtre. HubSpot, Salesforce, Pipedrive, Attio — nous nous branchons et pilotons depuis votre CRM. Nous sommes certifiés Make Advanced pour automatiser les synchronisations et enrichissements nécessaires." }];
+
+
+function FAQ() {
+  const [open, setOpen] = useState(0);
+  return (
+    <section style={{ background: 'var(--paper)', padding: '100px 32px' }}>
+      <div style={{ maxWidth: 820, margin: '0 auto' }}>
+        <p style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12, textAlign: 'center' }}>FAQ</p>
+        <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(28px,3.5vw,44px)', fontWeight: 400, textAlign: 'center', marginBottom: 56, letterSpacing: '-0.02em' }}>Les questions qu'on nous pose souvent</h2>
+        <div>
+          {faqs.map((f, i) =>
+          <div key={i} style={{ borderTop: '1px solid var(--line)' }}>
+              <button onClick={() => setOpen(open === i ? null : i)} style={{
+              width: '100%', background: 'none', border: 'none', padding: '24px 0',
+              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+              cursor: 'pointer', textAlign: 'left', gap: 16
+            }}>
+                <span style={{ fontSize: 16, fontWeight: 500, color: 'var(--ink)', lineHeight: 1.4 }}>{f.q}</span>
+                <span style={{ fontSize: 20, color: 'var(--ink-muted)', flexShrink: 0, transform: open === i ? 'rotate(45deg)' : 'none', transition: 'transform 0.2s' }}>+</span>
+              </button>
+              {open === i &&
+            <div style={{ paddingBottom: 24 }}>
+                  <p style={{ color: 'var(--ink-soft)', lineHeight: 1.7, fontSize: 15, whiteSpace: 'pre-line' }}>{f.a}</p>
+                </div>
+            }
+            </div>
+          )}
+          <div style={{ borderTop: '1px solid var(--line)' }}></div>
+        </div>
+      </div>
+    </section>);
+
+}
+
+/* ── CONTACT ── */
+function Contact() {
+  return (
+    <section id="contact" style={{ background: 'var(--gold)', padding: '100px 32px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 64, alignItems: 'center', marginBottom: 64 }} className="contact-grid">
+          <div>
+            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(32px,4vw,56px)', fontWeight: 400, lineHeight: 1.05, letterSpacing: '-0.025em', color: 'var(--dark)', marginBottom: 20 }}>
+              Trente minutes pour voir si c'est pertinent.
+            </h2>
+            <p style={{ fontSize: 16, color: 'oklch(25% 0.05 60)', lineHeight: 1.65, marginBottom: 36, maxWidth: 480 }}>
+              Pierre-Jean vous répond en direct. Pas de pitch commercial — un échange franc sur votre cycle de vente, vos blocages actuels, et ce qui ferait bouger l'aiguille. Si on est le bon partenaire, on vous le dira. Si non aussi.
+            </p>
+            <a href="https://bookings.cloud.microsoft/bookwithme/user/c844084bf24a4ff7ba01283a2e3266ed%40messor.fr?anonymous&ismsaljsauthenabled=true"
+            target="_blank" rel="noopener"
+            style={{
+              display: 'inline-block', background: 'var(--dark)', color: 'white',
+              padding: '14px 28px', borderRadius: 8, textDecoration: 'none',
+              fontSize: 15, fontWeight: 500, transition: 'background 0.15s'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.background = 'oklch(22% 0.01 260)'}
+            onMouseLeave={(e) => e.currentTarget.style.background = 'var(--dark)'}>
+              Réserver un créneau →</a>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} className="contact-portrait">
+            <div style={{
+              width: 220, height: 220, borderRadius: '50%',
+              background: 'oklch(94% 0.02 80)',
+              border: '4px solid var(--dark)',
+              boxShadow: '0 12px 28px oklch(20% 0.04 65 / 0.2)',
+              overflow: 'hidden',
+              display: 'flex', alignItems: 'flex-end', justifyContent: 'center'
+            }}>
+              <img src={window.__resources.pjPortrait} alt="Pierre-Jean Becker" style={{
+                width: '108%',
+                marginBottom: -8,
+                display: 'block',
+                objectFit: 'contain'
+              }} />
+            </div>
+            <div style={{ textAlign: 'center', marginTop: 20 }}>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: 22, color: 'var(--dark)', lineHeight: 1.2, marginBottom: 8 }}>Pierre-Jean Becker</div>
+              <div style={{ fontSize: 12, color: 'oklch(28% 0.06 65)', letterSpacing: '0.08em', textTransform: 'uppercase', fontWeight: 600, lineHeight: 1.4 }}>Fondateur · Messor</div>
+            </div>
+          </div>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32, paddingTop: 36, borderTop: '1px solid oklch(60% 0.12 70 / 0.4)' }} className="contact-info">
+          <div>
+            <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'oklch(30% 0.08 65)', marginBottom: 6 }}>Adresse</div>
+            <div style={{ fontSize: 15, color: 'var(--dark)' }}>27 place Saint Thiébault<br />57000 Metz, France</div>
+          </div>
+          <div>
+            <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'oklch(30% 0.08 65)', marginBottom: 6 }}>Téléphone</div>
+            <a href="tel:+33387748989" style={{ fontSize: 15, color: 'var(--dark)', textDecoration: 'none' }}>+33 3 87 74 89 89</a>
+          </div>
+          <div>
+            <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'oklch(30% 0.08 65)', marginBottom: 6 }}>Email</div>
+            <a href="mailto:hello@messor.fr" style={{ fontSize: 15, color: 'var(--dark)', textDecoration: 'none' }}>hello@messor.fr</a>
+          </div>
+          <div>
+            <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'oklch(30% 0.08 65)', marginBottom: 6 }}>LinkedIn</div>
+            <a href="https://www.linkedin.com/in/pj-becker/" target="_blank" rel="noopener" style={{ fontSize: 15, color: 'var(--dark)', textDecoration: 'none' }}>Pierre-Jean Becker</a>
+          </div>
+        </div>
+      </div>
+      <style>{`@media(max-width:900px){ .contact-grid{grid-template-columns:1fr!important; gap:40px!important;} .contact-info{grid-template-columns:repeat(2,1fr)!important;} }`}</style>
+    </section>);
+
+}
+
+/* ── FOOTER ── */
+function Footer() {
+  return (
+    <footer style={{ background: 'var(--dark)', padding: '48px 32px', borderTop: '1px solid var(--line-dark)' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 24 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <img src={window.__resources.logoMark} alt="Messor" style={{ width: 26, height: 26, objectFit: 'contain', display: 'block' }} />
+          <span style={{ fontWeight: 700, fontSize: 16, color: 'white', letterSpacing: '0.02em', textTransform: 'uppercase' }}>M<span style={{ color: 'var(--gold)' }}>€</span>SSOR</span>
+          <span style={{ fontSize: 12, color: 'oklch(40% 0.01 260)', marginLeft: 12 }}>Du latin messis — la moisson</span>
+        </div>
+        <div style={{ display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}>
+          <a href="https://messor.fr/mentions-legales" style={{ fontSize: 13, color: 'oklch(45% 0.01 260)', textDecoration: 'none' }}>Mentions légales</a>
+          <a href="https://messor.fr/politique-de-confidentialite" style={{ fontSize: 13, color: 'oklch(45% 0.01 260)', textDecoration: 'none' }}>Confidentialité</a>
+          <span style={{ fontSize: 13, color: 'oklch(35% 0.01 260)' }}>© 2025 Messor</span>
+        </div>
+      </div>
+    </footer>);
+
+}
+
+/* ── APP ── */
+function App() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const fn = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', fn);
+    return () => window.removeEventListener('scroll', fn);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('message', (e) => {
+      if (e.data?.type === '__activate_edit_mode') document.getElementById('tweaks-panel').style.display = 'block';
+      if (e.data?.type === '__deactivate_edit_mode') document.getElementById('tweaks-panel').style.display = 'none';
+    });
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+  }, []);
+
+  return (
+    <>
+      <Nav scrolled={scrolled} />
+      <Hero />
+      <Clients />
+      <Problem />
+      <Offres />
+      <Process />
+      <Results />
+      <Why />
+      <Testimonials />
+      <FAQ />
+      <Contact />
+      <Footer />
+
+      <div id="tweaks-panel" style={{ display: 'none', position: 'fixed', bottom: 24, right: 24, zIndex: 999, background: 'white', border: '1px solid var(--line)', borderRadius: 12, padding: '20px 24px', boxShadow: '0 8px 40px oklch(0% 0 0 / 0.15)', width: 260 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+          <span style={{ fontWeight: 600, fontSize: 14 }}>Tweaks</span>
+          <button onClick={() => {document.getElementById('tweaks-panel').style.display = 'none';window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');}} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: 18, color: 'var(--ink-muted)' }}>×</button>
+        </div>
+        <div>
+          <label style={{ fontSize: 12, color: 'var(--ink-muted)', display: 'block', marginBottom: 6 }}>Couleur d'accent</label>
+          <input type="color" defaultValue="#13C995" onChange={(e) => document.documentElement.style.setProperty('--gold', e.target.value)} style={{ width: '100%', height: 36, border: '1px solid var(--line)', borderRadius: 6, cursor: 'pointer' }} />
+        </div>
+      </div>
+    </>);
+
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+
+</body></html>

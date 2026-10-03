@@ -1,0 +1,68 @@
+---
+import { NAV, UI, type Lang } from '../data/site';
+import { url } from '../lib/url';
+
+interface Props { lang: Lang; alternate?: string; current?: string }
+const { lang, alternate, current = '' } = Astro.props;
+const t = UI[lang];
+const other = alternate || (lang === 'fr' ? UI.en.home : UI.fr.home);
+const isCurrent = (href: string) => href === current;
+---
+<header class="site-header" id="site-header">
+  <nav class="site-nav" aria-label="Navigation principale">
+    <a class="brand" href={url(t.home === '/en' ? '/en' : '/')}>
+      <img src={url('/images/logo-messor.png')} alt="Messor" width="32" height="32" />
+      <span class="brand-name">M<span>€</span>SSOR</span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      {NAV[lang].map((item) => item.children ? (
+        <li class="has-dropdown">
+          <button type="button" aria-expanded="false">{item.label}</button>
+          <ul class="dropdown">
+            {item.children.map((c) => (
+              <li><a href={url(c.href)} aria-current={isCurrent(c.href) ? 'page' : undefined}>{c.label}</a></li>
+            ))}
+          </ul>
+        </li>
+      ) : (
+        <li><a href={url(item.href!)} aria-current={isCurrent(item.href!) ? 'page' : undefined}>{item.label}</a></li>
+      ))}
+    </ul>
+
+    <div class="nav-actions">
+      <a class="lang-switch" href={url(other)} title={t.switchTitle} hreflang={lang === 'fr' ? 'en' : 'fr'}>
+        <span aria-hidden="true">🌐</span><span>{t.switchLabel}</span>
+      </a>
+      <a class="nav-cta" href="#contact">{t.cta}</a>
+      <button class="burger" type="button" aria-label={t.menu} aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const header = document.getElementById('site-header')!;
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const burger = header.querySelector<HTMLButtonElement>('.burger')!;
+  burger.addEventListener('click', () => {
+    const open = header.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  header.querySelectorAll<HTMLButtonElement>('.has-dropdown > button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const li = btn.parentElement!;
+      const open = li.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+  header.querySelectorAll('.nav-links a').forEach((a) =>
+    a.addEventListener('click', () => {
+      header.classList.remove('menu-open');
+      document.body.style.overflow = '';
+    }),
+  );
+</script>

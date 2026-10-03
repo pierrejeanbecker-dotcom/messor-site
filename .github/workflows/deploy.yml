@@ -1,0 +1,71 @@
+name: Publier le site
+
+# preview     -> https://messor.fr/nouveau-site/  (dossier www/nouveau-site, à côté de WordPress)
+# production  -> dossier « site-messor » sur OVH, vers lequel on fait pointer messor.fr (Multisite)
+on:
+  push:
+    branches: [claude/nifty-brown-5gkbin, main]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Où publier"
+        type: choice
+        options: [preview, production]
+        default: preview
+
+concurrency:
+  group: deploy-${{ inputs.target || 'preview' }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TARGET: ${{ inputs.target || 'preview' }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Choisir la destination
+        run: |
+          if [ "$TARGET" = "production" ]; then
+            echo "SITE_BASE=/" >> "$GITHUB_ENV"
+            echo "REMOTE_DIR=site-messor" >> "$GITHUB_ENV"
+          else
+            echo "SITE_BASE=/nouveau-site" >> "$GITHUB_ENV"
+            echo "REMOTE_DIR=www/nouveau-site" >> "$GITHUB_ENV"
+          fi
+
+      - name: Construire le site
+        run: |
+          npm ci
+          npm run build
+          npm run check-links
+
+      - name: Installer lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Envoyer sur OVH
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          # --delete ne touche qu'au dossier du nouveau site, jamais au reste de l'hébergement.
+          lftp -u "$FTP_USERNAME,$FTP_PASSWORD" "sftp://$FTP_SERVER" -e "
+            set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30;
+            mkdir -p -f '$REMOTE_DIR';
+            mirror --reverse --delete --parallel=6 --verbose=1 dist/ '$REMOTE_DIR';
+            bye"
+
+      - name: Résumé
+        run: |
+          if [ "$TARGET" = "production" ]; then
+            echo "### Production envoyée dans le dossier \`site-messor\`" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### Préproduction : https://messor.fr/nouveau-site/" >> "$GITHUB_STEP_SUMMARY"
+          fi

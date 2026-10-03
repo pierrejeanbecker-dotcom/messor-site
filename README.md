@@ -1,17 +1,52 @@
 # messor-site
 
-Code du site WordPress Messor, hébergé chez OVH (offre Pro, cluster127).
+Site de Messor (messor.fr), reconstruit **sans WordPress** : du code et du Markdown, transformés en pages HTML statiques par [Astro](https://astro.build), puis envoyés sur l'hébergement OVH par GitHub Actions.
 
-## Ce qui est dans ce dépôt
+## Modifier le contenu
 
-Uniquement `wp-content/themes`, `wp-content/plugins` et `wp-content/mu-plugins`.
+| Je veux modifier… | Fichier |
+|---|---|
+| La page d'accueil (FR et EN) | `src/data/home.ts` |
+| Une page (offres, expertise, mentions légales…) | `src/content/pages/<adresse>.md` |
+| Un article de blog | `src/content/posts/<catégorie>/<article>.md` |
+| Le menu, l'adresse, le téléphone, le lien de prise de RDV | `src/data/site.ts` |
+| Les catégories du blog | `src/data/categories.ts` |
+| Une redirection (ancienne adresse → nouvelle) | `src/data/redirects.json` |
+| Les couleurs, polices, mises en page | `src/styles/global.css` |
+| Les images | `public/medias/…` (contenu) et `public/images/…` (charte) |
 
-Ne sont **pas** versionnés : le cœur WordPress, `wp-config.php` (mots de passe),
-les médias (`wp-content/uploads`) et la base de données (pages, articles, réglages).
+Chaque fichier `.md` commence par un en-tête (`title`, `description`, `permalink`…) suivi du texte en Markdown.
+L'adresse publique de la page est son `permalink` : ne la changez pas sans ajouter une redirection.
 
-## Workflows (onglet Actions)
+**Ajouter un article** : copier un fichier de `src/content/posts/`, changer `title`, `permalink`, `date`, `excerpt` et le texte.
 
-- **Importer depuis OVH** : récupère les thèmes et extensions du site en ligne et les enregistre ici. Ne modifie rien sur OVH.
-- **Déployer vers OVH** : envoie un dossier précis (ex. `wp-content/themes/mon-theme`) vers le serveur. Manuel, en mode simulation par défaut, ne supprime jamais de fichiers.
+## Publier
 
-Secrets requis : `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD` (connexion SFTP, port 22).
+Chaque `push` sur la branche principale publie automatiquement la **préproduction** :
+https://messor.fr/nouveau-site/ (non indexée par Google, à côté de WordPress).
+
+La **production** se lance à la main : onglet *Actions* → *Publier le site* → *Run workflow* → `production`.
+Elle est envoyée dans le dossier `site-messor` de l'hébergement.
+
+### Basculer messor.fr sur le nouveau site (une seule fois)
+
+1. Lancer *Publier le site* en `production`.
+2. Espace client OVH → Web Cloud → Hébergements → *Multisite* → `messor.fr` (et `www.messor.fr`) → *Modifier* → dossier racine : `site-messor`.
+3. Retour arrière possible à tout moment en remettant `www`.
+
+Secrets GitHub requis : `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD` (connexion SFTP OVH).
+
+## Travailler en local
+
+```sh
+npm install
+npm run dev          # http://localhost:4321
+npm run build        # génère dist/ (+ .htaccess)
+npm run check-links  # vérifie les liens internes
+```
+
+## Migration depuis WordPress
+
+`scripts/migration/` contient l'export complet de l'ancien site (API WordPress, octobre 2026) et le script
+`convert_wordpress.py` qui l'a converti en Markdown. Il n'est plus nécessaire au fonctionnement du site.
+Attention : le relancer écrase les fichiers de `src/content/`.

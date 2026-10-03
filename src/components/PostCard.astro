@@ -1,0 +1,21 @@
+---
+import { UI, type Lang } from '../data/site';
+import { CATEGORIES } from '../data/categories';
+import { url } from '../lib/url';
+
+interface Props { post: any; lang: Lang }
+const { post, lang } = Astro.props;
+const d = post.data;
+const t = UI[lang];
+const cat = CATEGORIES.find((c) => c.slug === d.category);
+const date = d.date.toLocaleDateString(t.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<a class="post-card" href={url(d.permalink)}>
+  <div class:list={['thumb', { fallback: !d.image }]} style={`background-image:url("${url(d.image || '/images/bruegel-les-moissonneurs.webp')}")`}></div>
+  <div class="body">
+    <div class="meta">{cat && cat.slug !== 'blog-fr' ? `${cat.name} · ` : ''}{date}</div>
+    <h3>{d.title}</h3>
+    {d.excerpt && <p>{d.excerpt}</p>}
+    <span class="more">{t.readMore}</span>
+  </div>
+</a>

@@ -1,0 +1,146 @@
+---
+// Génère toutes les pages du site à partir de src/content (mêmes adresses que l'ancien WordPress).
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import PostCard from '../components/PostCard.astro';
+import { BOOKING_URL, UI } from '../data/site';
+import { CATEGORIES } from '../data/categories';
+import { url } from '../lib/url';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', (p) => !p.data.draft);
+  const posts = (await getCollection('posts', (p) => !p.data.draft)).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+  );
+  const slug = (permalink: string) => permalink.replace(/^\//, '');
+  const byLang = (lang: string) => posts.filter((p) => p.data.lang === lang);
+
+  return [
+    ...pages.map((entry) => ({
+      params: { slug: slug(entry.data.permalink) },
+      props: { kind: 'page' as const, entry, latest: byLang(entry.data.lang).slice(0, 3) },
+    })),
+    ...posts.map((entry) => ({
+      params: { slug: slug(entry.data.permalink) },
+      props: {
+        kind: 'post' as const,
+        entry,
+        latest: byLang(entry.data.lang).filter((p) => p.id !== entry.id).slice(0, 3),
+      },
+    })),
+    ...(['fr', 'en'] as const).map((lang) => ({
+      params: { slug: slug(UI[lang].blog) },
+      props: { kind: 'blog' as const, lang, list: byLang(lang) },
+    })),
+    ...CATEGORIES.map((cat) => ({
+      params: { slug: slug(cat.path) },
+      props: {
+        kind: 'category' as const,
+        lang: cat.lang,
+        cat,
+        list: posts.filter((p) => p.data.categories.includes(cat.slug) || p.data.category === cat.slug),
+      },
+    })),
+  ];
+}
+
+const props = Astro.props as any;
+const { kind } = props;
+const lang = kind === 'page' || kind === 'post' ? props.entry.data.lang : props.lang;
+const t = UI[lang as 'fr' | 'en'];
+const path = '/' + Astro.params.slug;
+const cats = CATEGORIES.filter((c) => c.lang === lang);
+const fmt = (d: Date) => d.toLocaleDateString(t.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
+
+let Content: any = null;
+if (kind === 'page' || kind === 'post') {
+  ({ Content } = await render(props.entry));
+}
+const d = props.entry?.data;
+const catOf = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
+---
+{kind === 'page' && (
+  <Base title={d.seoTitle || d.title} description={d.description} lang={lang} path={path} alternate={d.alternate} image={d.heroImage}>
+    <PageHero title={d.heroTitle || d.title} lead={d.heroLead} image={d.heroImage} imageAlt={d.heroImageAlt}>
+      <a class="btn" href={BOOKING_URL} target="_blank" rel="noopener">{t.book}</a>
+    </PageHero>
+    <section class="content-section">
+      <article class="prose wide">
+        <Content />
+      </article>
+    </section>
+    {(d.prev || d.next) && (
+      <nav class="pager" aria-label="Pages">
+        {d.prev && <a class="prev" href={url(d.prev.href)}><div class="dir">{t.prev}</div><div class="label">{d.prev.label}</div></a>}
+        {d.next && <a class="next" href={url(d.next.href)}><div class="dir">{t.next}</div><div class="label">{d.next.label}</div></a>}
+      </nav>
+    )}
+    {d.latestPosts && props.latest.length > 0 && (
+      <section class="section bg-warm">
+        <div class="wrap">
+          <div class="section-head">
+            <div><p class="eyebrow">Blog</p><h2 class="h2">{t.latest}</h2></div>
+            <a href={url(t.blog)}>{t.allPosts}</a>
+          </div>
+          <div class="post-grid">{props.latest.map((p: any) => <PostCard post={p} lang={lang} />)}</div>
+        </div>
+      </section>
+    )}
+  </Base>
+)}
+
+{kind === 'post' && (
+  <Base title={d.seoTitle || d.title} description={d.description} lang={lang} path={path} alternate={d.alternate} image={d.image} type="article">
+    <PageHero title={d.title} image={d.image} imageAlt={d.title}>
+      <div slot="before" class="crumbs">
+        <a href={url(t.blog)}>Blog</a>
+        {catOf(d.category) && catOf(d.category)!.slug !== 'blog-fr' && <> · <a href={url(catOf(d.category)!.path)}>{catOf(d.category)!.name}</a></>}
+      </div>
+      <p class="post-meta">{t.by} {d.author} · {fmt(d.date)}</p>
+    </PageHero>
+    <section class="content-section">
+      <article class="prose">
+        <Content />
+      </article>
+    </section>
+    {props.latest.length > 0 && (
+      <section class="section bg-warm">
+        <div class="wrap">
+          <div class="section-head">
+            <div><p class="eyebrow">Blog</p><h2 class="h2">{t.latest}</h2></div>
+            <a href={url(t.blog)}>{t.allPosts}</a>
+          </div>
+          <div class="post-grid">{props.latest.map((p: any) => <PostCard post={p} lang={lang} />)}</div>
+        </div>
+      </section>
+    )}
+  </Base>
+)}
+
+{(kind === 'blog' || kind === 'category') && (
+  <Base
+    title={kind === 'blog' ? `${t.blogTitle} - Messor` : `${props.cat.name} - Messor`}
+    description={kind === 'blog' ? t.blogLead : props.cat.description || t.blogLead}
+    lang={lang}
+    path={path}
+    alternate={kind === 'blog' ? UI[lang === 'fr' ? 'en' : 'fr'].blog : undefined}
+  >
+    <PageHero title={kind === 'blog' ? t.blogTitle : props.cat.name} lead={kind === 'blog' ? t.blogLead : props.cat.description} />
+    <section class="content-section">
+      <div class="wrap">
+        <nav class="cat-pills" aria-label={t.categories}>
+          <a href={url(t.blog)} aria-current={kind === 'blog' ? 'page' : undefined}>{lang === 'fr' ? 'Tous' : 'All'}</a>
+          {cats.filter((c) => c.slug !== 'blog-fr').map((c) => (
+            <a href={url(c.path)} aria-current={path === c.path ? 'page' : undefined}>{c.name}</a>
+          ))}
+        </nav>
+        <div class="post-grid">{props.list.map((p: any) => <PostCard post={p} lang={lang} />)}</div>
+      </div>
+    </section>
+  </Base>
+)}
+
+<style is:global>
+  .post-meta { color: var(--on-dark-soft); font-size: 14px; }
+</style>

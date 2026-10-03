@@ -1,0 +1,24 @@
+---
+import { marked } from 'marked';
+import { prefixHtml, url } from '../lib/url';
+
+interface Props { title: string; lead?: string; image?: string; imageAlt?: string }
+const { title, lead, image, imageAlt = '' } = Astro.props;
+const leadHtml = lead ? prefixHtml(marked.parse(lead) as string) : '';
+const hasActions = Astro.slots.has('default');
+---
+<section class:list={['page-hero', { 'no-image': !image }]}>
+  <div class="wrap">
+    <div>
+      <slot name="before" />
+      <h1>{title}</h1>
+      {leadHtml && <div class="lead" set:html={leadHtml} />}
+      {hasActions && <div class="actions"><slot /></div>}
+    </div>
+    {image && (
+      <div class="hero-img">
+        <img src={url(image)} alt={imageAlt} loading="eager" />
+      </div>
+    )}
+  </div>
+</section>

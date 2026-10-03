@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import Home from '../../components/Home.astro';
+import { HOME } from '../../data/home';
+const h = HOME.en;
+---
+<Base title={h.seoTitle} description={h.description} lang="en" path="/en" alternate="/" contactTitle={h.contact.title} contactText={h.contact.text}>
+  <Home lang="en" />
+</Base>

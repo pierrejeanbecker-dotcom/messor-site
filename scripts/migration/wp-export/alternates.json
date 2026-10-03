@@ -1,0 +1,256 @@
+{
+ "html/accompagnement-prospection-multicanal.html": {
+  "en": "https://messor.fr/en/prospecting-campaign",
+  "fr": "https://messor.fr/accompagnement-prospection-multicanal"
+ },
+ "html/automatisation-processus-metiers.html": {},
+ "html/base-de-donnees-prospects.html": {
+  "en": "https://messor.fr/en/database-creation",
+  "fr": "https://messor.fr/base-de-donnees-prospects"
+ },
+ "html/blog-fr.html": {},
+ "html/blog-fr__5-astuces-pour-des-rendez-vous-qualifies-en-btob.html": {},
+ "html/blog-fr__5-strategies-prospection-efficaces.html": {},
+ "html/blog-fr__automatisation-prospection.html": {},
+ "html/blog-fr__cabinets-de-conseil-les-avantages-dun-service-de-prospection-externalise.html": {},
+ "html/blog-fr__cas-pratique-comment-doubler-votre-taux-de-reponse-en-prospection-b2b.html": {},
+ "html/blog-fr__cold-phoning-astuces-pour-captiver-votre-interlocuteur.html": {},
+ "html/blog-fr__comment-creer-des-sequences-de-prospection-performantes-email-telephone-linkedin.html": {},
+ "html/blog-fr__comment-developper-le-chiffre-daffaires-de-son-cabinet-de-conseil.html": {},
+ "html/blog-fr__comment-identifier-et-atteindre-les-decideurs-cles-dans-les-grandes-entreprises.html": {},
+ "html/blog-fr__developpement-commercial-pour-les-cabinets-de-conseil-les-erreurs-a-eviter-absolument.html": {},
+ "html/blog-fr__externaliser-force-commerciale-btob.html": {},
+ "html/blog-fr__inside-sales-sdr-business-developer-ingenieur-daffaires-kezako.html": {},
+ "html/blog-fr__lart-de-la-personnalisation-dans-les-campagnes-de-prospection-les-cles-du-succes.html": {},
+ "html/blog-fr__linkedin-outil-incontournbale-prospection-reseaux-sociaux.html": {},
+ "html/blog-fr__mesurer-impact-strategie-omnicanal.html": {},
+ "html/blog-fr__pourquoi-le-suivi-des-leads-est-aussi-important-que-la-prospection-elle-meme.html": {},
+ "html/blog-fr__prospection-esn-mesurer-kpi.html": {},
+ "html/blog-fr__prospection-externalisee-grandes-entreprises.html": {},
+ "html/blog-fr__prospection-rgpd-5-astuces-pour-allier-conformite-et-efficacite.html": {},
+ "html/blog-fr__qualite-des-donnees-campagne-de-prospection.html": {},
+ "html/blog-fr__quels-avantages-pour-une-esn-a-travailler-avec-une-agence-de-prospection-externalisee.html": {},
+ "html/blog-fr__strategie-prospection-omnicanal.html": {},
+ "html/blog.html": {
+  "en": "https://messor.fr/en/blog-en",
+  "fr": "https://messor.fr/blog"
+ },
+ "html/chasseur-de-tetes.html": {
+  "en": "https://messor.fr/en/headhunting",
+  "fr": "https://messor.fr/chasseur-de-tetes"
+ },
+ "html/cold-calling.html": {
+  "en": "https://messor.fr/en/cold-calling-en",
+  "fr": "https://messor.fr/cold-calling"
+ },
+ "html/cold-calling__8-phrases-accroche-prospection-telephonique-b2b.html": {},
+ "html/cold-calling__cold-calling-b2b-allemagne.html": {
+  "en": "https://messor.fr/en/growth-haking-en/cold-calling-b2b-germany",
+  "fr": "https://messor.fr/cold-calling/cold-calling-b2b-allemagne"
+ },
+ "html/cold-calling__comment-mettre-en-place-une-cellule-de-cold-calling-en-interne.html": {},
+ "html/cold-calling__meilleures-strategies-cold-mailing.html": {},
+ "html/conseil-developpement-commercial.html": {},
+ "html/contactez-nous.html": {
+  "en": "https://messor.fr/en/contact-us",
+  "fr": "https://messor.fr/contactez-nous"
+ },
+ "html/convertir-un-prospect-en-client.html": {
+  "en": "https://messor.fr/en/turning-prospect-into-loyal-customer",
+  "fr": "https://messor.fr/convertir-un-prospect-en-client"
+ },
+ "html/creation-de-contenu-digital.html": {
+  "en": "https://messor.fr/en/content-creation-and-distribution",
+  "fr": "https://messor.fr/creation-de-contenu-digital"
+ },
+ "html/decouvrir-messor-2.html": {
+  "en": "https://messor.fr/en/about-us-messor",
+  "fr": "https://messor.fr/decouvrir-messor-2"
+ },
+ "html/developpement-commercial-externalise.html": {
+  "en": "https://messor.fr/en/business-development",
+  "fr": "https://messor.fr/developpement-commercial-externalise"
+ },
+ "html/divers.html": {},
+ "html/emailing.html": {
+  "en": "https://messor.fr/en/emailing-en",
+  "fr": "https://messor.fr/emailing"
+ },
+ "html/emailing__protocole-dmarc.html": {
+  "en": "https://messor.fr/en/emailing-en/dmarc-email-en",
+  "fr": "https://messor.fr/emailing/protocole-dmarc"
+ },
+ "html/emailing__tout-savoir-sur-emailing-en-2023.html": {},
+ "html/emailing__tout-savoir-sur-le-cold-emailing.html": {},
+ "html/en__about-us-messor.html": {
+  "en": "https://messor.fr/en/about-us-messor",
+  "fr": "https://messor.fr/decouvrir-messor-2"
+ },
+ "html/en__blog-en.html": {
+  "en": "https://messor.fr/en/blog-en",
+  "fr": "https://messor.fr/blog-fr"
+ },
+ "html/en__business-development.html": {
+  "en": "https://messor.fr/en/business-development",
+  "fr": "https://messor.fr/developpement-commercial-externalise"
+ },
+ "html/en__cold-calling-en.html": {
+  "en": "https://messor.fr/en/cold-calling-en",
+  "fr": "https://messor.fr/cold-calling"
+ },
+ "html/en__cold-calling.html": {
+  "en": "https://messor.fr/en/cold-calling-en",
+  "fr": "https://messor.fr/cold-calling"
+ },
+ "html/en__cold-mailing.html": {
+  "en": "https://messor.fr/en/cold-mailing",
+  "fr": "https://messor.fr/mail-prospection-b2b"
+ },
+ "html/en__contact-us.html": {
+  "en": "https://messor.fr/en/contact-us",
+  "fr": "https://messor.fr/contactez-nous"
+ },
+ "html/en__content-creation-and-distribution.html": {
+  "en": "https://messor.fr/en/content-creation-and-distribution",
+  "fr": "https://messor.fr/creation-de-contenu-digital"
+ },
+ "html/en__database-creation.html": {
+  "en": "https://messor.fr/en/database-creation",
+  "fr": "https://messor.fr/base-de-donnees-prospects"
+ },
+ "html/en__digital-marketing-strategy.html": {
+  "en": "https://messor.fr/en/digital-marketing-strategy",
+  "fr": "https://messor.fr/inbound-marketing-externalise"
+ },
+ "html/en__emailing-en.html": {
+  "en": "https://messor.fr/en/emailing-en",
+  "fr": "https://messor.fr/emailing"
+ },
+ "html/en__emailing-en__dmarc-email-en.html": {
+  "en": "https://messor.fr/en/emailing-en/dmarc-email-en",
+  "fr": "https://messor.fr/emailing/protocole-dmarc"
+ },
+ "html/en__google-ads-en.html": {
+  "en": "https://messor.fr/en/google-ads-en",
+  "fr": "https://messor.fr/optimiser-campagne-google-ads"
+ },
+ "html/en__growth-haking-en.html": {
+  "en": "https://messor.fr/en/growth-haking-en",
+  "fr": "https://messor.fr/growth-haking"
+ },
+ "html/en__growth-haking-en__5-things-check-outsourcing-sales.html": {
+  "en": "https://messor.fr/en/growth-haking-en/5-things-check-outsourcing-sales",
+  "fr": "https://messor.fr/top-articles/comment-choisir-le-bon-partenaire-dexternalisation-commerciale-b2b"
+ },
+ "html/en__growth-haking-en__6-reasons-outsourcing-sales-prospecting.html": {
+  "en": "https://messor.fr/en/growth-haking-en/6-reasons-outsourcing-sales-prospecting",
+  "fr": "https://messor.fr/top-articles/7-raisons-externaliser-prospection-commerciale"
+ },
+ "html/en__growth-haking-en__cold-calling-b2b-germany.html": {
+  "en": "https://messor.fr/en/growth-haking-en/cold-calling-b2b-germany",
+  "fr": "https://messor.fr/cold-calling/cold-calling-b2b-allemagne"
+ },
+ "html/en__growth-haking-en__power-automate-avoid-no-show-teams.html": {
+  "en": "https://messor.fr/en/growth-haking-en/power-automate-avoid-no-show-teams",
+  "fr": "https://messor.fr/growth-haking/confirmer-un-rdv-avec-power-automate"
+ },
+ "html/en__headhunting.html": {
+  "en": "https://messor.fr/en/headhunting",
+  "fr": "https://messor.fr/chasseur-de-tetes"
+ },
+ "html/en__homepage.html": {
+  "en": "https://messor.fr/en/homepage",
+  "fr": "https://messor.fr/"
+ },
+ "html/en__legal-notice.html": {
+  "en": "https://messor.fr/en/legal-notice",
+  "fr": "https://messor.fr/mentions-legales"
+ },
+ "html/en__linkedin-awareness.html": {
+  "en": "https://messor.fr/en/linkedin-awareness",
+  "fr": "https://messor.fr/gagner-en-visibilite-sur-linkedin"
+ },
+ "html/en__linkedin-prospecting.html": {
+  "en": "https://messor.fr/en/linkedin-prospecting",
+  "fr": "https://messor.fr/prospection-sales-navigator-linkedin"
+ },
+ "html/en__privacy-policy.html": {
+  "en": "https://messor.fr/en/privacy-policy",
+  "fr": "https://messor.fr/politique-de-confidentialite"
+ },
+ "html/en__prospecting-campaign.html": {
+  "en": "https://messor.fr/en/prospecting-campaign",
+  "fr": "https://messor.fr/accompagnement-prospection-multicanal"
+ },
+ "html/en__recruit-talent.html": {
+  "en": "https://messor.fr/en/recruit-talent",
+  "fr": "https://messor.fr/recruter-des-talents"
+ },
+ "html/en__top-articles-en.html": {},
+ "html/en__turning-prospect-into-loyal-customer.html": {
+  "en": "https://messor.fr/en/turning-prospect-into-loyal-customer",
+  "fr": "https://messor.fr/convertir-un-prospect-en-client"
+ },
+ "html/gagner-en-visibilite-sur-linkedin.html": {
+  "en": "https://messor.fr/en/linkedin-awareness",
+  "fr": "https://messor.fr/gagner-en-visibilite-sur-linkedin"
+ },
+ "html/growth-haking.html": {
+  "en": "https://messor.fr/en/growth-haking-en",
+  "fr": "https://messor.fr/growth-haking"
+ },
+ "html/growth-haking__confirmer-un-rdv-avec-power-automate.html": {
+  "en": "https://messor.fr/en/growth-haking-en/power-automate-avoid-no-show-teams",
+  "fr": "https://messor.fr/growth-haking/confirmer-un-rdv-avec-power-automate"
+ },
+ "html/inbound-marketing-externalise.html": {
+  "en": "https://messor.fr/en/digital-marketing-strategy",
+  "fr": "https://messor.fr/inbound-marketing-externalise"
+ },
+ "html/index.html": {},
+ "html/mail-prospection-b2b.html": {
+  "en": "https://messor.fr/en/cold-mailing",
+  "fr": "https://messor.fr/mail-prospection-b2b"
+ },
+ "html/mentions-legales.html": {
+  "en": "https://messor.fr/en/legal-notice",
+  "fr": "https://messor.fr/mentions-legales"
+ },
+ "html/nous-rejoindre.html": {},
+ "html/offres-demploi.html": {},
+ "html/offres-emploi-conseil.html": {},
+ "html/optimiser-campagne-google-ads.html": {
+  "en": "https://messor.fr/en/google-ads-en",
+  "fr": "https://messor.fr/optimiser-campagne-google-ads"
+ },
+ "html/politique-de-confidentialite.html": {
+  "en": "https://messor.fr/en/privacy-policy",
+  "fr": "https://messor.fr/politique-de-confidentialite"
+ },
+ "html/prospection-sales-navigator-linkedin.html": {
+  "en": "https://messor.fr/en/linkedin-prospecting",
+  "fr": "https://messor.fr/prospection-sales-navigator-linkedin"
+ },
+ "html/prospection-telephonique-b2b.html": {
+  "en": "https://messor.fr/en/cold-calling",
+  "fr": "https://messor.fr/prospection-telephonique-b2b"
+ },
+ "html/recruter-des-talents.html": {
+  "en": "https://messor.fr/en/recruit-talent",
+  "fr": "https://messor.fr/recruter-des-talents"
+ },
+ "html/top-articles.html": {},
+ "html/top-articles__33-outils-growth-hacking-plus-utilises-2025.html": {},
+ "html/top-articles__7-raisons-externaliser-prospection-commerciale.html": {
+  "en": "https://messor.fr/en/growth-haking-en/6-reasons-outsourcing-sales-prospecting",
+  "fr": "https://messor.fr/top-articles/7-raisons-externaliser-prospection-commerciale"
+ },
+ "html/top-articles__agents-ia-prospection-commerciale.html": {},
+ "html/top-articles__comment-choisir-le-bon-partenaire-dexternalisation-commerciale-b2b.html": {
+  "en": "https://messor.fr/en/growth-haking-en/5-things-check-outsourcing-sales",
+  "fr": "https://messor.fr/top-articles/comment-choisir-le-bon-partenaire-dexternalisation-commerciale-b2b"
+ },
+ "html/top-articles__le-business-development-dans-le-conseil-comment-lia-revolutionne-la-vente-de-missions.html": {},
+ "html/top-articles__le-commercial-5-0-human-after-all.html": {},
+ "html/vos-enjeux.html": {}
+}

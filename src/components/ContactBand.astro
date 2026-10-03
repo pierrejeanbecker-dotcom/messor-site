@@ -1,0 +1,49 @@
+---
+import { BOOKING_URL, CONTACT, UI, type Lang } from '../data/site';
+import { url } from '../lib/url';
+
+interface Props { lang: Lang; title?: string; text?: string }
+const { lang } = Astro.props;
+const t = UI[lang];
+const title = Astro.props.title ?? t.ctaTitle;
+const text = Astro.props.text ?? t.ctaText;
+---
+<section id="contact" class="contact-band">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2>{title}</h2>
+        <p>{text}</p>
+        <div class="contact-actions">
+          <a class="btn btn-dark" href={BOOKING_URL} target="_blank" rel="noopener">{t.ctaButton}</a>
+          <a class="link" href={`mailto:${CONTACT.email}`}>{t.ctaSecondary}</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="ring">
+          <img src={url('/images/pierre-jean-becker.png')} alt="Pierre-Jean Becker" width="238" height="258" loading="lazy" />
+        </div>
+        <div class="name">Pierre-Jean Becker</div>
+        <div class="role">{lang === 'fr' ? 'Fondateur' : 'Founder'} · Messor</div>
+      </div>
+    </div>
+    <div class="contact-info">
+      <div>
+        <div class="k">{t.labels.address}</div>
+        <div class="v">{CONTACT.address[0]}<br />{CONTACT.address[1]}</div>
+      </div>
+      <div>
+        <div class="k">{t.labels.phone}</div>
+        <a href={CONTACT.phoneHref}>{CONTACT.phone}</a>
+      </div>
+      <div>
+        <div class="k">{t.labels.email}</div>
+        <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+      </div>
+      <div>
+        <div class="k">{t.labels.linkedin}</div>
+        <a href={CONTACT.linkedin} target="_blank" rel="noopener">Pierre-Jean Becker</a>
+      </div>
+    </div>
+  </div>
+</section>
