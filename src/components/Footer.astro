@@ -23,7 +23,7 @@ const year = new Date().getFullYear();
         </p>
       </div>
       {groups.map((g) => (
-        <div>
+        <div class="nav-group">
           <h3>{g.label}</h3>
           <ul>{g.children!.map((c) => <li><a href={url(c.href)}>{c.label}</a></li>)}</ul>
         </div>
