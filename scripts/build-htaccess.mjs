@@ -76,7 +76,7 @@ lines.push(
   '',
   '# Cache navigateur (selon l’extension, indépendamment du type MIME renvoyé par OVH)',
   '<IfModule mod_headers.c>',
-  '  <FilesMatch "\\.(woff2|webp|png|jpe?g|svg|ico)$">',
+  '  <FilesMatch "\\.(woff2|webp|png|jpe?g|svg|ico|mp4)$">',
   '    Header set Cache-Control "public, max-age=2592000"',
   '  </FilesMatch>',
   '  <FilesMatch "^(?!.*\\.html$).*\\.(css|js|woff2)$">',

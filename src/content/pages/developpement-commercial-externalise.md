@@ -6,6 +6,7 @@ lang: "fr"
 permalink: "/developpement-commercial-externalise"
 alternate: "/en/business-development"
 kind: "offer"
+video: true
 heroTitle: "Développement Commercial Externalisé"
 heroLead: "Grâce à nos stratégies d’externalisation commerciale sur mesure, vous diversifiez votre portefeuille clients et maximisez les ventes auprès de votre clientèle existante. En confiant la gestion commerciale externalisée à notre équipe, vous bénéficiez d’une force de vente déléguée agile et performante pour accélérer votre croissance."
 prev:

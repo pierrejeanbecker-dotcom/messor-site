@@ -77,7 +77,7 @@ const catOf = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
 ---
 {kind === 'page' && d.kind && (
   <Base title={d.seoTitle || d.title} description={d.description} lang={lang} path={path} alternate={d.alternate}>
-    <ServicePage lang={lang} path={path} title={d.heroTitle || d.title} lead={d.heroLead} headings={headings} related={props.related} cta={d.cta}>
+    <ServicePage lang={lang} path={path} title={d.heroTitle || d.title} lead={d.heroLead} headings={headings} related={props.related} cta={d.cta} video={d.video}>
       <Content />
     </ServicePage>
     {d.latestPosts && props.latest.length > 0 && (

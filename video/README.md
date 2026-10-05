@@ -13,3 +13,15 @@ node video/render.mjs                     # -> video/messor-business-developer-a
 ```
 
 Le minutage de chaque élément se règle avec `data-in` / `data-out` (en secondes).
+
+## Versions pour le site
+
+Le site utilise des versions allégées dans `public/videos/` (composant `src/components/MessorVideo.astro`,
+affiché sur l'accueil FR et sur la page « Développement commercial externalisé » via `video: true`).
+Après un nouveau rendu, regénérer ces fichiers :
+
+```sh
+S=video/messor-business-developer-as-a-service.mp4
+ffmpeg -y -i $S -c:v libx264 -preset slow -crf 26 -pix_fmt yuv420p -movflags +faststart -an public/videos/messor-business-developer-as-a-service-1080.mp4
+ffmpeg -y -i $S -vf scale=1280:720 -c:v libx264 -preset slow -crf 27 -pix_fmt yuv420p -movflags +faststart -an public/videos/messor-business-developer-as-a-service-720.mp4
+```

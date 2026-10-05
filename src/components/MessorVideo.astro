@@ -1,0 +1,106 @@
+---
+// Vidéo de présentation « Business Developer as a Service » (sources : video/).
+// mode="inline" : lecteur dans la page ; mode="modal" : bouton qui ouvre la vidéo en plein écran.
+// La vidéo n'est chargée qu'au clic (preload="none") pour ne pas ralentir la page.
+import { url } from '../lib/url';
+
+interface Props { mode?: 'inline' | 'modal'; label?: string }
+const { mode = 'inline', label = 'Découvrir Messor en 1 min' } = Astro.props;
+
+const SITE = 'https://messor.fr';
+const name = 'Messor — Business Developer as a Service';
+const description = 'Messor en une minute : un business developer senior dédié à votre compte, de la prospection jusqu’à la signature, opérationnel en 4 semaines.';
+const poster = url('/videos/messor-bdaas-poster.webp');
+const src720 = url('/videos/messor-business-developer-as-a-service-720.mp4');
+const src1080 = url('/videos/messor-business-developer-as-a-service-1080.mp4');
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name,
+  description,
+  thumbnailUrl: SITE + '/videos/messor-bdaas-poster.webp',
+  contentUrl: SITE + '/videos/messor-business-developer-as-a-service-1080.mp4',
+  uploadDate: '2026-10-05',
+  duration: 'PT1M',
+  inLanguage: 'fr',
+  publisher: { '@type': 'Organization', name: 'Messor', url: SITE },
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+
+{mode === 'inline' ? (
+  <figure class="mv">
+    <div class="mv-frame">
+      <video controls preload="none" playsinline poster={poster} width="1920" height="1080" aria-label={name}>
+        <source src={src720} type="video/mp4" media="(max-width: 900px)" />
+        <source src={src1080} type="video/mp4" />
+      </video>
+      <button class="mv-play" type="button"><span class="mv-btn" aria-hidden="true"></span><span class="mv-txt">Lire la vidéo <small>1 min</small></span></button>
+    </div>
+    <figcaption><strong>Business Developer <em>as a Service</em></strong> — l’offre expliquée en 1 minute</figcaption>
+  </figure>
+) : (
+  <>
+    <button class="btn-ghost mv-open" type="button"><span class="mv-ico" aria-hidden="true"></span>{label}</button>
+    <dialog class="mv-dialog" aria-label={name}>
+      <button class="mv-close" type="button" aria-label="Fermer la vidéo">×</button>
+      <video controls preload="none" playsinline poster={poster} width="1920" height="1080">
+        <source src={src720} type="video/mp4" media="(max-width: 900px)" />
+        <source src={src1080} type="video/mp4" />
+      </video>
+    </dialog>
+  </>
+)}
+
+<script>
+  // Lecteur intégré : grand bouton de lecture sur l'aperçu, puis commandes natives.
+  document.querySelectorAll<HTMLElement>('.mv-frame').forEach((frame) => {
+    const video = frame.querySelector('video')!;
+    const play = frame.querySelector<HTMLButtonElement>('.mv-play')!;
+    video.controls = false;
+    frame.classList.add('js');
+    play.addEventListener('click', () => {
+      video.controls = true;
+      frame.classList.add('playing');
+      video.play();
+    });
+  });
+  // Fenêtre plein écran : lecture à l'ouverture, pause à la fermeture.
+  document.querySelectorAll<HTMLButtonElement>('.mv-open').forEach((btn) => {
+    const dialog = btn.nextElementSibling as HTMLDialogElement;
+    const video = dialog.querySelector('video')!;
+    btn.addEventListener('click', () => { dialog.showModal(); video.play(); });
+    dialog.querySelector('.mv-close')!.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', () => video.pause());
+  });
+</script>
+
+<style>
+  .mv { margin: 0; }
+  .mv-frame { position: relative; border-radius: 12px; overflow: hidden; background: var(--dark); box-shadow: 0 30px 80px -30px oklch(0% 0 0 / 0.7); border: 1px solid var(--line-dark); aspect-ratio: 16 / 9; }
+  .mv-frame video { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .mv-play { display: none; }
+  .mv-frame.js .mv-play { display: flex; align-items: flex-end; justify-content: flex-start; gap: 16px; position: absolute; inset: 0; width: 100%; padding: 28px; background: linear-gradient(180deg, transparent 50%, oklch(11% 0.015 260 / 0.75)); border: 0; cursor: pointer; text-align: left; font-family: inherit; }
+  .mv-btn { width: 64px; height: 64px; border-radius: 50%; background: var(--gold); position: relative; flex: none; box-shadow: 0 0 0 0 oklch(74% 0.15 165 / 0.55); animation: mv-pulse 2.4s ease-out infinite; transition: transform 0.2s; }
+  .mv-btn::after { content: ''; position: absolute; left: 26px; top: 20px; border-style: solid; border-width: 12px 0 12px 19px; border-color: transparent transparent transparent var(--dark); }
+  .mv-txt { color: white; font-size: 17px; font-weight: 500; padding-bottom: 20px; }
+  .mv-txt small { color: var(--on-dark-soft); font-size: 14px; font-weight: 400; margin-left: 6px; }
+  .mv-play:hover .mv-btn, .mv-play:focus-visible .mv-btn { transform: scale(1.08); }
+  @media (max-width: 600px) { .mv-frame.js .mv-play { padding: 14px; gap: 12px; } .mv-btn { width: 48px; height: 48px; } .mv-btn::after { left: 19px; top: 15px; border-width: 9px 0 9px 14px; } .mv-txt { font-size: 15px; padding-bottom: 13px; } }
+  .mv-frame.playing .mv-play { display: none; }
+  .mv figcaption { margin-top: 14px; font-size: 14px; color: var(--on-dark-soft); }
+  .mv figcaption strong { color: var(--on-dark); font-weight: 500; }
+  .mv figcaption em { font-family: var(--font-serif); color: var(--gold); font-weight: 400; }
+  @keyframes mv-pulse { 0% { box-shadow: 0 0 0 0 oklch(74% 0.15 165 / 0.55); } 70%, 100% { box-shadow: 0 0 0 22px oklch(74% 0.15 165 / 0); } }
+
+  .mv-open { display: inline-flex; align-items: center; gap: 10px; background: none; border-top: 0; border-left: 0; border-right: 0; cursor: pointer; font-family: inherit; }
+  .mv-ico { width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid var(--gold); position: relative; flex: none; }
+  .mv-ico::after { content: ''; position: absolute; left: 9px; top: 6.5px; border-style: solid; border-width: 5.5px 0 5.5px 9px; border-color: transparent transparent transparent var(--gold); }
+  .mv-dialog { margin: auto; border: 0; padding: 0; background: transparent; width: min(92vw, 1280px); max-width: none; overflow: visible; }
+  .mv-dialog::backdrop { background: oklch(8% 0.01 260 / 0.88); backdrop-filter: blur(4px); }
+  .mv-dialog video { display: block; width: 100%; height: auto; border-radius: 10px; background: var(--dark); }
+  .mv-close { position: absolute; top: -46px; right: 0; width: 38px; height: 38px; border-radius: 50%; border: 1px solid oklch(100% 0 0 / 0.35); background: oklch(100% 0 0 / 0.08); color: white; font-size: 24px; line-height: 1; cursor: pointer; }
+  .mv-close:hover { background: oklch(100% 0 0 / 0.2); }
+  @media (prefers-reduced-motion: reduce) { .mv-btn { animation: none; } }
+</style>

@@ -26,6 +26,7 @@ const pages = defineCollection({
     prev: link.optional(),
     next: link.optional(),
     latestPosts: z.boolean().optional(),
+    video: z.boolean().optional(), // vidéo de présentation sous l'en-tête (src/components/MessorVideo.astro)
     cta: link.optional(), // bouton principal de l'en-tête (par défaut : prise de RDV)
     kind: z.enum(['offer', 'expertise', 'page']).optional(), // mise en page en sections (offres, expertise, autres)
   }),

@@ -2,6 +2,7 @@
 import { HOME, CLIENTS } from '../data/home';
 import { BOOKING_URL, type Lang } from '../data/site';
 import { url } from '../lib/url';
+import MessorVideo from './MessorVideo.astro';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -33,7 +34,9 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
     <p class="hero-lead">{h.lead}</p>
     <div class="hero-actions">
       <a class="btn" href={BOOKING_URL} target="_blank" rel="noopener">{h.book}</a>
-      <a class="btn-ghost" href="#resultats">{h.seeResults}</a>
+      {lang === 'fr'
+        ? <MessorVideo mode="modal" />
+        : <a class="btn-ghost" href="#resultats">{h.seeResults}</a>}
     </div>
     <div class="stats">
       {h.stats.map((s) => (

@@ -321,6 +321,7 @@ a { color: inherit; }
 .svc-toc a { display: flex; gap: 14px; padding: 8px 0; color: var(--on-dark); text-decoration: none; font-size: 13.5px; line-height: 1.4; transition: color 0.15s; }
 .svc-toc a::before { content: counter(toc, decimal-leading-zero); color: var(--accent); font-family: var(--font-serif); font-size: 15px; min-width: 22px; }
 .svc-toc a:hover { color: white; }
+.svc-video { position: relative; z-index: 1; max-width: 1000px; margin: 64px auto 0; }
 @media (max-width: 960px) { .svc-hero-grid { grid-template-columns: 1fr; gap: 40px; } .svc-hero { padding-top: 120px; } }
 
 .blk { padding: 96px var(--gutter); background: var(--paper); scroll-margin-top: 68px; }

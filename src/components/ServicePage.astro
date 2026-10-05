@@ -3,6 +3,7 @@
 import { marked } from 'marked';
 import { BOOKING_URL, NAV, UI, type Lang } from '../data/site';
 import { prefixHtml, url } from '../lib/url';
+import MessorVideo from './MessorVideo.astro';
 
 interface Related { href: string; label: string; description?: string }
 interface Props {
@@ -13,8 +14,9 @@ interface Props {
   headings: { depth: number; slug: string; text: string }[];
   related: Related[];
   cta?: { href: string; label: string };
+  video?: boolean;
 }
-const { lang, path, title, lead, headings, related, cta } = Astro.props;
+const { lang, path, title, lead, headings, related, cta, video } = Astro.props;
 const t = UI[lang];
 const group = NAV[lang].find((g) => g.children?.some((c) => c.href === path));
 const leadHtml = lead ? prefixHtml(marked.parse(lead) as string) : '';
@@ -45,6 +47,7 @@ const L = lang === 'fr'
       </nav>
     )}
   </div>
+  {video && <div class="svc-video"><MessorVideo /></div>}
 </section>
 
 <div class="svc-content">
