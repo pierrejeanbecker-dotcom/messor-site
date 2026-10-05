@@ -1,0 +1,267 @@
+<!doctype html>
+<!--
+  Vidéo motion design « Messor — Business Developer as a Service » (1920 × 1080, 60 s).
+  Chaque élément porte data-in / data-out (secondes) et data-fx (type d'apparition).
+  render(t) calcule l'état exact de la vidéo à l'instant t : rendu image par image avec video/render.mjs.
+  Ouvrir ce fichier dans un navigateur affiche un aperçu en lecture continue.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Messor — Business Developer as a Service</title>
+<style>
+  @font-face { font-family: 'DM Sans'; font-weight: 300 700; src: url('../public/fonts/dm-sans-latin.woff2') format('woff2'); }
+  @font-face { font-family: 'DM Serif Display'; src: url('../public/fonts/dm-serif-display-latin.woff2') format('woff2'); }
+  @font-face { font-family: 'DM Serif Display'; font-style: italic; src: url('../public/fonts/dm-serif-display-italic-latin.woff2') format('woff2'); }
+  :root { --dark: #0b0e14; --dark2: #121722; --gold: #13C995; --ink-gold: #137656; --paper: #f7f4ef; --muted: #9aa1ad; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--dark); }
+  body { font-family: 'DM Sans', sans-serif; color: white; -webkit-font-smoothing: antialiased; }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--dark); }
+  .scene { position: absolute; inset: 0; }
+  [data-in] { opacity: 0; will-change: opacity, transform; }
+  .serif { font-family: 'DM Serif Display', serif; font-weight: 400; }
+  .green { color: var(--gold); }
+  .eyebrow { font-size: 22px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 18px; }
+  .eyebrow::before { content: ''; width: 56px; height: 2px; background: var(--gold); }
+
+  /* Fond tableau */
+  .bg { position: absolute; inset: -4%; background: url('../public/images/bruegel-les-moissonneurs-2200.webp') 30% 80% / cover; }
+  .veil { position: absolute; inset: 0; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 96px 96px; }
+
+  /* Scène 1 : logo */
+  .logo-wrap { position: absolute; left: 0; right: 0; top: 380px; display: flex; flex-direction: column; align-items: center; gap: 30px; }
+  .logo-row { display: flex; align-items: center; gap: 34px; }
+  .logo-row img { width: 130px; height: 130px; }
+  .wordmark { font-weight: 700; font-size: 132px; letter-spacing: 0.04em; line-height: 1; }
+  .wordmark span { color: var(--gold); }
+  .tagline { font-size: 34px; letter-spacing: 0.08em; color: #d7dbe1; }
+  .tagline em { font-family: 'DM Serif Display', serif; color: var(--gold); font-size: 40px; letter-spacing: 0.02em; }
+
+  /* Scène 2 : constat */
+  .pains { position: absolute; left: 180px; top: 230px; width: 1560px; }
+  .pain { display: flex; align-items: baseline; gap: 34px; font-size: 64px; line-height: 1.15; padding: 30px 0; border-top: 1px solid rgba(255,255,255,0.12); }
+  .pain .x { font-family: 'DM Serif Display', serif; color: var(--gold); font-size: 48px; }
+  .pain-close { margin-top: 56px; font-size: 54px; font-style: italic; }
+
+  /* Scène 3 : révélation */
+  .reveal { position: absolute; left: 0; right: 0; top: 270px; text-align: center; }
+  .reveal .q { font-size: 52px; color: #c9ced6; margin-bottom: 40px; }
+  .reveal .big { font-size: 170px; line-height: 1; letter-spacing: -0.02em; }
+  .reveal .aas { font-size: 150px; line-height: 1.05; font-style: italic; color: var(--gold); position: relative; display: inline-block; }
+  .reveal .aas .line { position: absolute; left: 0; right: 0; bottom: -6px; height: 8px; background: var(--gold); transform-origin: left; }
+  .reveal .sub { margin-top: 56px; font-size: 38px; color: #d7dbe1; letter-spacing: 0.02em; }
+
+  /* Scène 4 : l'offre */
+  .offer-title { position: absolute; left: 160px; top: 130px; width: 1600px; }
+  .offer-title h2 { font-size: 66px; line-height: 1.1; margin-top: 26px; }
+  .cards { position: absolute; left: 160px; right: 160px; top: 440px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+  .card { background: var(--dark2); border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 44px 38px; height: 360px; position: relative; overflow: hidden; }
+  .card::before { content: ''; position: absolute; left: 0; top: 0; right: 0; height: 5px; background: var(--gold); }
+  .card .n { font-family: 'DM Serif Display', serif; color: var(--gold); font-size: 64px; line-height: 1; margin-bottom: 30px; }
+  .card h3 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 40px; line-height: 1.12; margin-bottom: 16px; }
+  .card p { font-size: 24px; line-height: 1.45; color: #aab1bc; }
+  .arrow { position: absolute; top: 590px; font-size: 40px; color: var(--gold); }
+  .chips { position: absolute; left: 160px; top: 850px; display: flex; gap: 20px; }
+  .chip { border: 1px solid rgba(19,201,149,0.5); color: #e7f9f2; border-radius: 100px; padding: 16px 30px; font-size: 26px; }
+
+  /* Scène 5 : méthode */
+  .method-title { position: absolute; left: 160px; top: 140px; width: 1600px; }
+  .method-title h2 { font-size: 78px; line-height: 1.08; margin-top: 26px; white-space: nowrap; }
+  .method-title h2 em { color: var(--gold); }
+  .track { position: absolute; left: 160px; right: 160px; top: 584px; height: 8px; background: rgba(255,255,255,0.12); border-radius: 4px; }
+  .track .fill { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: var(--gold); border-radius: 4px; transform-origin: left; }
+  .milestones { position: absolute; left: 160px; right: 160px; top: 544px; display: grid; grid-template-columns: repeat(4, 1fr); }
+  .ms { padding-right: 40px; }
+  .ms .dot { width: 88px; height: 88px; border-radius: 50%; background: var(--dark); border: 4px solid var(--gold); display: grid; place-items: center; font-family: 'DM Serif Display', serif; font-size: 40px; color: var(--gold); }
+  .ms .when { margin-top: 40px; font-size: 22px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .ms h3 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 46px; margin-top: 12px; line-height: 1.1; }
+
+  /* Scène 6 : preuves */
+  .stats { position: absolute; left: 160px; right: 160px; top: 170px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
+  .stat .v { font-family: 'DM Serif Display', serif; color: var(--gold); font-size: 92px; line-height: 1; white-space: nowrap; }
+  .stat .l { margin-top: 18px; font-size: 27px; line-height: 1.35; color: #c3c9d1; max-width: 360px; }
+  .quote { position: absolute; left: 160px; right: 160px; top: 560px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 60px; }
+  .quote blockquote { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 60px; line-height: 1.22; max-width: 1500px; }
+  .quote .who { margin-top: 36px; font-size: 28px; color: #c3c9d1; }
+  .quote .who b { color: white; }
+
+  /* Scène 7 : fin */
+  .end { position: absolute; left: 160px; top: 230px; }
+  .end h2 { font-size: 132px; line-height: 1.02; letter-spacing: -0.02em; }
+  .end h2 em { color: var(--gold); }
+  .cta-row { position: absolute; left: 160px; top: 690px; display: flex; align-items: center; gap: 44px; }
+  .btn { background: var(--gold); color: var(--dark); font-weight: 700; font-size: 38px; padding: 30px 52px; border-radius: 14px; }
+  .site { font-size: 44px; font-weight: 600; letter-spacing: 0.02em; }
+  .end-logo { position: absolute; left: 160px; bottom: 110px; display: flex; align-items: center; gap: 18px; }
+  .end-logo img { width: 62px; height: 62px; }
+  .end-logo .wordmark { font-size: 54px; }
+  .credit { position: absolute; right: 60px; bottom: 44px; font-size: 18px; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; }
+  #black { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- 1. Ouverture : logo -->
+  <section class="scene" data-scene="0 6.2">
+    <div class="bg" data-kb="0 6.2"></div>
+    <div class="veil" style="background: radial-gradient(ellipse at center, rgba(11,14,20,0.55) 0%, rgba(11,14,20,0.88) 70%, rgba(11,14,20,0.96) 100%)"></div>
+    <div class="logo-wrap">
+      <div class="logo-row">
+        <img src="../public/images/logo-messor.png" alt="" data-in="0.4" data-out="5.6" data-fx="pop">
+        <div class="wordmark" data-in="0.8" data-out="5.6" data-fx="up">M<span>€</span>SSOR</div>
+      </div>
+      <div class="tagline" data-in="1.8" data-out="5.6" data-fx="up">Du latin <em>messis</em> — la moisson</div>
+    </div>
+    <div class="credit" data-in="1.2" data-out="5.6" data-fx="fade">Pieter Bruegel l’Ancien · Les Moissonneurs, 1565</div>
+  </section>
+
+  <!-- 2. Le constat -->
+  <section class="scene" data-scene="6 14.2">
+    <div class="grid"></div>
+    <div class="pains">
+      <div class="eyebrow" data-in="6.3" data-out="13.6" data-fx="up">Le constat</div>
+      <div style="height:40px"></div>
+      <div class="pain" data-in="6.9" data-out="13.6" data-fx="left"><span class="x">✕</span><span>Vos consultants ne sont pas des vendeurs.</span></div>
+      <div class="pain" data-in="8.4" data-out="13.6" data-fx="left"><span class="x">✕</span><span>Recruter un SDR est long, coûteux et risqué.</span></div>
+      <div class="pain" data-in="9.9" data-out="13.6" data-fx="left"><span class="x">✕</span><span>Votre CRM est plein de leads froids.</span></div>
+      <div class="pain-close serif" data-in="11.5" data-out="13.6" data-fx="up">La prospection B2B est devenue <span class="green">un métier à part entière.</span></div>
+    </div>
+  </section>
+
+  <!-- 3. La révélation -->
+  <section class="scene" data-scene="14 21.2">
+    <div class="grid"></div>
+    <div class="reveal">
+      <div class="q serif" data-in="14.3" data-out="20.6" data-fx="up">Et si votre prochain commercial était…</div>
+      <div class="big serif" data-in="15.8" data-out="20.6" data-fx="zoom">Business Developer</div>
+      <div class="aas serif" data-in="16.6" data-out="20.6" data-fx="up">as a Service<span class="line" data-wipe="17.3 0.8"></span></div>
+      <div class="sub" data-in="18.0" data-out="20.6" data-fx="up">L’offre de force de vente externalisée de Messor</div>
+    </div>
+  </section>
+
+  <!-- 4. L'offre -->
+  <section class="scene" data-scene="21 33.2">
+    <div class="grid"></div>
+    <div class="offer-title">
+      <div class="eyebrow" data-in="21.3" data-out="32.6" data-fx="up">Business Developer as a Service</div>
+      <h2 class="serif" data-in="21.7" data-out="32.6" data-fx="up">Un commercial senior <span class="green">dédié à votre compte</span>,<br>de la prospection jusqu’à la signature.</h2>
+    </div>
+    <div class="cards">
+      <div class="card" data-in="23.0" data-out="32.6" data-fx="card"><div class="n">01</div><h3>Ciblage</h3><p>Base de prospects ciblée et enrichie, ICP validé avec vous.</p></div>
+      <div class="card" data-in="23.9" data-out="32.6" data-fx="card"><div class="n">02</div><h3>Prospection multicanal</h3><p>Téléphone, email, LinkedIn : des séquences personnalisées.</p></div>
+      <div class="card" data-in="24.8" data-out="32.6" data-fx="card"><div class="n">03</div><h3>Rendez-vous qualifiés</h3><p>Avec des décideurs, jusqu’au C-Level. Réalisés ou co-réalisés.</p></div>
+      <div class="card" data-in="25.7" data-out="32.6" data-fx="card"><div class="n">04</div><h3>Closing &amp; suivi</h3><p>Qualification, négociation et pilotage CRM jusqu’à la vente.</p></div>
+    </div>
+    <div class="chips">
+      <div class="chip" data-in="27.4" data-out="32.6" data-fx="up">Intégré à votre CRM et vos outils</div>
+      <div class="chip" data-in="27.9" data-out="32.6" data-fx="up">En marque blanche</div>
+      <div class="chip" data-in="28.4" data-out="32.6" data-fx="up">FR · EN · DE · IT</div>
+      <div class="chip" data-in="28.9" data-out="32.6" data-fx="up">Point stratégique hebdomadaire</div>
+    </div>
+  </section>
+
+  <!-- 5. La méthode -->
+  <section class="scene" data-scene="33 42.2">
+    <div class="grid"></div>
+    <div class="method-title">
+      <div class="eyebrow" data-in="33.3" data-out="41.6" data-fx="up">Comment ça marche</div>
+      <h2 class="serif" data-in="33.7" data-out="41.6" data-fx="up">De la signature aux premiers rendez-vous,<br><em>en <span data-count="34.6 37.8 1 4">4</span> semaines.</em></h2>
+    </div>
+    <div class="track" data-in="34.4" data-out="41.6" data-fx="fade"><div class="fill" data-wipe="34.6 3.4"></div></div>
+    <div class="milestones">
+      <div class="ms" data-in="34.6" data-out="41.6" data-fx="up"><div class="dot">1</div><div class="when">Semaine 0</div><h3>Diagnostic</h3></div>
+      <div class="ms" data-in="35.7" data-out="41.6" data-fx="up"><div class="dot">2</div><div class="when">Semaines 1–2</div><h3>Atelier de cadrage</h3></div>
+      <div class="ms" data-in="36.8" data-out="41.6" data-fx="up"><div class="dot">3</div><div class="when">Semaines 3–4</div><h3>Lancement opérationnel</h3></div>
+      <div class="ms" data-in="37.9" data-out="41.6" data-fx="up"><div class="dot">4</div><div class="when">Mois 2 → ∞</div><h3>Pilotage &amp; itération</h3></div>
+    </div>
+  </section>
+
+  <!-- 6. Les preuves -->
+  <section class="scene" data-scene="42 51.2">
+    <div class="grid"></div>
+    <div class="stats">
+      <div class="stat" data-in="42.3" data-out="50.6" data-fx="up"><div class="v">+<span data-count="42.4 43.8 0 50">50</span></div><div class="l">clients B2B accompagnés</div></div>
+      <div class="stat" data-in="42.8" data-out="50.6" data-fx="up"><div class="v"><span data-count="42.9 44.3 0 10">10</span>M€</div><div class="l">signés avec notre principal partenaire</div></div>
+      <div class="stat" data-in="43.3" data-out="50.6" data-fx="up"><div class="v">C-Level</div><div class="l">la cible la plus attaquée par l’agence</div></div>
+      <div class="stat" data-in="43.8" data-out="50.6" data-fx="up"><div class="v"><span data-count="43.9 44.9 1 4">4</span> langues</div><div class="l">FR · EN · DE · IT pour l’Europe</div></div>
+    </div>
+    <div class="quote" data-in="45.6" data-out="50.6" data-fx="up">
+      <blockquote>« Messor est aujourd’hui un partenaire incontournable en Europe. Ils nous apportent plusieurs nouveaux clients majeurs chaque année. »</blockquote>
+      <div class="who"><b>Christophe Cren</b> — VP Business Development Europe, Proaction International</div>
+    </div>
+  </section>
+
+  <!-- 7. Fin -->
+  <section class="scene" data-scene="51 60">
+    <div class="bg" data-kb="51 60"></div>
+    <div class="veil" style="background: linear-gradient(95deg, rgba(11,14,20,0.96) 0%, rgba(11,14,20,0.86) 48%, rgba(11,14,20,0.55) 100%)"></div>
+    <div class="end">
+      <h2 class="serif" data-in="51.4" data-out="59.3" data-fx="up">Vous avez semé un produit.</h2>
+      <h2 class="serif" data-in="52.5" data-out="59.3" data-fx="up"><em>Nous moissonnons</em> vos clients.</h2>
+    </div>
+    <div class="cta-row">
+      <div class="btn" data-in="54.2" data-out="59.3" data-fx="pop">Réserver un diagnostic de 30 min →</div>
+      <div class="site" data-in="54.9" data-out="59.3" data-fx="up">messor.fr</div>
+    </div>
+    <div class="end-logo" data-in="55.6" data-out="59.3" data-fx="up"><img src="../public/images/logo-messor.png" alt=""><div class="wordmark">M<span>€</span>SSOR</div></div>
+  </section>
+
+  <div id="black"></div>
+</div>
+
+<script>
+  const DURATION = 60;
+  const clamp = (x) => Math.max(0, Math.min(1, x));
+  const easeOut = (x) => 1 - Math.pow(1 - x, 3);
+  const easeInOut = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+  const backOut = (x) => { const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+  const IN = 0.7, OUT = 0.5;
+  const nums = (s) => s.split(/\s+/).map(Number);
+
+  const els = [...document.querySelectorAll('[data-in]')].map((el) => ({ el, tin: +el.dataset.in, tout: +el.dataset.out, fx: el.dataset.fx || 'fade' }));
+  const scenes = [...document.querySelectorAll('[data-scene]')].map((el) => ({ el, range: nums(el.dataset.scene) }));
+  const kbs = [...document.querySelectorAll('[data-kb]')].map((el) => ({ el, range: nums(el.dataset.kb) }));
+  const wipes = [...document.querySelectorAll('[data-wipe]')].map((el) => ({ el, a: nums(el.dataset.wipe) }));
+  const counts = [...document.querySelectorAll('[data-count]')].map((el) => ({ el, a: nums(el.dataset.count) }));
+
+  function render(t) {
+    for (const s of scenes) s.el.style.visibility = t >= s.range[0] - 0.01 && t <= s.range[1] ? 'visible' : 'hidden';
+    for (const { el, tin, tout, fx } of els) {
+      const pi = clamp((t - tin) / IN), po = clamp((t - tout) / OUT);
+      const a = easeOut(pi) * (1 - easeInOut(po));
+      let tr = '';
+      if (fx === 'up') tr = `translateY(${(1 - easeOut(pi)) * 50 - easeInOut(po) * 20}px)`;
+      else if (fx === 'left') tr = `translateX(${(1 - easeOut(pi)) * -80}px)`;
+      else if (fx === 'pop') tr = `scale(${0.6 + 0.4 * backOut(pi) - easeInOut(po) * 0.05})`;
+      else if (fx === 'zoom') tr = `scale(${1.25 - 0.25 * easeOut(pi)})`;
+      else if (fx === 'card') tr = `translateY(${(1 - easeOut(pi)) * 90}px) rotate(${(1 - easeOut(pi)) * 2}deg)`;
+      el.style.opacity = a.toFixed(4);
+      el.style.transform = tr;
+    }
+    for (const { el, range } of kbs) {
+      const p = clamp((t - range[0]) / (range[1] - range[0]));
+      el.style.transform = `scale(${1 + 0.12 * p}) translate(${-2 * p}%, ${-1.5 * p}%)`;
+    }
+    for (const { el, a } of wipes) el.style.transform = `scaleX(${easeInOut(clamp((t - a[0]) / a[1])).toFixed(4)})`;
+    for (const { el, a } of counts) {
+      const [t0, t1, from, to] = a;
+      el.textContent = String(Math.round(from + (to - from) * easeOut(clamp((t - t0) / (t1 - t0)))));
+    }
+    // fondu au noir final
+    document.getElementById('black').style.opacity = clamp((t - (DURATION - 0.7)) / 0.7).toFixed(4);
+  }
+  window.render = render;
+  window.DURATION = DURATION;
+
+  // Aperçu dans un navigateur : lecture en boucle (désactivée pendant le rendu)
+  if (!location.hash.includes('render')) {
+    const start = performance.now();
+    const loop = () => { render(((performance.now() - start) / 1000) % DURATION); requestAnimationFrame(loop); };
+    document.fonts.ready.then(loop);
+  } else render(0);
+</script>
+</body>
+</html>
