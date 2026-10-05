@@ -7,6 +7,10 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const h = HOME[lang];
 const bruegel = url('/images/bruegel-les-moissonneurs-1024.webp');
+// « en 4 semaines » -> « en » + 4 (compteur animé) + « semaines »
+const [, weeksBefore = '', weeksNum = '', weeksAfter = h.process.titleEm] = h.process.titleEm.match(/^(\D*)(\d+)(.*)$/) || [];
+const weeks = Number(weeksNum) || 4;
+const T = lang === 'fr' ? { start: 'Signature', end: '1ers rendez-vous', wk: 'S' } : { start: 'Signature', end: 'First meetings', wk: 'W' };
 // Tableau de l'en-tête : image responsive, chargée en priorité (élément le plus grand de la page)
 const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-les-moissonneurs-${w}.webp`)} ${w}w`).join(', ');
 ---
@@ -97,18 +101,27 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── PROCESS ── -->
-<section id="process" class="section bg-warm">
+<section id="process" class="section bg-warm rv-scope">
   <div class="wrap-narrow">
-    <div style="max-width:720px;margin-bottom:64px">
-      <p class="eyebrow">{h.process.eyebrow}</p>
-      <h2 class="serif" style="font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-0.02em;margin-bottom:20px">
-        {h.process.titleStart}<em>{h.process.titleEm}</em>{h.process.titleEnd}
+    <div class="process-head">
+      <p class="eyebrow rv">{h.process.eyebrow}</p>
+      <h2 class="serif process-title rv" style={`--d:80ms`} aria-label={`${h.process.titleStart}${h.process.titleEm}${h.process.titleEnd}`}>
+        {h.process.titleStart}<em class="weeks">{weeksBefore}<span class="wk-num" data-to={weeks}>{weeks}</span>{weeksAfter}</em>{h.process.titleEnd}
       </h2>
-      <p class="muted" style="font-size:16px;line-height:1.65">{h.process.lead}</p>
+      <div class="timeline rv" style={`--d:160ms;--n:${weeks}`} aria-hidden="true">
+        <span class="tl-label">{T.start}</span>
+        <div class="tl-track">
+          {Array.from({ length: weeks }, (_, i) => (
+            <span class="tl-seg" style={`--i:${i}`}><b>{T.wk}{i + 1}</b></span>
+          ))}
+        </div>
+        <span class="tl-label tl-end">{T.end} <span class="tl-check">✓</span></span>
+      </div>
+      <p class="muted rv" style="font-size:16px;line-height:1.65;--d:240ms">{h.process.lead}</p>
     </div>
-    <div>
-      {h.process.steps.map((s) => (
-        <div class="step">
+    <div class="steps-list">
+      {h.process.steps.map((s, i) => (
+        <div class="step rv" style={`--d:${i * 120}ms`}>
           <div class="step-n">{s.n}</div>
           <div>
             <div class="step-delay">{s.delay}</div>
@@ -145,7 +158,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── POURQUOI MESSOR ── -->
-<section id="adn" class="section bg-warm adn-section">
+<section id="adn" class="section bg-warm adn-section rv-scope">
   <div class="adn-watermark" aria-hidden="true"><span>messis · messis · messis · messis · </span><span>messis · messis · messis · messis · </span></div>
   <div class="wrap adn">
     <div class="adn-left">
@@ -238,16 +251,27 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
     }, 2400);
   }
 
-  // Section « Pourquoi Messor » : apparition progressive au défilement
-  const adn = document.getElementById('adn');
-  if (adn && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    adn.classList.add('rv-on');
+  // Apparition progressive au défilement (sections .rv-scope) + compteur « en 4 semaines »
+  const scopes = document.querySelectorAll<HTMLElement>('.rv-scope');
+  const motion = 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const countUp = (el: HTMLElement) => {
+    const to = Number(el.dataset.to) || 4;
+    let n = 1;
+    el.textContent = '1';
+    const t = setInterval(() => { n++; el.textContent = String(n); if (n >= to) clearInterval(t); }, 380);
+  };
+  if (motion) {
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        e.target.querySelectorAll<HTMLElement>('.wk-num').forEach(countUp);
+        io.unobserve(e.target);
+      });
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-    adn.querySelectorAll('.rv').forEach((el) => io.observe(el));
-  } else if (adn) {
-    adn.classList.add('no-rv');
+    scopes.forEach((sc) => { sc.classList.add('rv-on'); sc.querySelectorAll('.rv').forEach((el) => io.observe(el)); });
+  } else {
+    scopes.forEach((sc) => sc.classList.add('no-rv'));
   }
 
   // Témoignages
@@ -275,6 +299,36 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
   .layer.shade { background: linear-gradient(95deg, oklch(11% 0.015 260 / 0.95) 0%, oklch(11% 0.015 260 / 0.88) 42%, oklch(11% 0.015 260 / 0.55) 68%, oklch(11% 0.015 260 / 0.3) 100%); }
   @media (max-width: 760px) { .layer.shade { background: linear-gradient(180deg, oklch(11% 0.015 260 / 0.8) 0%, oklch(11% 0.015 260 / 0.88) 50%, oklch(11% 0.015 260 / 0.8) 100%); } }
   .layer.grid { background-image: linear-gradient(oklch(30% 0.01 255 / 0.12) 1px, transparent 1px), linear-gradient(90deg, oklch(30% 0.01 255 / 0.12) 1px, transparent 1px); background-size: 80px 80px; opacity: 0.5; }
+
+  /* ── Comment ça marche : titre animé ── */
+  .process-head { max-width: 760px; margin-bottom: 56px; }
+  .process-title { font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 26px; }
+  .weeks { color: var(--accent); white-space: nowrap; background: linear-gradient(var(--gold), var(--gold)) 0 94% / 0% 0.08em no-repeat; transition: background-size 1.2s cubic-bezier(.2,.7,.2,1) 0.4s; }
+  .in .weeks, .no-rv .weeks { background-size: 100% 0.08em; }
+  .wk-num { display: inline-block; min-width: 0.6em; text-align: center; font-variant-numeric: tabular-nums; }
+  .in .wk-num { animation: tick 0.38s ease 4; }
+  @keyframes tick { 0% { transform: translateY(-0.18em); opacity: 0.4; } 100% { transform: none; opacity: 1; } }
+  .timeline { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-muted); }
+  .tl-track { flex: 1; display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: 4px; max-width: 420px; }
+  .tl-seg { position: relative; height: 26px; border-radius: 4px; background: oklch(88% 0.01 165); overflow: hidden; display: grid; place-items: center; }
+  .tl-seg::before { content: ''; position: absolute; inset: 0; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.36s ease calc(0.5s + var(--i) * 0.38s); }
+  .tl-seg b { position: relative; font-size: 11px; color: var(--ink-soft); transition: color 0.2s calc(0.6s + var(--i) * 0.38s); }
+  .in .tl-seg::before, .no-rv .tl-seg::before { transform: scaleX(1); }
+  .in .tl-seg b, .no-rv .tl-seg b { color: var(--dark); }
+  .tl-check { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: var(--gold-ink); color: white; font-size: 11px; margin-left: 4px; transform: scale(0); transition: transform 0.35s cubic-bezier(.3,1.6,.5,1) calc(0.6s + var(--n) * 0.38s); }
+  .in .tl-check, .no-rv .tl-check { transform: scale(1); }
+  .tl-end { color: var(--gold-ink); }
+  /* Étapes : trait vert qui se trace au-dessus de chaque étape */
+  .steps-list .step { position: relative; }
+  .steps-list .step::before { content: ''; position: absolute; left: 0; top: -1px; height: 2px; width: 100%; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.8s ease calc(var(--d, 0ms) + 0.15s); }
+  .rv-on .steps-list .step.in::before { transform: scaleX(1); }
+  .step:hover .step-n { transform: translateX(4px); }
+  .step-n { transition: transform 0.2s; }
+  @media (max-width: 600px) { .timeline { flex-wrap: wrap; gap: 8px 10px; } .tl-track { flex-basis: 100%; order: 2; max-width: none; } .tl-end { order: 3; } }
+  @media (prefers-reduced-motion: reduce) {
+    .weeks, .tl-seg::before, .tl-seg b, .tl-check, .steps-list .step::before { transition: none; }
+    .weeks { background-size: 100% 0.08em; } .tl-seg::before { transform: scaleX(1); } .tl-check { transform: scale(1); }
+  }
   /* Halo : dégradé radial (même rendu qu'un flou, sans le coût de calcul) */
   .glow { position: absolute; top: -360px; right: -360px; width: 920px; height: 920px; border-radius: 50%; background: radial-gradient(closest-side, oklch(72% 0.14 68 / 0.12), oklch(72% 0.14 68 / 0.06) 55%, transparent); pointer-events: none; }
   .credit { position: absolute; bottom: 24px; right: var(--gutter); font-size: 11px; color: oklch(66% 0.01 260); letter-spacing: 0.04em; z-index: 2; }
