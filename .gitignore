@@ -6,3 +6,4 @@ dist/
 
 # Vidéos rendues (regénérables avec : node video/render.mjs)
 video/*.mp4
+video/music.wav
