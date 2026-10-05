@@ -4,8 +4,8 @@
 // La vidéo n'est chargée qu'au clic (preload="none") pour ne pas ralentir la page.
 import { url } from '../lib/url';
 
-interface Props { mode?: 'inline' | 'modal'; label?: string }
-const { mode = 'inline', label = 'Découvrir Messor en 1 min' } = Astro.props;
+interface Props { mode?: 'inline' | 'modal'; label?: string; ld?: boolean }
+const { mode = 'inline', label = 'Découvrir Messor en 1 min', ld: withLd = true } = Astro.props;
 
 const SITE = 'https://messor.fr';
 const name = 'Messor — Business Developer as a Service';
@@ -26,7 +26,7 @@ const ld = {
   publisher: { '@type': 'Organization', name: 'Messor', url: SITE },
 };
 ---
-<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+{withLd && <script type="application/ld+json" set:html={JSON.stringify(ld)} />}
 
 {mode === 'inline' ? (
   <figure class="mv">

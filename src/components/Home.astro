@@ -7,6 +7,8 @@ import MessorVideo from './MessorVideo.astro';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const h = HOME[lang];
+// Sur mobile, la page d'accueil FR se resserre autour de la vidéo : en-tête, vidéo, clients, offres, contact.
+const focus = lang === 'fr';
 const bruegel = url('/images/bruegel-les-moissonneurs-1024.webp');
 // « en 4 semaines » -> « en » + 4 (compteur animé) + « semaines »
 const [, weeksBefore = '', weeksNum = '', weeksAfter = h.process.titleEm] = h.process.titleEm.match(/^(\D*)(\d+)(.*)$/) || [];
@@ -49,6 +51,16 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
   </div>
 </section>
 
+<!-- ── VIDÉO (mobile uniquement : sur ordinateur, elle s'ouvre depuis le bouton de l'en-tête) ── -->
+{focus && (
+  <section class="m-video" aria-label="Messor en 1 minute">
+    <div class="wrap">
+      <p class="eyebrow">Messor en 1 minute</p>
+      <MessorVideo ld={false} />
+    </div>
+  </section>
+)}
+
 <!-- ── CLIENTS ── -->
 <section class="clients">
   <div class="wrap">
@@ -58,7 +70,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── LE PROBLÈME ── -->
-<section class="section bg-paper" style="padding-top:90px;padding-bottom:90px">
+<section class:list={["section bg-paper", { "m-hide": focus }]} style="padding-top:90px;padding-bottom:90px">
   <div class="wrap-narrow">
     <div style="max-width:720px;margin-bottom:56px">
       <p class="eyebrow">{h.problem.eyebrow}</p>
@@ -104,7 +116,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── PROCESS ── -->
-<section id="process" class="section bg-warm rv-scope">
+<section id="process" class:list={["section bg-warm rv-scope", { "m-hide": focus }]}>
   <div class="wrap-narrow">
     <div class="process-head">
       <p class="eyebrow rv">{h.process.eyebrow}</p>
@@ -139,7 +151,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── RÉSULTATS ── -->
-<section id="resultats" class="section bg-paper">
+<section id="resultats" class:list={["section bg-paper", { "m-hide": focus }]}>
   <div class="wrap">
     <div style="margin-bottom:56px">
       <p class="eyebrow">{h.results.eyebrow}</p>
@@ -161,7 +173,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── POURQUOI MESSOR ── -->
-<section id="adn" class="section bg-warm adn-section rv-scope">
+<section id="adn" class:list={["section bg-warm adn-section rv-scope", { "m-hide": focus }]}>
   <div class="adn-watermark" aria-hidden="true"><span>messis · messis · messis · messis · </span><span>messis · messis · messis · messis · </span></div>
   <div class="wrap adn">
     <div class="adn-left">
@@ -191,7 +203,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── TÉMOIGNAGES ── -->
-<section class="section bg-dark">
+<section class:list={["section bg-dark", { "m-hide": focus }]}>
   <div class="wrap">
     <div class="t-head">
       <div>
@@ -226,7 +238,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── FAQ ── -->
-<section class="section bg-paper">
+<section class:list={["section bg-paper", { "m-hide": focus }]}>
   <div style="max-width:820px;margin:0 auto">
     <p class="eyebrow" style="text-align:center">{h.faq.eyebrow}</p>
     <h2 class="serif" style="font-size:clamp(28px,3.5vw,44px);text-align:center;margin-bottom:56px;letter-spacing:-0.02em">{h.faq.title}</h2>
@@ -469,7 +481,18 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
   .faq p { padding-bottom: 24px; color: var(--ink-soft); line-height: 1.7; font-size: 15px; white-space: pre-line; }
 
   /* ───── Mobile : page plus courte, l'essentiel d'abord ───── */
+  .m-video { display: none; }
   @media (max-width: 700px) {
+    /* Accueil FR : focus sur la vidéo, sections détaillées masquées (accessibles via le menu) */
+    .m-hide { display: none; }
+    .m-video { display: block; --accent: var(--gold); background: var(--dark); padding: 8px var(--gutter) 48px; }
+    .m-video .eyebrow { margin-bottom: 14px; }
+    .hero:has(+ .m-video) { min-height: 0; padding-top: 96px; padding-bottom: 28px; }
+    .hero:has(+ .m-video) .badge { display: none; }
+    .hero:has(+ .m-video) .hero-lead { font-size: 15px; line-height: 1.55; margin-bottom: 24px; }
+    .hero:has(+ .m-video) .stats, .hero:has(+ .m-video) .credit { display: none; }
+    .hero:has(+ .m-video) .hero-actions { margin-bottom: 0; }
+    .hero:has(+ .m-video) .hero-actions :global(.mv-open) { display: none; }
     .section { padding-top: 64px !important; padding-bottom: 64px !important; }
     /* Problème : liste resserrée */
     .pain { padding: 14px 0; font-size: 15px; gap: 12px; }
