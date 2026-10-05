@@ -145,21 +145,28 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
 </section>
 
 <!-- ── POURQUOI MESSOR ── -->
-<section id="adn" class="section bg-warm">
+<section id="adn" class="section bg-warm adn-section">
+  <div class="adn-watermark" aria-hidden="true"><span>messis · messis · messis · messis · </span><span>messis · messis · messis · messis · </span></div>
   <div class="wrap adn">
     <div class="adn-left">
-      <div class="adn-img" style={`background-image:url("${bruegel}")`} role="img" aria-label={h.why.credit[1]}></div>
+      <figure class="adn-frame rv">
+        <div class="adn-img" style={`background-image:url("${bruegel}")`} role="img" aria-label={h.why.credit[1]}></div>
+        <figcaption class="adn-tag"><em>{h.why.credit[1]}</em> · 1565</figcaption>
+      </figure>
       <p class="adn-credit">{h.why.credit[0]}<em>{h.why.credit[1]}</em>{h.why.credit[2]}</p>
-      <p class="eyebrow">{h.why.eyebrow}</p>
-      <h2 class="h2" style="margin-bottom:24px">{h.why.titleStart}<em>{h.why.titleEm}</em>{h.why.titleEnd}</h2>
-      <p class="muted" style="line-height:1.7;font-size:15px;margin-bottom:32px">{h.why.text}</p>
-      <a class="adn-btn" href={url(h.why.button.href)}>{h.why.button.label}</a>
+      <p class="eyebrow rv">{h.why.eyebrow}</p>
+      <h2 class="h2 rv" style="margin-bottom:24px">{h.why.titleStart}<em class="messis">{h.why.titleEm}</em>{h.why.titleEnd}</h2>
+      <p class="muted rv" style="line-height:1.7;font-size:15px;margin-bottom:32px">{h.why.text}</p>
+      <a class="adn-btn rv" href={url(h.why.button.href)}>{h.why.button.label} <span aria-hidden="true">→</span></a>
     </div>
     <div class="adn-points">
-      {h.why.points.map((p) => (
-        <div class="point">
-          <h3>{p.title}</h3>
-          <p>{p.desc}</p>
+      {h.why.points.map((p, i) => (
+        <div class="point rv" style={`--d:${i * 110}ms`}>
+          <span class="point-n">{String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <h3>{p.title}</h3>
+            <p>{p.desc}</p>
+          </div>
         </div>
       ))}
     </div>
@@ -229,6 +236,18 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
       i = (i + 1) % words.length;
       words[i].classList.add('on');
     }, 2400);
+  }
+
+  // Section « Pourquoi Messor » : apparition progressive au défilement
+  const adn = document.getElementById('adn');
+  if (adn && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    adn.classList.add('rv-on');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    adn.querySelectorAll('.rv').forEach((el) => io.observe(el));
+  } else if (adn) {
+    adn.classList.add('no-rv');
   }
 
   // Témoignages
@@ -326,17 +345,45 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
   @media (max-width: 1100px) { .results { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 600px) { .results { grid-template-columns: 1fr; } }
 
-  .adn { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+  .adn-section { position: relative; overflow: hidden; }
+  .adn { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; position: relative; }
   .adn-left { position: sticky; top: 100px; }
-  .adn-img { aspect-ratio: 16 / 10; background-size: cover; background-position: center 35%; border-radius: 4px; margin-bottom: 32px; border: 1px solid var(--line); box-shadow: 0 2px 8px oklch(0% 0 0 / 0.04); }
+  /* Tableau : cadre avec liseré vert et lent zoom (Ken Burns) */
+  .adn-frame { position: relative; margin: 0 0 32px; border-radius: 6px; overflow: hidden; aspect-ratio: 16 / 10; box-shadow: 0 18px 40px -18px oklch(20% 0.03 260 / 0.35); }
+  .adn-frame::after { content: ''; position: absolute; inset: 0; border-radius: 6px; box-shadow: inset 0 0 0 1px oklch(100% 0 0 / 0.25); pointer-events: none; }
+  .adn-frame::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--gold); z-index: 2; }
+  .adn-img { position: absolute; inset: 0; background-size: cover; background-position: center 35%; animation: kenburns 26s ease-in-out infinite alternate; }
+  @keyframes kenburns { from { transform: scale(1) translate(0, 0); } to { transform: scale(1.14) translate(-3%, -2%); } }
+  .adn-tag { position: absolute; left: 16px; bottom: 14px; z-index: 2; background: oklch(11% 0.015 260 / 0.78); color: white; font-size: 12px; letter-spacing: 0.04em; padding: 6px 12px; border-radius: 100px; backdrop-filter: blur(4px); }
   .adn-credit { color: var(--ink-muted); font-size: 11px; font-style: italic; letter-spacing: 0.02em; margin-bottom: 28px; line-height: 1.4; }
-  .adn-btn { display: inline-block; background: var(--ink); color: white; padding: 12px 22px; border-radius: 7px; text-decoration: none; font-size: 14px; font-weight: 500; transition: background 0.15s; }
-  .adn-btn:hover { background: var(--gold); }
-  .point { padding: 28px 0; border-bottom: 1px solid var(--line); }
-  .point:first-child { border-top: 1px solid var(--line); }
-  .point:last-child { border-bottom: 0; }
-  .point h3 { font-family: var(--font-serif); font-size: 22px; font-weight: 400; margin-bottom: 10px; letter-spacing: -0.01em; }
+  /* « messis » souligné en vert à l'apparition */
+  .messis { color: var(--accent); background: linear-gradient(var(--gold), var(--gold)) 0 92% / 0% 0.09em no-repeat; transition: background-size 0.9s cubic-bezier(.2,.7,.2,1) 0.35s; padding-bottom: 0.04em; }
+  .in .messis, .no-rv .messis { background-size: 100% 0.09em; }
+  /* Filigrane qui défile */
+  .adn-watermark { position: absolute; top: 50%; left: 0; transform: translateY(-50%); white-space: nowrap; font-family: var(--font-serif); font-style: italic; font-size: clamp(120px, 18vw, 260px); line-height: 1; color: oklch(72% 0.16 165 / 0.07); pointer-events: none; display: flex; animation: drift 60s linear infinite; }
+  @keyframes drift { to { transform: translate(-50%, -50%); } }
+  .adn-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: white; padding: 12px 22px; border-radius: 7px; text-decoration: none; font-size: 14px; font-weight: 500; transition: background 0.15s; }
+  .adn-btn span { transition: transform 0.2s; }
+  .adn-btn:hover { background: var(--gold-ink); }
+  .adn-btn:hover span { transform: translateX(4px); }
+  /* Atouts : cartes numérotées */
+  .adn-points { display: grid; gap: 14px; }
+  .point { display: grid; grid-template-columns: 52px 1fr; gap: 6px; align-items: start; background: oklch(100% 0 0 / 0.7); border: 1px solid var(--line); border-radius: 12px; padding: 26px 26px 26px 22px; position: relative; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s; }
+  .point::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--gold); transform: scaleY(0.25); transform-origin: top; transition: transform 0.35s ease; }
+  .point:hover { transform: translateY(-3px); box-shadow: 0 14px 30px -16px oklch(20% 0.03 260 / 0.3); border-color: oklch(72% 0.16 165 / 0.45); }
+  .point:hover::before { transform: scaleY(1); }
+  .point-n { font-family: var(--font-serif); font-size: 30px; line-height: 1; color: var(--accent); }
+  .point h3 { font-family: var(--font-serif); font-size: 22px; font-weight: 400; margin-bottom: 8px; letter-spacing: -0.01em; }
   .point p { font-size: 15px; color: var(--ink-soft); line-height: 1.65; }
+  /* Apparition au défilement (seulement si le script est actif) */
+  .rv-on .rv { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease var(--d, 0ms), transform 0.6s ease var(--d, 0ms); }
+  .rv-on .rv.in { opacity: 1; transform: none; }
+  .rv-on .point.rv.in:hover { transform: translateY(-3px); }
+  @media (prefers-reduced-motion: reduce) {
+    .adn-img, .adn-watermark { animation: none; }
+    .rv-on .rv { opacity: 1; transform: none; transition: none; }
+    .messis { transition: none; background-size: 100% 0.09em; }
+  }
   @media (max-width: 900px) { .adn { grid-template-columns: 1fr; gap: 40px; } .adn-left { position: static; } }
 
   .t-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 56px; flex-wrap: wrap; gap: 16px; }
@@ -380,7 +427,9 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
     .offer, .result, .point { flex: 0 0 84%; scroll-snap-align: start; border-radius: 10px; }
     .offer { border: 1px solid var(--line-dark); padding: 28px 22px; }
     .result { border: 1px solid var(--line); padding: 26px 22px; }
-    .point { background: white; border: 1px solid var(--line) !important; padding: 22px !important; }
+    .point { background: white; border: 1px solid var(--line) !important; padding: 22px !important; grid-template-columns: 1fr; }
+    .point-n { font-size: 24px; }
+    .adn-watermark { font-size: 110px; }
     .swipe-hint { display: block !important; }
     .offers-head, .t-head { margin-bottom: 28px; }
     .offers-side { font-size: 14px; }
@@ -390,7 +439,7 @@ const heroSrcset = [640, 1024, 1600, 2200].map((w) => `${url(`/images/bruegel-le
     .step-title { font-size: 21px; }
     .step-desc { grid-column: 2; font-size: 14px; }
     /* Pourquoi Messor : le tableau est déjà en en-tête */
-    .adn-img, .adn-credit { display: none; }
+    .adn-frame, .adn-credit { display: none; }
     .adn { gap: 28px; }
     /* Témoignages : flèches seulement */
     .t-list { display: none; }
