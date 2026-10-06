@@ -124,25 +124,30 @@ def clap():
     return x * e * 0.5
 
 
-def riser(dur):
-    n = int(dur * SR)
-    t = np.arange(n) / SR
-    x = rng.standard_normal(n)
-    out = np.zeros(n)
-    # bruit de plus en plus brillant (moyenne glissante de moins en moins large)
-    for a, b in zip(np.linspace(0, n, 9)[:-1].astype(int), np.linspace(0, n, 9)[1:].astype(int)):
-        w = int(np.interp(a, [0, n], [60, 3]))
-        out[a:b] = np.convolve(x, np.ones(w) / w, 'same')[a:b]
-    sweep = np.sin(2 * np.pi * np.cumsum(200 + 900 * (t / dur) ** 2) / SR) * 0.15
-    return (out * 2.2 + sweep) * (t / dur) ** 2.2
+def lowpass(x, w):
+    """Passe-bas doux : deux moyennes glissantes successives."""
+    k = np.ones(w) / w
+    return np.convolve(np.convolve(x, k, 'same'), k, 'same')
+
+
+def riser(dur, tail=0.5):
+    """Souffle feutré qui monte vers la transition puis s'éteint en douceur (pas de coupure nette)."""
+    n_up, n_tail = int(dur * SR), int(tail * SR)
+    x = rng.standard_normal(n_up + n_tail)
+    dark, bright = lowpass(x, 90), lowpass(x, 28)   # ~250 Hz et ~800 Hz : aucun sifflement aigu
+    up = np.linspace(0, 1, n_up)
+    mix = np.concatenate([up, np.ones(n_tail)])
+    sig = dark * (1 - mix) + bright * mix
+    env = np.concatenate([np.sin(up * np.pi / 2) ** 3, np.exp(-np.arange(n_tail) / (0.14 * SR))])
+    return sig / np.abs(sig).max() * env
 
 
 def impact():
-    n = int(2.0 * SR)
+    """Coup sourd et rond (grave seul, attaque adoucie), sans bruit de claquement."""
+    n = int(1.6 * SR)
     t = np.arange(n) / SR
-    boom = np.sin(2 * np.pi * np.cumsum(38 + 60 * np.exp(-t / 0.08)) / SR) * np.exp(-t / 0.55)
-    noise = np.convolve(rng.standard_normal(n), np.ones(30) / 30, 'same') * np.exp(-t / 0.25) * 3
-    return boom + noise
+    boom = np.sin(2 * np.pi * np.cumsum(42 + 26 * np.exp(-t / 0.09)) / SR)
+    return boom * np.minimum(t / 0.02, 1) * np.exp(-t / 0.45)
 
 
 def reverb_ir(seconds=2.6, seed=0):
@@ -231,12 +236,12 @@ for i in range(int(14 / BEAT), int(END / BEAT)):
 
 # Transitions : souffle montant + impact
 for t_hit, d in [(6, 1.2), (14, 2.0), (21, 1.5), (33, 1.5), (42, 1.5), (49.2, 1.0), (WHY, 1.5), (END, 2.0)]:
-    place(fx, riser(d), t_hit - d, 0.06)
-for t_hit, g in [(14, 0.45), (END, 0.5), (WHY, 0.28), (21, 0.22), (33, 0.22), (42, 0.28)]:
+    place(fx, riser(d), t_hit - d, 0.05)
+for t_hit, g in [(14, 0.30), (END, 0.32), (WHY, 0.16), (21, 0.12), (33, 0.12), (42, 0.16)]:
     place(fx, impact(), t_hit, g)
 
 # ── Mixage stéréo ──
-wet_src = pad * 0.8 + bells + (arp_l + arp_r) * 0.6 + fx * 0.6 + drums * 0.08
+wet_src = pad * 0.8 + bells + (arp_l + arp_r) * 0.6 + fx * 0.35 + drums * 0.08
 L = pad + bells + arp_l * 1.0 + arp_r * 0.45 + bass + drums + fx
 R = pad + bells + arp_r * 1.0 + arp_l * 0.45 + bass + drums + fx
 L += 0.32 * fft_conv(wet_src, reverb_ir(seed=1))
