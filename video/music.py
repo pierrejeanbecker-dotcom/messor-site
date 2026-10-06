@@ -1,6 +1,6 @@
-"""Musique originale de la vidéo Messor (75 s), synthétisée entièrement par ce script : libre de droits.
+"""Musique originale de la vidéo Messor (80 s), synthétisée entièrement par ce script : libre de droits.
 
-120 BPM (1 temps = 0,5 s) : chaque changement de scène (6, 14, 21, 33, 42, 56, 66 s) tombe sur un temps.
+120 BPM (1 temps = 0,5 s) : chaque changement de scène (6, 14, 21, 33, 42, 61, 71 s) tombe sur un temps.
 Grille d'accords Am – F – C – G (une mesure de 2 s chacun), résolution finale sur Do majeur.
 Usage : python3 video/music.py [sortie.wav]   (nécessite numpy)
 """
@@ -9,9 +9,9 @@ import wave
 import numpy as np
 
 SR = 44100
-DUR = 75.0
-WHY = 56.0  # écran « Pourquoi Messor »
-END = 66.0  # début de la conclusion
+DUR = 80.0
+WHY = 61.0  # écran « Pourquoi Messor »
+END = 71.0  # début de la conclusion
 N = int(SR * DUR)
 BEAT = 0.5
 BAR = 4 * BEAT
@@ -230,7 +230,7 @@ for i in range(int(14 / BEAT), int(END / BEAT)):
             place(drums, hat(), t0, 0.05)
 
 # Transitions : souffle montant + impact
-for t_hit, d in [(6, 1.2), (14, 2.0), (21, 1.5), (33, 1.5), (42, 1.5), (49.2, 0.8), (52.7, 0.8), (WHY, 1.5), (END, 2.0)]:
+for t_hit, d in [(6, 1.2), (14, 2.0), (21, 1.5), (33, 1.5), (42, 1.5), (49.2, 0.8), (52.7, 0.8), (56.2, 1.0), (WHY, 1.5), (END, 2.0)]:
     place(fx, riser(d), t_hit - d, 0.06)
 for t_hit, g in [(14, 0.45), (END, 0.5), (WHY, 0.28), (21, 0.22), (33, 0.22), (42, 0.28)]:
     place(fx, impact(), t_hit, g)
