@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Vidéo motion design « Messor — Business Developer as a Service » (1920 × 1080, 70 s).
+  Vidéo motion design « Messor — Business Developer as a Service » (1920 × 1080, 75 s).
   Chaque élément porte data-in / data-out (secondes) et data-fx (type d'apparition).
   render(t) calcule l'état exact de la vidéo à l'instant t : rendu image par image avec video/render.mjs.
   Ouvrir ce fichier dans un navigateur affiche un aperçu en lecture continue.
@@ -82,10 +82,14 @@
   .stats { position: absolute; left: 160px; right: 160px; top: 170px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
   .stat .v { font-family: 'DM Serif Display', serif; color: var(--gold); font-size: 92px; line-height: 1; white-space: nowrap; }
   .stat .l { margin-top: 18px; font-size: 27px; line-height: 1.35; color: #c3c9d1; max-width: 360px; }
-  .quote { position: absolute; left: 160px; right: 160px; top: 560px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 60px; }
+  .quote { position: absolute; left: 160px; right: 160px; top: 560px; padding-top: 60px; }
+  .qline { position: absolute; left: 160px; right: 160px; top: 560px; height: 1px; background: rgba(255,255,255,0.14); }
   .quote blockquote { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 60px; line-height: 1.22; max-width: 1500px; }
   .quote .who { margin-top: 36px; font-size: 28px; color: #c3c9d1; }
   .quote .who b { color: white; }
+  .qdots { position: absolute; right: 160px; top: 600px; display: flex; gap: 14px; }
+  .qdots i { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.22); transition: none; }
+  .qdots i.on { background: var(--gold); }
 
   /* Scène 7 : pourquoi Messor */
   .why-title { position: absolute; left: 160px; top: 110px; width: 1600px; }
@@ -196,78 +200,88 @@
   </section>
 
   <!-- 6. Les preuves -->
-  <section class="scene" data-scene="42 51.2">
+  <section class="scene" data-scene="42 56.2">
     <div class="grid"></div>
     <div class="stats">
-      <div class="stat" data-in="42.3" data-out="50.6" data-fx="up"><div class="v">+<span data-count="42.4 43.8 0 50">50</span></div><div class="l">clients B2B accompagnés</div></div>
-      <div class="stat" data-in="42.8" data-out="50.6" data-fx="up"><div class="v"><span data-count="42.9 44.3 0 10">10</span>M€</div><div class="l">signés avec notre principal partenaire</div></div>
-      <div class="stat" data-in="43.3" data-out="50.6" data-fx="up"><div class="v">C-Level</div><div class="l">la cible la plus attaquée par l’agence</div></div>
-      <div class="stat" data-in="43.8" data-out="50.6" data-fx="up"><div class="v"><span data-count="43.9 44.9 1 4">4</span> langues</div><div class="l">FR · EN · DE · IT pour l’Europe</div></div>
+      <div class="stat" data-in="42.3" data-out="55.6" data-fx="up"><div class="v">+<span data-count="42.4 43.8 0 50">50</span></div><div class="l">clients B2B accompagnés</div></div>
+      <div class="stat" data-in="42.8" data-out="55.6" data-fx="up"><div class="v"><span data-count="42.9 44.3 0 10">10</span>M€</div><div class="l">signés avec notre principal partenaire</div></div>
+      <div class="stat" data-in="43.3" data-out="55.6" data-fx="up"><div class="v">C-Level</div><div class="l">la cible la plus attaquée par l’agence</div></div>
+      <div class="stat" data-in="43.8" data-out="55.6" data-fx="up"><div class="v"><span data-count="43.9 44.9 1 4">4</span> langues</div><div class="l">FR · EN · DE · IT pour l’Europe</div></div>
     </div>
-    <div class="quote" data-in="45.6" data-out="50.6" data-fx="up">
+    <div class="qline" data-in="44.6" data-out="55.6" data-fx="fade"></div>
+    <div class="quote" data-in="45.0" data-out="48.9" data-fx="slide">
       <blockquote>« Messor est aujourd’hui un partenaire incontournable en Europe. Ils nous apportent plusieurs nouveaux clients majeurs chaque année. »</blockquote>
       <div class="who"><b>Christophe Cren</b> — VP Business Development Europe, Proaction International</div>
     </div>
+    <div class="quote" data-in="49.2" data-out="52.4" data-fx="slide">
+      <blockquote>« Dans le marché tendu qu’est l’IT, Messor est parvenu à identifier de nombreuses opportunités dont plusieurs se sont transformées en vente. »</blockquote>
+      <div class="who"><b>Antoine Ramponi</b> — Co-Founder &amp; CEO, InFine</div>
+    </div>
+    <div class="quote" data-in="52.7" data-out="55.6" data-fx="slide">
+      <blockquote>« En seulement 2 mois, leur capacité à comprendre notre discours commercial a déjà généré des rendez-vous de qualité avec des CTO. »</blockquote>
+      <div class="who"><b>Emeric Lamour de Caslou</b> — Sales Lead, Qontrol</div>
+    </div>
+    <div class="qdots" data-in="45.0" data-out="55.6" data-fx="fade"><i data-on="45.0 48.9"></i><i data-on="49.2 52.4"></i><i data-on="52.7 56"></i></div>
   </section>
 
   <!-- 7. Pourquoi Messor -->
-  <section class="scene" data-scene="51 61.2">
+  <section class="scene" data-scene="56 66.2">
     <div class="grid"></div>
     <div class="why-title">
-      <div class="eyebrow" data-in="51.3" data-out="60.6" data-fx="up">Pourquoi Messor</div>
-      <h2 class="serif" data-in="51.6" data-out="60.6" data-fx="up">Ce qui nous <span class="green">distingue</span>.</h2>
+      <div class="eyebrow" data-in="56.3" data-out="65.6" data-fx="up">Pourquoi Messor</div>
+      <h2 class="serif" data-in="56.6" data-out="65.6" data-fx="up">Ce qui nous <span class="green">distingue</span>.</h2>
     </div>
     <div class="why-cards">
-      <div class="why" data-in="52.4" data-out="60.6" data-fx="card">
+      <div class="why" data-in="57.4" data-out="65.6" data-fx="card">
         <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg>
         <h3>Une équipe en France, à Metz</h3>
         <p>Identifiable et diplômée Bac+5 : vos interlocuteurs ne changent pas tous les trois mois.</p>
       </div>
-      <div class="why" data-in="53.2" data-out="60.6" data-fx="card">
+      <div class="why" data-in="58.2" data-out="65.6" data-fx="card">
         <svg viewBox="0 0 24 24"><path d="M5 3.5h3.2l1.6 4.3-2.1 1.4a11.5 11.5 0 0 0 7.1 7.1l1.4-2.1 4.3 1.6V19a1.8 1.8 0 0 1-1.9 1.8A16.6 16.6 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>
         <h3>Le goût du téléphone</h3>
         <p>Là où d’autres automatisent tout, nous décrochons : le canal qui ouvre la porte des décideurs.</p>
       </div>
-      <div class="why" data-in="54.0" data-out="60.6" data-fx="card">
+      <div class="why" data-in="59" data-out="65.6" data-fx="card">
         <svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
         <h3>Transparence totale</h3>
         <p>Reporting en temps réel et accès à nos outils : vous voyez ce qui est fait, pour qui, avec quels résultats.</p>
       </div>
     </div>
-    <div class="tools-head" data-in="55.3" data-out="60.6" data-fx="up">
+    <div class="tools-head" data-in="60.3" data-out="65.6" data-fx="up">
       <span>Une méthode qui s’appuie sur des outils robustes</span>
       <span class="chip">Certifiés Make Advanced</span>
     </div>
     <div class="tools">
-      <div class="tool" data-in="55.8" data-out="60.6" data-fx="pop"><img src="logos/aircall.svg" alt=""><span>Aircall</span></div>
-      <div class="tool" data-in="56.05" data-out="60.6" data-fx="pop"><img src="logos/notion.svg" alt=""><span>Notion</span></div>
-      <div class="tool" data-in="56.3" data-out="60.6" data-fx="pop"><img src="logos/airtable.svg" alt=""><span>Airtable</span></div>
-      <div class="tool" data-in="56.55" data-out="60.6" data-fx="pop"><img src="logos/github.svg" alt=""><span>GitHub</span></div>
-      <div class="tool" data-in="56.8" data-out="60.6" data-fx="pop"><img src="logos/make.svg" alt=""><span>Make</span></div>
-      <div class="tool" data-in="57.05" data-out="60.6" data-fx="pop"><img src="logos/claude.svg" alt=""><span>Claude</span></div>
+      <div class="tool" data-in="60.8" data-out="65.6" data-fx="pop"><img src="logos/aircall.svg" alt=""><span>Aircall</span></div>
+      <div class="tool" data-in="61.05" data-out="65.6" data-fx="pop"><img src="logos/notion.svg" alt=""><span>Notion</span></div>
+      <div class="tool" data-in="61.3" data-out="65.6" data-fx="pop"><img src="logos/airtable.svg" alt=""><span>Airtable</span></div>
+      <div class="tool" data-in="61.55" data-out="65.6" data-fx="pop"><img src="logos/github.svg" alt=""><span>GitHub</span></div>
+      <div class="tool" data-in="61.8" data-out="65.6" data-fx="pop"><img src="logos/make.svg" alt=""><span>Make</span></div>
+      <div class="tool" data-in="62.05" data-out="65.6" data-fx="pop"><img src="logos/claude.svg" alt=""><span>Claude</span></div>
     </div>
   </section>
 
   <!-- 8. Fin -->
-  <section class="scene" data-scene="61 70">
-    <div class="bg" data-kb="61 70"></div>
+  <section class="scene" data-scene="66 75">
+    <div class="bg" data-kb="66 75"></div>
     <div class="veil" style="background: linear-gradient(95deg, rgba(11,14,20,0.96) 0%, rgba(11,14,20,0.86) 48%, rgba(11,14,20,0.55) 100%)"></div>
     <div class="end">
-      <h2 class="serif" data-in="61.4" data-out="69.3" data-fx="up">Vous avez semé un produit.</h2>
-      <h2 class="serif" data-in="62.5" data-out="69.3" data-fx="up"><em>Nous moissonnons</em> vos clients.</h2>
+      <h2 class="serif" data-in="66.4" data-out="74.3" data-fx="up">Vous avez semé un produit.</h2>
+      <h2 class="serif" data-in="67.5" data-out="74.3" data-fx="up"><em>Nous moissonnons</em> vos clients.</h2>
     </div>
     <div class="cta-row">
-      <div class="btn" data-in="64.2" data-out="69.3" data-fx="pop">Réserver un diagnostic de 30 min →</div>
-      <div class="site" data-in="64.9" data-out="69.3" data-fx="up">messor.fr</div>
+      <div class="btn" data-in="69.2" data-out="74.3" data-fx="pop">Réserver un diagnostic de 30 min →</div>
+      <div class="site" data-in="69.9" data-out="74.3" data-fx="up">messor.fr</div>
     </div>
-    <div class="end-logo" data-in="65.6" data-out="69.3" data-fx="up"><img src="../public/images/logo-messor.png" alt=""><div class="wordmark">M<span>€</span>SSOR</div></div>
+    <div class="end-logo" data-in="70.6" data-out="74.3" data-fx="up"><img src="../public/images/logo-messor.png" alt=""><div class="wordmark">M<span>€</span>SSOR</div></div>
   </section>
 
   <div id="black"></div>
 </div>
 
 <script>
-  const DURATION = 70;
+  const DURATION = 75;
   const clamp = (x) => Math.max(0, Math.min(1, x));
   const easeOut = (x) => 1 - Math.pow(1 - x, 3);
   const easeInOut = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
@@ -279,6 +293,7 @@
   const scenes = [...document.querySelectorAll('[data-scene]')].map((el) => ({ el, range: nums(el.dataset.scene) }));
   const kbs = [...document.querySelectorAll('[data-kb]')].map((el) => ({ el, range: nums(el.dataset.kb) }));
   const wipes = [...document.querySelectorAll('[data-wipe]')].map((el) => ({ el, a: nums(el.dataset.wipe) }));
+  const dots = [...document.querySelectorAll('[data-on]')].map((el) => ({ el, a: nums(el.dataset.on) }));
   const counts = [...document.querySelectorAll('[data-count]')].map((el) => ({ el, a: nums(el.dataset.count) }));
 
   function render(t) {
@@ -291,6 +306,7 @@
       else if (fx === 'left') tr = `translateX(${(1 - easeOut(pi)) * -80}px)`;
       else if (fx === 'pop') tr = `scale(${0.6 + 0.4 * backOut(pi) - easeInOut(po) * 0.05})`;
       else if (fx === 'zoom') tr = `scale(${1.25 - 0.25 * easeOut(pi)})`;
+      else if (fx === 'slide') tr = `translateX(${(1 - easeOut(pi)) * 140 - easeInOut(po) * 140}px)`;
       else if (fx === 'card') tr = `translateY(${(1 - easeOut(pi)) * 90}px) rotate(${(1 - easeOut(pi)) * 2}deg)`;
       el.style.opacity = a.toFixed(4);
       el.style.transform = tr;
@@ -300,6 +316,7 @@
       el.style.transform = `scale(${1 + 0.12 * p}) translate(${-2 * p}%, ${-1.5 * p}%)`;
     }
     for (const { el, a } of wipes) el.style.transform = `scaleX(${easeInOut(clamp((t - a[0]) / a[1])).toFixed(4)})`;
+    for (const { el, a } of dots) el.classList.toggle('on', t >= a[0] && t < a[1]);
     for (const { el, a } of counts) {
       const [t0, t1, from, to] = a;
       el.textContent = String(Math.round(from + (to - from) * easeOut(clamp((t - t0) / (t1 - t0)))));

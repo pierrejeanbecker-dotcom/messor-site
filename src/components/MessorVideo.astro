@@ -2,6 +2,8 @@
 // Vidéo de présentation « Business Developer as a Service » (sources : video/).
 // mode="inline" : lecteur dans la page ; mode="modal" : bouton qui ouvre la vidéo en plein écran.
 // La vidéo n'est chargée qu'au clic (preload="none") pour ne pas ralentir la page.
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { url } from '../lib/url';
 
 interface Props { mode?: 'inline' | 'modal'; label?: string; ld?: boolean }
@@ -10,9 +12,11 @@ const { mode = 'inline', label = 'Découvrir Messor en 1 min', ld: withLd = true
 const SITE = 'https://messor.fr';
 const name = 'Messor — Business Developer as a Service';
 const description = 'Messor en une minute : un business developer senior dédié à votre compte, de la prospection jusqu’à la signature, opérationnel en 4 semaines.';
-const poster = url('/videos/messor-bdaas-poster.webp');
-const src720 = url('/videos/messor-business-developer-as-a-service-720.mp4');
-const src1080 = url('/videos/messor-business-developer-as-a-service-1080.mp4');
+// ?v=<empreinte du fichier> : chaque nouvelle version de la vidéo contourne le cache navigateur (1 mois)
+const versioned = (p: string) => `${url(p)}?v=${createHash('md5').update(readFileSync(`public${p}`)).digest('hex').slice(0, 8)}`;
+const poster = versioned('/videos/messor-bdaas-poster.webp');
+const src720 = versioned('/videos/messor-business-developer-as-a-service-720.mp4');
+const src1080 = versioned('/videos/messor-business-developer-as-a-service-1080.mp4');
 const ld = {
   '@context': 'https://schema.org',
   '@type': 'VideoObject',
@@ -21,7 +25,7 @@ const ld = {
   thumbnailUrl: SITE + '/videos/messor-bdaas-poster.webp',
   contentUrl: SITE + '/videos/messor-business-developer-as-a-service-1080.mp4',
   uploadDate: '2026-10-05',
-  duration: 'PT1M10S',
+  duration: 'PT1M15S',
   inLanguage: 'fr',
   publisher: { '@type': 'Organization', name: 'Messor', url: SITE },
 };
