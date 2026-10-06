@@ -1,6 +1,6 @@
-"""Musique originale de la vidéo Messor (60 s), synthétisée entièrement par ce script : libre de droits.
+"""Musique originale de la vidéo Messor (70 s), synthétisée entièrement par ce script : libre de droits.
 
-120 BPM (1 temps = 0,5 s) : chaque changement de scène (6, 14, 21, 33, 42, 51 s) tombe sur un temps.
+120 BPM (1 temps = 0,5 s) : chaque changement de scène (6, 14, 21, 33, 42, 51, 61 s) tombe sur un temps.
 Grille d'accords Am – F – C – G (une mesure de 2 s chacun), résolution finale sur Do majeur.
 Usage : python3 video/music.py [sortie.wav]   (nécessite numpy)
 """
@@ -9,7 +9,8 @@ import wave
 import numpy as np
 
 SR = 44100
-DUR = 60.0
+DUR = 70.0
+END = 61.0  # début de la conclusion
 N = int(SR * DUR)
 BEAT = 0.5
 BAR = 4 * BEAT
@@ -170,7 +171,7 @@ def section_level(t, points):
 pad, arp_l, arp_r, bass, drums, fx, bells = (buf() for _ in range(7))
 
 # Nappe : une mesure par accord, de plus en plus brillante
-bar_starts = np.arange(0, 51, BAR)
+bar_starts = np.arange(0, END, BAR)
 for b0 in bar_starts:
     ch = chord_at(b0)
     bright = float(section_level(b0, [(0, 2.5), (14, 4), (21, 5), (42, 6.5), (50, 6.5)]))
@@ -179,29 +180,29 @@ for b0 in bar_starts:
         place(pad, pad_note(hz(m), BAR + 0.6, bright), b0, gain)
 # Final : accord de Do majeur tenu
 for m in C_MAJ['pad']:
-    place(pad, pad_note(hz(m), 9.0, 5.5) * env(int(9.0 * SR), 0.2, 4.0), 51.0, 0.12)
+    place(pad, pad_note(hz(m), 9.0, 5.5) * env(int(9.0 * SR), 0.2, 4.0), END, 0.12)
 
 # Cloches : motif d'ouverture et de conclusion
 for t0, m in [(0.4, 76), (1.4, 72), (2.4, 69), (3.6, 79), (4.6, 76)]:
     place(bells, bell(hz(m)), t0, 0.16)
-for t0, m in [(51.0, 84), (52.0, 79), (53.0, 76), (54.0, 72), (55.5, 79), (56.5, 84)]:
-    place(bells, bell(hz(m), 3.0), t0, 0.15)
+for t0, m in [(0.0, 84), (1.0, 79), (2.0, 76), (3.0, 72), (4.5, 79), (5.5, 84)]:
+    place(bells, bell(hz(m), 3.0), END + t0, 0.15)
 
 # Basse : croches étouffées pendant le constat, puis noires/blanches
 for i in range(int(6 / 0.25), int(14 / 0.25)):
     t0 = i * 0.25
     place(bass, bass_note(hz(chord_at(t0)['bass'] + 12), 0.2), t0, 0.22 if i % 2 == 0 else 0.13)
-for i in range(int(14 / BEAT), int(51 / BEAT)):
+for i in range(int(14 / BEAT), int(END / BEAT)):
     t0 = i * BEAT
     if 32.5 <= t0 < 33:
         continue
     place(bass, bass_note(hz(chord_at(t0)['bass'] + 12), 0.45), t0, 0.20)
-place(bass, bass_note(hz(C_MAJ['bass'] + 12), 5.0) * env(int(5.0 * SR), 0.01, 3.0), 51.0, 0.32)
+place(bass, bass_note(hz(C_MAJ['bass'] + 12), 5.0) * env(int(5.0 * SR), 0.01, 3.0), END, 0.32)
 
 # Arpège : croches dès la révélation, doubles croches pendant la méthode
 t0 = 14.0
-while t0 < 51.0 - 1e-9:
-    step = 0.125 if 33 <= t0 < 51 else 0.25
+while t0 < END - 1e-9:
+    step = 0.125 if 33 <= t0 < 42 or 51 <= t0 < END else 0.25
     idx = int(round(t0 / step))
     ch = chord_at(t0)
     m = ch['arp'][idx % 4] + (12 if 42 <= t0 < 51 and idx % 8 >= 4 else 0)
@@ -210,9 +211,9 @@ while t0 < 51.0 - 1e-9:
     t0 += step
 
 # Batterie
-for i in range(int(14 / BEAT), int(51 / BEAT)):
+for i in range(int(14 / BEAT), int(END / BEAT)):
     t0 = i * BEAT
-    if 32 <= t0 < 33 or 50 <= t0 < 51:
+    if 32 <= t0 < 33 or END - 1 <= t0 < END:
         continue  # respirations avant les transitions
     beat = i % 4
     if 14 <= t0 < 21:
@@ -228,9 +229,9 @@ for i in range(int(14 / BEAT), int(51 / BEAT)):
             place(drums, hat(), t0, 0.05)
 
 # Transitions : souffle montant + impact
-for t_hit, d in [(6, 1.2), (14, 2.0), (21, 1.5), (33, 1.5), (42, 1.5), (51, 2.0)]:
+for t_hit, d in [(6, 1.2), (14, 2.0), (21, 1.5), (33, 1.5), (42, 1.5), (51, 1.5), (END, 2.0)]:
     place(fx, riser(d), t_hit - d, 0.06)
-for t_hit, g in [(14, 0.45), (51, 0.5), (21, 0.22), (33, 0.22), (42, 0.28)]:
+for t_hit, g in [(14, 0.45), (END, 0.5), (51, 0.28), (21, 0.22), (33, 0.22), (42, 0.28)]:
     place(fx, impact(), t_hit, g)
 
 # ── Mixage stéréo ──

@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Vidéo motion design « Messor — Business Developer as a Service » (1920 × 1080, 60 s).
+  Vidéo motion design « Messor — Business Developer as a Service » (1920 × 1080, 70 s).
   Chaque élément porte data-in / data-out (secondes) et data-fx (type d'apparition).
   render(t) calcule l'état exact de la vidéo à l'instant t : rendu image par image avec video/render.mjs.
   Ouvrir ce fichier dans un navigateur affiche un aperçu en lecture continue.
@@ -87,7 +87,23 @@
   .quote .who { margin-top: 36px; font-size: 28px; color: #c3c9d1; }
   .quote .who b { color: white; }
 
-  /* Scène 7 : fin */
+  /* Scène 7 : pourquoi Messor */
+  .why-title { position: absolute; left: 160px; top: 110px; width: 1600px; }
+  .why-title h2 { font-size: 78px; line-height: 1.08; margin-top: 22px; }
+  .why-cards { position: absolute; left: 160px; right: 160px; top: 310px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .why { background: var(--dark2); border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 38px 40px 40px; height: 380px; }
+  .why svg { width: 58px; height: 58px; fill: none; stroke: var(--gold); stroke-width: 1.6; stroke-linejoin: round; margin-bottom: 22px; }
+  .why h3 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 42px; line-height: 1.1; margin-bottom: 16px; }
+  .why p { font-size: 25px; line-height: 1.45; color: #aab1bc; }
+  .tools-head { position: absolute; left: 160px; right: 160px; top: 748px; display: flex; align-items: center; gap: 28px; font-size: 30px; color: #d7dbe1; }
+  .tools-head::before { content: ''; width: 56px; height: 2px; background: var(--gold); }
+  .tools-head .chip { font-size: 22px; padding: 10px 22px; }
+  .tools { position: absolute; left: 160px; right: 160px; top: 826px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
+  .tool { display: flex; align-items: center; justify-content: center; gap: 18px; height: 120px; border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; background: rgba(255,255,255,0.03); }
+  .tool img { width: 50px; height: 50px; }
+  .tool span { font-size: 30px; font-weight: 600; letter-spacing: 0.01em; }
+
+  /* Scène 8 : fin */
   .end { position: absolute; left: 160px; top: 230px; }
   .end h2 { font-size: 132px; line-height: 1.02; letter-spacing: -0.02em; }
   .end h2 em { color: var(--gold); }
@@ -194,26 +210,64 @@
     </div>
   </section>
 
-  <!-- 7. Fin -->
-  <section class="scene" data-scene="51 60">
-    <div class="bg" data-kb="51 60"></div>
+  <!-- 7. Pourquoi Messor -->
+  <section class="scene" data-scene="51 61.2">
+    <div class="grid"></div>
+    <div class="why-title">
+      <div class="eyebrow" data-in="51.3" data-out="60.6" data-fx="up">Pourquoi Messor</div>
+      <h2 class="serif" data-in="51.6" data-out="60.6" data-fx="up">Ce qui nous <span class="green">distingue</span>.</h2>
+    </div>
+    <div class="why-cards">
+      <div class="why" data-in="52.4" data-out="60.6" data-fx="card">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.6"/></svg>
+        <h3>Une équipe en France, à Metz</h3>
+        <p>Identifiable et diplômée Bac+5 : vos interlocuteurs ne changent pas tous les trois mois.</p>
+      </div>
+      <div class="why" data-in="53.2" data-out="60.6" data-fx="card">
+        <svg viewBox="0 0 24 24"><path d="M5 3.5h3.2l1.6 4.3-2.1 1.4a11.5 11.5 0 0 0 7.1 7.1l1.4-2.1 4.3 1.6V19a1.8 1.8 0 0 1-1.9 1.8A16.6 16.6 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>
+        <h3>Le goût du téléphone</h3>
+        <p>Là où d’autres automatisent tout, nous décrochons : le canal qui ouvre la porte des décideurs.</p>
+      </div>
+      <div class="why" data-in="54.0" data-out="60.6" data-fx="card">
+        <svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>Transparence totale</h3>
+        <p>Reporting en temps réel et accès à nos outils : vous voyez ce qui est fait, pour qui, avec quels résultats.</p>
+      </div>
+    </div>
+    <div class="tools-head" data-in="55.3" data-out="60.6" data-fx="up">
+      <span>Une méthode qui s’appuie sur des outils robustes</span>
+      <span class="chip">Certifiés Make Advanced</span>
+    </div>
+    <div class="tools">
+      <div class="tool" data-in="55.8" data-out="60.6" data-fx="pop"><img src="logos/aircall.svg" alt=""><span>Aircall</span></div>
+      <div class="tool" data-in="56.05" data-out="60.6" data-fx="pop"><img src="logos/notion.svg" alt=""><span>Notion</span></div>
+      <div class="tool" data-in="56.3" data-out="60.6" data-fx="pop"><img src="logos/airtable.svg" alt=""><span>Airtable</span></div>
+      <div class="tool" data-in="56.55" data-out="60.6" data-fx="pop"><img src="logos/github.svg" alt=""><span>GitHub</span></div>
+      <div class="tool" data-in="56.8" data-out="60.6" data-fx="pop"><img src="logos/make.svg" alt=""><span>Make</span></div>
+      <div class="tool" data-in="57.05" data-out="60.6" data-fx="pop"><img src="logos/claude.svg" alt=""><span>Claude</span></div>
+    </div>
+  </section>
+
+  <!-- 8. Fin -->
+  <section class="scene" data-scene="61 70">
+    <div class="bg" data-kb="61 70"></div>
     <div class="veil" style="background: linear-gradient(95deg, rgba(11,14,20,0.96) 0%, rgba(11,14,20,0.86) 48%, rgba(11,14,20,0.55) 100%)"></div>
     <div class="end">
-      <h2 class="serif" data-in="51.4" data-out="59.3" data-fx="up">Vous avez semé un produit.</h2>
-      <h2 class="serif" data-in="52.5" data-out="59.3" data-fx="up"><em>Nous moissonnons</em> vos clients.</h2>
+      <h2 class="serif" data-in="61.4" data-out="69.3" data-fx="up">Vous avez semé un produit.</h2>
+      <h2 class="serif" data-in="62.5" data-out="69.3" data-fx="up"><em>Nous moissonnons</em> vos clients.</h2>
     </div>
     <div class="cta-row">
-      <div class="btn" data-in="54.2" data-out="59.3" data-fx="pop">Réserver un diagnostic de 30 min →</div>
-      <div class="site" data-in="54.9" data-out="59.3" data-fx="up">messor.fr</div>
+      <div class="btn" data-in="64.2" data-out="69.3" data-fx="pop">Réserver un diagnostic de 30 min →</div>
+      <div class="site" data-in="64.9" data-out="69.3" data-fx="up">messor.fr</div>
     </div>
-    <div class="end-logo" data-in="55.6" data-out="59.3" data-fx="up"><img src="../public/images/logo-messor.png" alt=""><div class="wordmark">M<span>€</span>SSOR</div></div>
+    <div class="end-logo" data-in="65.6" data-out="69.3" data-fx="up"><img src="../public/images/logo-messor.png" alt=""><div class="wordmark">M<span>€</span>SSOR</div></div>
   </section>
 
   <div id="black"></div>
 </div>
 
 <script>
-  const DURATION = 60;
+  const DURATION = 70;
   const clamp = (x) => Math.max(0, Math.min(1, x));
   const easeOut = (x) => 1 - Math.pow(1 - x, 3);
   const easeInOut = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
