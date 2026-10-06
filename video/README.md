@@ -1,6 +1,6 @@
 # Vidéo « Messor — Business Developer as a Service »
 
-Motion design de 80 s (1920 × 1080, 30 i/s), aux couleurs et polices du site.
+Motion design de 74 s (1920 × 1080, 30 i/s), aux couleurs et polices du site.
 
 - `messor-bdaas.html` : la vidéo elle-même (textes, mise en page, minutage). Ouvrir le fichier
   dans un navigateur pour un aperçu en boucle.
