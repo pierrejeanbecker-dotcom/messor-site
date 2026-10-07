@@ -13,7 +13,7 @@ image: "/medias/2023/05/scraping-outil-scraper-outils-de-growth-hacking.png"
 excerpt: "Dans cet article, nous vous avons rassemblé les 33 outils les plus utilisés par les professionnels de growth hacking en 2023. Notre classement est basé sur les préférences d’utilisation des outils d’une centaine de…"
 ---
 
-<aside class="tip tip-update"><p><strong>Nouveau :</strong> découvrez notre classement mis à jour, <a href="/top-articles/39-outils-growth-hacking-plus-utilises-2027">Les 39 outils de growth hacking les plus utilisés en 2027</a> (IA, enrichissement de données, téléphonie…).</p></aside>
+<aside class="tip tip-update"><p><strong>Nouveau :</strong> découvrez notre classement mis à jour, <a href="/top-articles/27-outils-growth-hacking-plus-utilises-2027">Les 27 outils de growth hacking les plus utilisés en 2027</a> (IA, enrichissement de données, téléphonie…).</p></aside>
 
 Comme le dit le proverbe français : « **Les bons outils font les bons ouvriers.**». Il en va de même pour votre stratégie de Growth Hacking ! En effet, pour que celle-ci soit performante et surtout pertinente, vous aurez besoin des bons leviers.
 
