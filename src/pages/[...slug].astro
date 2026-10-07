@@ -73,6 +73,8 @@ if (kind === 'page' || kind === 'post') {
   ({ Content, headings } = await render(props.entry));
 }
 const d = props.entry?.data;
+// Sommaire en tête des articles longs (au moins 5 parties)
+const toc = kind === 'post' ? headings.filter((h: any) => h.depth === 2) : [];
 const catOf = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
 ---
 {kind === 'page' && d.kind && (
@@ -135,6 +137,14 @@ const catOf = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
     </PageHero>
     <section class="content-section">
       <article class="prose">
+        {toc.length >= 5 && (
+          <nav class="post-toc" aria-label={lang === 'fr' ? 'Sommaire' : 'Contents'}>
+            <details open>
+              <summary>{lang === 'fr' ? 'Sommaire' : 'Contents'} <span>{toc.length} {lang === 'fr' ? 'parties' : 'sections'}</span></summary>
+              <ol>{toc.map((h: any) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+            </details>
+          </nav>
+        )}
         <Content />
       </article>
     </section>
