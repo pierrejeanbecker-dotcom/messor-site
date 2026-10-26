@@ -30,14 +30,14 @@ const TEAM: { name: string; photo: string; langs: string[]; fr: { role: string; 
     en: { role: 'SEO Specialist', facts: ['EFFICOM Paris 2014 - Master’s in Web & Digital Project Management; Google Analytics and Semrush Technical SEO certified', 'Baby Yoda', 'People from Nancy?', '“There is a difference between knowing the path and walking the path.” Morpheus', 'Bringing real added value to my clients.'] },
   },
   {
-    name: 'Evan B.', photo: '', langs: ['FR'],
+    name: 'Evan B.', photo: "/images/equipe/portrait-evan-b.webp", langs: ['FR'],
     fr: { role: 'Business Developer', facts: [] },
     en: { role: 'Business Developer', facts: [] },
   },
   {
-    name: 'Camille C.', photo: '', langs: ['FR'],
-    fr: { role: 'Business Developer', facts: [] },
-    en: { role: 'Business Developer', facts: [] },
+    name: 'Camille C.', photo: "/images/equipe/portrait-camille-chabot.webp", langs: ['FR'],
+    fr: { role: 'Business Developer', facts: ['ICN Business School', 'Le voyage, la bonne cuisine et le lèche-vitrine', 'Les retards et le désordre', '« Fais les choses bien ou ne les fais pas. » Mon père', 'Des objectifs concrets qui me poussent à apprendre et à progresser.'] },
+    en: { role: 'Business Developer', facts: ['ICN Business School', 'Travel, good food and window shopping', 'Lateness and mess', '“Do things right or don’t do them at all.” My father', 'Concrete goals that push me to learn and grow.'] },
   },
   {
     name: 'Genny Z.', photo: '', langs: ['FR', 'EN', 'IT'],
