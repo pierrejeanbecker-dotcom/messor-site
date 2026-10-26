@@ -41,8 +41,8 @@ const TEAM: { name: string; photo: string; langs: string[]; fr: { role: string; 
   },
   {
     name: 'Genny Z.', photo: '', langs: ['FR', 'EN', 'IT'],
-    fr: { role: 'Office Manager', facts: [] },
-    en: { role: 'Office Manager', facts: [] },
+    fr: { role: 'Office Manager', facts: ['M2 Commerce international - Sorbonne Université', 'La médecine chinoise', 'Le tunnel du Gothard', '« Chi va piano, va sano e va lontano. » Proverbe italien', 'Trouver un équilibre entre vie professionnelle et vie personnelle.'] },
+    en: { role: 'Office Manager', facts: ['Master’s in International Trade - Sorbonne University', 'Traditional Chinese medicine', 'The Gotthard tunnel', '“Chi va piano, va sano e va lontano” (Slow and steady wins the race). Italian proverb', 'Finding a good work-life balance.'] },
   },
 ];
 
