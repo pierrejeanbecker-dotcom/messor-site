@@ -31,8 +31,8 @@ const TEAM: { name: string; photo: string; langs: string[]; fr: { role: string; 
   },
   {
     name: 'Evan B.', photo: "/images/equipe/portrait-evan-b.webp", langs: ['FR'],
-    fr: { role: 'Business Developer', facts: [] },
-    en: { role: 'Business Developer', facts: [] },
+    fr: { role: 'Business Developer', facts: ['ICN Business School', 'La bonne cuisine, le sport et la moto', 'Les bouchons le matin (ou le soir)', '« Comment voulez-vous gouverner un pays où il y a 258 variétés de fromage ? » Charles de Gaulle', 'Être le meilleur dans ce que je fais.'] },
+    en: { role: 'Business Developer', facts: ['ICN Business School', 'Good food, sport and motorbikes', 'Traffic jams in the morning (or in the evening)', '“How can you govern a country which has 258 varieties of cheese?” Charles de Gaulle', 'Being the best at what I do.'] },
   },
   {
     name: 'Camille C.', photo: "/images/equipe/portrait-camille-chabot.webp", langs: ['FR'],
