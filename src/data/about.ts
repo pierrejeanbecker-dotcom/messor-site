@@ -40,7 +40,7 @@ const TEAM: { name: string; photo: string; langs: string[]; fr: { role: string; 
     en: { role: 'Business Developer', facts: ['ICN Business School', 'Travel, good food and window shopping', 'Lateness and mess', '“Do things right or don’t do them at all.” My father', 'Concrete goals that push me to learn and grow.'] },
   },
   {
-    name: 'Genny Z.', photo: '', langs: ['FR', 'EN', 'IT'],
+    name: 'Genny Z.', photo: "/images/equipe/portrait-genny-zampieri.webp", langs: ['FR', 'EN', 'IT'],
     fr: { role: 'Office Manager', facts: ['M2 Commerce international - Sorbonne Université', 'La médecine chinoise', 'Le tunnel du Gothard', '« Chi va piano, va sano e va lontano. » Proverbe italien', 'Trouver un équilibre entre vie professionnelle et vie personnelle.'] },
     en: { role: 'Office Manager', facts: ['Master’s in International Trade - Sorbonne University', 'Traditional Chinese medicine', 'The Gotthard tunnel', '“Chi va piano, va sano e va lontano” (Slow and steady wins the race). Italian proverb', 'Finding a good work-life balance.'] },
   },
