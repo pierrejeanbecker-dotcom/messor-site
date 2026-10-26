@@ -111,12 +111,14 @@ const initials = (n: string) => n.split(/\s+/).map((w) => w[0]).join('').slice(0
           <h3>{m.name}</h3>
           <p class="role">{m.role}</p>
           <p class="langs">{m.langs.map((l) => <span>{l}</span>)}</p>
-          <details>
-            <summary>{lang === 'fr' ? 'Mieux me connaître' : 'Get to know me'}</summary>
-            <dl>
-              {m.facts.map((f, i) => (<><dt>{a.factLabels[i]}</dt><dd>{f}</dd></>))}
-            </dl>
-          </details>
+          {m.facts.length > 0 && (
+            <details>
+              <summary>{lang === 'fr' ? 'Mieux me connaître' : 'Get to know me'}</summary>
+              <dl>
+                {m.facts.map((f, i) => (<><dt>{a.factLabels[i]}</dt><dd>{f}</dd></>))}
+              </dl>
+            </details>
+          )}
         </article>
       ))}
     </div>

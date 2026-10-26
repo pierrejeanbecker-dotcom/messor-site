@@ -1,22 +1,18 @@
 // Page « Découvrir Messor » / « About Messor ». Mise en page : src/components/About.astro
 
-// Équipe : textes repris de l'ancien site (les fiches « Lucas N. », « Kevin L. », « Mona O. »
-// et « Etienne H. » n'existaient qu'en français : traduction à relire).
-const TEAM = [
+// Équipe : textes repris de l'ancien site (les fiches « Lucas N. » et « Kevin L. » n'existaient qu'en français :
+// traduction à relire). Nouveaux arrivants : facts vides tant que la fiche n'est pas remplie (rubrique masquée),
+// photo vide = initiales.
+const TEAM: { name: string; photo: string; langs: string[]; fr: { role: string; facts: string[] }; en: { role: string; facts: string[] } }[] = [
   {
     name: 'Pierre-Jean Becker', photo: "/images/equipe/portrait-pierre-jean-becker.webp", langs: ['FR', 'EN', 'DE', 'IT'],
     fr: { role: 'Moissonneur en chef', facts: ['PGE Sup de Co Reims 2012 - admission prépa ECS.', 'La pêche, Paul McCartney, Larry David, Jim Thompson', 'Me coucher tard.', '« Allons-y, Alon zo ! » Pierrot Le Fou, Jean-Luc Godard', 'Réaliser en province un projet économique et humain dans lequel chacun a envie de s’investir.'] },
-    en: { role: 'Chief Harvester', facts: ['PGE Sup de Co Reims 2012 - admission to ECS prep school.', 'Fishing, Paul McCartney, Larry David and beating my colleagues at chess (especially Guillaume).', 'Staying up late.', '“Allons-y, Alon zo!” Pierrot Le Fou, Jean-Luc Godard', 'To carry out an economic and human project in the province in which everyone wants to get involved.'] },
-  },
-  {
-    name: 'Guillaume D.', photo: "/images/equipe/portrait-guillaume-delawoevre.webp", langs: ['FR', 'EN'],
-    fr: { role: 'Business Development Manager', facts: ['PGE EM Strasbourg - DUT Techniques de commercialisation.', 'La calisthenie, les échecs et la blockchain.', 'Perdre.', '« Ils ne savaient pas que c’était impossible alors ils l’ont fait. » Mark Twain', 'Le challenge et le cold calling.'] },
-    en: { role: 'Business Development Manager', facts: ['PGE EM Strasbourg - DUT Sales Techniques.', 'Calisthenics, chess and blockchain.', 'Losing (especially in chess against Pierre-Jean).', '“They did not know it was impossible so they did it.” Mark Twain', 'Challenge and cold calling.'] },
+    en: { role: 'Chief Harvester', facts: ['PGE Sup de Co Reims 2012 - admission to ECS prep school.', 'Fishing, Paul McCartney, Larry David, Jim Thompson', 'Staying up late.', '“Allons-y, Alon zo!” Pierrot Le Fou, Jean-Luc Godard', 'To carry out an economic and human project in the province in which everyone wants to get involved.'] },
   },
   {
     name: 'Valentin L.', photo: "/images/equipe/portrait-valentin-lequesne.webp", langs: ['FR'],
-    fr: { role: 'Ingénieur d’affaires', facts: ['Prépa HEC Caen - Programme grande école ICN Business School.', 'La natation, le fromage, World of Warcraft et la pluie.', 'Les bretons et le retard.', '« Soit A un succès dans la vie. Alors A = x + y + z, où x = travailler, y = s’amuser, z = se taire. » Albert Einstein', 'Notre animal mascotte Papaye ! Et bien sûr, le challenge.'] },
-    en: { role: 'Business Engineer', facts: ['HEC prep school, Caen - Grande École programme, ICN Business School.', 'Swimming, cheese, World of Warcraft and rain.', 'The Bretons and being late.', '“If A is success in life, then A = x + y + z. Work is x, play is y, and z is keeping your mouth shut.” Albert Einstein', 'Our pet mascot Papaya! And of course, new challenges.'] },
+    fr: { role: 'Business Development Manager', facts: ['Prépa HEC Caen - Programme grande école ICN Business School.', 'La natation, le fromage, World of Warcraft et la pluie.', 'Les bretons et le retard.', '« Soit A un succès dans la vie. Alors A = x + y + z, où x = travailler, y = s’amuser, z = se taire. » Albert Einstein', 'Notre animal mascotte Papaye ! Et bien sûr, le challenge.'] },
+    en: { role: 'Business Development Manager', facts: ['HEC prep school, Caen - Grande École programme, ICN Business School.', 'Swimming, cheese, World of Warcraft and rain.', 'The Bretons and being late.', '“If A is success in life, then A = x + y + z. Work is x, play is y, and z is keeping your mouth shut.” Albert Einstein', 'Our pet mascot Papaya! And of course, new challenges.'] },
   },
   {
     name: 'Sarah V.', photo: "/images/equipe/portrait-sarah-vine.webp", langs: ['FR', 'EN', 'DE'],
@@ -34,14 +30,19 @@ const TEAM = [
     en: { role: 'SEO Specialist', facts: ['EFFICOM Paris 2014 - Master’s in Web & Digital Project Management; Google Analytics and Semrush Technical SEO certified', 'Baby Yoda', 'People from Nancy?', '“There is a difference between knowing the path and walking the path.” Morpheus', 'Bringing real added value to my clients.'] },
   },
   {
-    name: 'Mona O.', photo: "/images/equipe/portrait-mona-ouboubker.webp", langs: ['FR'],
-    fr: { role: 'Business Developer', facts: ['PGE ICN Nancy - MSc Marketing et Ingénierie d’affaires', 'Le sport, les Escape Game', 'Vivre dans le passé', '« Tu connais les plans par cœur ? Mieux que ça, je les ai toujours sur moi » Prison Break', 'Un esprit d’équipe qui pousse à aller de l’avant et à se surpasser.'] },
-    en: { role: 'Business Developer', facts: ['PGE ICN Nancy - MSc Marketing and Business Engineering', 'Sport, escape games', 'Living in the past', '“You know the plans by heart? Better than that, I always carry them with me.” Prison Break', 'A team spirit that pushes us forward and to outdo ourselves.'] },
+    name: 'Evan B.', photo: '', langs: ['FR'],
+    fr: { role: 'Business Developer', facts: [] },
+    en: { role: 'Business Developer', facts: [] },
   },
   {
-    name: 'Etienne H.', photo: "/images/equipe/portrait-etienne-hollard.webp", langs: ['FR'],
-    fr: { role: 'Business Developer', facts: ['ICN Nancy', 'Le sport', 'L’impolitesse', '« Comme le café sauf que ça s’écrit pas pareil » (Vous l’avez non ?)', 'Vivre une belle aventure humaine.'] },
-    en: { role: 'Business Developer', facts: ['ICN Nancy', 'Sport', 'Rudeness', '“Like coffee, except it’s not spelled the same” (you get it, right?)', 'Living a great human adventure.'] },
+    name: 'Camille C.', photo: '', langs: ['FR'],
+    fr: { role: 'Business Developer', facts: [] },
+    en: { role: 'Business Developer', facts: [] },
+  },
+  {
+    name: 'Genny Z.', photo: '', langs: ['FR', 'EN', 'IT'],
+    fr: { role: 'Office Manager', facts: [] },
+    en: { role: 'Office Manager', facts: [] },
   },
 ];
 
