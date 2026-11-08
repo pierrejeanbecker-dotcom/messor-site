@@ -1,7 +1,7 @@
 ---
 title: "Comment choisir le bon partenaire d’externalisation commerciale B2B ?"
-seoTitle: "5 points à valider avant d'externaliser sa prospection commerciale"
-description: "Vous entamez une collaboration avec une entreprise externe pour la prospection B2B ? Voici les 5 points à vérifier avant de vous lancer !"
+seoTitle: "Externaliser sa prospection : bien choisir son partenaire"
+description: "Externaliser sa prospection B2B ? Définition du lead, rôles, réputation, profils, tarifs, délais : les points à valider avant de signer avec une agence."
 lang: "fr"
 permalink: "/top-articles/comment-choisir-le-bon-partenaire-dexternalisation-commerciale-b2b"
 alternate: "/en/growth-haking-en/5-things-check-outsourcing-sales"

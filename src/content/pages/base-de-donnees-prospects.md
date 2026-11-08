@@ -1,7 +1,7 @@
 ---
 title: "Création base de données"
-seoTitle: "Base de Données Prospects : Optimisez Votre Prospection B2B"
-description: "Découvrez comment Messor construit et enrichit votre base de données prospects pour une prospection B2B efficace et performante."
+seoTitle: "Base de données prospects B2B : construire et enrichir"
+description: "Construire une base de données de prospects B2B fiable : ciblage des décideurs, emails et téléphones vérifiés, conformité RGPD. Messor la crée pour vous."
 lang: "fr"
 permalink: "/base-de-donnees-prospects"
 alternate: "/en/database-creation"

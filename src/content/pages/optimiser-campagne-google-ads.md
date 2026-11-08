@@ -1,7 +1,7 @@
 ---
 title: "Optimisation campagne Google Ads"
-seoTitle: "Optimisation campagne Google Ads - Messor"
-description: "Boostez votre visibilité B2B grâce à Google Ads. Découvrez comment optimiser votre campagne, attirer plus de prospects et dynamiser vos conversions avec MESSOR"
+seoTitle: "Optimiser une campagne Google Ads (AdWords) : la méthode"
+description: "Ciblage, mots-clés, annonces, enchères et suivi des conversions : la méthode Messor pour optimiser vos campagnes Google Ads B2B et baisser votre coût par lead."
 lang: "fr"
 permalink: "/optimiser-campagne-google-ads"
 alternate: "/en/google-ads-en"

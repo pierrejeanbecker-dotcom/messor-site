@@ -1,7 +1,7 @@
 ---
 title: "Prospection multicanal : boostez votre acquisition B2B"
-seoTitle: "Prospection multicanal : boostez votre acquisition B2B - Messor"
-description: "Prospection multicanal : optimisez votre stratégie, engagez vos prospects sur plusieurs canaux et boostez vos conversions avec nos méthodes."
+seoTitle: "Prospection multicanal B2B : téléphone, email, LinkedIn"
+description: "Prospection multicanale B2B externalisée : séquences téléphone, email et LinkedIn, ciblage des décideurs et rendez-vous qualifiés. La méthode Messor."
 lang: "fr"
 permalink: "/accompagnement-prospection-multicanal"
 alternate: "/en/prospecting-campaign"
