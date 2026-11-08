@@ -1,6 +1,6 @@
 ---
 title: "Inbound Marketing Externalisé : Boostez votre Acquisition Digitale"
-seoTitle: "Inbound Marketing Externalisé : Boostez votre Acquisition Digitale - Messor"
+seoTitle: "Inbound marketing externalisé - Messor"
 description: "Optez pour l’inbound marketing externalisé avec Messor. Attirez de nouveaux leads, renforcez votre brand awareness et votre ROI marketing."
 lang: "fr"
 permalink: "/inbound-marketing-externalise"

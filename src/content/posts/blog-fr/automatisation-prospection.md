@@ -1,6 +1,6 @@
 ---
 title: "Automatisation de la Prospection : Jusqu’où Aller pour Maximiser l’Efficacité"
-seoTitle: "Automatisation de la Prospection : Jusqu’où Aller pour Maximiser l’Efficacité - Messor"
+seoTitle: "Automatisation de la prospection : jusqu'où aller ?"
 description: "Découvrez comment l'automatisation de la prospection maximise votre efficacité commerciale. Optimisez vos ventes avec nos stratégies clés."
 lang: "fr"
 permalink: "/blog-fr/automatisation-prospection"

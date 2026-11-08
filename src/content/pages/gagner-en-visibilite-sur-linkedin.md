@@ -1,6 +1,6 @@
 ---
 title: "Gagner en visibilité sur LinkedIn : consolidez votre notoriété B2B"
-seoTitle: "Gagner en visibilité sur LinkedIn : consolidez votre notoriété B2B - Messor"
+seoTitle: "Gagner en visibilité sur LinkedIn en B2B - Messor"
 description: "Comment fonctionnent les algorithmes Linkedin ? Nous consolidons votre notoriété en faisant de votre profil une vitrine idéale."
 lang: "fr"
 permalink: "/gagner-en-visibilite-sur-linkedin"

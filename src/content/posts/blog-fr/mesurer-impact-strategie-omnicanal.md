@@ -1,6 +1,6 @@
 ---
 title: "Comment Mesurer l’Impact d’une Stratégie Omnicanal sur Votre Acquisition de Clients"
-seoTitle: "Comment Mesurer l’Impact d’une Stratégie Omnicanal sur Votre Acquisition de Clients - Messor"
+seoTitle: "Mesurer l'impact d'une stratégie omnicanal - Messor"
 description: "Découvrez comment une stratégie omnicanal booste votre acquisition de clients de 30 %. Apprenez à mesurer l'impact avec des outils et KPIs efficaces."
 lang: "fr"
 permalink: "/blog-fr/mesurer-impact-strategie-omnicanal"

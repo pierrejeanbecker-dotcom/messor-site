@@ -1,6 +1,6 @@
 ---
 title: "Comment Créer des Séquences de Prospection Performantes (Email, Téléphone, LinkedIn)"
-seoTitle: "Comment Créer des Séquences de Prospection Performantes (Email, Téléphone, LinkedIn) - Messor"
+seoTitle: "Séquences de prospection : email, téléphone, LinkedIn"
 description: "Découvrez comment créer des séquences de prospection performantes par email, téléphone et LinkedIn pour booster vos taux de conversion."
 lang: "fr"
 permalink: "/blog-fr/comment-creer-des-sequences-de-prospection-performantes-email-telephone-linkedin"

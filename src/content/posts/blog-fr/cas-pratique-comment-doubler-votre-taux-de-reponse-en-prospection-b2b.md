@@ -1,6 +1,6 @@
 ---
 title: "Cas Pratique : Comment Doubler Votre Taux de Réponse en Prospection B2B"
-seoTitle: "Cas Pratique : Comment Doubler Votre Taux de Réponse en Prospection B2B - Messor"
+seoTitle: "Cas pratique : doubler son taux de réponse en B2B - Messor"
 description: "Découvrez comment doubler votre taux de réponse en prospection B2B grâce à des stratégies personnalisées et multicanales."
 lang: "fr"
 permalink: "/blog-fr/cas-pratique-comment-doubler-votre-taux-de-reponse-en-prospection-b2b"

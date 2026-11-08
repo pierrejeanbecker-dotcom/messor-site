@@ -1,6 +1,6 @@
 ---
 title: "Conseil Développement Commercial : optimisez vos performances"
-seoTitle: "Conseil Développement Commercial : optimisez vos performances - Messor"
+seoTitle: "Conseil en développement commercial B2B - Messor"
 description: "Bénéficiez d’un plan d’actions commerciales complet, d’un coaching de managers et d’une méthodologie pour accélérer votre développement."
 lang: "fr"
 permalink: "/conseil-developpement-commercial"

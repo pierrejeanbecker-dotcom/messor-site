@@ -1,6 +1,6 @@
 ---
 title: "Prospection RGPD : 5 Astuces pour Allier Conformité et Efficacité"
-seoTitle: "Prospection RGPD : 5 Astuces pour Allier Conformité et Efficacité - Messor"
+seoTitle: "Prospection et RGPD : 5 astuces - Messor"
 description: "Optimisez votre prospection commerciale en respectant le RGPD. Nos stratégies pour augmenter vos ventes et garantir la protection des données"
 lang: "fr"
 permalink: "/blog-fr/prospection-rgpd-5-astuces-pour-allier-conformite-et-efficacite"

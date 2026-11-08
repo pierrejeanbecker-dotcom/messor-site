@@ -1,6 +1,6 @@
 ---
 title: "Quels Avantages pour une ESN à Travailler avec une Agence de Prospection Externalisée ?"
-seoTitle: "Quels Avantages pour une ESN à Travailler avec une Agence de Prospection Externalisée ? - Messor"
+seoTitle: "ESN : les avantages d'une agence de prospection externalisée"
 description: "Découvrez les avantages pour une ESN de collaborer avec une agence de prospection externalisée : plus de clients, expertise spécialisée et économies."
 lang: "fr"
 permalink: "/blog-fr/quels-avantages-pour-une-esn-a-travailler-avec-une-agence-de-prospection-externalisee"

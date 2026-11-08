@@ -1,6 +1,6 @@
 ---
 title: "Omnicanal : La Stratégie de Prospection Incontournable pour Atteindre les Décideurs en Entreprise"
-seoTitle: "Omnicanal : La Stratégie de Prospection Incontournable pour Atteindre les Décideurs en Entreprise - Messor"
+seoTitle: "Prospection omnicanal : atteindre les décideurs - Messor"
 description: "Omnicanal : Stratégie essentielle pour atteindre les décideurs. Apprenez comment augmenter vos conversions grâce à une approche intégrée."
 lang: "fr"
 permalink: "/blog-fr/strategie-prospection-omnicanal"

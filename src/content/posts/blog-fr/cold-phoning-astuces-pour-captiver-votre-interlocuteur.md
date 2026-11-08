@@ -1,6 +1,6 @@
 ---
 title: "Cold Phoning : Comment Passer des Appels Qui Captivent les Décideurs"
-seoTitle: "Cold Phoning : Comment Passer des Appels Qui Captivent les Décideurs - Messor"
+seoTitle: "Cold phoning : des appels qui captivent les décideurs"
 description: "Découvrez comment les appels à froid captivent les décideurs. Maîtrisez des stratégies efficaces et augmentez vos conversions."
 lang: "fr"
 permalink: "/blog-fr/cold-phoning-astuces-pour-captiver-votre-interlocuteur"

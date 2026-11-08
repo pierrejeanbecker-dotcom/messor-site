@@ -1,6 +1,6 @@
 ---
 title: "Développement Commercial pour les Cabinets de Conseil : Les Erreurs à Éviter Absolument"
-seoTitle: "Développement Commercial pour les Cabinets de Conseil : Les Erreurs à Éviter Absolument - Messor"
+seoTitle: "Cabinets de conseil : erreurs de développement commercial"
 description: "Développement commercial pour cabinets de conseil : évitez les erreurs courantes et boostez votre croissance."
 lang: "fr"
 permalink: "/blog-fr/developpement-commercial-pour-les-cabinets-de-conseil-les-erreurs-a-eviter-absolument"

@@ -1,6 +1,6 @@
 ---
 title: "Comment Identifier et Atteindre les Décideurs Clés dans les Grandes Entreprises"
-seoTitle: "Comment Identifier et Atteindre les Décideurs Clés dans les Grandes Entreprises - Messor"
+seoTitle: "Atteindre les décideurs des grandes entreprises - Messor"
 description: "Comment identifier et atteindre les décideurs clés dans les grandes entreprises. Adoptez des stratégies performantes pour booster vos ventes."
 lang: "fr"
 permalink: "/blog-fr/comment-identifier-et-atteindre-les-decideurs-cles-dans-les-grandes-entreprises"

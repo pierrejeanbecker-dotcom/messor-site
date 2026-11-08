@@ -1,6 +1,6 @@
 ---
 title: "Prospection pour ESN : Quels KPIs Suivre pour Mesurer Votre Succès"
-seoTitle: "Prospection pour ESN : Quels KPIs Suivre pour Mesurer Votre Succès - Messor"
+seoTitle: "Prospection pour ESN : les KPI à suivre - Messor"
 description: "Optimisez votre prospection pour ESN en suivant les bons KPIs. Découvrez comment améliorer vos stratégies et booster votre succès."
 lang: "fr"
 permalink: "/blog-fr/prospection-esn-mesurer-kpi"

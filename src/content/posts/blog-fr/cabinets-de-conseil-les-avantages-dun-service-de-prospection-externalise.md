@@ -1,6 +1,6 @@
 ---
 title: "Cabinets de conseil : les avantages d’un service de prospection externalisé"
-seoTitle: "Cabinets de conseil : les avantages d'un service de prospection externalisé - Messor"
+seoTitle: "Cabinets de conseil : externaliser la prospection - Messor"
 description: "Aller chercher du business en dehors du réseau des associés est une volonté de nombreux cabinets de conseil aujourd'hui. On vous explique ici pourquoi l'externalisation représente un atout."
 lang: "fr"
 permalink: "/blog-fr/cabinets-de-conseil-les-avantages-dun-service-de-prospection-externalise"

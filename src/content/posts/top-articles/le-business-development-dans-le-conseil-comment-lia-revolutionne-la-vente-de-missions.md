@@ -1,6 +1,6 @@
 ---
 title: "Le business development dans le conseil : comment l’IA révolutionne la vente de missions"
-seoTitle: "Le business development dans le conseil : comment l'IA révolutionne la vente de missions - Messor"
+seoTitle: "Conseil : comment l'IA transforme la vente de missions"
 description: "Un défi historique pour les cabinets de conseil Le business development (BD) dans le conseil ne va pas de soi. Historiquement, il est laissé aux partners, dont le réseau, bien que précieux, n&rsquo;est pas inépuisable et peut limiter la croissance. En 2025, la majorité des cabinets ont expérimenté diverses stratégies de BD, souvent avec des [&hellip;]"
 lang: "fr"
 permalink: "/top-articles/le-business-development-dans-le-conseil-comment-lia-revolutionne-la-vente-de-missions"

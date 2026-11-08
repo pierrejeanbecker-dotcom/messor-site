@@ -1,6 +1,6 @@
 ---
 title: "L’Importance de la Qualité des Données dans la Réussite d’une Campagne de Prospection"
-seoTitle: "L'Importance de la Qualité des Données dans la Réussite d'une Campagne de Prospection - Messor"
+seoTitle: "Qualité des données et campagne de prospection - Messor"
 description: "La qualité des données est clé pour vos campagnes de prospection. Maximisez vos résultats avec des données fiables."
 lang: "fr"
 permalink: "/blog-fr/qualite-des-donnees-campagne-de-prospection"

@@ -1,6 +1,6 @@
 ---
 title: "Agents IA et prospection commerciale : comment ils transforment la vente B2B"
-seoTitle: "Agents IA et prospection commerciale : comment ils transforment la vente B2B - Messor"
+seoTitle: "Agents IA et prospection commerciale B2B - Messor"
 description: "Les agents IA transforment la prospection B2B en profondeur — identification des leads, personnalisation, relances automatisées. Mais ils soulèvent aussi de vraies questions sur la confidentialité des données d'entreprise. Tour d'horizon complet."
 lang: "fr"
 permalink: "/top-articles/agents-ia-prospection-commerciale"

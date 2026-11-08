@@ -1,6 +1,6 @@
 ---
 title: "Cabinet de conseil : comment développer son chiffre d’affaires ?"
-seoTitle: "Cabinet de conseil : comment développer son chiffre d'affaires ? - Messor"
+seoTitle: "Développer le CA de son cabinet de conseil - Messor"
 description: "Besoin de développer le chiffre d'affaires de votre cabinet de conseil ? Voici 15 idées pour vendre davantage ou ouvrir de nouveaux comptes."
 lang: "fr"
 permalink: "/blog-fr/comment-developper-le-chiffre-daffaires-de-son-cabinet-de-conseil"

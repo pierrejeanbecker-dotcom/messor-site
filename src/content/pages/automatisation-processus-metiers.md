@@ -1,6 +1,6 @@
 ---
 title: "Automatisation des Processus Métiers : gagnez en efficacité et en productivité"
-seoTitle: "Automatisation des Processus Métiers : gagnez en efficacité et en productivité"
+seoTitle: "Automatisation des processus métiers - Messor"
 description: "Gagnez en productivité en automatisant les processus supports ou métiers répétitifs afin d'apporter une aide précieuse à votre organisation."
 lang: "fr"
 permalink: "/automatisation-processus-metiers"

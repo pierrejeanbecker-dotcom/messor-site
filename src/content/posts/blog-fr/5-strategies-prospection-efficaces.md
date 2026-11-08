@@ -1,6 +1,6 @@
 ---
 title: "Les 5 Stratégies de Prospection qui Fonctionnent le Mieux pour les Services B2B en 2024"
-seoTitle: "Les 5 Stratégies de Prospection qui Fonctionnent le Mieux pour les Services B2B en 2024 - Messor"
+seoTitle: "5 stratégies de prospection B2B efficaces - Messor"
 description: "Découvrez les 5 stratégies de prospection B2B 2024 qui boostent votre chiffre d'affaires. Maîtrisez contenu, réseaux sociaux & automatisation."
 lang: "fr"
 permalink: "/blog-fr/5-strategies-prospection-efficaces"

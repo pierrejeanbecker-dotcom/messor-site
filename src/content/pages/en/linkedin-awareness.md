@@ -66,6 +66,6 @@ Your publication is distributed by LinkedIn to a sample of your network (between
    - Ego-centered: to be used if you already have an established personal brand, if you are an influencer in your field
    - **Make the best use of the 120 sign limit.**
 5. **Be relevant in the first 2-3 lines of the information section** (the only ones directly visible)
-6. To spice up the layout, **insert emojis or unicode characters related to your activity**: on [smiley.cool](https://smiley.cool/fr/emoji-list.php)or [wikipedia](https://en.wikipedia.org/wiki&/Miscellaneous_Symbols).
+6. To spice up the layout, **insert emojis or unicode characters related to your activity**: on [smiley.cool](https://smiley.cool/fr/emoji-list.php) or [Wikipedia](https://en.wikipedia.org/wiki/Miscellaneous_Symbols).
 7. **Fill in all the information in the sections**: experience, skills, recommendations, languages, volunteering, etc.
 8. **Translate your profile into another language** if you are targeting foreign prospects.

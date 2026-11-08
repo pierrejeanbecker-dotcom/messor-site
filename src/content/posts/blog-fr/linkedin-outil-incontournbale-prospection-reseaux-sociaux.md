@@ -1,6 +1,6 @@
 ---
 title: "LinkedIn : L’Outil Incontournable pour les ESN et Cabinets de Conseil en Prospection B2B"
-seoTitle: "LinkedIn : L’Outil Incontournable pour les ESN et Cabinets de Conseil en Prospection B2B - Messor"
+seoTitle: "LinkedIn : prospection B2B pour ESN et cabinets de conseil"
 description: "Boostez votre prospection B2B avec LinkedIn, l'outil indispensable pour ESN et cabinets de conseil. Découvrez des stratégies efficaces dès maintenant !"
 lang: "fr"
 permalink: "/blog-fr/linkedin-outil-incontournbale-prospection-reseaux-sociaux"

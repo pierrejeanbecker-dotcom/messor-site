@@ -1,6 +1,6 @@
 ---
 title: "Cold Calling"
-seoTitle: "Cold Calling - Messor"
+seoTitle: "B2B Cold Calling: Outsourced Phone Prospecting - Messor"
 description: "Cold Calling - Real-life prospecting: the realm of the motivated - Business Development Agency - Metz"
 lang: "en"
 permalink: "/en/cold-calling"

@@ -65,6 +65,12 @@ const lang = kind === 'page' || kind === 'post' ? props.entry.data.lang : props.
 const t = UI[lang as 'fr' | 'en'];
 const path = '/' + Astro.params.slug;
 const cats = CATEGORIES.filter((c) => c.lang === lang);
+// Titres uniques pour l'accueil du blog et les catégories (FR et EN partagent les mêmes noms de catégorie)
+const listTitle = {
+  blog: lang === 'fr' ? 'Blog : prospection et développement commercial B2B - Messor' : 'Blog: B2B prospecting and business development - Messor',
+  cat: props.cat?.slug === 'blog-fr' ? 'Tous nos articles de blog - Messor'
+    : lang === 'fr' ? `${props.cat?.name} : nos articles - Messor` : `${props.cat?.name}: our articles - Messor`,
+};
 const fmt = (d: Date) => d.toLocaleDateString(t.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
 
 let Content: any = null;
@@ -164,7 +170,7 @@ const catOf = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
 
 {(kind === 'blog' || kind === 'category') && (
   <Base
-    title={kind === 'blog' ? `${t.blogTitle} - Messor` : `${props.cat.name} - Messor`}
+    title={kind === 'blog' ? listTitle.blog : listTitle.cat}
     description={kind === 'blog' ? t.blogLead : props.cat.description || t.blogLead}
     lang={lang}
     path={path}

@@ -1,6 +1,6 @@
 ---
 title: "Développement Commercial Externalisé : votre force de vente sous contrôle"
-seoTitle: "Développement Commercial Externalisé : votre force de vente sous contrôle"
+seoTitle: "Développement commercial externalisé - Messor"
 description: "Externalisez votre force commerciale pour optimiser vos résultats et booster votre acquisition client avec Messor."
 lang: "fr"
 permalink: "/developpement-commercial-externalise"

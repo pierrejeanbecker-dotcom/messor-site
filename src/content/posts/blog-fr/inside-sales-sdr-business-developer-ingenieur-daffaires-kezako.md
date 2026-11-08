@@ -1,6 +1,6 @@
 ---
 title: "Inside Sales, SDR, Business Developer, ingénieur d’affaires : kezako ?"
-seoTitle: "Inside Sales, SDR, Business Developer, ingénieur d'affaires : kezako ? - Messor"
+seoTitle: "Inside Sales, SDR, Business Developer : kezako ? - Messor"
 description: "Inside Sales, SDR, BDR, Ingénieur d'affaires : qui fait quoi ? Les explications d'un spécialiste de l'externalisation commerciale b2b"
 lang: "fr"
 permalink: "/blog-fr/inside-sales-sdr-business-developer-ingenieur-daffaires-kezako"

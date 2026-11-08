@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi le Suivi des Leads Est Aussi Important que la Prospection Elle-Même"
-seoTitle: "Pourquoi le Suivi des Leads Est Aussi Important que la Prospection Elle-Même - Messor"
+seoTitle: "Suivi des leads : aussi important que la prospection"
 description: "Pourquoi le suivi des leads est aussi important que la prospection ? Découvrez comment optimiser vos conversions et booster votre ROI."
 lang: "fr"
 permalink: "/blog-fr/pourquoi-le-suivi-des-leads-est-aussi-important-que-la-prospection-elle-meme"
