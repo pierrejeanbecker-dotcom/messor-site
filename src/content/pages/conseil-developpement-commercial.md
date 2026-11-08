@@ -1,11 +1,11 @@
 ---
-title: "Conseil Développement Commercial : optimisez vos performances"
+title: "Conseil en développement commercial B2B"
 seoTitle: "Conseil en développement commercial B2B - Messor"
-description: "Bénéficiez d’un plan d’actions commerciales complet, d’un coaching de managers et d’une méthodologie pour accélérer votre développement."
+description: "Cabinet de conseil en développement commercial B2B : audit, stratégie, plan d’actions à 100 jours, process de vente, CRM et coaching des équipes. Basé à Metz."
 lang: "fr"
 permalink: "/conseil-developpement-commercial"
 kind: "offer"
-heroTitle: "Conseil Développement Commercial"
+heroTitle: "Conseil en développement commercial"
 heroLead: "MESSOR vous accompagne pour construire ou perfectionner votre dispositif commercial, en créant une cohérence entre tous les leviers : organisation, outils, méthodologie de prospection, discours, rémunération, gestion RH…\n\nNotre mission ?\n\nVous aider à déployer une stratégie de croissance robuste et adaptée à votre marché."
 prev:
   href: "/accompagnement-prospection-multicanal"
@@ -16,11 +16,72 @@ next:
 latestPosts: true
 ---
 
-## Collaborons en confiance pour passer un cap en business development
+## Un cabinet de conseil en développement commercial pour passer un cap
 
 Ensemble, nous évaluons tous les facteurs qui influencent votre performance commerciale : structuration de la force de vente, choix des outils (CRM, automatisation), formation des équipes, plan d’actions commerciales… Notre rôle est de vous rendre autonomes afin que vous deveniez de véritables experts du développement commercial.
 
 Que ce soit pour un accompagnement global ou des besoins ponctuels (construction d’une base de données, maîtrise de LinkedIn, amélioration des rendez-vous découvertes, etc.), nous intervenons avec flexibilité pour répondre à vos priorités de conquête de marché.
+
+## Quand faire appel à un conseil en développement commercial ?
+
+Un regard extérieur est particulièrement utile lorsque :
+
+- **Votre croissance plafonne** : le chiffre d’affaires dépend de quelques clients historiques ou du réseau des associés, et les nouveaux comptes se font rares.
+- **Vous lancez une offre ou attaquez un nouveau marché** (un secteur, une taille d’entreprise, un pays) sans savoir par où commencer.
+- **Votre équipe commerciale grandit** et il faut structurer les rôles, les objectifs, la rémunération et le pilotage.
+- **Votre CRM est sous-exploité** : données incomplètes, pipeline peu fiable, relances oubliées.
+- **Vos consultants vendent « au feeling »**, sans discours commun ni processus de vente partagé.
+- **Vous préparez un recrutement commercial** et voulez définir le bon profil, la bonne organisation et les bons objectifs avant d’embaucher.
+
+## Nos domaines d’intervention
+
+### Stratégie commerciale et ciblage
+
+Segmentation de votre marché, définition de votre client idéal (ICP) et des personas, priorisation des comptes, positionnement et proposition de valeur pour chaque cible.
+
+### Organisation de la force de vente
+
+Répartition des rôles (chasse, élevage, avant-vente), objectifs et indicateurs, plan de rémunération variable, accompagnement au recrutement de vos commerciaux.
+
+### Process de vente et Sales Process Book
+
+Formalisation des étapes de votre cycle de vente, des critères de qualification, des argumentaires et du traitement des objections, rassemblés dans un Sales Process Book partagé par toute l’équipe.
+
+### CRM, données et automatisation
+
+Choix et paramétrage du CRM, structuration du pipeline, enrichissement des données et automatisation des tâches répétitives : relances, mises à jour, reporting. Messor est certifié Make Advanced.
+
+### Prospection et génération de leads
+
+Mise en place d’une cellule de prospection, construction de la base de prospects, séquences multicanales (téléphone, email, LinkedIn) et stratégie de contenu pour attirer des leads entrants.
+
+### Formation et coaching
+
+Formation des commerciaux et des consultants à la prospection, à la découverte des besoins et à la négociation ; coaching des managers commerciaux sur le pilotage de l’activité.
+
+### Développement à l’international
+
+Adaptation de votre stratégie, de vos messages et de vos outils aux marchés européens, avec une équipe qui travaille en français, anglais, allemand et italien.
+
+## Un plan d’actions commercial à 100 jours
+
+Pour transformer le diagnostic en résultats concrets, nous structurons nos missions autour d’un plan d’actions à 100 jours, découpé en trois temps :
+
+### Jours 1 à 30 : diagnostic et priorités
+
+Audit de l’existant (offre, organisation, outils, pipeline, données), entretiens avec les équipes et quelques clients, puis définition des objectifs et des chantiers prioritaires.
+
+### Jours 30 à 60 : mise en place
+
+Formalisation du discours et du process de vente, paramétrage du CRM, construction de la base de prospects, formation des équipes et lancement des premières actions de prospection.
+
+### Jours 60 à 100 : accélération et autonomie
+
+Pilotage des indicateurs, ajustement des messages et des cibles selon les premiers retours, coaching des managers et transfert de compétences pour que vos équipes poursuivent en autonomie.
+
+## Conseil, externalisation ou les deux ?
+
+Le conseil vous aide à **construire et structurer** votre dispositif commercial ; l’externalisation **l’exécute** à votre place. Les deux se combinent souvent : nous définissons ensemble la stratégie, puis un business developer Messor la met en œuvre le temps que votre équipe prenne le relais. Découvrez notre offre de [développement commercial externalisé](/developpement-commercial-externalise) et notre guide de l’[externalisation de la prospection commerciale](/externalisation-prospection-commerciale).
 
 ## Méthodologie
 
@@ -102,6 +163,27 @@ Nous privilégions des CRM reconnus et des solutions d’automatisation fiables.
 <summary>Quel est le rôle du coaching dans le conseil en développement commercial ?</summary>
 
 Le coaching commercial permet de faire monter en compétences vos managers et consultants. Il s’agit d’instaurer de bonnes pratiques de vente, de structurer les process et d’adopter une communication plus efficace. À terme, vous gagnez en autonomie et en performance grâce à cette méthodologie sur-mesure.
+
+</details>
+
+<details>
+<summary>Cabinet de conseil ou consultant indépendant : que choisir ?</summary>
+
+Un consultant indépendant apporte son expérience personnelle ; un cabinet comme Messor s’appuie sur une équipe, une méthode éprouvée auprès de plus de 50 clients B2B et la capacité de passer du conseil à l’exécution (prospection, développement commercial externalisé) si vous le souhaitez.
+
+</details>
+
+<details>
+<summary>Accompagnez-vous les PME ?</summary>
+
+Oui. Nous accompagnons majoritairement des PME et ETI B2B : cabinets de conseil, éditeurs de logiciels, ESN et sociétés de services. L’accompagnement s’adapte à votre taille, de quelques jours de conseil ciblé à une mission complète.
+
+</details>
+
+<details>
+<summary>Combien coûte une mission de conseil en développement commercial ?</summary>
+
+Le budget dépend du périmètre (audit ponctuel, plan d’actions à 100 jours, accompagnement dans la durée) et du nombre de jours d’intervention. Chaque mission démarre par un diagnostic offert de 30 minutes, à l’issue duquel nous vous proposons un format et un budget précis.
 
 </details>
 
