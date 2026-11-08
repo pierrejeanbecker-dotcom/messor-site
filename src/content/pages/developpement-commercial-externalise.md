@@ -26,6 +26,8 @@ Nous pouvons également développer le chiffre d’affaires cumulé moyen géné
 
 Ensemble, testons le potentiel marché de vos différentes offres (ou d’une seule en particulier) et agissons comme votre force de vente externe pour des résultats concrets !
 
+Vous découvrez le sujet ? Consultez notre guide complet de l’[externalisation de la prospection commerciale](/externalisation-prospection-commerciale) : ce que l’on peut confier à une agence, combien cela coûte et comment la choisir.
+
 ## Méthodologie
 
 ### Identification des cibles

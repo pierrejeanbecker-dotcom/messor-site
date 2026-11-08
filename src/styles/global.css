@@ -425,3 +425,8 @@ a { color: inherit; }
 .post-toc li a:hover { color: var(--gold-ink); }
 @media (max-width: 700px) { .post-toc ol { columns: 1; } }
 .prose :is(h2, h3, h4)[id] { scroll-margin-top: 90px; }
+
+/* Encadré « offre » en fin d'article */
+.post-offer { margin-top: 3em; padding: 26px 28px; border-radius: 10px; background: var(--paper-warm); border: 1px solid var(--line); }
+.post-offer .eyebrow { margin-bottom: 8px; }
+.post-offer p:last-child { margin: 0; font-size: 16px; line-height: 1.6; }

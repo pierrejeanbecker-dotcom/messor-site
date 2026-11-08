@@ -152,6 +152,12 @@ const catOf = (slug: string) => CATEGORIES.find((c) => c.slug === slug);
           </nav>
         )}
         <Content />
+        {lang === 'fr' && path !== '/externalisation-prospection-commerciale' && (
+          <aside class="post-offer">
+            <p class="eyebrow">Externaliser votre prospection ?</p>
+            <p>Un business developer dédié à votre compte, de la prospection jusqu’à la signature. Découvrez notre <a href={url('/externalisation-prospection-commerciale')}>guide de l’externalisation de la prospection commerciale</a> et notre offre de <a href={url('/developpement-commercial-externalise')}>développement commercial externalisé</a>.</p>
+          </aside>
+        )}
       </article>
     </section>
     {props.latest.length > 0 && (

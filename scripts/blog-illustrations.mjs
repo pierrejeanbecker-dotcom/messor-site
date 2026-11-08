@@ -231,7 +231,8 @@ function insert(body, img1, img2) {
 
 // ── Principal ─────────────────────────────────────────────────────────
 mkdirSync(OUT, { recursive: true });
-const browser = await chromium.launch();
+// PW_CHROMIUM : chemin d'un Chromium déjà installé si la version attendue par Playwright est absente
+const browser = await chromium.launch(process.env.PW_CHROMIUM ? { executablePath: process.env.PW_CHROMIUM } : {});
 const tab = await browser.newPage({ viewport: { width: 1200, height: 675 } });
 const render = async (html, file) => {
   await tab.setContent(html, { waitUntil: 'load' });
